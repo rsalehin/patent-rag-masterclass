@@ -30,8 +30,12 @@ Google Colab VM. Shared, tested implementations live in [`patentrag/`](patentrag
 
 ## Running on Google Colab (primary)
 
+**Launcher:** open [`index.ipynb`](index.ipynb) in Colab — it has one-click "Open in Colab" links
+for every chapter, plus an optional cell that executes the whole series in a single runtime.
+
 Each notebook is self-contained and rebuilds any pipeline artifacts it needs from the bundled
-`data/` corpus — so you run **one notebook at a time on a fresh VM**, in any order.
+`data/` corpus — so you run **one notebook at a time on a fresh VM**, in any order. (Colab runs one
+notebook per runtime; to open several, just click several chapter links — each gets its own tab.)
 
 1. **Push this repo to GitHub** (public or private).
 2. **Fill in `REPO_URL`** once. Every notebook's first (bootstrap) cell has the same line:

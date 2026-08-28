@@ -33,6 +33,14 @@ Google Colab VM. Shared, tested implementations live in [`patentrag/`](patentrag
 | # | Appendix | Topic |
 |---|----------|-------|
 | A1 | `A1_pydantic` | Pydantic from zero — every concept the series' data models rely on |
+| A2 | `A2_langchain` | LangChain from zero — messages, LCEL, parsers, tools, retrieval, RAG chains, memory |
+| A3 | `A3_langgraph` | LangGraph from zero — state, nodes/edges, cycles, checkpoints, agents, human-in-the-loop |
+| A4 | `A4_langsmith` | LangSmith from zero — tracing, datasets, evaluators, the evaluation loop |
+
+The LangChain/LangGraph/LangSmith appendices install `requirements-appendix.txt` themselves and
+run **offline with no API key** (deterministic fake models). To use a real model, add a Colab
+secret `LLM_API_KEY` (optionally `LLM_BASE_URL`, `LLM_MODEL`) or `OPENAI_API_KEY`; for LangSmith
+tracing/eval add `LANGSMITH_API_KEY`.
 
 ## Running on Google Colab (primary)
 

@@ -1,0 +1,239 @@
+{
+ "doc_id": "US11971885B2",
+ "publication_number": "US11971885B2",
+ "title": "Retrieval aware embedding",
+ "abstract": "Systems and methods for information retrieval are described. Embodiments generate a dense embedding for each of a plurality of media objects to be searched, generate a sparse embedding for each of the media objects using an encoder that takes the dense embedding as an input, wherein the sparse embedding satisfies a sparsity constraint that is applied to at least one layer of the encoder during training, and perform a search on the plurality of media objects based at least in part on the sparse embedding.",
+ "assignees": [
+  "Adobe Inc",
+  "Adobe Inc"
+ ],
+ "inventors": [
+  "Fengbin Chen",
+  "Venkat Barakam",
+  "Benjamin Leviant",
+  "Amine Ben Khalifa",
+  "Kerem TURGUTLU",
+  "Jayant Kumar",
+  "Sumeet Zaverilal Gala",
+  "Gaurav Kukal"
+ ],
+ "priority_date": "2021-02-10",
+ "filing_date": "2021-02-10",
+ "publication_date": "2024-04-30",
+ "cpc": [
+  "G06N",
+  "G06N3/00",
+  "G06N3/02",
+  "G06N3/08",
+  "G06N3/082",
+  "G06F",
+  "G06F16/00",
+  "G06F16/20",
+  "G06F16/24",
+  "G06F16/245",
+  "G06F16/40",
+  "G06F16/43"
+ ],
+ "citations": [
+  "US20170228344A1",
+  "US20180190377A1",
+  "US20190347256A1",
+  "US20200004835A1",
+  "US20200166611A1",
+  "US20200311542A1",
+  "US20210097141A1",
+  "US20210241460A1"
+ ],
+ "language": "en",
+ "claims": [
+  {
+   "number": 1,
+   "text": "A method for information retrieval, comprising: generating a dense image embedding for each of a plurality of media objects to be searched; generating a sparse image embedding with a higher number of dimensions than the dense image embedding for each of the media objects using an encoder that takes the dense image embedding as an input, wherein the sparse image embedding is generated using an activation function including a sparsity constraint that limits a number of non-zero parameters at a hidden layer of the encoder; performing a search on the plurality of media objects based at least in part on the sparse image embedding; and retrieving a matching object from the plurality of media objects based on the search.",
+   "dependent_on": null
+  },
+  {
+   "number": 2,
+   "text": "The method of claim 1 , further comprising: receiving a query object of the plurality of media objects; generating a sparse query embedding for the query object, wherein the search is based on the sparse query embedding; identifying the matching object similar to the query object based on the search; and presenting the matching object to a user.",
+   "dependent_on": 1
+  },
+  {
+   "number": 3,
+   "text": "The method of claim 1 , further comprising: receiving a text query; identifying the matching object corresponding to the text query based on the search; and presenting the matching object to a user.",
+   "dependent_on": 1
+  },
+  {
+   "number": 4,
+   "text": "The method of claim 1 , further comprising: storing the media objects and the sparse image embedding in a database; identifying a stored media object based on the search; and retrieving the stored media object from the database.",
+   "dependent_on": 1
+  },
+  {
+   "number": 5,
+   "text": "The method of claim 1 , wherein: at least one layer of the encoder comprises an intermediate layer of an auto-encoder during a training phase.",
+   "dependent_on": 1
+  },
+  {
+   "number": 6,
+   "text": "The method of claim 1 , wherein: the sparsity constraint comprises a limit on a number of non-zero parameters in at least one layer of the encoder.",
+   "dependent_on": 1
+  },
+  {
+   "number": 7,
+   "text": "The method of claim 1 , wherein: the media objects comprise image files.",
+   "dependent_on": 1
+  },
+  {
+   "number": 8,
+   "text": "The method of claim 1 , wherein: the media objects comprise at least two media types from a set comprising audio files, video files, image files, and text files.",
+   "dependent_on": 1
+  },
+  {
+   "number": 9,
+   "text": "A non-transitory computer readable medium storing code for information retrieval, the code comprising instructions executable by at least one processor to: generate a dense image embedding for a plurality of media objects; generate a sparse image embedding with a higher number of dimensions than the dense image embedding for each of the media objects using an encoder that takes the dense image embedding as an input, wherein the sparse image embedding is generated using an activation function including a sparsity constraint that limits a number of non-zero parameters at a hidden layer of the encoder; and perform a search of the plurality of media objects based at least in part on the sparse image embedding and retrieve a matching object from the plurality of media objects based on the search.",
+   "dependent_on": null
+  },
+  {
+   "number": 10,
+   "text": "The non-transitory computer readable medium of claim 9 , wherein: at least one layer of the encoder comprises an intermediate layer of an auto-encoder during a training phase.",
+   "dependent_on": 9
+  },
+  {
+   "number": 11,
+   "text": "The non-transitory computer readable medium of claim 9 , wherein: the sparsity constraint comprises a limit on a number of non-zero parameters in at least one layer of the encoder.",
+   "dependent_on": 9
+  },
+  {
+   "number": 12,
+   "text": "The non-transitory computer readable medium of claim 9 , the code further comprising instructions executable by the at least one processor to: store the plurality of media objects.",
+   "dependent_on": 9
+  },
+  {
+   "number": 13,
+   "text": "The non-transitory computer readable medium of claim 9 , the code further comprising instructions executable by the at least one processor to: generate an additional dense embedding for additional media objects having a different media type from the plurality of media objects.",
+   "dependent_on": 9
+  },
+  {
+   "number": 14,
+   "text": "An apparatus comprising: a processor; and a memory including instructions executable by the processor to: generate a dense image embedding for each of a plurality of media objects to be searched; generate a sparse image embedding with a higher number of dimensions than the dense image embedding for each of the media objects using an encoder that takes the dense image embedding as an input, wherein the sparse image embedding is generated using an activation function including a sparsity constraint that limits a number of non-zero parameters at a hidden layer of the encoder; perform a search on the plurality of media objects based at least in part on the sparse image embedding; and retrieve a matching object from the plurality of media objects based on the search.",
+   "dependent_on": null
+  },
+  {
+   "number": 15,
+   "text": "The apparatus of claim 14 , further comprising instructions executable by the processor to: receive a query object of the plurality of media objects; generate a sparse query embedding for the query object, wherein the search is based on the sparse query embedding; identify the matching object similar to the query object based on the search; and present the matching object to a user.",
+   "dependent_on": 14
+  },
+  {
+   "number": 16,
+   "text": "The apparatus of claim 14 , further comprising instructions executable by the processor to: receive a text query; identify the matching object corresponding to the text query based on the search; and present the matching object to a user.",
+   "dependent_on": 14
+  },
+  {
+   "number": 17,
+   "text": "The apparatus of claim 14 , further comprising instructions executable by the processor to: store the media objects and the sparse image embedding in a database; identify a stored media object based on the search; and retrieve the stored media object from the database.",
+   "dependent_on": 14
+  },
+  {
+   "number": 18,
+   "text": "The apparatus of claim 14 , wherein: the sparsity constraint comprises a limit on a number of non-zero parameters in at least one layer of the encoder.",
+   "dependent_on": 14
+  }
+ ],
+ "description": [
+  {
+   "heading": "BACKGROUND",
+   "paragraphs": [
+    "The following relates generally to information retrieval, and more specifically to information retrieval using machine learning.",
+    "Information retrieval refers to the task of extracting information resources based on a query. In some cases, information retrieval includes identifying relevant search objects from a database and comparing the search objects to a query object. For example, a user may provide a text description or an image as a query, and a search engine may find images that are similar or relevant to the query.",
+    "In some cases, information retrieval systems represent query objects and search objects as multi-dimensional vectors in an embedding space. The vector representations may capture the semantic meaning and other attributes such as color information, meta-data or classification tags. An information retrieval system such as a search engine can retrieve relevant documents by comparing the embedded representation of the query to the embedded representations of the documents stored in a database (i.e., the search objects). Recently, information retrieval systems have used neural networks and other sophisticated embedding systems to generate complex, high dimensional embeddings that are capable of comparing and differentiating a large number of different text or image objects.",
+    "However, the embedding systems used by these information retrieval systems produce dense and high-dimensional vector representations. Comparing a large number of these representations is computationally expensive and therefore difficult to scale. As a result, they cannot practically be used for very large scale databases. Therefore, there is a need in the art for an improved embedding system that is efficient and scalable to large datasets."
+   ]
+  },
+  {
+   "heading": "SUMMARY",
+   "paragraphs": [
+    "The present disclosure describes systems and methods for information retrieval. Embodiments of the disclosure provide a retrieval network trained using machine learning techniques to embed objects using a representation that enables efficient search. For example, the retrieval network may be trained using a sparsity constraint, which results in sparse embeddings for media objects such as text documents or images. Similar to text search, each dimension can be treated as an abstract token and can be indexed in inverted index for efficient retrieval by a search engine. In some examples, auto-encoder training techniques are used to train the retrieval network without the use of annotated training data.",
+    "A method, apparatus, and non-transitory computer readable medium for information retrieval are described. Embodiments of the method, apparatus, and non-transitory computer readable medium are configured to generate a dense embedding for each of a plurality of media objects to be searched, generate a sparse embedding for each of the media objects using an encoder that takes the dense embedding as an input, wherein the sparse embedding satisfies a sparsity constraint that is applied to at least one layer of the encoder during training, and perform a search on the plurality of media objects based at least in part on the sparse embedding.",
+    "An apparatus and method for information retrieval are described. Embodiments of the apparatus and method include an embedding component configured to generate a dense embedding for a plurality of media objects, an encoder configured to generate a sparse embedding based on the dense embedding, wherein the sparse embedding satisfies a sparsity constraint and at least one layer of the encoder is limited by the sparsity constraint during training, and a search component configured to perform a search of the media objects based at least in part on the sparse embedding.",
+    "A method, apparatus, and non-transitory computer readable medium for training an encoder are described. Embodiments of the method, apparatus, and non-transitory computer readable medium are configured to encode an embedding vector corresponding to a media object to produce an encoding vector, apply a sparsity constraint on the encoding vector to produce a sparse encoding vector, decode the encoding vector to produce a predicted embedding vector, compare the embedding vector to the predicted embedding vector, iteratively update parameters of the encoder based on the comparison to train the encoder, encode a plurality of media objects using the trained encoder, and perform a search of the media objects based on the encoding of the media objects. In some examples, the embedding vector is compared to the predicted embedding vector using an L2 loss function (i.e., a least square loss function)."
+   ]
+  },
+  {
+   "heading": "BRIEF DESCRIPTION OF THE DRAWINGS",
+   "paragraphs": [
+    "FIG. 1 shows an example of a system for information retrieval according to aspects of the present disclosure.",
+    "FIG. 2 shows an example of a process for information retrieval according to aspects of the present disclosure.",
+    "FIG. 3 shows an example of an apparatus for information retrieval according to aspects of the present disclosure.",
+    "FIG. 4 shows an example of a retrieval aware autoencoder according to aspects of the present disclosure.",
+    "FIG. 5 shows an example of a process for information retrieval according to aspects of the present disclosure.",
+    "FIG. 6 shows an example of a retrieval network according to aspects of the present disclosure.",
+    "FIG. 7 shows an example of a process for training a retrieval network according to aspects of the present disclosure."
+   ]
+  },
+  {
+   "heading": "DETAILED DESCRIPTION",
+   "paragraphs": [
+    "The present disclosure describes systems and methods for information retrieval. Embodiments of the disclosure provide a retrieval network trained using machine learning techniques. The retrieval network is subject to a sparsity constraint that results in the generation of sparse embeddings. As a result, the embedded objects can be compared efficiently during information retrieval.",
+    "Recently, information retrieval systems (i.e., search engines) have used embedding networks to represent query objects and search objects in a common embedding space using dense, high-dimensional vector representations. Because these dense embeddings have a high number of non-zero dimensions, searching them places a heavy demand on storage and computation resources. As a result, these systems are not scalable and cannot perform real time searching of very large datasets.",
+    "By contrast, embodiments of the present disclosure provide an improved retrieval network that can search very large scale databases in real time. In some examples, the retrieval network generates an initial dense embedding of search objects, and then converts the initial embeddings into high dimensional sparse embeddings using a neural network encoder subject to a sparsity constraint.",
+    "By applying the unconventional step of applying a sparsity constraint to the encoder, embodiments of the present disclosure provide sparse embeddings that can be more efficiently searched. In some cases, the sparse embeddings include a higher number of dimensions than the initial dense embeddings. However, many of the dimensions have a value of zero. Searching based on sparse embeddings results in improved efficiency even when using higher dimensional representations.",
+    "Embodiments of the present disclosure may be used in the context of a search engine. For example, a retrieval network based on the present disclosure may take natural language text or an image as a query, and efficiently search through millions of images to find images relevant to the query. An example of an application of the inventive concept in the image search context is provided with reference to FIGS. 1 and 2 . Details regarding the architecture of an example retrieval network are provided with reference to FIGS. 3 and 4 . Examples of a process for generating sparse embeddings are provided with reference to FIGS. 5 and 6 . A description of an example training process is described with reference to FIG. 7 ."
+   ]
+  },
+  {
+   "heading": "Image Search Application",
+   "paragraphs": [
+    "FIG. 1 shows an example of a system for information retrieval according to aspects of the present disclosure. The example shown includes user 100 , user device 105 , retrieval network 110 , cloud 115 , and database 120 . Retrieval network 110 is an example of, or includes aspects of, the corresponding element described with reference to FIG. 3 .",
+    "In the example of FIG. 1 , both the query and the search objects are images. However, other types of queries and search objects may be used. In some examples, the query is of a different media type than the search objects. For example, the query can be a natural language query and the search objects can be images. In some examples, the search objects themselves include different media types (e.g., audio files, video files, image files, and text files).",
+    "The user 100 communicates with the retrieval network 110 via the user device 105 and the cloud 115 . For example, the user 100 may provide a query object such as a text query or an image query. In the example illustrated in FIG. 1 , the query object includes an image representing a natural landscape. The user device 105 transmits the search query to the retrieval network 110 to find related objects or information (i.e., search objects stored within the database 120 ). In some examples, the user device 105 communicates with the retrieval network 110 via the cloud 115 .",
+    "The retrieval network 110 generates a sparse embedding for the query object and compares the sparse query embedding to sparse embeddings for search objects stored in database 120 . The database 120 returns one or more images related to the sparse query embedding. The matching images are presented to the user 100 . The process of using the retrieval network 110 to perform an image search is further described with reference to FIG. 2 .",
+    "Prior to performing the search, the retrieval network 110 may be trained and then used to embed the search objects and query objects in a common embedding space in which each of the objects is represented as a sparse embedding. In some cases, the objects are represented using a dense embedding and then converted to a sparse embedding.",
+    "Dense embeddings and sparse embeddings are both multi-dimensional vectors that represent the objects in a vector space. A dense embedding may not have constraints on the number of non-zero values, and therefore may have a large number of non-zero values relative to the number of dimensions. A sparse embedding is a multi-dimensional vector subject to a sparsity constraint. For example, a threshold number of values may be identified, and all the sparse embeddings of the objects may be limited to having less than or equal the threshold number of non-zero values.",
+    "According to some embodiments, the number of dimensions of the sparse embedding can be larger than the number of dimensions of the dense embedding. However, due to the sparsity constraint, the number of non-zero values of the sparse embeddings is generally significantly smaller than the number of non-zero values of the dense embeddings.",
+    "The user device 105 may be a personal computer, laptop computer, mainframe computer, palmtop computer, personal assistant, mobile device, or any other suitable processing apparatus.",
+    "The retrieval network 110 includes a computer implemented network that generates a sparse embedding for each of a set of media objects to be searched, and performs a search on a set of media objects using the sparse embedding. According to some embodiments, the retrieval network 110 includes an embedding component, an encoder, and a search component. The embedding component generates an initial dense embedding for each of the media objects. The encoder takes the dense embedding as an input and generates sparse embedding for each of the set of media objects. A sparsity constraint is applied to at least one layer of the encoder during training.",
+    "The retrieval network 110 may also include a processor unit, a memory unit, a user interface, and a training component. The training component is used to train the encoder of the retrieval network. Additionally, the retrieval network 110 can communicate with the database 120 via the cloud 115 . In some cases, the architecture of the retrieval network 110 is also referred to as a retrieval aware embedding (RAE) model. Further detail regarding the architecture of the retrieval network 110 is provided with reference to FIGS. 3 and 4 . Further detail regarding the operation of the retrieval network 110 is provided with reference to FIGS. 5 and 6 .",
+    "In some cases, the retrieval network 110 is implemented on a server. A server provides one or more functions to users linked by way of one or more of the various networks. In some cases, the server includes a single microprocessor board, which includes a microprocessor responsible for controlling all aspects of the server. In some cases, a server uses microprocessor and protocols to exchange data with other devices/users on one or more of the networks via hypertext transfer protocol (HTTP), and simple mail transfer protocol (SMTP), although other protocols such as file transfer protocol (FTP), and simple network management protocol (SNMP) may also be used. In some cases, a server is configured to send and receive hypertext markup language (HTML) formatted files (e.g., for displaying web pages). In various embodiments, a server comprises a general purpose computing device, a personal computer, a laptop computer, a mainframe computer, a supercomputer, or any other suitable processing apparatus.",
+    "In some examples, the retrieval network 110 is an information retrieval system or a search system that performs image or document search based on content understanding. The retrieval network 110 can be used to identify objects, subjects, action, tone, emotion, concepts, aesthetics, style, and media types such as images, videos, documents, composites, etc. Based on information of the content, the retrieval network 110 can provide discovery and search experiences where boundaries across different kind of content and input modalities become blurring.",
+    "In some examples, the retrieval network 110 takes original information as input and represent such information in textual form, where a subsequent search depends on the textual representation. In some cases, the retrieval network 110 is able to accurately represent the original information (e.g., non-textual) as a dense embedding using an embedding component. In one embodiment, the retrieval network 110 captures text representation irrespective of types of content or information (e.g., image, audio, video, composites, 3D, etc.).",
+    "In some embodiments, the retrieval network 110 includes an artificial neural network to generate a sparse embedding for each of the media objects. An artificial neural network is a hardware or a software component that includes a number of connected nodes (i.e., artificial neurons), which loosely correspond to the neurons in a human brain. Each connection, or edge, transmits a signal from one node to another (like the physical synapses in a brain). When a node receives a signal, it processes the signal and then transmits the processed signal to other connected nodes. In some cases, the signals between nodes comprise real numbers, and the output of each node is computed by a function of the sum of its inputs. Each node and edge is associated with one or more node weights that determine how the signal is processed and transmitted.",
+    "During the training process, these weights are adjusted to increase the accuracy of the result (i.e., by minimizing a loss function which corresponds in some way to the difference between the current result and the target result). The weight of an edge increases or decreases the strength of the signal transmitted between nodes. In some cases, nodes have a threshold below which a signal is not transmitted at all. In some examples, the nodes are aggregated into layers. Different layers perform different transformations on their inputs. The initial layer is known as the input layer and the last layer is known as the output layer. In some cases, signals traverse certain layers multiple times.",
+    "According to some embodiments, deep learning techniques may be used to map information or content into a multi-dimensional embedding space. The embedding space provides representation that is independent of content type or language. This kind of representation may blur the lines of content types or input modalities or language modalities for information retrieval.",
+    "In some examples, a training component is used to train the encoder of the retrieval network. A loss function is used during the training and the parameters of the encoder are iteratively updated based on comparison. After training, the trained encoder is used to generate a sparse embedding for each of the media objects and a sparse query embedding for the query object. An example of a process for training the encoder will be described in greater detail in FIG. 7 .",
+    "A cloud 115 is a computer network configured to provide on-demand availability of computer system resources, such as data storage and computing power. In some examples, the cloud 115 provides resources without active management by the user. The term cloud 115 is sometimes used to describe data centers available to many users over the Internet. Some large cloud networks have functions distributed over multiple locations from central servers. A server is designated an edge server if it has a direct or close connection to a user. In some cases, a cloud 115 is limited to a single organization. In other examples, the cloud 115 is available to many organizations. In one example, a cloud 115 includes a multi-layer communications network comprising multiple edge routers and core routers. In another example, a cloud 115 is based on a local collection of switches in a single physical location.",
+    "The database 120 stores the media objects and the respective sparse embeddings for each of the media objects. In some examples, one or more of the stored media objects are retrieved from the database 120 as a result of a search by the information retrieval network 110 .",
+    "A database 120 is an organized collection of data. For example, a database 120 stores data in a specified format known as a schema. A database 120 may be structured as a single database, a distributed database, multiple distributed databases, or an emergency backup database. In some cases, a database controller may manage data storage and processing in a database 120 . In some cases, a user interacts with database controller. In other cases, database controller may operate automatically without user interaction. In some examples, the database 120 includes a set of media objects (e.g., image files). In some cases, a search is performed based on the sparse query embedding for the query object (e.g., a search image file), and at least one image file is retrieved from the database 120 . In some other cases, no images are retrieved and returned to the user due to lack of similarity based on the sparse query embedding.",
+    "FIG. 2 shows an example of a process for information retrieval according to aspects of the present disclosure. In some examples, these operations are performed by a system such as the information retrieval system of claim 1 . The system may include a processor executing a set of codes to control functional elements of an apparatus. Additionally or alternatively, certain processes are performed using special-purpose hardware. Generally, these operations are performed according to the methods and processes described in accordance with aspects of the present disclosure. In some cases, the operations described herein are composed of various substeps, or are performed in conjunction with other operations.",
+    "At operation 200 , the user identifies a search image. According to an example, the search image includes a natural landscape (e.g., the search image includes the sun and mountains). The search image herein is for illustrative purpose. However, in practice, a search image may be more complex. Furthermore, embodiments of the present disclosure are not limited to image queries. In some cases, the query object can be an audio file, video file, image file, natural language text, text file or any combination of thereof. In some cases, the operations of this step may be performed by a user as described with reference to FIG. 1 , using a user interface as described with reference to FIG. 3 .",
+    "At operation 205 , the system creates a sparse embedding for the search image. According to an embodiment, an encoder is used to generate a sparse embedding based on a dense embedding of the search image. The sparse embedding can have a higher number of dimensions than the dense embedding. In some cases, the operations of this step refer to, or may be performed by, an encoder of retrieval network as described with reference to FIGS. 1 and 3 .",
+    "In some examples, a document may include several embeddings (e.g., embeddings based on foreground, background, color, light, aesthetics). An information retrieval engine depends on parallel execution of retrieval request against several embeddings for running at scale. The retrieval network is applicable in morphing an embedding into information retrieval imperatives. Furthermore, the retrieval network may be configured to map query (e.g., text, image, or a combination thereof) to target retrieval aware embeddings associated with the document space. The retrieval network may be further configured to include a multi-task learning network.",
+    "At operation 210 , the system performs a search on the set of images based on the sparse embedding. According to an embodiment, the system generates a sparse embedding for each of a set of images stored in the database (i.e., during an offline embedding period prior to the search, as described in FIG. 1 ). The respective sparse embedding for each image is also stored in the database.",
+    "The system is configured to compare the values of the sparse embedding for images in the database to values of the query embedding (i.e., the sparse embedding of the query object) based on pre-determined standards. For example, a distance metric may be used to identify objects that are close to the query object in the embedding space. In another example, the system identifies objects having at least a threshold number of overlapping dimensions with non-zero values. In some cases, the operations of this step refer to, or may be performed by, a search component as described with reference to FIG. 3 .",
+    "At operation 215 , the system presents one or more matching images to the user. The use is able to view the matching images presented. The user can choose to refine the search results by running an additional search (i.e., by selecting an image from the search results and using the selected image as a new query). In some cases, the operations of this step refer to, or may be performed by, a user interface as described with reference to FIG. 3 .",
+    "The retrieval network 110 can efficiently and accurately compare a query object and a set of media objects in a common and sparse embedding space, and scale to millions of contents. As a result, the system can be further applied to multiple embeddings. For example, the query may include multiple embeddings such as a content embedding, a color embedding, a style embedding, a background embedding, etc. Each query embedding search in its corresponding embedding space and the final output is a combination of match of the multiple embeddings."
+   ]
+  },
+  {
+   "heading": "Network Architecture",
+   "paragraphs": [
+    "FIG. 3 shows an example of an apparatus for information retrieval according to aspects of the present disclosure. The example shown includes processor unit 300 , memory unit 305 , retrieval network 310 , user interface 330 , and training component 335 . Retrieval network 310 is an example of, or includes aspects of, the corresponding element described with reference to FIG. 1 .",
+    "In one embodiment, retrieval network 310 includes embedding component 315 , encoder 320 , and search component 325 . According to this embodiment, embedding component 315 is configured to generate a dense embedding for a set of media objects, encoder 320 is configured to generate a sparse embedding based on the dense embedding, wherein the sparse embedding satisfies a sparsity constraint and at least one layer of the encoder 320 is limited by the sparsity constraint during training, and search component 325 is configured to perform a search of the media objects based at least in part on the sparse embedding.",
+    "A processor unit 300 is an intelligent hardware device, (e.g., a general-purpose processing component, a digital signal processor (DSP), a central processing unit (CPU), a graphics processing unit (GPU), a microcontroller, an application specific integrated circuit (ASIC), a field programmable gate array (FPGA), a programmable logic device, a discrete gate or transistor logic component, a discrete hardware component, or any combination thereof). In some cases, the processor unit 300 is configured to operate a memory array using a memory controller. In other cases, a memory controller is integrated into the processor unit 300 . In some cases, the processor unit 300 is configured to execute computer-readable instructions stored in a memory to perform various functions. In some embodiments, a processor unit 300 includes special purpose components for modem processing, baseband processing, digital signal processing, or transmission processing.",
+    "Examples of a memory unit 305 include random access memory (RAM), read-only memory (ROM), or a hard disk. Examples of memory unit 305 include solid state memory and a hard disk drive. In some examples, memory unit 305 is used to store computer-readable, computer-executable software including instructions that, when executed, cause a processor to perform various functions described herein. In some cases, the memory unit 305 contains, among other things, a basic input/output system (BIOS) which controls basic hardware or software operation such as the interaction with peripheral components or devices. In some cases, a memory controller operates memory cells. For example, the memory controller can include a row decoder, column decoder, or both. In some cases, memory cells within a memory unit 305 store information in the form of a logical state.",
+    "According to some embodiments, embedding component 315 generates a dense embedding for each of a set of media objects to be searched. In some examples, the media objects include image files. In some examples, the media objects include at least two media types from a set including audio files, video files, image files, and text files.",
+    "According to some embodiments, embedding component 315 is configured to generate a dense embedding for a set of media objects. In some examples, embedding component 315 is configured to generate an additional dense embedding for additional media objects having a different media type from the plurality of media objects. Embedding component 315 is an example of, or includes aspects of, the corresponding element described with reference to FIG. 6 .",
+    "According to some embodiments, encoder 320 generates a sparse embedding for each of the media objects taking the dense embedding as an input, where the sparse embedding satisfies a sparsity constraint that is applied to at least one layer of the encoder 320 during training. In some examples, the sparse embedding has a higher number of dimensions than the dense embedding.",
+    "In some examples, the at least one layer of the encoder 320 includes an intermediate layer of an auto-encoder during a training phase. In some examples, the sparsity constraint includes a limit on a number of non-zero parameters in the at least one layer of the encoder 320 .",
+    "According to some embodiments, encoder 320 is configured to generate a sparse embedding based on a dense embedding, wherein the sparse embedding satisfies a sparsity constraint and at least one layer of the encoder 320 is limited by the sparsity constraint during training.",
+    "According to some embodiments, encoder 320 encodes an embedding vector corresponding to a media object to produce an encoding vector. In some examples, encoder 320 applies a sparsity constraint on the encoding vector to produce a sparse encoding vector. In some examples, a trained encoder 320 encodes a set of media objects. In some examples, the sparsity constraint includes a limit on a number of non-zero parameters in at least one layer of the encoder 320 . Encoder 320 is an example of, or includes aspects of, the corresponding element described with reference to FIG. 6 .",
+    "According to an embodiment, the retrieval network 310 uses a k-sparse autoencoder to convert an initial dense embedding to a relatively high dimensional sparse embedding. The autoencoder includes at least an input layer, embedding layer, and decoding layer. The input layer of the autoencoder may include the initial dense embedding. The middle layer or the embedding layer is sometimes referred to as a k-sparse layer encoder, where only k largest ReLU hidden units are selected, and the others are set to zero. The output layer of the autoencoder is a decoder which is used to reconstruct the original or initial embedding. The architecture of the autoencoder will be described in greater detail in FIG. 4 .",
+    "According to some embodiments, search component 325 performs a search on the set of media objects based on the sparse embedding. In some examples, search component 325 identifies a matching object similar to the query object based on the search. In some examples, search component 325 identifies a matching object corresponding to the text query based on the search. In some other examples, search component 325 identifies a stored media object based on the search."
+   ]
+  }
+ ],
+ "pdf_url": "https://patentimages.storage.googleapis.com/51/fd/0f/4896f81bfacf2c/US11971885.pdf",
+ "source": {
+  "provider": "Google Patents",
+  "url": "https://patents.google.com/patent/US11971885B2/en",
+  "fetched": "2026-08-28",
+  "note": "Patent text is public record; Google Patents used as aggregator."
+ }
+}

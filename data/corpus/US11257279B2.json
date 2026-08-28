@@ -1,0 +1,254 @@
+{
+ "doc_id": "US11257279B2",
+ "publication_number": "US11257279B2",
+ "title": "Systems and methods for providing non-parametric texture synthesis of arbitrary shape and/or material data in a unified framework",
+ "abstract": "Systems and methods perform non-parametric texture synthesis of arbitrary shape and/or material data taken from an exemplar object in accordance with embodiments of the invention. Exemplar data is first analyzed. Based upon the analysis, new unique but similar data is synthesized in a myriad of ways.",
+ "assignees": [
+  "Unity Technologies SF",
+  "Artomatix Ltd"
+ ],
+ "inventors": [
+  "Eric Andrew Risser"
+ ],
+ "priority_date": "2017-07-03",
+ "filing_date": "2020-08-31",
+ "publication_date": "2022-02-22",
+ "cpc": [
+  "G06T",
+  "G06T11/00",
+  "G06T11/10",
+  "G06K9/6202",
+  "G06T11/001",
+  "G06T15/00",
+  "G06T15/04",
+  "G06T17/00",
+  "G06T17/20",
+  "G06T7/00",
+  "G06T7/40",
+  "G06F"
+ ],
+ "citations": [
+  "US20060274070A1",
+  "US20070296730A1",
+  "US7558433B1",
+  "US7577313B1",
+  "US20110235905A1",
+  "US8285055B1",
+  "US20130120393A1",
+  "US8571328B2",
+  "US20140019484A1",
+  "US20140026111A1",
+  "US8818749B2",
+  "US8818135B1",
+  "US9014470B2",
+  "US20160034809A1",
+  "US20160163021A1",
+  "US9396530B2",
+  "US9410898B2",
+  "US9536377B2",
+  "US9536327B2",
+  "US9576351B1"
+ ],
+ "language": "en",
+ "claims": [
+  {
+   "number": 1,
+   "text": "A system for performing non-parametric texture synthesis of texture or material data taken from an exemplar object comprising: one or more processors; memory readable by the one or more processors; and instructions stored in the memory that when read by the one or more processors direct the one more processors to perform operations, the operations including: receiving data describing the exemplar object, the data including a set of source graphic objects that each contain a pixel at an index that contributes to an overall appearance vector at a location associated with the index, wherein the data includes a plurality of appearance vectors that define a desired texture; generating a feature vector for each pixel in a plurality of pixels of the exemplar object, the generating of a feature vector for a pixel including combining a set of appearance vectors surrounding the pixel and transforming the set through a convolutional neural network; determining a list of nearest neighbor candidates for each particular pixel in the plurality of pixels of the exemplar object using the feature vectors from the exemplar object, wherein each nearest neighbor candidate matches the particular pixel within a matching metric; and synthesizing, using at least the determined list of nearest neighbor candidates, an output graphic object by modifying each pixel in a plurality of pixels of the output graphic object to have an appearance vector which is within a similarity metric of an appearance vector of the particular pixel from the exemplar object.",
+   "dependent_on": null
+  },
+  {
+   "number": 2,
+   "text": "The system of claim 1 , wherein operations for generating the feature vector include transforming one or more appearance vectors through one or more Convolutional Neural Networks to generate one or more feature vectors for each pixel and concatenating the one or more feature vectors into a single feature vector, wherein the plurality of appearance vectors include individual 2D arrays of different appearance characteristics at a pixel location.",
+   "dependent_on": 1
+  },
+  {
+   "number": 3,
+   "text": "The system of claim 2 , wherein operations for generating the feature vector further include reducing a dimensionality of the single feature vector.",
+   "dependent_on": 2
+  },
+  {
+   "number": 4,
+   "text": "The system of claim 2 , wherein a multi-scale representation of the exemplar object is built whereby coarser scales within the multi-scale representation encode lower spatial frequencies of the exemplar object.",
+   "dependent_on": 2
+  },
+  {
+   "number": 5,
+   "text": "The system of claim 1 , the operations further comprising: determining locations of a number of feature vectors within a threshold similarity for each particular pixel location in the plurality of pixels of the exemplar object, wherein the number of feature vectors of each pixel location includes feature vectors for a plurality of pixel locations from the exemplar object or a second exemplar object that match the feature vector of the particular pixel location within a distance metric including, but not limited to, L0 distance, L1 distance, L2 distance, Bregman divergence, Lullback-Leibler divergence, Hellinger distance, cross entropy and a-divergence; performing an Approximate Nearest Neighbor Search on the pixels in the plurality of pixels of the exemplar object to determine a candidate nearest neighbor pixel; and adding a location of the candidate nearest neighbor pixel and candidate nearest neighbor pixel locations from the number of feature vectors of the candidate pixel to the list of nearest neighbor candidates of the particular pixel.",
+   "dependent_on": 1
+  },
+  {
+   "number": 6,
+   "text": "The system of claim 5 , wherein the operations for performing the Approximate Nearest Neighbor Search further includes: initializing a Nearest Neighbor Field for the pixels in the plurality of pixels of the exemplar object; and replacing one or more pixels in the Nearest Neighbor Field by performing an iterative nearest neighbor candidate improvement process to determine a replacement nearest neighbor pixel in the exemplar object or a second exemplar object that matches the one or more pixels, the matching including a determination of whether a feature vector for the replacement nearest neighbor pixel is within a threshold distance of a feature vector associated with the one or more pixels.",
+   "dependent_on": 5
+  },
+  {
+   "number": 7,
+   "text": "The system of claim 6 , wherein the initializing of the Nearest Neighbor Field includes performing an initial Approximate Nearest Neighbor Search as an initial input to the Nearest Neighbor Field through a histogram matching process that includes the following operations: building a histogram for each element of the feature vector, the histogram including a plurality of bins that cover a range of values associated with each element, wherein a bin may include links to pixels that contribute to the bin; searching for a nearest neighbor match for a pixel using a feature vector channel value as an index into the corresponding histogram; and based on a searched bin being empty, searching a next closest bin that is not empty.",
+   "dependent_on": 6
+  },
+  {
+   "number": 8,
+   "text": "The system of claim 5 , wherein operations for determining locations of the number of feature vectors include: modifying a jump flooding algorithm executing in parallel on a GPU to propagate best nearest neighbor matches to coherent regions, the modification including searching and ordering 8 surrounding pixels in power of 2 decrements from a most distant pixel to a least distant pixel, the modification further including sampling a current Nearest Neighbor Field pointer at a location identified by a translation, updating a location of interest to the location of the sampled pointer, and applying an inverse of the translation; and testing a pixel location resulting from the inverse of the translation as a new potential nearest neighbor candidate by determining that a distance between a current best feature vector and a feature vector of the candidate is below a threshold.",
+   "dependent_on": 5
+  },
+  {
+   "number": 9,
+   "text": "The system of claim 5 , wherein operations for determining the plurality of nearest neighbor pixel locations include: performing a further histogram comparison wherein a plurality of links that fall into a single bin are chosen as new nearest neighbor pixel candidates; and performing an iterative nearest neighbor candidate improvement process to check pixel locations that fall in the single bin as new links for each pixel location, wherein one or more of the new link locations are selected and tested against a current link as a new potential better nearest neighbor candidate.",
+   "dependent_on": 5
+  },
+  {
+   "number": 10,
+   "text": "The system of claim 5 , wherein the operations further include computing a set of multiscale Nearest Neighbor Fields for a continuous set of scale levels of a multiscale representation of the exemplar object, wherein computing the set of multiscale Nearest Neighbor Fields includes the following operations: determining an initial Nearest Neighbor Field for a coarsest level of the multiscale representation of the exemplar object, the determining using histogram matching; using an iterative upscaling process to upscale a current level of the set of multiscale Nearest Neighbor Fields to generate a Nearest Neighbor Field for a next finer level, the upscaling including providing a nearest neighbor match from a pixel in the current level to each descendent pixel in the next finer level, determining neighboring pixels for each descendent pixel, comparing a nearest neighbor of each descendent pixel to a nearest neighbor of each of the determined neighboring pixels and selecting a best nearest neighbor for each descendent pixel based on a measure; and refining a Nearest Neighbor Field of a level using one or more of histogram matching and modified jump flooding.",
+   "dependent_on": 5
+  },
+  {
+   "number": 11,
+   "text": "The system of claim 5 , wherein the operations further include computing a set of multiscale Nearest Neighbor Fields for a continuous set of layers within a Convolutional Neural Network, wherein computing the set of multiscale Nearest Neighbor Fields includes the following operations: determining an initial Nearest Neighbor Field for a deepest layer of the Convolutional Neural Network, the determining using histogram matching and jump flooding; determining one or more layers of the convolutional neural network to upscale during the upscaling, the determining based on a measure of network resolution for the one or more layers; and using an iterative upscaling process to upscale a current layer of the convoluted neural network to generate a Nearest Neighbor Field for a next finer layer of the one or more layers by providing a nearest neighbor match from a tensor position in the current layer to finer descendent tensors in a next finer layer, determining neighboring tensors for each descendent tensor, comparing a nearest neighbor of each descendent tensor to a nearest neighbor of each neighbor tensor and selecting a best fit for the nearest neighbor of each descendent tensor based on a predetermined best fit measure.",
+   "dependent_on": 5
+  },
+  {
+   "number": 12,
+   "text": "The system of claim 5 , wherein the operations for performing the Approximate Nearest Neighbor Search further includes: generating an image structure that includes a set of multiscale levels, wherein each level within the multiscale levels includes a Convolutional Neural Network that represents a continuous multiscale set of neural network layers; and computing nearest neighbor fields for each level of the structure from a coarse level to a fine level, the computing using an upscaling process.",
+   "dependent_on": 5
+  },
+  {
+   "number": 13,
+   "text": "The system of claim 1 , wherein synthesizing of a pixel within the synthesizing of the output graphic object includes the following operations: finding a nearest neighbor for the pixel in the exemplar object using a nearest neighbor search; and updating the pixel to mimic an appearance vector of the found nearest neighbor.",
+   "dependent_on": 1
+  },
+  {
+   "number": 14,
+   "text": "The system of claim 13 , wherein the operations further include adding a jitter offset to the feature vectors produced by the convolutional neural network.",
+   "dependent_on": 13
+  },
+  {
+   "number": 15,
+   "text": "The system of claim 1 , the operations further includee: determining a measure of uniqueness for each appearance vector in the exemplar object, the determining based on a Nearest Neighbor Search of feature vectors; and using the measure of uniqueness to determine one or more areas in a material that include defects.",
+   "dependent_on": 1
+  },
+  {
+   "number": 16,
+   "text": "The system of claim 15 , wherein the measure of uniqueness is used to mask one or more areas in a material and modify pixels within the one or more areas, the modification including applying an erosion effect to the pixels.",
+   "dependent_on": 15
+  },
+  {
+   "number": 17,
+   "text": "The system of claim 1 , wherein the determined list of nearest neighbor candidates are identified from the plurality of pixels of the exemplar object or from a plurality of pixels of a second exemplar object.",
+   "dependent_on": 1
+  },
+  {
+   "number": 18,
+   "text": "A non-transitory machine readable medium containing processor instructions, where execution of the instructions by a processor causes the processor to perform a process comprising: receiving data describing the exemplar object, the data including a set of source graphic objects that each contain a pixel at an index that contributes to an overall appearance vector at a location associated with the index, wherein the data includes a plurality of appearance vectors that define a desired texture; generating a feature vector for each pixel in a plurality of pixels of the exemplar object, the generating of a feature vector for a pixel including combining a set of appearance vectors surrounding the pixel and transforming the set through a convolutional neural network; determining a list of nearest neighbor candidates for each particular pixel in the plurality of pixels of the exemplar object using the feature vectors from the exemplar object, wherein each nearest neighbor candidate matches the particular pixel within a matching metric; and synthesizing, using at least the determined list of nearest neighbor candidates, an output graphic object by modifying each pixel in a plurality of pixels of the output graphic object to have an appearance vector which is within a similarity metric of an appearance vector of the particular pixel from the exemplar object.",
+   "dependent_on": null
+  },
+  {
+   "number": 19,
+   "text": "The non-transitory machine readable medium of claim 18 , wherein the process further comprises: determining locations of a number of feature vectors within a threshold similarity for each particular pixel location in the plurality of pixels of the exemplar object, wherein the number of feature vectors of each pixel location includes feature vectors for a plurality of pixel locations from the exemplar object or a second exemplar object that match the feature vector of the particular pixel location within a distance metric including, but not limited to, L0 distance, L1 distance, L2 distance, Bregman divergence, Lullback-Leibler divergence, Hellinger distance, cross entropy and a-divergence; performing an Approximate Nearest Neighbor Search on the pixels in the plurality of pixels of the exemplar object to determine a candidate nearest neighbor pixel; and adding a location of the candidate nearest neighbor pixel and candidate nearest neighbor pixel locations from the number of feature vectors of the candidate pixel to the list of nearest neighbor candidates of the particular pixel.",
+   "dependent_on": 18
+  },
+  {
+   "number": 20,
+   "text": "A method for performing non-parametric texture synthesis of texture or material data taken from an exemplar object, the method comprising: receiving data describing the exemplar object, the data including a set of source graphic objects that each contain a pixel at an index that contributes to an overall appearance vector at a location associated with the index, wherein the data includes a plurality of appearance vectors that define a desired texture, using one or more processors of a synthesis system; generating a feature vector for each pixel in a plurality of pixels of the exemplar object, the generating of a feature vector for a pixel including combining a set of appearance vectors surrounding the pixel and transforming the set through a convolutional neural network, using the one or more processors; determining a list of nearest neighbor candidates for each particular pixel in the plurality of pixels of the exemplar object using the feature vectors from the exemplar object, wherein each nearest neighbor candidate matches the particular pixel within a matching metric, using the one or more processors; and synthesizing, using at least the determined list of nearest neighbor candidates, an output graphic object by modifying each pixel in a plurality of pixels of the output graphic object to have an appearance vector which is within a similarity metric of an appearance vector of the particular pixel from the exemplar object, using the one or more processors.",
+   "dependent_on": null
+  },
+  {
+   "number": 21,
+   "text": "The method of claim 20 further comprising: determining locations of a number of feature vectors within a threshold similarity for each particular pixel location in the plurality of pixels of the exemplar object, wherein the number of feature vectors of each pixel location includes feature vectors for a plurality of pixel locations from the exemplar object or a second exemplar object that match the feature vector of the particular pixel location within a distance metric including, but not limited to, L0 distance, L1 distance, L2 distance, Bregman divergence, Lullback-Leibler divergence, Hellinger distance, cross entropy and a-divergence; performing an Approximate Nearest Neighbor Search on the pixels in the plurality of pixels of the exemplar object to determine a candidate nearest neighbor pixel; and adding a location of the candidate nearest neighbor pixel and candidate nearest neighbor pixel locations from the number of feature vectors of the candidate pixel to the list of nearest neighbor candidates of the particular pixel.",
+   "dependent_on": 20
+  }
+ ],
+ "description": [
+  {
+   "heading": "CROSS-REFERENCE TO RELATED APPLICATIONS",
+   "paragraphs": [
+    "The current application is a continuation of U.S. patent application Ser. No. 16/027,091, filed Jul. 3, 2018, which application claims priority to U.S. Provisional Patent Application No. 62/528,372, filed Jul. 3, 2017, the disclosures of which are hereby incorporated by reference in their entirety for all purposes."
+   ]
+  },
+  {
+   "heading": "FIELD OF THE INVENTION",
+   "paragraphs": [
+    "This invention relates to generating a new graphic object using texture synthesis on a first graphic object with texture from a second graphic object."
+   ]
+  },
+  {
+   "heading": "BACKGROUND",
+   "paragraphs": [
+    "With the advent of social media and mass availability of digital cameras, users are capturing more digital images. To set their captured images apart, users often want to pass their images through a filter or to otherwise modify their image to make the image unique. Furthermore, users often use an avatar or some other graphic display during interaction with other users via a social media, gaming, or other communication platform to distinguish themselves from others. To modify the avatar or other graphic display, users often use sophisticated software either installed on their device or accessible via a connection with another device to make the desired modifications."
+   ]
+  },
+  {
+   "heading": "SUMMARY",
+   "paragraphs": [
+    "Systems and methods for performing non-parametric texture synthesis of arbitrary shape and/or material data taken from an exemplar object in accordance with embodiments of the invention are illustrated. Systems in accordance with some embodiments of the invention receive an exemplar set comprising one or more graphical elements that each contain a pixel at a same index that contributes to an overall appearance vector at the index. The exemplar object in many embodiments comprises a set of one or more meshes represented in parametrized UV space, from which geometric information is “baked” into the pixels of additional images that contribute to the overall “appearance” vector at different locations. In some embodiments, the exemplar object is a 3D tensor, or a 2D array of appearance vectors where the plurality of these vectors define a desired texture. The system builds a multi-scale representation of the exemplar object where coarser scales encode the lower frequencies of the exemplar object. The system in accordance with many embodiments generates a feature vector for each pixel in a portion of the plurality of pixels of the exemplar graphic object by combining a patch of appearance vectors surrounding that pixel and optionally transforming them through a CNN and/or dimensionality reduction process. Systems in accordance with some embodiments of the invention determine a list of nearest neighbor candidates for each particular pixel in the portion of the plurality of pixels of the exemplar graphic object from the pixels in the portion of the plurality of pixels of the same or different exemplar graphic object using the feature vectors of the pixels from the portion of the plurality of pixels of the exemplar graphic object(s), wherein a nearest neighbor is a pixel from the exemplar graphic that closely matches the particular pixel in the other exemplar object and the list of nearest neighbor candidates includes one or more pixels from the exemplar graphic object that closely match the particular pixel. In certain embodiments, each appearance vector in the exemplar object is given a “uniqueness” value. Systems synthesize the synthesized graphic object by modifying each particular pixel in a portion of a plurality of pixels of the synthesized graphic object to mimic a pixel from the exemplar graphic object.",
+    "In another embodiment, any shape information from a mesh containing UV coordinates is rendered onto a 2D array as a pre-process. This shape information can include any combination of: global normal, curvature, ambient occlusion and/or Gaussian Mixture Models (GMM).",
+    "In a further embodiment, the volumetric 3D shape of the mesh is modeled as a 2D manifold of Gaussian functions at each point along the surface of the mesh where these GMMs can be averaged together to form a multiscale representation and patches of Gaussians can be used as a feature vector.",
+    "In still another embodiment, systems generate a hybrid stack for the exemplar graphic object wherein the object hybrid stack encodes a multiscale representation of the exemplar object where different scale levels encode different frequencies of the exemplar data. The hybrid stack modulates between the characteristics of a Gaussian stack and a Gaussian pyramid at different scale ranges of the hybrid stack.",
+    "In a still further embodiment, individual 2D arrays making up the different appearance and shape characteristics at a pixel location for each level of a hybrid stack are combined into an “appearance vector” and a patch of appearance vectors are combined into a “feature vector” where this feature vector can be used directly to represent a local feature, or transformed into a lower dimensional summary feature vector using a dimensionality reduction algorithm such as Principle Component Analysis (PCA). E.g., Principle Component Analysis is performed on each of the feature vectors, or some fraction of the feature vectors, for each pixel in the portion of the plurality of pixels of the source object and each pixel in the portion of the plurality of pixels in the exemplar graphic object to reduce the dimensionality of the feature vectors.",
+    "In yet another embodiment, individual 2D arrays making up the different appearance and shape characteristics at a pixel location for each level of a hybrid stack are either combined into a single unified “appearance vector” or left as a collection of partial appearance vectors. One or more of these appearance vectors are transformed through one or more Convolutional Neural Network(s) (CNN) which generates a feature vector for each pixel location. The feature vector can then optionally be summarized through a dimensionality reduction process.",
+    "In a yet further embodiment, determine the locations of the K most similar feature vectors (a feature vector is a descriptor of a neighborhood of pixels) for each particular pixel location in the portion of the plurality of pixels of the exemplar graphic object, where the k most similar feature vectors of each particular pixel includes a plurality of pixels from the same or another exemplar graphic object that closely match the particular pixel through some distance metric including but not limited to L0 distane, L1 distance, L2 distance, Bregman divergence, Kullback-Leibler divergence, Hellinger distane, cross entropy or a-divergence, perform an Approximate Nearest Neighbor Search (ANNS) on the pixels in the portion of the plurality of pixels of the first exemplar object to determine a candidate nearest neighbor pixel in the second exemplar graphic object, and add the candidate nearest neighbor pixel location of each particular pixel in portion of the plurality of pixels of the exemplar graphic object and the plurality of pixels in the K most similar neighborhoods of the candidate pixel to the list nearest neighbor candidates of the particular pixel.",
+    "In another additional embodiment, systems initialize a Nearest Neighbor Field (NNF) for the pixels of the portion of the plurality of pixels of the source graphic objects, and replace one or more pixels in the NNF by performing an iterative nearest neighbor candidate improvement process with a better nearest neighbor that more closely match the corresponding pixel in the portion of the plurality of pixels of the source graphic object.",
+    "In a further additional embodiment, systems perform an initial ANNS to bootstrap a NNF through a histogram matching process, which: builds a histogram for each element of the feature vector where the bins cover the full range of values that each element can have, where each particular bin in the histogram may contain links to the pixels that contributed to the particular bin. When finding a match for an arbitrary pixel, the value of each channel may be used as an index into the corresponding histogram. If no values exist in a bin being indexed by a channel value, the next closest bin that contains values may be used in accordance with a number of embodiments. In accordance with several embodiments, a pixel link may be selected at random from the next closest bin. If an ANNS is being performed internal to an image, there may be an additional constraint that any link selected using the histogram strategy must also be 5% away from any other nearest neighbors that have previously been determined in accordance with a few embodiments.",
+    "In another embodiment again, the plurality of nearest neighboring pixel locations are determined using a uniquely modified jump flooding process that operates in parallel on a GPU.",
+    "In a further embodiment again, the modified jump flooding process follows the same searching and ordering strategies as the original jump flooding process where the 8 surrounding pixels are checked in power of two increments going from farther away to closer, but rather than applying a translation and then checking the pixel location values directly, the modified approach samples the current NNF pointer at the location identified by translation, updates the location of interest to that of the pointer sampled and then applies the inverse of the translation. The feature vector at the resulting pixel location is tested as a new potential nearest neighbor candidate by finding the distance between the current best feature vector and this candidate.",
+    "In still yet another embodiment, the plurality of nearest neighboring pixel locations are tested against a semi-random sampling determined using a uniquely modified jump flooding process. In a still yet further embodiment, an iterative nearest neighbor candidate improvement process checks several semi-random new links for each pixel location. This algorithm randomly selects among the 8 pixels surrounding the link stored in the NNF some power of two distance away from the location that the link points to, where one or more of these new link locations can be selected to test against the current link as a new potential better nearest neighbor candidate. Using this search strategy, the iterative nearest neighbor candidate improvement process may be able to escape local minimums in the optimization process.",
+    "In still another additional embodiment, a set of multiscale NNFs are computed for some continuous set of scale levels of a multiscale data structure. The coarsest level is bootstrapped and refined. The coarsest level is referred to as the “current level” and the next finer level is referred to as the “next level”. An upscaling process is applied to the current level in order to bootstrap the NNF of the next level. The “current level” is then updated to point to the NNF of the “next level” and the new “next level” is then ready for the process to start again, moving up the multiscale exemplar object. The upscaling process involves providing a nearest neighbor match from a pixel in the current level to each finer descendant pixel in the next level, then determining the neighboring pixels for each descendant pixel, comparing the nearest neighbor of each decendent pixel to the nearest neighbor of each neighbor pixel and selecting a best fit for the nearest neighbor. The NNF of the current level is upscaled to the next finest level, capturing the similarity of large scale structures and propagating them to finer scale levels in order to refine the local similarity, keeping the greater context of the nearest neighbor candidate.",
+    "In a still further additional embodiment, a set of multiscale NNFs are computed for some continuous set of layers within a CNN. This could include a hybrid stack where each level is then processed through a CNN and a NNFs is computed for each CNN at each level.",
+    "In still another embodiment again, a unique feature map is computed for each exemplar object.",
+    "In a still further embodiment again, a system synthesizes the synthesized graphic object by generating a set of synthesis object pyramids for the synthesized graphic object based upon the exemplar graphic object and an additional NNF field linking each synthesis feature with its exemplar archetype. Object pyramid(s) are a plurality of graphic objects arranged in levels of ascending resolutions where a finer level of the object pyramid has a higher resolution then a courser level of the object pyramid and a plurality of pixels in a finer level have a common ancestor pixel in a courser level and at least one level of the object pyramid is based on the source graphic object. The process for synthesizing a synthesis object proceeds iteratively in a coarse-to-fine manner, where each scale level is synthesized using three basic operations, upscale, jitter and correction.",
+    "In yet another additional embodiment, “upscaling” one synthesis object level to the next involves both a scale and pixel location dependent offset of the lower scale NNF in order to populate the finer scale NNF, and each synthesis pyramid in the plurality of graphic objects in the synthesis object must also be “upscaled” by taking the current synthesis feature vector at the coarse scale and adding an offset calculated as the NNF exemplar pointer in the finer scale minus the NNF exemplar pointer taken from the coarser scale, i.e., the scale dependent difference between corresponding exemplar features is added to the coarse scale synthesis feature.",
+    "In a yet further additional embodiment, systems add randomness into the NNF at each level of the synthesis pyramid through a “structure-preserving jitter” process by using the synthesis pyramid NNF to gather a collection of exemplar candidate locations for each synthesis location that have a similar feature to that of the synthesis feature, and using a “jitter” value to choose where in the range of candidates from the current exemplar feature to the worst matching feature the new link should be updated to.",
+    "In yet another embodiment again, synthesizing the synthesized graphic object includes dividing the pixels of the synthesized graphic object into a plurality of groups, and iteratively performing a correction process on each of the plurality of groups to determine a new nearest neighbor for each of the pixels in a group for a predetermined number of iterations, such that the iterative performance of the correction process is performed using a first buffer having a size of the number of pixels in the portion of the plurality of pixels of the synthesized graphic object and a second buffer the size of one of the plurality of groups of pixels wherein the first buffer stores pixel information for each pixels in the portion of the plurality pixels of the synthesized graphic object and second buffer stores the pixel information for a current one of the plurality of groups of pixels upon which the correction process is being performed. The order of the performance of the correction process on the plurality of groups in an iteration is determined by a Hilbert curve.",
+    "In a yet further embodiment again, finding a more optimal exemplar link for each synthesis location includes optimizing the synthesis pyramid objects NNF into the exemplar object using a semi-random jump flooding strategy, and performing a jump flood-like propagation pass similar to structure-preserving jitter where a set of potentially better candidates is gathered from a patch in the NNF and the NNF synthesis location is updated to the best matching exemplar object candidate location.",
+    "In another additional embodiment again, iteratively performing the correction process includes maintaining an optimization mask that indicates each pixel in the portion of the plurality of pixels in the synthesized graphic object that have reached an optimal value, determining whether each pixel in the portion of the plurality of pixels in the synthesized graphic object has reached an optimal value, changing a status in the optimization mask of each pixel in the portion of the plurality of pixels in the synthesized graphic object determined to have reached an optimal value, and reading the optimization mask during each iteration of the correction process and perform the correction process on only the pixels not indicated to be optimal.",
+    "In a further additional embodiment again, systems maintain an occurrence map that indicates a number of times a pixel in the exemplar graphic object is selected as one of a nearest neighbor and a candidate for a nearest neighbor in one of the nearest neighbor fields. An occurrence map is a 2D histogram having a bin for each pixel in the portion of the plurality of pixels of the exemplar graphic object. Systems maintain a 2D histogram that indicates a number of times each pixel in the portion of plurality pixels of the exemplar graphic object are selected as one of a nearest neighbor candidate for the collection of nearest neighbor candidate sets when doing NNS during analysis.",
+    "In still yet another additional embodiment, systems maintain an occurrence map that indicates a number of times a pixel in the exemplar graphic object is pointed to by the synthesis pyramid. The data structure for synthesis is a pyramid and the data structure for the exemplar is a hybrid stack. The synthesis image pyramid and exemplar hybrid stack have the same relative scale at the upper levels where they are both pyramids. However for a level, L, below the stack to pyramid border B, the scaling factor is 2{circumflex over ( )}(B−L). When using an exemplar link of a pixel in the synthesis pyramid as an index into the occurrence map the scale factor may be determined by dividing the value of the exemplar link by the scale factor. This can be thought of as creating a “coarse” version of the occurrence map specifically for synthesis.",
+    "In another embodiment, systems maintain a minimum distance between exemplar links in adjacent synthesis NNF locations to compare nearest neighbors of adjacent pixels in the synthesized pyramid object to determine whether the nearest neighbors are within a predetermined distance of each other, and adjust an error factor in response to a determination that the nearest neighbor pixels of the adjacent pixels are within the predetermined distance. It is desirable to have larger neighborhoods for lower levels and decrement the neighborhood at each level as the process progresses up the pyramid capping the neighborhood at a minimum of three pixels so that the pixels immediately surrounding the pixel of interest are always included in a neighborhood.",
+    "In a further embodiment, systems synthesize a displacement map where local gradients are the dominant features to be synthesized such that the process computes the difference between the local gradients of the synthesizing displacement map and the corresponding local gradients from the exemplar object links. The process is broken up into several passes where the difference between synthesis and exemplar gradients is divided by the number of optimization passes and then added to the synthesis displacement value. This is done to all synthesis object locations in parallel for each level of the synthesis pyramid. Levels are synthesized in sequence from coarse to fine.",
+    "In still another embodiment, systems maintain a flow field and jump maps across an input mesh's UV space and extends this approach for on-model synthesis to support a CNN type architecture wherein the vector field directs the local orientation of the convolution and these processes bi-linearly interpolate sampling of neural activations from the previous layer. The convolution kernel extends beyond the scope of an atlas chart the jump map redirects the process to another chart. During a back-propagation process, inverse mapping can be used in a manner similar to the that of convolution. The inverse mapping allows these processes to perform CNN texture synthesis (and style transfer) directly in the UV space of a mesh.",
+    "In a still further embodiment, systems encode a volumetric shape representation of a 3D mesh baked onto a 2D plane through its parameterized UV space whereby the relationship between texture features and the underlying geometric shape upon which the texture feature exists through a parameterization of the model in UV space (i.e. the geometric shape of a mesh is projected onto an image). Geometric shape information for each point on a mesh that is projected onto each pixel of an image set include: global normal direction, local curvature, Ambient Occlusion and a Gaussian function. The collection of Gaussian functions (one for each pixel) or Gaussian Mixture Model (GMM) can be downscaled through a pyramid or hybrid stack process whereby the other shape properties are recomputed from the resulting positions of the GMM. The GMM acts as a volumetric shape descriptor that can be compared along with other appearance information such as surface color, surface deformation and reflectance properties. Feature distances between two points on a 3D mesh can be measured as a total variation distance between GMMs that are comprised of some neighborhood of Gaussian functions around a point (a pixel in texture space). This geometric shape descriptor can be combined with arbitrary appearance information (such as a material) into a single unified vector so that arbitrary shape and material data can be synthesized in a single unified framework.",
+    "In yet another embodiment, systems allow a user to supply a fully textured mesh as an input exemplar and apply the texture from the exemplar onto a different untextured model. A mapping is computed through NNS from the untextured models shape and the textured models shape. This mapping bootstraps and guides the material synthesis process.",
+    "In a yet further embodiment, systems synthesize geometry in the form of a 3D mesh wherein the mean of each Gaussian function comprising a GMM is allowed to change through the upscale, randomization and correction process defined for image synthesis. 3D model synthesis shares an additional step in common with displacement map synthesis, where a new position is found for a pixel based on relative position of the pixel as compared to neighboring pixels, this concept is extended from a 1-element vector to a 3-element vector.",
+    "In another additional embodiment, systems synthesize a 4×4 16-element Wang Tile set wherein a red tile is first synthesized without constraints, other than that it must tile with itself, and a blue tile is then synthesized to conform to the corners of a red tile while also tiling with itself. 14 additional tiles are synthesized, one for each combination of the red and blue tile borders along the top, bottom, left and right sides of the tile to be synthesized. A unique feature map is utilized so that highly unique features do not synthesize along border regions between tiles when generating the red and blue tiles and a correction influence weight map is used to incentivize features along the border to propagate inwards towards the center of the tile.",
+    "In a further additional embodiment, systems synthesize an in-painting process whereby a mask is supplied which directs the area to be “in-painted” and the area to remain unchanged. A distance field is automatically generated from the border pixels of the mask going inwards. This mask acts as a correction influence weight map which is used to incentivize features along the border to propagate inwards towards the center of the area to be “in-painted”.",
+    "Additional embodiments and features are set forth in part in the description that follows, and in part will become apparent to those skilled in the art upon examination of the specification or may be learned by the practice of the invention. A further understanding of the nature and advantages of the present invention may be realized by reference to the remaining portions of the specification and the drawings, which forms a part of this disclosure."
+   ]
+  },
+  {
+   "heading": "BRIEF DESCRIPTION OF THE DRAWINGS",
+   "paragraphs": [
+    "FIG. 1 is an illustration of various devices that may perform one or more processes to provide texture synthesis of arbitrary shape and/or material data in accordance with various embodiments of the invention.",
+    "FIG. 2 is an illustration of components of a processing system in a device that executes one or more processes to provide arbitrary shape and/or material synthesis in accordance with various embodiments of the invention.",
+    "FIG. 3 is an illustration of a flow diagram of an analysis portion of a texture synthesis process in accordance with an embodiment of the invention.",
+    "FIG. 4 is an illustration of resolution image pyramids representing an image in accordance with a conventional filter process.",
+    "FIG. 5 is an illustration of a Gaussian Stack representing an image in accordance with a conventional filter process.",
+    "FIG. 6 is an illustration a pyramid/stack hybrid for representing an image in a filter process in accordance with an embodiment of the invention.",
+    "FIG. 7 is an illustration of a flow diagram of an Approximate Nearest Neighbor Search (ANNS) process in accordance with an embodiment of the invention.",
+    "FIG. 8 is an illustration of a flow diagram of a bootstrapping process performed in an ANNS process in accordance with an embodiment of the invention.",
+    "FIG. 9 is an illustration of images of the pixels under consideration during steps of a jump flooding process.",
+    "FIG. 10 is an illustration of a flow diagram of an iterative nearest neighbor candidate improvement process in accordance with an embodiment of the invention.",
+    "FIG. 11 is an illustration of the use of jump flooding to determine pixels to test in an iterative nearest neighbor candidate improvement process in accordance with an embodiment of the invention.",
+    "FIG. 12 is an illustration of the use of jump flooding to determine random new links in an exemplar object to test as a nearest neighbor candidate in an iterative nearest neighbor candidate improvement process in accordance with an embodiment of the invention.",
+    "FIG. 13 is an illustration of a flow diagram of an upscaling process performed in an ANNS process in accordance with an embodiment of the invention",
+    "FIG. 14 is an illustration showing the operation of an upscale process in accordance with an embodiment of the invention.",
+    "FIG. 15 is an illustration a cell neighborhood sampling map generated by a filter process in accordance with an embodiment of the invention.",
+    "FIG. 16 is an illustration of a flow diagram of a synthesis portion of a texture synthesis process in accordance with an embodiment of the invention.",
+    "FIG. 17 is an illustration of a flow diagram of a process for generating an image pyramid in accordance with an embodiment of the invention.",
+    "FIG. 18 is an illustration of upsampling a pixel in a lower level of an image stack into four pixels in a higher resolution level of the image stack in a filter process in accordance with an embodiment of the invention.",
+    "FIG. 19 is an illustration of nearest neighbor links between related pixels in lower resolution level and a higher resolution level of an image stack in a filter process in accordance with an embodiment of the invention.",
+    "FIG. 20 is an illustration of a Hilbert curve followed for processing pixels in a filter process in accordance with an embodiment of the invention.",
+    "FIG. 21 is an illustration of a full buffer and a sub-pass write-to buffer for use in a filter process in accordance with an embodiment of the invention.",
+    "FIG. 22 is an illustration of a flow diagram of a process for using a full buffer and sub-pass buffer in accordance with an embodiment of the invention.",
+    "FIG. 23 is an illustration of a visualization of fully optimized pixels over 10 correction passes using a filtering process in accordance with an embodiment of the invention.",
+    "FIG. 24 is an illustration of a flow diagram of an adaptive correction process in accordance with an embodiment of the invention.",
+    "FIG. 25 is an illustration of a manually synthesized image and an image generated using a filtering process in accordance with an embodiment of this invention showing artifacts in the image synthesized using the filtering process."
+   ]
+  }
+ ],
+ "pdf_url": "https://patentimages.storage.googleapis.com/11/31/5a/ba45929640bda7/US11257279.pdf",
+ "source": {
+  "provider": "Google Patents",
+  "url": "https://patents.google.com/patent/US11257279B2/en",
+  "fetched": "2026-08-28",
+  "note": "Patent text is public record; Google Patents used as aggregator."
+ }
+}

@@ -1,0 +1,218 @@
+{
+ "doc_id": "US10083169B1",
+ "publication_number": "US10083169B1",
+ "title": "Topic-based sequence modeling neural networks",
+ "abstract": "Methods, systems, and apparatus, including computer programs encoded on computer storage media, for processing word sequences using neural networks. One of the methods includes receiving a first sequence of words arranged according to a first order; and for each word in the first sequence, beginning with a first word in the first order: determining a topic vector that is associated with the word; generating a combined input from the word and the topic vector, and processing the combined input through one or more sequence modeling layers to generate a sequence modeling output for the word; and processing one or more of the sequence modeling outputs through an output layer to generate a neural network output for the first sequence of words.",
+ "assignees": [
+  "Google LLC",
+  "Google LLC"
+ ],
+ "inventors": [
+  "Shalini Ghosh",
+  "Oriol Vinyals",
+  "Brian Patrick Strope",
+  "Howard Scott Roy",
+  "Thomas L. Dean",
+  "Larry Paul Heck"
+ ],
+ "priority_date": "2015-08-28",
+ "filing_date": "2016-08-26",
+ "publication_date": "2018-09-25",
+ "cpc": [
+  "G06F17/276",
+  "G06F",
+  "G06F40/00",
+  "G06F40/30",
+  "G06F40/35",
+  "G06N",
+  "G06N3/00",
+  "G06N3/02",
+  "G06N3/08",
+  "G06N3/084",
+  "G06F17/2775",
+  "G06F40/40"
+ ],
+ "citations": [
+  "US6178396B1",
+  "US20060020473A1",
+  "US20070055496A1",
+  "US20110246076A1",
+  "US20120150532A1",
+  "US20160071526A1",
+  "US20170053646A1",
+  "US20170076196A1",
+  "US9805371B1"
+ ],
+ "language": "en",
+ "claims": [
+  {
+   "number": 1,
+   "text": "A method comprising: receiving a first sequence of words arranged according to a first order, wherein the first sequence of words comprises a plurality of sentences of words, the plurality of sentences being in an input order; for each word in the first sequence of words, beginning with a first word in the first order: determining a topic vector that is associated with the word, generating a combined input from the word and the topic vector, and processing the combined input through one or more sequence modeling layers to generate a respective sequence modeling output for the word; and processing one or more of the respective sequence modeling outputs through an output layer to generate a neural network output for the first sequence of words, wherein, for each word in each sentence after a first sentence in the input order, determining the topic vector that is associated with the word is based, at least in part, on a sequence modeling output for a last word in a sentence immediately before the sentence in the input order.",
+   "dependent_on": null
+  },
+  {
+   "number": 2,
+   "text": "The method of claim 1 , wherein the one or more sequence modeling layers are recurrent neural network layers.",
+   "dependent_on": 1
+  },
+  {
+   "number": 3,
+   "text": "The method of claim 2 , wherein the recurrent neural network layers are long-short term memory (LSTM) neural network layers.",
+   "dependent_on": 2
+  },
+  {
+   "number": 4,
+   "text": "The method of claim 1 , wherein processing one or more of the respective sequence modeling outputs comprises: processing the respective sequence modeling output for a last word in the first sequence of words through the output layer, wherein the output layer is configured to receive the respective sequence modeling output for the last word in the first sequence of words and generate a respective next word score for each word in a vocabulary of words, and wherein the respective next word score for each vocabulary word represents a likelihood that the vocabulary word is a word that immediately follows the last word in the first sequence of words in a source text.",
+   "dependent_on": 1
+  },
+  {
+   "number": 5,
+   "text": "The method of claim 1 , wherein processing one or more of the respective sequence modeling outputs comprises: processing the respective sequence modeling output for a last word in the first sequence of words through the output layer, wherein the output layer is configured to receive the respective sequence modeling output for the last word in the first sequence of words and generate a respective next topic score for each topic in a predetermined set of topics, and wherein the respective next topic score for each topic represents a likelihood that the topic is the topic of a second sequence of words that immediately follows the first sequence of words in a source text.",
+   "dependent_on": 1
+  },
+  {
+   "number": 6,
+   "text": "The method of claim 1 , wherein processing one or more of the respective sequence modeling outputs comprises: identifying N ending words that are a last N words in the first sequence of words; generating N respective next word scores for each of the words of the N ending words by processing a sequence modeling output for each word that precedes each of the N ending words in the first sequence of words using the output layer, wherein each of the N respective next word scores represents a likelihood that a respective word of the N ending words follows a word that precedes the respective word of the N ending words in the first sequence of words in a source text; combining the N respective next word scores for each of the words of the N ending words to generate a combined score; and determining, from the combined score, a next sentence score that represents a likelihood that a sentence made up of the N ending words follows words in the first sequence of words that precede the N ending words in the source text.",
+   "dependent_on": 1
+  },
+  {
+   "number": 7,
+   "text": "The method of claim 1 , wherein, for each sentence after a first sentence in the input order, a topic vector associated with one or more words in each sentence is the sequence modeling output for a last word, which is in a sentence immediately before each sentence in the input order.",
+   "dependent_on": 1
+  },
+  {
+   "number": 8,
+   "text": "The method of claim 1 , wherein a topic vector associated with the words in the first sentence in the input order is a placeholder topic vector.",
+   "dependent_on": 1
+  },
+  {
+   "number": 9,
+   "text": "The method of claim 1 , further comprising, for each of the plurality of sentences: after generating a sequence modeling output for a last word in a sentence of the plurality of sentences, updating one or more topic vectors associated with one or more words in the sentence using the sequence modeling output for the last word in the sentence to generate one or more updated topic vectors; and associating the one or more updated topic vectors with one or more words in a next sentence of the plurality of sentences in the input order.",
+   "dependent_on": 1
+  },
+  {
+   "number": 10,
+   "text": "The method of claim 9 , wherein updating the one or more topic vectors associated with the one or more words in the sentence using the sequence modeling output for the last word in the sentence of the plurality of sentences to generate the one or more updated topic vectors comprises one of: computing a weighted sum of the one or more topic vectors associated with the one or more words in the sentence and the sequence modeling output for a last word in the sentence, or computing a measure of central tendency of the one or more topic vectors associated with the one or more words in the sentence and the sequence modeling output for a last word in the sentence.",
+   "dependent_on": 9
+  },
+  {
+   "number": 11,
+   "text": "The method of claim 1 , wherein generating a combined input from the word and the topic vector comprises: mapping the word to a word vector, wherein the word vector is a numeric representation of the word; and concatenating the word vector and the topic vector to generate the combined input.",
+   "dependent_on": 1
+  },
+  {
+   "number": 12,
+   "text": "A system comprising one or more computers and one or more storage devices storing instructions that when executed by the one or more computers cause the one or more computers to perform operations comprising: receiving a first sequence of words arranged according to a first order, wherein the first sequence of words comprises a plurality of sentences of words, the plurality of sentences being in an input order; for each word in the first sequence of words, beginning with a first word in the first order: determining a topic vector that is associated with the word, generating a combined input from the word and the topic vector, and processing the combined input through one or more sequence modeling layers to generate a respective sequence modeling output for the word; and processing one or more of the respective sequence modeling outputs through an output layer to generate a neural network output for the first sequence of words, wherein, for each word in each sentence after a first sentence in the input order, determining the topic vector that is associated with the word is based, at least in part, on a sequence modeling output for a last word in a sentence immediately before the sentence in the input order.",
+   "dependent_on": null
+  },
+  {
+   "number": 13,
+   "text": "The system of claim 12 , wherein the one or more sequence modeling layers are recurrent neural network layers.",
+   "dependent_on": 12
+  },
+  {
+   "number": 14,
+   "text": "The system of claim 12 , wherein generating a combined input from the word and the topic vector comprises: mapping the word in the first sequence of words to a word vector, wherein the word vector is a numeric representation of the word in the first sequence of words; and concatenating the word vector and the topic vector to generate the combined input.",
+   "dependent_on": 12
+  },
+  {
+   "number": 15,
+   "text": "One or more non-transitory computer storage media storing instructions that when executed by one or more computers cause the one or more computers to perform operations comprising: receiving a first sequence of words arranged according to a first order, wherein the first sequence of words comprises a plurality of sentences of words, the plurality of sentences being in an input order; for each word in the first sequence of words, beginning with a first word in the first order: determining a topic vector that is associated with the word, generating a combined input from the word and the topic vector, and processing the combined input through one or more sequence modeling layers to generate a respective sequence modeling output for the word; and processing one or more of the respective sequence modeling outputs through an output layer to generate a neural network output for the first sequence of words, wherein, for each word in each sentence after a first sentence in the input order, determining the topic vector that is associated with the word is based, at least in part, on a sequence modeling output for a last word in a sentence immediately before the sentence in the input order.",
+   "dependent_on": null
+  }
+ ],
+ "description": [
+  {
+   "heading": "CROSS-REFERENCE TO RELATED APPLICATION",
+   "paragraphs": [
+    "This application claims priority to U.S. Provisional Application No. 62/211,636, filed on Aug. 28, 2015. The disclosure of the prior application is considered part of and is incorporated by reference in the disclosure of this application."
+   ]
+  },
+  {
+   "heading": "BACKGROUND",
+   "paragraphs": [
+    "This specification relates to processing word sequences using neural networks.",
+    "Neural networks are machine learning models that employ one or more layers of nonlinear units to predict an output for a received input. Some neural networks include one or more hidden layers in addition to an output layer. The output of each hidden layer is used as input to the next layer in the network, i.e., the next hidden layer or the output layer. Each layer of the network generates an output from a received input in accordance with current values of a respective set of parameters.",
+    "Some neural networks are recurrent neural networks. A recurrent neural network is a neural network that receives an input sequence and generates an output sequence from the input sequence. In particular, a recurrent neural network can use some or all of the internal state of the network from a previous time step in computing an output at a current time step. An example of a recurrent neural network is a long short-term (LSTM) neural network that includes one or more LSTM memory blocks. Each LSTM memory block can include one or more cells that each include an input gate, a forget gate, and an output gate that allow the cell to store previous states for the cell, e.g., for use in generating a current activation or to be provided to other components of the LSTM neural network."
+   ]
+  },
+  {
+   "heading": "SUMMARY",
+   "paragraphs": [
+    "This specification describes technologies that relate to processing word sequences using neural networks.",
+    "Generally, a sequence processing system generates a neural network output for a received word sequence by, for each word in the word sequence, determining a topic vector for the word and generating a combined input from the word and the topic vector. The sequence processing system then processes the combined input through one or more sequence modeling layers to generate a sequence modeling output for the word and generates the neural network output for the word sequence by processing one or more of the sequence modeling outputs through an output layer.",
+    "For a system of one or more computers to be configured to perform particular operations or actions means that the system has installed on it software, firmware, hardware, or a combination of them that in operation cause the system to perform the operations or actions. For one or more computer programs to be configured to perform particular operations or actions means that the one or more programs include instructions that, when executed by data processing apparatus, cause the apparatus to perform the operations or actions.",
+    "The subject matter described in this specification can be implemented in particular embodiments so as to realize one or more of the following advantages. A sequence processing neural network system that considers topics for words in input word sequences can achieve a significant performance benefit on many natural language (NL) tasks. For example, such a system can be used for a wide variety of NL applications, like question answering, sentence completion, paraphrase generation, and next utterance prediction in dialog systems. Additionally, some of the sequence modeling neural network systems can learn the topic for words in input word sequences in an unsupervised manner, i.e., instead of using supervised extraneous topics as additional inputs that are required to be received or maintained by the system in order to process a word sequence. This can reduce the computational complexity of the system and reduce latency in responding to user requests, i.e., because the system does not have to maintain or receive topic data for words and instead can generate the topics during the processing of the words sequence.",
+    "The details of one or more embodiments of the subject matter of this specification are set forth in the accompanying drawings and the description below. Other features, aspects, and advantages of the subject matter will become apparent from the description, the drawings, and the claims."
+   ]
+  },
+  {
+   "heading": "BRIEF DESCRIPTION OF THE DRAWINGS",
+   "paragraphs": [
+    "FIG. 1 shows an example sequence processing system.",
+    "FIG. 2 is a flow diagram of an example process for generating a neural network output for a word sequence.",
+    "FIG. 3 is a flow diagram of an example process for generating an LSTM output for a word in a word sequence.",
+    "Like reference numbers and designations in the various drawings indicate like elements."
+   ]
+  },
+  {
+   "heading": "DETAILED DESCRIPTION",
+   "paragraphs": [
+    "FIG. 1 shows an example sequence processing system 100 . The sequence processing system 100 is an example of a system implemented as computer programs on one or more computers in one or more locations in which the systems, components, and techniques described below are implemented.",
+    "The sequence processing system 100 receives an input word sequence 102 that includes multiple words and generates a neural network output 132 for the word sequence 102 . Generally, the word sequence 102 is an ordered collection of words. In some cases, the word sequence 102 includes multiple sentences of words in the order in which those sentences appear in a source text.",
+    "The sequence processing system 100 can be configured to generate any of a variety of different kinds of neural network outputs for a given word sequence. That is, the sequence processing system 100 can be configured to perform any of a variety of natural language processing tasks, and the neural network output generated by the sequence processing system 100 will be an output that is appropriate for the task that the sequence processing system 100 is configured to perform.",
+    "In one example, the sequence processing system 100 is configured to perform a word prediction task in which, given the words in the word sequence 102 , the sequence processing system 100 predicts the most likely next word, i.e., the word that is most likely to immediately follow the last word in the sequence 102 in a source text. In this example, the neural network output 132 includes a respective next word score for each vocabulary word in a vocabulary of words. The respective next word score for each vocabulary word represents a likelihood that the vocabulary word is the word that immediately follows the last word in the sequence in the source text.",
+    "In another example, the sequence processing system 100 is configured to perform a sentence topic prediction task in which, given the word sequence 102 that includes one or more sentences, the sequence processing system 100 predicts the topic of the next sentence, i.e., of a sentence that would immediately follow the last sentence in the sequence 102 in a source text. In this example, the neural network output 132 includes a respective next topic score for each topic in a predetermined set of topics. The respective next topic score for each of the topics in the set represents a likelihood that the topic is the topic of a sequence of words that immediately follows the sequence 102 in the source text.",
+    "In another example, the sequence processing system 100 is configured to perform a next sentence selection task in which, given a current sequence of one or more sentences, the sequence processing system 100 predicts the most likely next sentence, i.e., the sentence that is most likely to follow the last sentence in the current sequence, from a set of candidate next sentences.",
+    "In this example, the word sequence 102 is made up of the current sequence followed by one of the candidate next sentences in the set of candidate next sentences. The neural network output 132 generated by the sequence processing system 100 for the word sequence 102 is a next sentence score that represents a likelihood that the candidate next sentence in the word sequence 102 would follow the current sequence in a source text.",
+    "In this example, to determine the sentence in the set of candidate next sentences that is the most likely next sentence, the sequence processing system 100 can generate a respective next sentence score for each candidate next sentence by, for each candidate next sentence, processing a respective word sequence that includes the current sequence followed by the candidate next sentence. The sequence processing system 100 can then select the sentence in the set that has the highest next sentence score as the most likely next sentence.",
+    "The sequence processing system 100 includes an input generation subsystem 110 , one or more long-short term memory (LSTM) neural network layers 120 , and an output layer 130 .",
+    "For each word in the word sequence 102 , the input generation subsystem 110 is configured to generate a combined input from the word and a topic vector for the word.",
+    "A topic vector for a word is a numeric representation of the topic of a text segment to which the word belongs. For example, a text segment describing a cat may have as its topic vector a vector that maps to the word “cat.”",
+    "As will be described in more detail below with reference to FIG. 3 , in some implementations, the input generation subsystem 110 uses the same topic vector for all of the words in the word sequence 102 . In some other implementations, when the word sequence 102 includes more than one sentence, the input generation subsystem 110 uses the same topic vector only for all of the words in the same sentence within the word sequence 102 .",
+    "In some implementations, the input generation subsystem 110 receives as input topics 104 or topic vectors as determined by an external system and uses the received topics 104 or topic vectors in generating combined inputs.",
+    "In some other implementations, the input generation subsystem 110 uses LSTM outputs, e.g., an LSTM output 122 , generated by the one or more LSTM layers 120 to generate topic vectors for words in the word sequence 102 , i.e., without needing to receive topic data from an external system.",
+    "Generating a topic vector for a given word in an input word sequence and using the topic vector to generate a combined input are described in more detail below with reference to FIG. 3 .",
+    "For each word in the word sequence 102 , the LSTM layers 120 are configured to receive the combined input generated by the input generation subsystem 110 for the word and to process the combined input in accordance with a current hidden state of the LSTM layers 120 to generate an LSTM output, e.g., the LSTM output 122 , and to update the current hidden state.",
+    "In particular, each LSTM layer includes one or more LSTM memory blocks, with each LSTM memory block including one or more cells that each include an input gate, a forget gate, and an output gate that allow the cell to store previous states for the cell, e.g., for use in generating a current activation. An example configuration of the one or more LSTM layers 120 is described in Alex Graves, Supervised Sequence Labelling with Recurrent Neural Networks , volume 385 of Studies in Computational Intelligence. Springer, 2012.",
+    "The output layer 130 is configured to receive as input an LSTM output and to generate an output by processing the LSTM output. In particular, as described above, the sequence processing system 100 may be configured to perform any of a variety of language processing tasks, and the output that is generated by the output layer 130 is dependent on the task that the sequence processing system 100 is configured to perform.",
+    "For example, when the sequence processing system 100 is configured to perform the word prediction task, the output layer 130 is configured to receive the LSTM output for the last word in the word sequence 102 and generate the respective next word scores for the vocabulary words in the vocabulary of words.",
+    "As another example, when the sequence processing system 100 is configured to perform the sentence topic prediction task, the output layer 130 is configured to receive the LSTM output for the last word in the sequence and generate the respective next topic scores for the topics in the predetermined set of topics.",
+    "As another example, when the sequence processing system 100 is configured to perform the next sentence selection task, the output layer 130 is configured to receive an LSTM output for a given word in the sequence and to generate a respective score for each vocabulary word in the vocabulary of words. The respective score for each vocabulary word represents a likelihood that the vocabulary word is the word that immediately follows the given word.",
+    "In this example, to generate the next sentence score when the candidate sequence that is included in the word sequence 102 includes N words, the sequence processing system 100 determines, for each of the last N words in the word sequence 102 , the score generated by the output layer 130 by processing the LSTM output for the word preceding the word in the word sequence 102 and combines the scores generated by the output layer 130 for each of the last N words to generate a combined score for the last N words. The sequence processing system 100 then determines the next sentence score for the candidate sentence from the combined score, e.g., by normalizing the combined score.",
+    "In some implementations, when the sequence processing system 100 is configured to perform the next sentence selection task and rather than process multiple word sequences that each include the current sequence followed by a different candidate sequence, the sequence processing system 100 processes the current sequence to determine an LSTM output and internal state for the last word in the current sequence. For each candidate sequence in the set, the sequence processing system 100 then initializes the internal state of the LSTM layers 120 to be the internal state for the last word in the current sequence, and processes the candidate sequence in accordance with the initialized internal state. The sequence processing system 100 therefore reduces the amount of computation necessary to generate next sentence scores for each candidate sequence by processing the current sequence only one time and using the results of that processing to seed the processing of each of the candidate sequences.",
+    "FIG. 2 is a flow diagram of an example process 200 for generating a neural network output for an input word sequence. For convenience, the process 200 will be described as being performed by a system of one or more computers located in one or more locations. For example, a sequence processing system, e.g., the sequence processing system 100 of FIG. 1 , appropriately programmed in accordance with this specification, can perform the process 200 .",
+    "The system receives a word sequence that includes multiple words arranged according to a particular order (step 202 ). For example, the word sequence can be a sentence or a paragraph or other sequence that includes multiple sentences.",
+    "The system generates a respective LSTM output for each word in the sequence (step 204 ). Generally, for each word in the sequence, the system determines a topic vector and generates a combined input using the topic vector and the word. The system processes the combined inputs through the one or more LSTM layers to generate the LSTM output for the corresponding word. Generating an LSTM output is described in more detail below with reference to FIG. 3 .",
+    "The system generates the neural network output for the word sequence from one or more of the LSTM outputs (step 206 ). In particular, the system processes one or more of the LSTM outputs through the output layer to generate the neural network output.",
+    "Once the neural network output has been generated, the system can provide an output derived from the neural network output for presentation to a user on a user computer, can store the neural network output or the output derived from the neural network output for later use, or can provide the neural network output or the output derived from the neural network output to an external system for use for some other immediate purpose. The output derived from the neural network output can be, for example, a formatted presentation of the scores in the neural network output or a presentation that identifies one or more highest-scoring topics, words, or sentences, depending on the language processing task that the system is configured to perform.",
+    "As described above, the kind of output the output layer is configured to generate and which LSTM outputs the output layer is configured to receive depends on the language processing task that the system is configured to perform.",
+    "For example, when the system is configured to perform the word prediction task, the output layer is configured to receive the LSTM output for the last word in the word sequence and generate the respective next word scores for the vocabulary words in the vocabulary of words.",
+    "As another example, when the system is configured to perform the sentence topic prediction task, the output layer is configured to receive the LSTM output for the last word in the sequence and generate the respective next topic scores for the topics in the predetermined set of topics.",
+    "As another example, when the system is configured to perform the next sentence selection task, the output layer is configured to receive an LSTM output for a given word in the sequence and to generate a respective score for each vocabulary word in the vocabulary of words. The respective score for each vocabulary word represents a likelihood that the vocabulary word is the word that immediately follows the given word.",
+    "FIG. 3 is a flow diagram of an example process 300 for generating an LSTM output for a current word in a word sequence. For convenience, the process 300 will be described as being performed by a system of one or more computers located in one or more locations. For example, a sequence processing system, e.g., the sequence processing system 100 of FIG. 1 , appropriately programmed in accordance with this specification, can perform the process 300 .",
+    "The system receives the current word in the text sequence (step 302 ).",
+    "The system obtains a topic vector for the current word in the text sequence (step 304 ).",
+    "In some implementations, the topic vector for each word in the sequence is generated by an external system and received by the system.",
+    "In some other implementations, the system receives a topic for the word sequence, i.e., a word or phrase characterizing the subject of the word sequence, and maps the topic to a topic vector that is a numeric representation of the topic. The system then uses the topic vector as the topic vector for all of the words in the sequence. For example, the topics may have been generated from the word sequence using a hierarchical topic model.",
+    "In some other implementations, the sequence includes multiple sentences and the system receives a respective topic for each of the sentences, with the topic for a given sentence being a word or phrase characterizing the subject of the sentence. The system then maps each of the topics to a respective topic vector and uses, for each word, the topic vector for the sentence to which the word belongs.",
+    "In some other implementations, where the sequence includes multiple sentences the system generates the topic vector for the current word from the LSTM outputs generated for words in previous sentences in the sequence. In particular, in these implementations, the system uses a predetermined placeholder topic vector as the topic vector for the words in the first sentence in the sequence and uses previous LSTM outputs to determine the topic vector for words in the sentences after the first sentence in the sequence.",
+    "In some of these implementations, for each sentence that is after the first sentence in the sequence, the system assigns as the topic vector for the sentence the LSTM output for the last word in the sentence immediately before the sentence in the sequence.",
+    "In others of these implementations, after generating the LSTM output for the last word in a given sentence that is after the first sentence in the sequence, the system updates a topic vector associated with the words in the given sentence using the LSTM output for the last word in the sentence to generate an updated topic vector. The system then assigns the updated topic vector as the topic vector for the words in the next sentence, i.e., the sentence immediately following the given sentence. Thus, after the last word in a given sentence has been processed, the system updates a current topic vector and uses the updated topic vector as the topic vector for the next sentence.",
+    "To update a current topic vector using an LSTM output, the system combines the current topic vector and the LSTM output. For example, the system can compute a weighted sum of the current topic vector and the LSTM output or compute a measure of central tendency of the current topic vector and the LSTM output.",
+    "In some of the implementations in which the system generates the topic vector, the system denoises the generated vector before using it as the topic vector using a low-dimensional embedding, e.g., by adding roundoff-based projection.",
+    "The system generates a combined input from the current word and the topic vector (step 306 ). In particular, the system maps the current word to a word vector, i.e., to a numeric representation of the current word, and then combines, e.g., concatenates, the word vector with the topic vector to generate the combined input.",
+    "In some implementations, the system maintains a pre-determined mapping of each word in a vocabulary of words to a word vector. In some other implementations, the system adjusts the mappings of words to word vectors using backpropagation during the training of the LSTM layers.",
+    "The system processes the combined input through the one or more LSTM layers to generate the LSTM output for the current word (step 308 ). That is, the system processes the combined input through the one or more LSTM layers in accordance with the current hidden state of the LSTM layers to update the hidden state and to generate the LSTM output for the current word.",
+    "The processes 200 and 300 can be performed for word sequences for which the desired output, i.e., the neural network output that should be generated by the system for the input sequence, is not known. The system can also perform the processes 200 and 300 on inputs in a set of training data, i.e., a set of inputs for which the output that should be predicted by the system is known, in order to train the system, i.e., to determine trained values for the parameters of the LSTM neural network layers and, optionally, for the mappings of words to word vectors. In particular, the processes 200 and 300 can be performed repeatedly on input sequences selected from a set of training data as part of a conventional machine learning training technique to train the LSTM neural network layers, e.g., a stochastic gradient descent with backpropagation through time training technique."
+   ]
+  }
+ ],
+ "pdf_url": "https://patentimages.storage.googleapis.com/cb/9c/89/3380a24b3483a1/US10083169.pdf",
+ "source": {
+  "provider": "Google Patents",
+  "url": "https://patents.google.com/patent/US10083169B1/en",
+  "fetched": "2026-08-28",
+  "note": "Patent text is public record; Google Patents used as aggregator."
+ }
+}

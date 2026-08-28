@@ -1,0 +1,334 @@
+{
+ "doc_id": "US10261954B2",
+ "publication_number": "US10261954B2",
+ "title": "Optimizing search result snippet selection",
+ "abstract": "Techniques for optimizing search result snippet selection. In one aspect, the techniques include receiving a query and identifying a set of documents matching the query. A set of one or more snippet field types for a snippet representing a corresponding document of the set of documents is selected based at least in part on a snippet selection model. The snippet selection model is adjusted to reinforce or discourage selection of the set of one or more snippet field types for future queries based on the user click.",
+ "assignees": [
+  "Dropbox Inc",
+  "Dropbox Inc"
+ ],
+ "inventors": [
+  "John Robert Grace, JR.",
+  "Neil Sethi",
+  "Tsung-Hsiang Chang"
+ ],
+ "priority_date": "2016-12-30",
+ "filing_date": "2017-06-30",
+ "publication_date": "2019-04-16",
+ "cpc": [
+  "G06F",
+  "G06F16/00",
+  "G06F16/20",
+  "G06F16/24",
+  "G06F16/245",
+  "G06F16/2457",
+  "G06F16/24578",
+  "G06F16/30",
+  "G06F16/33",
+  "G06F16/338",
+  "G06F16/90",
+  "G06F16/93"
+ ],
+ "citations": [
+  "US20070174237A1",
+  "US20070266025A1",
+  "US20100082566A1",
+  "US20120117093A1",
+  "US20120254218A1",
+  "US20150161130A1",
+  "US20150169753A1",
+  "US9646260B1"
+ ],
+ "language": "en",
+ "claims": [
+  {
+   "number": 1,
+   "text": "A method performed by a computing system comprising one or more processors and storage media storing one or more programs executed by the one or more processors to perform the method, the method comprising: receiving a query and identifying a set of documents matching the query; selecting, for a snippet representing a corresponding document of the set of documents, a set of a plurality of snippet field types from a plurality of predefined snippet field types, the selecting based at least in part on a snippet selection model; causing display of the snippet, the snippet display including a separate value for each snippet field type in the set of the plurality of snippet field types selected for the snippet detecting a user click on the snippet; determining a user dwell time, associated with the user click, on the corresponding document; based at least in part on the user click and the user dwell time, adjusting the snippet selection model to reinforce or discourage selection of the set of the plurality of snippet field types for future queries; wherein, before the adjusting, the snippet selection model is configured to apply a first set of weights to a set of parameters of the snippet selection model; wherein, after the adjusting, the snippet selection model is configured to apply a second set of weights to the set of parameters of the snippet selection model; wherein the second set of weights are different than the first set of weights; wherein the second set of weights is determined based at least in part on: assigning a relevance label to the set of the plurality of snippet field types selected, wherein the relevance label is assigned to the set of the plurality of snippet field types selected based at least in part on the user dwell time on the corresponding document, determining a ground truth ranking of the plurality of predefined snippet field types; wherein the ground truth ranking is determined based at least in part on the relevance label assigned, and determining a set of weights that, when applied to the set of parameters of the snippet selection model, minimizes a loss function with respect to at least the ground truth ranking.",
+   "dependent_on": null
+  },
+  {
+   "number": 2,
+   "text": "The method of claim 1 , further comprising: based at least in part on the user click and the user dwell time, adjusting the snippet selection model to reinforce selection of the set of the plurality of snippet field types for future queries.",
+   "dependent_on": 1
+  },
+  {
+   "number": 3,
+   "text": "The method of claim 1 , further comprising: based at least in part on the user click and the user dwell time, adjusting the snippet selection model to discourage selection of the set of the plurality of snippet field types for future queries.",
+   "dependent_on": 1
+  },
+  {
+   "number": 4,
+   "text": "The method of claim 1 , wherein: the user dwell time is based at least in part on an amount of time that at least a portion of the corresponding document is presented in a graphical user interface in response to the user click on the snippet.",
+   "dependent_on": 1
+  },
+  {
+   "number": 5,
+   "text": "The method of claim 1 , wherein: the adjusting the snippet selection model to reinforce or discourage selection of the set of the plurality of snippet field types is further based at least in part on a ranking score for the corresponding document; and the ranking score is based at least in part on a query-dependent score for at least the query and the corresponding document.",
+   "dependent_on": 1
+  },
+  {
+   "number": 6,
+   "text": "The method of claim 1 , wherein: the adjusting the snippet selection model to reinforce or discourage selection of the set of the plurality of snippet field types is further based at least in part on a ranking score for the corresponding document; and the ranking score is based at least in part on a query-independent score for the corresponding document.",
+   "dependent_on": 1
+  },
+  {
+   "number": 7,
+   "text": "A computing system comprising: one or more processors; storage media; and one or more programs stored in the storage media and configured for execution by the one or more processors, the one or more programs comprising instructions configured for: receiving a query and identifying a set of documents matching the query; selecting, for a snippet representing a corresponding document of the set of documents, a set of a plurality of snippet field types from a plurality of predefined snippet field types, the selecting based at least in part on a snippet selection model; causing display of the snippet, the snippet display including a separate value for each snippet field type in the set of the plurality of snippet field types selected for the snippet; detecting a user click on the snippet; determining a user dwell time, associated with the user click, on the corresponding document; and based at least in part on the user click and the user dwell time, adjusting the snippet selection model to discourage selection of the set of the plurality of snippet field types for future queries; wherein, before the adjusting, the snippet selection model is configured to apply a first set of weights to a set of parameters of the snippet selection model; wherein, after the adjusting, the snippet selection model is configured to apply a second set of weights to the set of parameters of the snippet selection model; wherein the second set of weights are different than the first set of weights; wherein the second set of weights is determined based at least in part on: assigning a relevance label to the set of the plurality of snippet field types selected, wherein the relevance label is assigned to the set of the plurality of snippet field types selected based at least in part on the user dwell time on the corresponding document, determining a ground truth ranking of the plurality of predefined snippet field types; wherein the ground truth ranking is determined based at least in part on the relevance label assigned, and determining a set of weights that, when applied to the set of parameters of the snippet selection model, minimizes a loss function with respect to at least the ground truth ranking.",
+   "dependent_on": null
+  },
+  {
+   "number": 8,
+   "text": "The computing system of claim 7 , wherein the adjusting the snippet selection model to discourage selection of the set of the plurality of snippet field types is based at least in part on determining that the user dwell time on the corresponding document did not exceed a threshold amount of time; and the user dwell time is based at least in part on an amount of time that at least a portion of the corresponding document is presented in a graphical user interface in response to the user click on the snippet.",
+   "dependent_on": 7
+  },
+  {
+   "number": 9,
+   "text": "The computing system of claim 7 , wherein: the user click is a first user click; the snippet is a first snippet; the corresponding document is a first corresponding document; the instructions are further configured for detecting a second user click, that is not the first user click, on a second snippet, that is not the first snippet, representing a second corresponding document of the set of documents, that is not the first corresponding document; the adjusting the snippet selection model to discourage selection of the set of the plurality of snippet field types is based at least in part on determining that the second user click happened before the first user click.",
+   "dependent_on": 7
+  },
+  {
+   "number": 10,
+   "text": "The computing system of claim 9 , wherein: the adjusting the snippet selection model to discourage selection of the set of the plurality of snippet field types is based at least in part on determining that a user dwell time on the first corresponding document exceeds a threshold amount of time; and the user dwell time is based at least in part on an amount of time that at least a portion of the first corresponding document is presented in a graphical user interface in response to the first user click on the first snippet.",
+   "dependent_on": 9
+  },
+  {
+   "number": 11,
+   "text": "The computing system of claim 9 , wherein: the user click on the first snippet is performed while the first snippet and the second snippet are displayed in a graphical user interface; the first snippet is displayed at a first respective position in the graphical user interface; the second snippet is displayed at a second respective position in the graphical user interface; and the first respective position and the second respective position are such they visually indicate that the first corresponding document is more relevant to the query than the second corresponding document.",
+   "dependent_on": 9
+  },
+  {
+   "number": 12,
+   "text": "One or more non-transitory computer-readable media storing one or more programs for execution by one or more processors, the one or more programs comprising instructions configured for: receiving a query and identifying a set of documents matching the query; selecting, for a snippet representing a corresponding document in the set of documents, a set of a plurality of snippet field types from a plurality of predefined snippet field types, the selecting based at least in part on a snippet selection model; causing display of the snippet in a graphical user interface, the snippet display including a separate value for each snippet field type in the set of the plurality of snippet field types selected for the snippet; detecting a user click on the snippet; detecting a user dwell time, associated with the user click, on the corresponding document; and based at least in part on the user click and the user dwell time, adjusting the snippet selection model to reinforce or discourage selection of the set of the plurality of snippet field types for future queries; wherein, before the adjusting, the snippet selection model is configured to apply a first set of weights to a set of parameters of the snippet selection model; wherein, after the adjusting, the snippet selection model is configured to apply a second set of weights to the set of parameters of the snippet selection model; wherein the second set of weights are different than the first set of weights; wherein the second set of weights is determined based at least in part on: assigning a relevance label to the set of the plurality of snippet field types selected, wherein the relevance label is assigned to the set of the plurality of snippet field types selected based at least in part on the user dwell time on the corresponding document, determining a ground truth ranking of the plurality of predefined snippet field types; wherein the ground truth ranking is determined based at least in part on the relevance label assigned, and determining a set of weights that, when applied to the set of parameters of the snippet selection model, minimizes a loss function with respect to at least the ground truth ranking.",
+   "dependent_on": null
+  },
+  {
+   "number": 13,
+   "text": "The one or more non-transitory computer-readable media of claim 12 , wherein: the snippet is a first snippet; the corresponding document is a first corresponding document; the instructions are further configured for adjusting the snippet selection model to discourage selection of the set of a plurality of snippet field types based at least in part on all of: a user click on a second snippet that is not the first snippet representing a second corresponding document in the set of documents that is not the first corresponding document, a first ranking score for the first corresponding document, and a second ranking score for the second corresponding document; the user click on the second snippet is performed while the first snippet and the second snippet are presented in the graphical user interface; the user click on the second snippet is performed before any click on the first snippet; the first snippet is presented in the graphical user interface at a first respective position based at least in part in the first ranking score; the second snippet is presented in the graphical user interface at a second respective position based at least in part on the second ranking score; and the first respective position and the second respective position are such they visually indicate that the first corresponding document is more relevant to the query than the second corresponding document.",
+   "dependent_on": 12
+  },
+  {
+   "number": 14,
+   "text": "The one or more non-transitory computer-readable media of claim 12 , wherein: the instructions further configured for computing a weighted snippet field score for each of a plurality of snippet field types based at least in part on the corresponding document; and wherein the adjusting the snippet selection model to reinforce or discourage selection of the set of the plurality of snippet field types is based at least in part on adjusting weights applied to snippet field scores to reinforce or discourage selection of the set of the plurality of snippet field types.",
+   "dependent_on": 12
+  },
+  {
+   "number": 15,
+   "text": "The one or more non-transitory computer-readable media of claim 12 , wherein at least one snippet field type of the set of the plurality of snippet field types is: a privacy snippet field, a path snippet field, a truncated path snippet field, a path tail snippet field, a shared with snippet field, a last viewed snippet field, an edited snippet field, a commented snippet field, a doc copy snippet field, a presence snippet field, or a logical organization snippet field.",
+   "dependent_on": 12
+  },
+  {
+   "number": 16,
+   "text": "The one or more non-transitory computer-readable media of claim 12 , wherein the adjusting the snippet selection model to reinforce or discourage selection of the set of the plurality of snippet field types is based at least in part on detecting that the snippet did not receive a user click.",
+   "dependent_on": 12
+  },
+  {
+   "number": 17,
+   "text": "The one or more non-transitory computer-readable media of claim 12 , the instructions further configured for: computing a ranking score for each document in the set of documents; and wherein the adjusting the snippet selection model to reinforce or discourage selection of the set of the plurality of snippet field types is based at least in part on detecting that the corresponding document received a best ranking score among the ranking scores computed for the set of documents.",
+   "dependent_on": 12
+  },
+  {
+   "number": 18,
+   "text": "The one or more non-transitory computer-readable media of claim 12 , the instructions further configured for: computing a ranking score for the corresponding document; and wherein the adjusting the snippet selection model to reinforce or discourage selection of the set of the plurality of snippet field types is based at least in part on the user click and the ranking score.",
+   "dependent_on": 12
+  },
+  {
+   "number": 19,
+   "text": "The method of claim 1 , wherein the separate value for each snippet field type pertains particularly to metadata about the corresponding document.",
+   "dependent_on": 1
+  }
+ ],
+ "description": [
+  {
+   "heading": "PRIORITY CLAIM",
+   "paragraphs": [
+    "This application claims the benefit of priority of provisional application No. 62/440,549, filed Dec. 30, 2016, the entire contents of which is hereby incorporated by reference as if fully set forth herein."
+   ]
+  },
+  {
+   "heading": "TECHNICAL FIELD",
+   "paragraphs": [
+    "Aspects of the present disclosure relate generally to text-based information retrieval computer systems, and more specifically to computer-implemented techniques for optimizing search result snippet selection."
+   ]
+  },
+  {
+   "heading": "BACKGROUND",
+   "paragraphs": [
+    "The approaches described in this section are approaches that could be pursued, but not necessarily approaches that have been previously conceived or pursued. Therefore, unless otherwise indicated, it should not be assumed that any of the approaches described in this section qualify as prior art merely by virtue of their inclusion in this section.",
+    "Various techniques exist for an information retrieval computer system to present documents to a user that match a given query. These techniques generally operate by computing ranking scores for the matching documents according to a relevance scoring model. The matching documents are then presented to the querying user in order of their ranking scores. For example, the matching documents may be presented to the querying user as a search result in a web page or other graphical user interface.",
+    "A search result may provide digests, synopses or other summaries of the matching documents. The summaries may be presented in the user interface in order of the ranking scores of the corresponding documents. For example, the summary of the matching document with the highest or best ranking score for the most relevant matching document may be presented near the top of the user interface above the summaries for relatively less relevant matching document.",
+    "A summary presented to a user as part of a search result may also be actionable by the user with user input. For example, by clicking on or otherwise directing user input toward a summary for a matching document, the user may be able to command some action on the matching document such as downloading the matching document, viewing the matching document, opening the matching document, or some other action appropriate for the matching document.",
+    "For text-based information retrieval systems, the ranking scores computed for matching documents are often a function of the query terms in the query. For example, the ranking score for a matching document may be a function of the variance between the matching document's term frequency (TF) and the matching document's inverse document frequency (IDF). The matching document's term frequency (TF) may be a function of how many times each query term appears in the matching document. The matching document's inverse document frequency (IDF) may be a function of how many items in a corpus of documents each query term appears. The variance may be computed as the product of the matching document's term frequency (TF) and the matching document's inverse document frequency (IDF).",
+    "A term frequency-inverse document frequency (TF-IDF)-based ranking function may normalize TF and IDF according to a probabilistic information retrieval framework to compute ranking scores that more accurately reflect relevance. For example, the widely-used BM25 family of ranking functions dampen the effect of a relatively large term frequency (TF) and adjust the term frequency (TF) based on the length of the matching document relative to the average length of documents in the corpus to which the matching document belongs.",
+    "In addition to a query-dependent score, such as a BM25 score mentioned above, a ranking function may incorporate a non-query dependent (query independent) score. A query independent score may reflect the relevance of a matching document based on various metrics that are independent of how well the document matches the query. One example of an algorithm for computing a query independent score is the PageRank algorithm which computes a query independent score based on the number and the quality of documents that link (refer) to a matching document. There are many other types of query independent scores and different algorithms for computing them.",
+    "One challenge facing designers and operators of text-based information retrieval systems is what weights to apply to each of the individual query-dependent and query-independent field scores on which the ranking function is based. As a simple example of the challenge faced, a query-dependent score may be based on two individual query-dependent field scores. One of the individual query-dependent field scores may be, for example, a BM25 score on the title of a matching document while the other individual query-dependent field score may be a BM25 score on the body of a matching document. Intuitively, the designer or operator may configure the ranking function to assign more weight to the BM25 score for the title relative to the weight assigned to the BM25 score for the body on the assumption that users will consider a query term match on the title to be more relevant than a match on the body.",
+    "To assign the weights, the designer or operator may engage in trial and error. For example, the designer or operator may submit what are believed to be representative queries to the information retrieval system and “eyeball” the search results to see if the most relevant items are presented as expected. If the search results are not as expected, then the weights may be adjusted and representative queries submitted again to verify the adjustment. This process of trial and error may be repeated until the assigned weights “look” optimal. Unfortunately, this process can be tedious, time consuming, and error prone, especially for a relatively large corpus of searchable items (e.g., millions of items or more) that undergo frequent changes or edits, or where there the ranking function has more than a few weighted components.",
+    "Thus, there is a need for techniques for more efficiently determining optimal weights to use in a ranking function. The present disclosure provides techniques that address this and other needs."
+   ]
+  },
+  {
+   "heading": "BRIEF DESCRIPTION OF THE DRAWINGS",
+   "paragraphs": [
+    "In the drawings:",
+    "FIG. 1 is a block diagram of a computing environment according to aspects of the present disclosure.",
+    "FIG. 2 illustrates result content according to aspects of the present disclosure.",
+    "FIG. 3 is a block diagram of ranking information for a query that may be stored in a ranking log according to aspects of the present disclosure.",
+    "FIG. 4 is a flowchart of a process for optimizing search result relevance according to aspects of the present disclosure.",
+    "FIG. 5 is a table of rules for assigning relevance labels to documents ranked in a search result to a query according to aspects of the present disclosure.",
+    "FIG. 6 is a block diagram of a machine learning system for training a document ranking model and a snippet selection model according to aspects of the present disclosure.",
+    "FIG. 7 is a flowchart of a machine learning approach for document ranking and snippet selection according to aspects of the present disclosure.",
+    "FIG. 8 is a block diagram of a computer system with which various aspects of the present disclosure may be implemented.",
+    "While the present technology is amenable to various modifications and alternative forms, specific embodiments are shown by way of example in the drawings and are described in detail. It should be understood, however, that the drawings and detailed description are not intended to limit the present technology to the particular form disclosed. The intention is to cover all modifications, equivalents, and alternatives falling within the spirit and scope of the present technology as defined by the appended claims."
+   ]
+  },
+  {
+   "heading": "DETAILED DESCRIPTION",
+   "paragraphs": [
+    "In the following description, for the purposes of explanation, numerous specific details are set forth in order to provide a thorough understanding of the present technology. It will be apparent, however, that the present technology may be practiced without these specific details. In other instances, well-known structures and devices are shown in block diagram form in order to avoid unnecessarily obscuring the present technology."
+   ]
+  },
+  {
+   "heading": "General Overview",
+   "paragraphs": [
+    "Techniques for optimizing the relevance of search results in a text-based information retrieval computer system are disclosed. According to some aspects of the present disclosure, the techniques include determining a more optimal set of “boost factors” (e.g., weights) for use in a ranking function. The determined set of boost factors may be more optimal than a set of boost factors that the ranking function is currently configured to use in that the ranking function configured with the more optimal set of boost factors produces more accurate ranking scores, where ranking scores reflect an expected relevance of matching documents. In some implementations, the ranking scores also indicate a set of snippet fields to show in the search results. In some implementations, a set of snippet fields can be selected based on separate snippet scores.",
+    "According to some implementations, the determination of the more optimal set of boost factors is based on historical search result ranking scores and user responses to the historical search results. More specifically, a ranking log and a user response log can be maintained. The ranking log can record individual field scores computed for search result documents matching corresponding search queries. The recorded individual field scores may be weighted components of the ranking function to which a current set of boost factors are applied. The ranking log can also record the search result ranking order of the matching documents.",
+    "The user response log can record how users interact with the search results. These search results can be presented as summaries of the matching documents, which can include snippet fields including: content from the matching document; privacy data for the matching document; indicators about storage location or organization identifiers for the matching document; user view, edit, or comment history on the matching document; or any combination thereof. Search results can be presented in an order defined by corresponding ranking scores. According to some implementations, the user response log records which matching documents received a “long click” (e.g. a user remaining on a selected content item for above a threshold duration) indicating a “good” relevancy, which documents received a “short click” (e.g. a user remaining on a selected content item for below the threshold duration) indicating “fair” relevancy, and which documents were skipped indicating “bad” relevancy.",
+    "Based on information in the user response log, relevance labels or scores such as “good,” “fair,” “bad,” and “unknown” can be assigned to the matching documents returned in the search results. From the assigned relevance labels, ground truth rankings can be determined for the matching documents. An optimization algorithm can then be executed to find a set of boost factors that minimizes a cost function. The cost function may be based on a metric that compares (i) rankings of the documents according to ranking scores computed by the ranking function using a given set of boost factors to (ii) the ground truth rankings of the documents. According to some aspects of the present disclosure, the metric is a pairwise metric based on the number of inversions between (i) the rankings computed using the given set of boost factors and (ii) the ground truth rankings. For example, the number of inversions may be measured by a Kendal tau distance or other metric suitable for measuring the difference or distance between two ranked lists (e.g., Spearman's footrule).",
+    "The ranking function may then be configured to compute ranking scores for documents matching user queries using a new set of boost factors determined by the optimization algorithm to minimize the cost function. The process of determining a new set of boost factors to use in the ranking function may be repeated periodically to account for document changes (additions, deletions, and/or modifications) within the document corpus that occur over time.",
+    "In some embodiments, a machine learning approach is used to rank documents matching a query and/or to select snippet field types for snippets of the matching documents presented in a search result to the query.",
+    "In the description below, an example information retrieval system is used for illustrative purposes. It will be appreciated that the various features and techniques described herein could, with appropriate modifications, be used with alternative information retrieval systems (e.g., Apache Solr, Apache Sphinx, an Internet search engine, or other search engine)."
+   ]
+  },
+  {
+   "heading": "Computing Environment",
+   "paragraphs": [
+    "FIG. 1 illustrates an environment 100 in which aspects of the present disclosure may be implemented. Environment 100 can be a distributed computing system comprising a number of a computing devices (not shown) interconnected by one or more communications networks (not shown).",
+    "The communication networks may include one or more of: the Internet, other wide area networks, local area networks, metropolitan area networks, wireless networks, cellular networks, and so on.",
+    "The computing devices may include “server” computing devices operated by an online service provider and “personal” computing devices operated by users. In some implementations, users can hold user accounts with the online service provider. The server computing devices may be co-located (racked) in a data center or other computer hosting facility. The personal computing devices may include stationary and portable computing devices such as, for example, desktop computers, workstation computers, laptop computers, tablet computers, smart phones, and so on. A computing device, whether server-type or personal-type, may have hardware components like one or more of those of example computer system 800 described below with respect to FIG. 8 .",
+    "In an example embodiment, the online service provider is a large-scale online service provider that hosts millions of user accounts or more and services requests from a corresponding number of personal computing devices. However, it will be appreciated that various techniques and features disclosed herein could, with appropriate modifications according to the requirements of the particular implementation at hand, be implemented on a smaller scale (e.g., with tens, hundreds, or thousands of accounts or less).",
+    "In FIG. 1 , the environment 100 includes a document indexing computer system (indexer) 104 , a document index 106 , a top-k retrieval computer system 108 , a boost factor optimizer computer system (optimizer) 114 , a ranking log 116 , a user response log 118 , and a user click collector system (click collector) 122 . These and other system components are discussed in turn below."
+   ]
+  },
+  {
+   "heading": "Indexer and Document Index",
+   "paragraphs": [
+    "The indexer 104 can receive and parse a set of documents 102 to produce tokens that can be stored in document index 106 to enable fast information retrieval. In certain embodiments, the set of documents 102 indexed by indexer 104 may be associated with one or more user accounts held by user(s) with the online service provider. For example, the set of documents 102 indexed by indexer 104 may be those associated with a single user account, those associated with a team or group of user accounts, or those associated with all user accounts. Thus, document index 106 may be user-specific, team or group specific, or a global index for all user accounts.",
+    "A document may be considered associated with a user account if the user account has some level of access (e.g., view and/or edit access) to the document by virtue of the association that the user account would not have if the association did not exist. In other words, the association between the user account and the document provides affirmative permission for some level of access to the document by the user account where the level of access is specified by the association (e.g., in an access control list). The association may be established, for example, by an access control list stored in a database (not shown) and associated directly or indirectly with the document and the user account. Further, even though the set of documents 102 indexed by indexer 104 may be those associated with a single user account, one or more documents of the set of documents 102 in this case may be associated with one or more additional user accounts. For example, one or more documents may be shared among (accessible by) multiple user accounts."
+   ]
+  },
+  {
+   "heading": "Parsing Documents",
+   "paragraphs": [
+    "Parsing of a document by indexer 104 may include parsing the document's contents and/or the document's metadata. Parsing of a document by indexer 104 may occur at various times including after a new document is added to the set of documents 102 and/or after an existing document in the set of documents 102 is modified (edited). In the case of a modified (edited) document, parsing may be limited to just the portion of the document's contents and/or the document's metadata affected by the modification (edit) or modifications (edits).",
+    "Parsing a document by indexer 104 may include tokenization where indexer 104 identifies sequences of characters (tokens) in the document's contents and/or the document's metadata. Indexer 104 may then store the extracted tokens in index 106 in association with the document from which the tokens were extracted. For example, the index 106 may be structured as an inverted index that maps tokens to identifiers of documents that contain the tokens. It will be appreciated that various techniques and features disclosed herein could, with appropriate modifications according to the requirements of the particular implementation at hand, be implemented in an environment where document index 106 is structured in a manner other than as an inverted index (e.g., as a suffix tree, N-gram index, or document-term matrix)."
+   ]
+  },
+  {
+   "heading": "Documents",
+   "paragraphs": [
+    "Techniques described herein involve ranking scores computed for documents 102 that match queries 110 . Various aspects of the documents may be used in computing ranking scores for the documents. The two highest level aspects of a document 102 that may be used for computing a ranking score are the document's contents and the document's metadata. A document 102 may also be indexed, in document index 106 , by tokens extracted from the document's contents and/or the document's metadata."
+   ]
+  },
+  {
+   "heading": "Document Content Type",
+   "paragraphs": [
+    "A document's contents may conform to a content type. The techniques described herein are not limited to any particular content type or set of content types. A document 102 may belong to a general content type category such as, for example, text (e.g., a textual message, plain unformatted text, enriched text, word processing text, rich text, etc.), multipart (e.g., data consisting of multiple parts of independent data types), message (e.g., an encapsulated message, an RFC 822 conformant message, etc.), image (e.g., image data that requires a display device to view the information, JPEG, GIF, etc.), audio (e.g., audio data that requires an audio output device such as a speaker or a telephone to “display” the information), video (e.g., video data that requires the capability to display moving images), or application (e.g., some other kind of data, binary data in a standardized, proprietary, or application-specific format, etc.)",
+    "Within a general content type category, a document contents may have a specific digital content type. For example, the contents of a document 102 in the application content type category may be an ADOBE PDF content type or a MICROSOFT WORD content type, as just two examples. However, a document 102 may belong to other general content type categories and a document's contents may have other specific content types. Accordingly, unless otherwise apparent in context, the term “document” as used herein and in the appended claims is not limited to any particular general content type category or any particular specific content type."
+   ]
+  },
+  {
+   "heading": "Document Metadata",
+   "paragraphs": [
+    "A document's metadata may contain information about various aspects of the document. A document's metadata can be formatted as text, but there is no requirement of the techniques described herein that a document's metadata be formatted as text. Non-limiting examples of a document's metadata may include a title of the document, a file name for the document, a relative or absolute file path for the document, a team name for the document, a creator or owner of the document, an editor of the document, an invitee to the document, an inviter for the document, a sharer of the document, a recipient of the document, or a commenter on the document."
+   ]
+  },
+  {
+   "heading": "Document Title",
+   "paragraphs": [
+    "A title for a document 102 may include an identifier (e.g., a name) of the document. The title of the document in the document's metadata may be the same or different from a title for the document in the document's contents."
+   ]
+  },
+  {
+   "heading": "Document File Name",
+   "paragraphs": [
+    "A file name for a document 102 may include an identifier of a file in a file system that contains the document's contents. The file may also contain some or all of the document's metadata. Alternatively, some or all of the document's metadata may be stored in separate container(s). The file system can be a file system for organizing and tracking data stored on storage media or a file system based thereon."
+   ]
+  },
+  {
+   "heading": "Document File Path",
+   "paragraphs": [
+    "A file path for a document 102 may include an identifier of a relative or absolute path in a file system to a file system directory or folder that contains the document."
+   ]
+  },
+  {
+   "heading": "Document Team Name",
+   "paragraphs": [
+    "A team name for a document 102 may include an identifier of a set of user accounts that have some level of access with respect to the document (e.g., permission to view, preview, read, edit, and/or share the document) by virtue of the user account's membership in the user account set."
+   ]
+  },
+  {
+   "heading": "Document Creator",
+   "paragraphs": [
+    "A creator of a document 102 may include an identifier of a user account that created an initial version of the document. An owner of a document 102 may include an identifier of a primary user account to which the document 102 is assigned. In various implementations, the owner of a document 102 can be the creator of the document 102 or can be a different user account."
+   ]
+  },
+  {
+   "heading": "Document Editor",
+   "paragraphs": [
+    "An editor of a document 102 may include an identifier of a user account that edited a version of the document. A document 102 may have multiple editors."
+   ]
+  },
+  {
+   "heading": "Document Invitee",
+   "paragraphs": [
+    "An invitee for a document 102 may include an identifier of a user account that was invited to the document by another user account. A document 102 may have multiple invitees. Upon accepting an invitation to the document, the invitee user account may be added to a group of user accounts that have some level of access to the document and the list of user accounts in this group can be the invitees for the document."
+   ]
+  },
+  {
+   "heading": "Document Inviter",
+   "paragraphs": [
+    "An inviter for the document 102 may include an identifier of a user account that invited another user account to the document 102 . A document 102 may have multiple inviters. In some implementations, each inviter associated with a document 102 can be correlated with one or more invitees that inviter has invited to the document."
+   ]
+  },
+  {
+   "heading": "Document Sharer",
+   "paragraphs": [
+    "A sharer for a document 102 may include an identifier of a user account that shared the document with another user account. In some implementations, a document 102 may be shared with a user account via a unique link (e.g., a unique URL) to the document. The recipient of the link may use the link to access the document according to permissions associated with the link. Depending on permissions associated with the document, the sharer user account may or may not be a member of a group of user accounts that has some level of access to the document, yet the sharer user account may still have permission to share a link to the document. Likewise, depending on permissions associated with the document, the recipient user account may or may not be a member of the group, yet the recipient user account may still have permission to access the document via the link according to permissions associated with the link. A document 102 may have multiple sharers."
+   ]
+  },
+  {
+   "heading": "Document Recipient",
+   "paragraphs": [
+    "A recipient for a document 102 may include an identifier of a user account with which a link to the document was shared by a sharer user. The recipient user may use the link to access the document according to permissions associated with the link. A document 102 may have multiple recipients.",
+    "While in some embodiments sharing a document by a user account involves generating a unique link (e.g., a unique URL) to the document and sharing the link with one or more other user accounts (e.g., via an e-mail or text message), a document may be shared by a user account with other user accounts by mechanisms in addition to or instead of a unique link. For example, an inviter to a document 102 as described above may also be considered a sharer of the document and an invitee to a document 102 as described above may also be considered a recipient of the document."
+   ]
+  },
+  {
+   "heading": "Document Commenter",
+   "paragraphs": [
+    "A commenter on a document 102 may include an identifier of a user account that has commented on the document using a commenting application that allows a user account with access to the commenting application to engage in a threaded discussion about the document."
+   ]
+  },
+  {
+   "heading": "Other Document Metdata",
+   "paragraphs": [
+    "A document's metadata may also contain information about or derived from various recorded aspects of the history of the document. Such information may include, but is not limited to, metrics computed from the viewing, editing, sharing, or commenting history of the document. Such metrics may include, but are not limited to, a number of times and/or timestamps that user accounts have viewed (view count), edited (edit count), commented on (comment count), or shared (share count) the document."
+   ]
+  },
+  {
+   "heading": "Other Document Features",
+   "paragraphs": [
+    "A document 102 may comprise a text string and an associated set of attributes. The text string may be a part or all of the document's contents. The associated set of attributes may be part of the document's contents, part of the document's metadata, or some of the attributes may be part of the document's contents and some part of the documents' metadata. Each attribute may be associated with a character or a range one or more characters in the text string to which the attribute applies or describes. The association between an attribute and a character or a range of one or more characters may be established by a numerical index or numerical indices into the text string that identify the character or range of characters with which the attribute is associated. An attribute may be a key/value pair, identified by the key, where no two attributes that apply to a given character of the text string have the same key. Attributes associated with the text string may be processed in an application-specific manner. For example, a range of characters in the text string may be associated with an attribute that indicates that the characters are to be presented by a word processing application in a bold typeface.",
+    "A document 102 may be stored as a sequence of change sets. In this context, a change set represents an edit to a particular version of a document 102 . When applied to a document representation, a change set can insert and delete characters and apply attributes to ranges of characters. For example, a particular change set might represent the edit “insert the lowercase character ‘d’ at position 2 in the text string.” If the particular change set is applied to a document representation having the text string “abc\\n”, then the resulting document representation would have the text string “adbc\\n”. A document 102 comprising a text string and a set of associated attributes may thus be formed by applying a sequence of change sets to an initial document representation. The initial document representation may be a document template or another document 102 , for example.",
+    "A document's contents may be stored in various different types of data containers. For example, a document's contents may be stored in a file system file container, in a database, as one or more blocks, or as a base version and a series of any number of changes to the base version. Further, a document 102 may be stored by a single computing device or portions of the document 102 may be stored by different computing devices in a distributed file system. Some or all of the document's metadata may be stored in the same data container(s) as the document's contents. For example, some or all of the document's metadata may be stored in a header of a file system file container that also contains the document's contents. However, some or all of a document's metadata may be stored separately from the document's contents. For example, some or all of a document's metadata may be stored in one or more databases while the document's contents are stored in a file system file container and/or in one or more blocks in a distributed file system.",
+    "A document 102 may be configured for unidirectional or bidirectional asynchronous synchronization. In the unidirectional case, changes to a document originating at a user's personal computing device are replicated to one or more other computing devices where the replicated changes are applied to copies of the document stored at those other computing devices. In the case of bidirectional synchronization, changes to a document originating at a particular user's personal computing device are replicated to one or more other computing devices where the replicated changes are applied to copies of the document stored at those other computing device as in the case of unidirectional synchronization. In addition, with bidirectional synchronization, changes to the document originating at the other computing devices are replicated to the particular user's personal computing device where the replicated changes are applied to a copy of the document stored at the particular user's personal computing device."
+   ]
+  }
+ ],
+ "pdf_url": "https://patentimages.storage.googleapis.com/ab/79/93/fdf5e1dbc5fab6/US10261954.pdf",
+ "source": {
+  "provider": "Google Patents",
+  "url": "https://patents.google.com/patent/US10261954B2/en",
+  "fetched": "2026-08-28",
+  "note": "Patent text is public record; Google Patents used as aggregator."
+ }
+}

@@ -1,0 +1,1450 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pat:PatentPublication xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xsi:schemaLocation="http://www.wipo.int/standards/XMLSchema/ST96/Patent https://www.wipo.int/standards/XMLSchema/ST96/V8_0/Patent/Document/PatentPublication_V8_0.xsd" com:st96Version="V8_0" com:languageCode="en" com:documentFileName="US08936998-20150120.XML" com:documentStatusText="TEST" com:id="us-patent-grant" com:creationDate="2024-10-09" com:documentPublicationDate="2024-11-01">
+	<com:IPOfficeCode>US</com:IPOfficeCode>
+	<pat:BibliographicData com:st96Version="V8_0">
+		<pat:PatentPublicationIdentification>
+			<com:IPOfficeCode>US</com:IPOfficeCode>
+			<pat:PublicationNumber>08936998</pat:PublicationNumber>
+			<com:PatentDocumentKindCode>B2</com:PatentDocumentKindCode>
+			<com:PublicationDate>2015-01-20</com:PublicationDate>
+		</pat:PatentPublicationIdentification>
+		<pat:ApplicationIdentification>
+			<com:IPOfficeCode>US</com:IPOfficeCode>
+			<com:ApplicationNumber>
+				<com:ApplicationNumberText>13797521</com:ApplicationNumberText>
+			</com:ApplicationNumber>
+			<pat:InventionSubjectMatterCategory>Utility</pat:InventionSubjectMatterCategory>
+			<pat:FilingDate>2013-03-12</pat:FilingDate>
+		</pat:ApplicationIdentification>
+		<pat:PriorityClaimBag>
+			<pat:PriorityClaim com:sequenceNumber="1">
+				<com:IPOfficeCode>JP</com:IPOfficeCode>
+				<com:ApplicationNumber>
+					<com:ApplicationNumberText>2007-290922</com:ApplicationNumberText>
+				</com:ApplicationNumber>
+				<pat:FilingDate>2007-11-08</pat:FilingDate>
+				<pat:ApplicationFilingCategory>National</pat:ApplicationFilingCategory>
+			</pat:PriorityClaim>
+		</pat:PriorityClaimBag>
+		<pat:PatentClassificationBag>
+			<pat:IPCRClassificationBag>
+				<pat:IPCRClassification com:sequenceNumber="1">
+					<pat:ClassificationVersionDate>2006-01-01</pat:ClassificationVersionDate>
+					<pat:PatentClassificationLevelCode>A</pat:PatentClassificationLevelCode>
+					<com:SymbolPositionCode>F</com:SymbolPositionCode>
+					<pat:IPCClassificationValueCode>I</pat:IPCClassificationValueCode>
+					<pat:ActionDate>2015-01-20</pat:ActionDate>
+					<pat:IPCClassificationStatusCode>B</pat:IPCClassificationStatusCode>
+					<pat:PatentClassificationDataSourceCode>H</pat:PatentClassificationDataSourceCode>
+					<pat:GeneratingOfficeCode>US</pat:GeneratingOfficeCode>
+					<pat:Section>H</pat:Section>
+					<pat:Class>01</pat:Class>
+					<pat:Subclass>L</pat:Subclass>
+					<pat:MainGroup>21</pat:MainGroup>
+					<pat:Subgroup>30</pat:Subgroup>
+				</pat:IPCRClassification>
+				<pat:IPCRClassification com:sequenceNumber="2">
+					<pat:ClassificationVersionDate>2006-01-01</pat:ClassificationVersionDate>
+					<pat:PatentClassificationLevelCode>A</pat:PatentClassificationLevelCode>
+					<com:SymbolPositionCode>L</com:SymbolPositionCode>
+					<pat:IPCClassificationValueCode>I</pat:IPCClassificationValueCode>
+					<pat:ActionDate>2015-01-20</pat:ActionDate>
+					<pat:IPCClassificationStatusCode>B</pat:IPCClassificationStatusCode>
+					<pat:PatentClassificationDataSourceCode>H</pat:PatentClassificationDataSourceCode>
+					<pat:GeneratingOfficeCode>US</pat:GeneratingOfficeCode>
+					<pat:Section>H</pat:Section>
+					<pat:Class>01</pat:Class>
+					<pat:Subclass>L</pat:Subclass>
+					<pat:MainGroup>21</pat:MainGroup>
+					<pat:Subgroup>302</pat:Subgroup>
+				</pat:IPCRClassification>
+				<pat:IPCRClassification com:sequenceNumber="3">
+					<pat:ClassificationVersionDate>2006-01-01</pat:ClassificationVersionDate>
+					<pat:PatentClassificationLevelCode>A</pat:PatentClassificationLevelCode>
+					<com:SymbolPositionCode>L</com:SymbolPositionCode>
+					<pat:IPCClassificationValueCode>I</pat:IPCClassificationValueCode>
+					<pat:ActionDate>2015-01-20</pat:ActionDate>
+					<pat:IPCClassificationStatusCode>B</pat:IPCClassificationStatusCode>
+					<pat:PatentClassificationDataSourceCode>H</pat:PatentClassificationDataSourceCode>
+					<pat:GeneratingOfficeCode>US</pat:GeneratingOfficeCode>
+					<pat:Section>H</pat:Section>
+					<pat:Class>01</pat:Class>
+					<pat:Subclass>L</pat:Subclass>
+					<pat:MainGroup>21</pat:MainGroup>
+					<pat:Subgroup>324</pat:Subgroup>
+				</pat:IPCRClassification>
+				<pat:IPCRClassification com:sequenceNumber="4">
+					<pat:ClassificationVersionDate>2006-01-01</pat:ClassificationVersionDate>
+					<pat:PatentClassificationLevelCode>A</pat:PatentClassificationLevelCode>
+					<com:SymbolPositionCode>L</com:SymbolPositionCode>
+					<pat:IPCClassificationValueCode>I</pat:IPCClassificationValueCode>
+					<pat:ActionDate>2015-01-20</pat:ActionDate>
+					<pat:IPCClassificationStatusCode>B</pat:IPCClassificationStatusCode>
+					<pat:PatentClassificationDataSourceCode>H</pat:PatentClassificationDataSourceCode>
+					<pat:GeneratingOfficeCode>US</pat:GeneratingOfficeCode>
+					<pat:Section>H</pat:Section>
+					<pat:Class>01</pat:Class>
+					<pat:Subclass>L</pat:Subclass>
+					<pat:MainGroup>21</pat:MainGroup>
+					<pat:Subgroup>20</pat:Subgroup>
+				</pat:IPCRClassification>
+				<pat:IPCRClassification com:sequenceNumber="5">
+					<pat:ClassificationVersionDate>2006-01-01</pat:ClassificationVersionDate>
+					<pat:PatentClassificationLevelCode>A</pat:PatentClassificationLevelCode>
+					<com:SymbolPositionCode>L</com:SymbolPositionCode>
+					<pat:IPCClassificationValueCode>I</pat:IPCClassificationValueCode>
+					<pat:ActionDate>2015-01-20</pat:ActionDate>
+					<pat:IPCClassificationStatusCode>B</pat:IPCClassificationStatusCode>
+					<pat:PatentClassificationDataSourceCode>H</pat:PatentClassificationDataSourceCode>
+					<pat:GeneratingOfficeCode>US</pat:GeneratingOfficeCode>
+					<pat:Section>H</pat:Section>
+					<pat:Class>01</pat:Class>
+					<pat:Subclass>L</pat:Subclass>
+					<pat:MainGroup>23</pat:MainGroup>
+					<pat:Subgroup>00</pat:Subgroup>
+				</pat:IPCRClassification>
+				<pat:IPCRClassification com:sequenceNumber="6">
+					<pat:ClassificationVersionDate>2014-01-01</pat:ClassificationVersionDate>
+					<pat:PatentClassificationLevelCode>A</pat:PatentClassificationLevelCode>
+					<com:SymbolPositionCode>L</com:SymbolPositionCode>
+					<pat:IPCClassificationValueCode>N</pat:IPCClassificationValueCode>
+					<pat:ActionDate>2015-01-20</pat:ActionDate>
+					<pat:IPCClassificationStatusCode>B</pat:IPCClassificationStatusCode>
+					<pat:PatentClassificationDataSourceCode>H</pat:PatentClassificationDataSourceCode>
+					<pat:GeneratingOfficeCode>US</pat:GeneratingOfficeCode>
+					<pat:Section>H</pat:Section>
+					<pat:Class>01</pat:Class>
+					<pat:Subclass>L</pat:Subclass>
+					<pat:MainGroup>31</pat:MainGroup>
+					<pat:Subgroup>0203</pat:Subgroup>
+				</pat:IPCRClassification>
+			</pat:IPCRClassificationBag>
+			<pat:CPCClassificationBag>
+				<pat:MainCPC>
+					<pat:CPCClassification>
+						<pat:ClassificationVersionDate>2013-01-01</pat:ClassificationVersionDate>
+						<pat:CPCSection>H</pat:CPCSection>
+						<pat:Class>01</pat:Class>
+						<pat:Subclass>L</pat:Subclass>
+						<pat:MainGroup>21</pat:MainGroup>
+						<pat:Subgroup>2007</pat:Subgroup>
+						<com:SymbolPositionCode>F</com:SymbolPositionCode>
+						<pat:CPCClassificationValueCode>I</pat:CPCClassificationValueCode>
+						<pat:ActionDate>2015-01-20</pat:ActionDate>
+						<pat:GeneratingOfficeCode>US</pat:GeneratingOfficeCode>
+						<pat:CPCClassificationStatusCode>B</pat:CPCClassificationStatusCode>
+						<pat:PatentClassificationDataSourceCode>H</pat:PatentClassificationDataSourceCode>
+					</pat:CPCClassification>
+				</pat:MainCPC>
+				<pat:FurtherCPC>
+					<pat:CPCClassification>
+						<pat:ClassificationVersionDate>2013-01-01</pat:ClassificationVersionDate>
+						<pat:CPCSection>H</pat:CPCSection>
+						<pat:Class>01</pat:Class>
+						<pat:Subclass>L</pat:Subclass>
+						<pat:MainGroup>24</pat:MainGroup>
+						<pat:Subgroup>28</pat:Subgroup>
+						<com:SymbolPositionCode>L</com:SymbolPositionCode>
+						<pat:CPCClassificationValueCode>I</pat:CPCClassificationValueCode>
+						<pat:ActionDate>2015-01-20</pat:ActionDate>
+						<pat:GeneratingOfficeCode>US</pat:GeneratingOfficeCode>
+						<pat:CPCClassificationStatusCode>B</pat:CPCClassificationStatusCode>
+						<pat:PatentClassificationDataSourceCode>H</pat:PatentClassificationDataSourceCode>
+					</pat:CPCClassification>
+					<pat:CPCClassification>
+						<pat:ClassificationVersionDate>2013-01-01</pat:ClassificationVersionDate>
+						<pat:CPCSection>H</pat:CPCSection>
+						<pat:Class>01</pat:Class>
+						<pat:Subclass>L</pat:Subclass>
+						<pat:MainGroup>24</pat:MainGroup>
+						<pat:Subgroup>31</pat:Subgroup>
+						<com:SymbolPositionCode>L</com:SymbolPositionCode>
+						<pat:CPCClassificationValueCode>I</pat:CPCClassificationValueCode>
+						<pat:ActionDate>2015-01-20</pat:ActionDate>
+						<pat:GeneratingOfficeCode>US</pat:GeneratingOfficeCode>
+						<pat:CPCClassificationStatusCode>B</pat:CPCClassificationStatusCode>
+						<pat:PatentClassificationDataSourceCode>H</pat:PatentClassificationDataSourceCode>
+					</pat:CPCClassification>
+					<pat:CPCClassification>
+						<pat:ClassificationVersionDate>2013-01-01</pat:ClassificationVersionDate>
+						<pat:CPCSection>H</pat:CPCSection>
+						<pat:Class>01</pat:Class>
+						<pat:Subclass>L</pat:Subclass>
+						<pat:MainGroup>24</pat:MainGroup>
+						<pat:Subgroup>83</pat:Subgroup>
+						<com:SymbolPositionCode>L</com:SymbolPositionCode>
+						<pat:CPCClassificationValueCode>I</pat:CPCClassificationValueCode>
+						<pat:ActionDate>2015-01-20</pat:ActionDate>
+						<pat:GeneratingOfficeCode>US</pat:GeneratingOfficeCode>
+						<pat:CPCClassificationStatusCode>B</pat:CPCClassificationStatusCode>
+						<pat:PatentClassificationDataSourceCode>H</pat:PatentClassificationDataSourceCode>
+					</pat:CPCClassification>
+					<pat:CPCClassification>
+						<pat:ClassificationVersionDate>2013-01-01</pat:ClassificationVersionDate>
+						<pat:CPCSection>H</pat:CPCSection>
+						<pat:Class>01</pat:Class>
+						<pat:Subclass>L</pat:Subclass>
+						<pat:MainGroup>24</pat:MainGroup>
+						<pat:Subgroup>75</pat:Subgroup>
+						<com:SymbolPositionCode>L</com:SymbolPositionCode>
+						<pat:CPCClassificationValueCode>I</pat:CPCClassificationValueCode>
+						<pat:ActionDate>2015-01-20</pat:ActionDate>
+						<pat:GeneratingOfficeCode>US</pat:GeneratingOfficeCode>
+						<pat:CPCClassificationStatusCode>B</pat:CPCClassificationStatusCode>
+						<pat:PatentClassificationDataSourceCode>H</pat:PatentClassificationDataSourceCode>
+					</pat:CPCClassification>
+					<pat:CPCClassification>
+						<pat:ClassificationVersionDate>2013-01-01</pat:ClassificationVersionDate>
+						<pat:CPCSection>H</pat:CPCSection>
+						<pat:Class>01</pat:Class>
+						<pat:Subclass>L</pat:Subclass>
+						<pat:MainGroup>31</pat:MainGroup>
+						<pat:Subgroup>0203</pat:Subgroup>
+						<com:SymbolPositionCode>L</com:SymbolPositionCode>
+						<pat:CPCClassificationValueCode>A</pat:CPCClassificationValueCode>
+						<pat:ActionDate>2015-01-20</pat:ActionDate>
+						<pat:GeneratingOfficeCode>US</pat:GeneratingOfficeCode>
+						<pat:CPCClassificationStatusCode>B</pat:CPCClassificationStatusCode>
+						<pat:PatentClassificationDataSourceCode>H</pat:PatentClassificationDataSourceCode>
+					</pat:CPCClassification>
+					<pat:CPCClassification>
+						<pat:ClassificationVersionDate>2013-01-01</pat:ClassificationVersionDate>
+						<pat:CPCSection>H</pat:CPCSection>
+						<pat:Class>01</pat:Class>
+						<pat:Subclass>L</pat:Subclass>
+						<pat:MainGroup>2224</pat:MainGroup>
+						<pat:Subgroup>83099</pat:Subgroup>
+						<com:SymbolPositionCode>L</com:SymbolPositionCode>
+						<pat:CPCClassificationValueCode>A</pat:CPCClassificationValueCode>
+						<pat:ActionDate>2015-01-20</pat:ActionDate>
+						<pat:GeneratingOfficeCode>US</pat:GeneratingOfficeCode>
+						<pat:CPCClassificationStatusCode>B</pat:CPCClassificationStatusCode>
+						<pat:PatentClassificationDataSourceCode>H</pat:PatentClassificationDataSourceCode>
+					</pat:CPCClassification>
+					<pat:CPCClassification>
+						<pat:ClassificationVersionDate>2013-01-01</pat:ClassificationVersionDate>
+						<pat:CPCSection>H</pat:CPCSection>
+						<pat:Class>01</pat:Class>
+						<pat:Subclass>L</pat:Subclass>
+						<pat:MainGroup>2224</pat:MainGroup>
+						<pat:Subgroup>8385</pat:Subgroup>
+						<com:SymbolPositionCode>L</com:SymbolPositionCode>
+						<pat:CPCClassificationValueCode>A</pat:CPCClassificationValueCode>
+						<pat:ActionDate>2015-01-20</pat:ActionDate>
+						<pat:GeneratingOfficeCode>US</pat:GeneratingOfficeCode>
+						<pat:CPCClassificationStatusCode>B</pat:CPCClassificationStatusCode>
+						<pat:PatentClassificationDataSourceCode>H</pat:PatentClassificationDataSourceCode>
+					</pat:CPCClassification>
+					<pat:CPCClassification>
+						<pat:ClassificationVersionDate>2013-01-01</pat:ClassificationVersionDate>
+						<pat:CPCSection>H</pat:CPCSection>
+						<pat:Class>01</pat:Class>
+						<pat:Subclass>L</pat:Subclass>
+						<pat:MainGroup>2224</pat:MainGroup>
+						<pat:Subgroup>83894</pat:Subgroup>
+						<com:SymbolPositionCode>L</com:SymbolPositionCode>
+						<pat:CPCClassificationValueCode>A</pat:CPCClassificationValueCode>
+						<pat:ActionDate>2015-01-20</pat:ActionDate>
+						<pat:GeneratingOfficeCode>US</pat:GeneratingOfficeCode>
+						<pat:CPCClassificationStatusCode>B</pat:CPCClassificationStatusCode>
+						<pat:PatentClassificationDataSourceCode>H</pat:PatentClassificationDataSourceCode>
+					</pat:CPCClassification>
+					<pat:CPCClassification>
+						<pat:ClassificationVersionDate>2013-01-01</pat:ClassificationVersionDate>
+						<pat:CPCSection>H</pat:CPCSection>
+						<pat:Class>01</pat:Class>
+						<pat:Subclass>L</pat:Subclass>
+						<pat:MainGroup>2924</pat:MainGroup>
+						<pat:Subgroup>01012</pat:Subgroup>
+						<com:SymbolPositionCode>L</com:SymbolPositionCode>
+						<pat:CPCClassificationValueCode>A</pat:CPCClassificationValueCode>
+						<pat:ActionDate>2015-01-20</pat:ActionDate>
+						<pat:GeneratingOfficeCode>US</pat:GeneratingOfficeCode>
+						<pat:CPCClassificationStatusCode>B</pat:CPCClassificationStatusCode>
+						<pat:PatentClassificationDataSourceCode>H</pat:PatentClassificationDataSourceCode>
+					</pat:CPCClassification>
+					<pat:CPCClassification>
+						<pat:ClassificationVersionDate>2013-01-01</pat:ClassificationVersionDate>
+						<pat:CPCSection>H</pat:CPCSection>
+						<pat:Class>01</pat:Class>
+						<pat:Subclass>L</pat:Subclass>
+						<pat:MainGroup>2924</pat:MainGroup>
+						<pat:Subgroup>01013</pat:Subgroup>
+						<com:SymbolPositionCode>L</com:SymbolPositionCode>
+						<pat:CPCClassificationValueCode>A</pat:CPCClassificationValueCode>
+						<pat:ActionDate>2015-01-20</pat:ActionDate>
+						<pat:GeneratingOfficeCode>US</pat:GeneratingOfficeCode>
+						<pat:CPCClassificationStatusCode>B</pat:CPCClassificationStatusCode>
+						<pat:PatentClassificationDataSourceCode>H</pat:PatentClassificationDataSourceCode>
+					</pat:CPCClassification>
+					<pat:CPCClassification>
+						<pat:ClassificationVersionDate>2013-01-01</pat:ClassificationVersionDate>
+						<pat:CPCSection>H</pat:CPCSection>
+						<pat:Class>01</pat:Class>
+						<pat:Subclass>L</pat:Subclass>
+						<pat:MainGroup>2924</pat:MainGroup>
+						<pat:Subgroup>01015</pat:Subgroup>
+						<com:SymbolPositionCode>L</com:SymbolPositionCode>
+						<pat:CPCClassificationValueCode>A</pat:CPCClassificationValueCode>
+						<pat:ActionDate>2015-01-20</pat:ActionDate>
+						<pat:GeneratingOfficeCode>US</pat:GeneratingOfficeCode>
+						<pat:CPCClassificationStatusCode>B</pat:CPCClassificationStatusCode>
+						<pat:PatentClassificationDataSourceCode>H</pat:PatentClassificationDataSourceCode>
+					</pat:CPCClassification>
+					<pat:CPCClassification>
+						<pat:ClassificationVersionDate>2013-01-01</pat:ClassificationVersionDate>
+						<pat:CPCSection>H</pat:CPCSection>
+						<pat:Class>01</pat:Class>
+						<pat:Subclass>L</pat:Subclass>
+						<pat:MainGroup>2924</pat:MainGroup>
+						<pat:Subgroup>01018</pat:Subgroup>
+						<com:SymbolPositionCode>L</com:SymbolPositionCode>
+						<pat:CPCClassificationValueCode>A</pat:CPCClassificationValueCode>
+						<pat:ActionDate>2015-01-20</pat:ActionDate>
+						<pat:GeneratingOfficeCode>US</pat:GeneratingOfficeCode>
+						<pat:CPCClassificationStatusCode>B</pat:CPCClassificationStatusCode>
+						<pat:PatentClassificationDataSourceCode>H</pat:PatentClassificationDataSourceCode>
+					</pat:CPCClassification>
+					<pat:CPCClassification>
+						<pat:ClassificationVersionDate>2013-01-01</pat:ClassificationVersionDate>
+						<pat:CPCSection>H</pat:CPCSection>
+						<pat:Class>01</pat:Class>
+						<pat:Subclass>L</pat:Subclass>
+						<pat:MainGroup>2924</pat:MainGroup>
+						<pat:Subgroup>0102</pat:Subgroup>
+						<com:SymbolPositionCode>L</com:SymbolPositionCode>
+						<pat:CPCClassificationValueCode>A</pat:CPCClassificationValueCode>
+						<pat:ActionDate>2015-01-20</pat:ActionDate>
+						<pat:GeneratingOfficeCode>US</pat:GeneratingOfficeCode>
+						<pat:CPCClassificationStatusCode>B</pat:CPCClassificationStatusCode>
+						<pat:PatentClassificationDataSourceCode>H</pat:PatentClassificationDataSourceCode>
+					</pat:CPCClassification>
+					<pat:CPCClassification>
+						<pat:ClassificationVersionDate>2013-01-01</pat:ClassificationVersionDate>
+						<pat:CPCSection>H</pat:CPCSection>
+						<pat:Class>01</pat:Class>
+						<pat:Subclass>L</pat:Subclass>
+						<pat:MainGroup>2924</pat:MainGroup>
+						<pat:Subgroup>01033</pat:Subgroup>
+						<com:SymbolPositionCode>L</com:SymbolPositionCode>
+						<pat:CPCClassificationValueCode>A</pat:CPCClassificationValueCode>
+						<pat:ActionDate>2015-01-20</pat:ActionDate>
+						<pat:GeneratingOfficeCode>US</pat:GeneratingOfficeCode>
+						<pat:CPCClassificationStatusCode>B</pat:CPCClassificationStatusCode>
+						<pat:PatentClassificationDataSourceCode>H</pat:PatentClassificationDataSourceCode>
+					</pat:CPCClassification>
+					<pat:CPCClassification>
+						<pat:ClassificationVersionDate>2013-01-01</pat:ClassificationVersionDate>
+						<pat:CPCSection>H</pat:CPCSection>
+						<pat:Class>01</pat:Class>
+						<pat:Subclass>L</pat:Subclass>
+						<pat:MainGroup>2924</pat:MainGroup>
+						<pat:Subgroup>0104</pat:Subgroup>
+						<com:SymbolPositionCode>L</com:SymbolPositionCode>
+						<pat:CPCClassificationValueCode>A</pat:CPCClassificationValueCode>
+						<pat:ActionDate>2015-01-20</pat:ActionDate>
+						<pat:GeneratingOfficeCode>US</pat:GeneratingOfficeCode>
+						<pat:CPCClassificationStatusCode>B</pat:CPCClassificationStatusCode>
+						<pat:PatentClassificationDataSourceCode>H</pat:PatentClassificationDataSourceCode>
+					</pat:CPCClassification>
+					<pat:CPCClassification>
+						<pat:ClassificationVersionDate>2013-01-01</pat:ClassificationVersionDate>
+						<pat:CPCSection>H</pat:CPCSection>
+						<pat:Class>01</pat:Class>
+						<pat:Subclass>L</pat:Subclass>
+						<pat:MainGroup>2924</pat:MainGroup>
+						<pat:Subgroup>0105</pat:Subgroup>
+						<com:SymbolPositionCode>L</com:SymbolPositionCode>
+						<pat:CPCClassificationValueCode>A</pat:CPCClassificationValueCode>
+						<pat:ActionDate>2015-01-20</pat:ActionDate>
+						<pat:GeneratingOfficeCode>US</pat:GeneratingOfficeCode>
+						<pat:CPCClassificationStatusCode>B</pat:CPCClassificationStatusCode>
+						<pat:PatentClassificationDataSourceCode>H</pat:PatentClassificationDataSourceCode>
+					</pat:CPCClassification>
+					<pat:CPCClassification>
+						<pat:ClassificationVersionDate>2013-01-01</pat:ClassificationVersionDate>
+						<pat:CPCSection>H</pat:CPCSection>
+						<pat:Class>01</pat:Class>
+						<pat:Subclass>L</pat:Subclass>
+						<pat:MainGroup>2924</pat:MainGroup>
+						<pat:Subgroup>01051</pat:Subgroup>
+						<com:SymbolPositionCode>L</com:SymbolPositionCode>
+						<pat:CPCClassificationValueCode>A</pat:CPCClassificationValueCode>
+						<pat:ActionDate>2015-01-20</pat:ActionDate>
+						<pat:GeneratingOfficeCode>US</pat:GeneratingOfficeCode>
+						<pat:CPCClassificationStatusCode>B</pat:CPCClassificationStatusCode>
+						<pat:PatentClassificationDataSourceCode>H</pat:PatentClassificationDataSourceCode>
+					</pat:CPCClassification>
+					<pat:CPCClassification>
+						<pat:ClassificationVersionDate>2013-01-01</pat:ClassificationVersionDate>
+						<pat:CPCSection>H</pat:CPCSection>
+						<pat:Class>01</pat:Class>
+						<pat:Subclass>L</pat:Subclass>
+						<pat:MainGroup>2924</pat:MainGroup>
+						<pat:Subgroup>01082</pat:Subgroup>
+						<com:SymbolPositionCode>L</com:SymbolPositionCode>
+						<pat:CPCClassificationValueCode>A</pat:CPCClassificationValueCode>
+						<pat:ActionDate>2015-01-20</pat:ActionDate>
+						<pat:GeneratingOfficeCode>US</pat:GeneratingOfficeCode>
+						<pat:CPCClassificationStatusCode>B</pat:CPCClassificationStatusCode>
+						<pat:PatentClassificationDataSourceCode>H</pat:PatentClassificationDataSourceCode>
+					</pat:CPCClassification>
+					<pat:CPCClassification>
+						<pat:ClassificationVersionDate>2013-01-01</pat:ClassificationVersionDate>
+						<pat:CPCSection>H</pat:CPCSection>
+						<pat:Class>01</pat:Class>
+						<pat:Subclass>L</pat:Subclass>
+						<pat:MainGroup>2924</pat:MainGroup>
+						<pat:Subgroup>04941</pat:Subgroup>
+						<com:SymbolPositionCode>L</com:SymbolPositionCode>
+						<pat:CPCClassificationValueCode>A</pat:CPCClassificationValueCode>
+						<pat:ActionDate>2015-01-20</pat:ActionDate>
+						<pat:GeneratingOfficeCode>US</pat:GeneratingOfficeCode>
+						<pat:CPCClassificationStatusCode>B</pat:CPCClassificationStatusCode>
+						<pat:PatentClassificationDataSourceCode>H</pat:PatentClassificationDataSourceCode>
+					</pat:CPCClassification>
+					<pat:CPCClassification>
+						<pat:ClassificationVersionDate>2013-01-01</pat:ClassificationVersionDate>
+						<pat:CPCSection>H</pat:CPCSection>
+						<pat:Class>01</pat:Class>
+						<pat:Subclass>L</pat:Subclass>
+						<pat:MainGroup>2924</pat:MainGroup>
+						<pat:Subgroup>07802</pat:Subgroup>
+						<com:SymbolPositionCode>L</com:SymbolPositionCode>
+						<pat:CPCClassificationValueCode>A</pat:CPCClassificationValueCode>
+						<pat:ActionDate>2015-01-20</pat:ActionDate>
+						<pat:GeneratingOfficeCode>US</pat:GeneratingOfficeCode>
+						<pat:CPCClassificationStatusCode>B</pat:CPCClassificationStatusCode>
+						<pat:PatentClassificationDataSourceCode>H</pat:PatentClassificationDataSourceCode>
+					</pat:CPCClassification>
+					<pat:CPCClassification>
+						<pat:ClassificationVersionDate>2013-01-01</pat:ClassificationVersionDate>
+						<pat:CPCSection>H</pat:CPCSection>
+						<pat:Class>01</pat:Class>
+						<pat:Subclass>L</pat:Subclass>
+						<pat:MainGroup>2924</pat:MainGroup>
+						<pat:Subgroup>01006</pat:Subgroup>
+						<com:SymbolPositionCode>L</com:SymbolPositionCode>
+						<pat:CPCClassificationValueCode>A</pat:CPCClassificationValueCode>
+						<pat:ActionDate>2015-01-20</pat:ActionDate>
+						<pat:GeneratingOfficeCode>US</pat:GeneratingOfficeCode>
+						<pat:CPCClassificationStatusCode>B</pat:CPCClassificationStatusCode>
+						<pat:PatentClassificationDataSourceCode>H</pat:PatentClassificationDataSourceCode>
+					</pat:CPCClassification>
+					<pat:CPCClassification>
+						<pat:ClassificationVersionDate>2013-01-01</pat:ClassificationVersionDate>
+						<pat:CPCSection>H</pat:CPCSection>
+						<pat:Class>01</pat:Class>
+						<pat:Subclass>L</pat:Subclass>
+						<pat:MainGroup>2924</pat:MainGroup>
+						<pat:Subgroup>01072</pat:Subgroup>
+						<com:SymbolPositionCode>L</com:SymbolPositionCode>
+						<pat:CPCClassificationValueCode>A</pat:CPCClassificationValueCode>
+						<pat:ActionDate>2015-01-20</pat:ActionDate>
+						<pat:GeneratingOfficeCode>US</pat:GeneratingOfficeCode>
+						<pat:CPCClassificationStatusCode>B</pat:CPCClassificationStatusCode>
+						<pat:PatentClassificationDataSourceCode>H</pat:PatentClassificationDataSourceCode>
+					</pat:CPCClassification>
+					<pat:CPCClassification>
+						<pat:ClassificationVersionDate>2013-01-01</pat:ClassificationVersionDate>
+						<pat:CPCSection>H</pat:CPCSection>
+						<pat:Class>01</pat:Class>
+						<pat:Subclass>L</pat:Subclass>
+						<pat:MainGroup>2924</pat:MainGroup>
+						<pat:Subgroup>014</pat:Subgroup>
+						<com:SymbolPositionCode>L</com:SymbolPositionCode>
+						<pat:CPCClassificationValueCode>A</pat:CPCClassificationValueCode>
+						<pat:ActionDate>2015-01-20</pat:ActionDate>
+						<pat:GeneratingOfficeCode>US</pat:GeneratingOfficeCode>
+						<pat:CPCClassificationStatusCode>B</pat:CPCClassificationStatusCode>
+						<pat:PatentClassificationDataSourceCode>H</pat:PatentClassificationDataSourceCode>
+					</pat:CPCClassification>
+					<pat:CPCCombinationSet>
+						<pat:CPCGroupNumber>1</pat:CPCGroupNumber>
+						<pat:CPCCombinationRank>
+							<pat:CPCRankNumber>1</pat:CPCRankNumber>
+							<pat:CPCClassification>
+								<pat:ClassificationVersionDate>2013-01-01</pat:ClassificationVersionDate>
+								<pat:CPCSection>H</pat:CPCSection>
+								<pat:Class>01</pat:Class>
+								<pat:Subclass>L</pat:Subclass>
+								<pat:MainGroup>2924</pat:MainGroup>
+								<pat:Subgroup>3512</pat:Subgroup>
+								<com:SymbolPositionCode>L</com:SymbolPositionCode>
+								<pat:CPCClassificationValueCode>A</pat:CPCClassificationValueCode>
+								<pat:ActionDate>2015-01-20</pat:ActionDate>
+								<pat:GeneratingOfficeCode>US</pat:GeneratingOfficeCode>
+								<pat:CPCClassificationStatusCode>B</pat:CPCClassificationStatusCode>
+								<pat:PatentClassificationDataSourceCode>H</pat:PatentClassificationDataSourceCode>
+							</pat:CPCClassification>
+						</pat:CPCCombinationRank>
+						<pat:CPCCombinationRank>
+							<pat:CPCRankNumber>2</pat:CPCRankNumber>
+							<pat:CPCClassification>
+								<pat:ClassificationVersionDate>2013-01-01</pat:ClassificationVersionDate>
+								<pat:CPCSection>H</pat:CPCSection>
+								<pat:Class>01</pat:Class>
+								<pat:Subclass>L</pat:Subclass>
+								<pat:MainGroup>2924</pat:MainGroup>
+								<pat:Subgroup>00</pat:Subgroup>
+								<com:SymbolPositionCode>L</com:SymbolPositionCode>
+								<pat:CPCClassificationValueCode>A</pat:CPCClassificationValueCode>
+								<pat:ActionDate>2015-01-20</pat:ActionDate>
+								<pat:GeneratingOfficeCode>US</pat:GeneratingOfficeCode>
+								<pat:CPCClassificationStatusCode>B</pat:CPCClassificationStatusCode>
+								<pat:PatentClassificationDataSourceCode>H</pat:PatentClassificationDataSourceCode>
+							</pat:CPCClassification>
+						</pat:CPCCombinationRank>
+					</pat:CPCCombinationSet>
+				</pat:FurtherCPC>
+			</pat:CPCClassificationBag>
+		</pat:PatentClassificationBag>
+		<pat:InventionTitleBag>
+			<pat:InventionTitle com:id="d2e61" pat:inventionTitleCategory="In grant publication">Manufacturing method for room-temperature substrate bonding</pat:InventionTitle>
+		</pat:InventionTitleBag>
+		<pat:ReferenceCitationBag>
+			<pat:ReferenceCitation pat:citingPartyCategory="Applicant">
+				<com:PatentCitation com:sequenceNumber="00001">
+					<com:CitedPatentDocumentIdentification>
+						<com:IPOfficeCode>US</com:IPOfficeCode>
+						<com:DocumentNumber>6054363</com:DocumentNumber>
+						<com:EntityName>Sakaguchi et al.</com:EntityName>
+						<com:PatentDocumentKindCode>A</com:PatentDocumentKindCode>
+						<com:PatentDocumentDate>2000-04</com:PatentDocumentDate>
+					</com:CitedPatentDocumentIdentification>
+				</com:PatentCitation>
+			</pat:ReferenceCitation>
+			<pat:ReferenceCitation pat:citingPartyCategory="Applicant">
+				<com:PatentCitation com:sequenceNumber="00002">
+					<com:CitedPatentDocumentIdentification>
+						<com:IPOfficeCode>US</com:IPOfficeCode>
+						<com:DocumentNumber>6639249</com:DocumentNumber>
+						<com:EntityName>Valliath</com:EntityName>
+						<com:PatentDocumentKindCode>B2</com:PatentDocumentKindCode>
+						<com:PatentDocumentDate>2003-10</com:PatentDocumentDate>
+					</com:CitedPatentDocumentIdentification>
+				</com:PatentCitation>
+			</pat:ReferenceCitation>
+			<pat:ReferenceCitation pat:citingPartyCategory="Applicant">
+				<com:PatentCitation com:sequenceNumber="00003">
+					<com:CitedPatentDocumentIdentification>
+						<com:IPOfficeCode>US</com:IPOfficeCode>
+						<com:DocumentNumber>7101735</com:DocumentNumber>
+						<com:EntityName>Noma et al.</com:EntityName>
+						<com:PatentDocumentKindCode>B2</com:PatentDocumentKindCode>
+						<com:PatentDocumentDate>2006-09</com:PatentDocumentDate>
+					</com:CitedPatentDocumentIdentification>
+				</com:PatentCitation>
+			</pat:ReferenceCitation>
+			<pat:ReferenceCitation pat:citingPartyCategory="Applicant">
+				<com:PatentCitation com:sequenceNumber="00004">
+					<com:CitedPatentDocumentIdentification>
+						<com:IPOfficeCode>US</com:IPOfficeCode>
+						<com:DocumentNumber>2004/0226162</com:DocumentNumber>
+						<com:EntityName>Miura et al.</com:EntityName>
+						<com:PatentDocumentKindCode>A1</com:PatentDocumentKindCode>
+						<com:PatentDocumentDate>2004-11</com:PatentDocumentDate>
+					</com:CitedPatentDocumentIdentification>
+				</com:PatentCitation>
+			</pat:ReferenceCitation>
+			<pat:ReferenceCitation pat:citingPartyCategory="Examiner">
+				<com:PatentCitation com:sequenceNumber="00005">
+					<com:CitedPatentDocumentIdentification>
+						<com:IPOfficeCode>US</com:IPOfficeCode>
+						<com:DocumentNumber>2004/0235266</com:DocumentNumber>
+						<com:EntityName>Tong</com:EntityName>
+						<com:PatentDocumentKindCode>A1</com:PatentDocumentKindCode>
+						<com:PatentDocumentDate>2004-11</com:PatentDocumentDate>
+					</com:CitedPatentDocumentIdentification>
+				</com:PatentCitation>
+				<pat:PatentClassificationBag>
+					<pat:NationalClassification>
+						<com:IPOfficeCode>US</com:IPOfficeCode>
+						<pat:MainNationalClassification>
+							<pat:NationalClass>438</pat:NationalClass>
+							<pat:NationalSubclass>455</pat:NationalSubclass>
+						</pat:MainNationalClassification>
+					</pat:NationalClassification>
+				</pat:PatentClassificationBag>
+			</pat:ReferenceCitation>
+			<pat:ReferenceCitation pat:citingPartyCategory="Applicant">
+				<com:PatentCitation com:sequenceNumber="00006">
+					<com:CitedPatentDocumentIdentification>
+						<com:IPOfficeCode>US</com:IPOfficeCode>
+						<com:DocumentNumber>2006/0286388</com:DocumentNumber>
+						<com:EntityName>Wei et al.</com:EntityName>
+						<com:PatentDocumentKindCode>A1</com:PatentDocumentKindCode>
+						<com:PatentDocumentDate>2006-12</com:PatentDocumentDate>
+					</com:CitedPatentDocumentIdentification>
+				</com:PatentCitation>
+			</pat:ReferenceCitation>
+			<pat:ReferenceCitation pat:citingPartyCategory="Examiner">
+				<com:PatentCitation com:sequenceNumber="00007">
+					<com:CitedPatentDocumentIdentification>
+						<com:IPOfficeCode>US</com:IPOfficeCode>
+						<com:DocumentNumber>2008/0179547</com:DocumentNumber>
+						<com:EntityName>Henley</com:EntityName>
+						<com:PatentDocumentKindCode>A1</com:PatentDocumentKindCode>
+						<com:PatentDocumentDate>2008-07</com:PatentDocumentDate>
+					</com:CitedPatentDocumentIdentification>
+				</com:PatentCitation>
+				<pat:PatentClassificationBag>
+					<pat:NationalClassification>
+						<com:IPOfficeCode>US</com:IPOfficeCode>
+						<pat:MainNationalClassification>
+							<pat:NationalClass>250</pat:NationalClass>
+							<pat:NationalSubclass>492.21</pat:NationalSubclass>
+						</pat:MainNationalClassification>
+					</pat:NationalClassification>
+					<pat:CPCClassificationBag>
+						<pat:ReferenceCitationCPCSymbolText>H01L 21/76254</pat:ReferenceCitationCPCSymbolText>
+					</pat:CPCClassificationBag>
+				</pat:PatentClassificationBag>
+			</pat:ReferenceCitation>
+			<pat:ReferenceCitation pat:citingPartyCategory="Applicant">
+				<com:PatentCitation com:sequenceNumber="00008">
+					<com:CitedPatentDocumentIdentification>
+						<com:IPOfficeCode>JP</com:IPOfficeCode>
+						<com:DocumentNumber>63-101085</com:DocumentNumber>
+						<com:PatentDocumentKindCode>A</com:PatentDocumentKindCode>
+						<com:PatentDocumentDate>1988-05</com:PatentDocumentDate>
+					</com:CitedPatentDocumentIdentification>
+				</com:PatentCitation>
+			</pat:ReferenceCitation>
+			<pat:ReferenceCitation pat:citingPartyCategory="Applicant">
+				<com:PatentCitation com:sequenceNumber="00009">
+					<com:CitedPatentDocumentIdentification>
+						<com:IPOfficeCode>JP</com:IPOfficeCode>
+						<com:DocumentNumber>6-166550</com:DocumentNumber>
+						<com:PatentDocumentKindCode>A</com:PatentDocumentKindCode>
+						<com:PatentDocumentDate>1994-06</com:PatentDocumentDate>
+					</com:CitedPatentDocumentIdentification>
+				</com:PatentCitation>
+			</pat:ReferenceCitation>
+			<pat:ReferenceCitation pat:citingPartyCategory="Applicant">
+				<com:PatentCitation com:sequenceNumber="00010">
+					<com:CitedPatentDocumentIdentification>
+						<com:IPOfficeCode>JP</com:IPOfficeCode>
+						<com:DocumentNumber>10-200079</com:DocumentNumber>
+						<com:PatentDocumentKindCode>A</com:PatentDocumentKindCode>
+						<com:PatentDocumentDate>1998-07</com:PatentDocumentDate>
+					</com:CitedPatentDocumentIdentification>
+				</com:PatentCitation>
+			</pat:ReferenceCitation>
+			<pat:ReferenceCitation pat:citingPartyCategory="Applicant">
+				<com:PatentCitation com:sequenceNumber="00011">
+					<com:CitedPatentDocumentIdentification>
+						<com:IPOfficeCode>JP</com:IPOfficeCode>
+						<com:DocumentNumber>2000-56265</com:DocumentNumber>
+						<com:PatentDocumentKindCode>A</com:PatentDocumentKindCode>
+						<com:PatentDocumentDate>2000-02</com:PatentDocumentDate>
+					</com:CitedPatentDocumentIdentification>
+				</com:PatentCitation>
+			</pat:ReferenceCitation>
+			<pat:ReferenceCitation pat:citingPartyCategory="Applicant">
+				<com:PatentCitation com:sequenceNumber="00012">
+					<com:CitedPatentDocumentIdentification>
+						<com:IPOfficeCode>JP</com:IPOfficeCode>
+						<com:DocumentNumber>2004-54170</com:DocumentNumber>
+						<com:PatentDocumentKindCode>A</com:PatentDocumentKindCode>
+						<com:PatentDocumentDate>2004-02</com:PatentDocumentDate>
+					</com:CitedPatentDocumentIdentification>
+				</com:PatentCitation>
+			</pat:ReferenceCitation>
+			<pat:ReferenceCitation pat:citingPartyCategory="Applicant">
+				<com:PatentCitation com:sequenceNumber="00013">
+					<com:CitedPatentDocumentIdentification>
+						<com:IPOfficeCode>JP</com:IPOfficeCode>
+						<com:DocumentNumber>2004-337927</com:DocumentNumber>
+						<com:PatentDocumentKindCode>A</com:PatentDocumentKindCode>
+						<com:PatentDocumentDate>2004-12</com:PatentDocumentDate>
+					</com:CitedPatentDocumentIdentification>
+				</com:PatentCitation>
+			</pat:ReferenceCitation>
+			<pat:ReferenceCitation pat:citingPartyCategory="Applicant">
+				<com:PatentCitation com:sequenceNumber="00014">
+					<com:CitedPatentDocumentIdentification>
+						<com:IPOfficeCode>JP</com:IPOfficeCode>
+						<com:DocumentNumber>2004-343359</com:DocumentNumber>
+						<com:PatentDocumentKindCode>A</com:PatentDocumentKindCode>
+						<com:PatentDocumentDate>2004-12</com:PatentDocumentDate>
+					</com:CitedPatentDocumentIdentification>
+				</com:PatentCitation>
+			</pat:ReferenceCitation>
+			<pat:ReferenceCitation pat:citingPartyCategory="Applicant">
+				<com:PatentCitation com:sequenceNumber="00015">
+					<com:CitedPatentDocumentIdentification>
+						<com:IPOfficeCode>JP</com:IPOfficeCode>
+						<com:DocumentNumber>2005-70682</com:DocumentNumber>
+						<com:PatentDocumentKindCode>A</com:PatentDocumentKindCode>
+						<com:PatentDocumentDate>2005-03</com:PatentDocumentDate>
+					</com:CitedPatentDocumentIdentification>
+				</com:PatentCitation>
+			</pat:ReferenceCitation>
+			<pat:ReferenceCitation pat:citingPartyCategory="Applicant">
+				<com:PatentCitation com:sequenceNumber="00016">
+					<com:CitedPatentDocumentIdentification>
+						<com:IPOfficeCode>JP</com:IPOfficeCode>
+						<com:DocumentNumber>2005-104810</com:DocumentNumber>
+						<com:PatentDocumentKindCode>A</com:PatentDocumentKindCode>
+						<com:PatentDocumentDate>2005-04</com:PatentDocumentDate>
+					</com:CitedPatentDocumentIdentification>
+				</com:PatentCitation>
+			</pat:ReferenceCitation>
+			<pat:ReferenceCitation pat:citingPartyCategory="Applicant">
+				<com:PatentCitation com:sequenceNumber="00017">
+					<com:CitedPatentDocumentIdentification>
+						<com:IPOfficeCode>JP</com:IPOfficeCode>
+						<com:DocumentNumber>2007-42750</com:DocumentNumber>
+						<com:PatentDocumentKindCode>A</com:PatentDocumentKindCode>
+						<com:PatentDocumentDate>2007-02</com:PatentDocumentDate>
+					</com:CitedPatentDocumentIdentification>
+				</com:PatentCitation>
+			</pat:ReferenceCitation>
+			<pat:ReferenceCitation pat:citingPartyCategory="Examiner">
+				<com:NPLCitation com:sequenceNumber="00018">
+					<com:NPLCitationText>Gary S. May, Fundamantals of Semiconductor Fabrication,2004, John Wiley and Sons, pp. 41-45.</com:NPLCitationText>
+				</com:NPLCitation>
+			</pat:ReferenceCitation>
+			<pat:ReferenceCitation pat:citingPartyCategory="Examiner">
+				<com:NPLCitation com:sequenceNumber="00019">
+					<com:NPLCitationText>Stanely Wolf, Silicon Processing for the VLSI ERA, 2000, Lattice Press, vol. 1, pp. 265-268.</com:NPLCitationText>
+				</com:NPLCitation>
+			</pat:ReferenceCitation>
+			<pat:ReferenceCitation pat:citingPartyCategory="Examiner">
+				<com:NPLCitation com:sequenceNumber="00020">
+					<com:NPLCitationText>M.M.R Howlader et al., Room temperature wafer level glass/glass bonding, Dec. 19, 2005,Sensors and Actuators A 127 (2006), pp. 31-36.</com:NPLCitationText>
+				</com:NPLCitation>
+			</pat:ReferenceCitation>
+			<pat:ReferenceCitation pat:citingPartyCategory="Applicant">
+				<com:NPLCitation com:sequenceNumber="00021">
+					<com:NPLCitationText>C. Tudryn, &#x201c;Characterization of Anodic Bonding&#x201d;, The Catholic University of America, 2000, pp. 3, 83-118.</com:NPLCitationText>
+				</com:NPLCitation>
+			</pat:ReferenceCitation>
+			<pat:ReferenceCitation pat:citingPartyCategory="Applicant">
+				<com:NPLCitation com:sequenceNumber="00022">
+					<com:NPLCitationText>George Wallis, &#x201c;Field Assisted Glass Sealing&#x201d; Electrocomponent Science and Technology 1975, vol. 2, No. 1, pp. 45-53.</com:NPLCitationText>
+				</com:NPLCitation>
+			</pat:ReferenceCitation>
+			<pat:ReferenceCitation pat:citingPartyCategory="Applicant">
+				<com:NPLCitation com:sequenceNumber="00023">
+					<com:NPLCitationText>H. Takagi, et al. &#x201c;Low-Temperature Direct Bonding of Silicon and Silicon Dioxide by the Surface Activation Method&#x201d;, Sensors and Actuators A 70 (1998) pp. 164-170.</com:NPLCitationText>
+				</com:NPLCitation>
+			</pat:ReferenceCitation>
+			<pat:ReferenceCitation pat:citingPartyCategory="Applicant">
+				<com:NPLCitation com:sequenceNumber="00024">
+					<com:NPLCitationText>Hideki Takagi, &#x201c;Room-Temperature Bonding of Silicon Wafers by means of the Surface Activation Method&#x201d;, Report of Mechanical Engineering Laboratory No. 189 (2000).</com:NPLCitationText>
+				</com:NPLCitation>
+			</pat:ReferenceCitation>
+			<pat:ReferenceCitation pat:citingPartyCategory="Applicant">
+				<com:NPLCitation com:sequenceNumber="00025">
+					<com:NPLCitationText>Howlader, et al. &#x201c;Room Temperature Wafer Level Glass/Glass Bonding&#x201d; Sensors and Actuators A 127 (2006) pp. 31-36.</com:NPLCitationText>
+				</com:NPLCitation>
+			</pat:ReferenceCitation>
+			<pat:ReferenceCitation pat:citingPartyCategory="Applicant">
+				<com:NPLCitation com:sequenceNumber="00026">
+					<com:NPLCitationText>Howlader, et al. &#x201c;Sequential Plasma Activation Process for Microfluidics Packaging at Room Temperature&#x201d; 2005 Electronic Components and Technology Conference, pp. 611-616.</com:NPLCitationText>
+				</com:NPLCitation>
+			</pat:ReferenceCitation>
+			<pat:ReferenceCitation pat:citingPartyCategory="Applicant">
+				<com:NPLCitation com:sequenceNumber="00027">
+					<com:NPLCitationText>Kondou, et al. &#x201c;Si Nanoadhesion Layer for Enhanced SiO2&#x2014;SiN Wafer Bonding&#x201d; Scripta Materialia 65 (2011) pp. 320-322.</com:NPLCitationText>
+				</com:NPLCitation>
+			</pat:ReferenceCitation>
+			<pat:ReferenceCitation pat:citingPartyCategory="Applicant">
+				<com:NPLCitation com:sequenceNumber="00028">
+					<com:NPLCitationText>Satoru Suehara et al., &#x201c;Low Temperature Glass Wafer Bonding with Sequential Plasma Activation&#x201d;, The Transactions of the Institute of Electronics, Information and Communication Engineers. C, Nov. 1, 2005, vol. J88-C, No. 11, pp. 920 to 927.</com:NPLCitationText>
+				</com:NPLCitation>
+			</pat:ReferenceCitation>
+			<pat:ReferenceCitation pat:citingPartyCategory="Applicant">
+				<com:NPLCitation com:sequenceNumber="00029">
+					<com:NPLCitationText>Takagi et al., &#x201c;Corrosion resistant and highly reliable integration technology for MEMS devices&#x201d;, Proceedings of NEDO (New Energy and Industrial Technology Development Organization), 2003 Research Promotion Business Accomplishment Report Meeting, pp. 220-225, 2003.</com:NPLCitationText>
+				</com:NPLCitation>
+			</pat:ReferenceCitation>
+			<pat:ReferenceCitation pat:citingPartyCategory="Applicant">
+				<com:NPLCitation com:sequenceNumber="00030">
+					<com:NPLCitationText>Xing, et al &#x201c;TEM Study of the Interface of Anodic-bonded Si/glass&#x201d;, Scripta Materialia 47 (2002), pp. 577-582.</com:NPLCitationText>
+				</com:NPLCitation>
+			</pat:ReferenceCitation>
+		</pat:ReferenceCitationBag>
+		<pat:ClaimTotalQuantity>10</pat:ClaimTotalQuantity>
+		<pat:SearchField>
+			<pat:PatentClassificationBag>
+				<pat:NationalClassification>
+					<com:IPOfficeCode>US</com:IPOfficeCode>
+					<pat:MainNationalClassification>
+						<pat:NationalClass>438</pat:NationalClass>
+						<pat:NationalSubclass>455</pat:NationalSubclass>
+					</pat:MainNationalClassification>
+				</pat:NationalClassification>
+				<pat:NationalClassification>
+					<com:IPOfficeCode>US</com:IPOfficeCode>
+					<pat:MainNationalClassification>
+						<pat:NationalClass>438</pat:NationalClass>
+						<pat:NationalSubclass>456</pat:NationalSubclass>
+					</pat:MainNationalClassification>
+				</pat:NationalClassification>
+				<pat:NationalClassification>
+					<com:IPOfficeCode>US</com:IPOfficeCode>
+					<pat:MainNationalClassification>
+						<pat:NationalClass>257</pat:NationalClass>
+						<pat:NationalSubclass>E23.009</pat:NationalSubclass>
+					</pat:MainNationalClassification>
+				</pat:NationalClassification>
+				<pat:NationalClassification>
+					<com:IPOfficeCode>US</com:IPOfficeCode>
+					<pat:MainNationalClassification>
+						<pat:NationalClass>257</pat:NationalClass>
+						<pat:NationalSubclass>E23.192</pat:NationalSubclass>
+					</pat:MainNationalClassification>
+				</pat:NationalClassification>
+				<pat:CPCClassificationBag>
+					<pat:SearchFieldCPCSymbolText>B81C 2203/0109</pat:SearchFieldCPCSymbolText>
+					<pat:SearchFieldCPCSymbolText>B81C 2203/0118</pat:SearchFieldCPCSymbolText>
+					<pat:SearchFieldCPCSymbolText>B81C 2201/019</pat:SearchFieldCPCSymbolText>
+					<pat:SearchFieldCPCSymbolText>H01L 21/2007</pat:SearchFieldCPCSymbolText>
+					<pat:SearchFieldCPCSymbolText>H01L 24/83</pat:SearchFieldCPCSymbolText>
+				</pat:CPCClassificationBag>
+			</pat:PatentClassificationBag>
+		</pat:SearchField>
+		<pat:FigureBag>
+			<pat:DrawingSheetTotalQuantity>6</pat:DrawingSheetTotalQuantity>
+			<pat:FigureTotalQuantity>11</pat:FigureTotalQuantity>
+		</pat:FigureBag>
+		<pat:RelatedDocumentBag>
+			<pat:Division>
+				<pat:ParentDocument>
+					<pat:PatentDocumentIdentification>
+						<pat:ApplicationIdentification>
+							<com:IPOfficeCode>US</com:IPOfficeCode>
+							<com:ApplicationNumber>
+								<com:ApplicationNumberText>12741916</com:ApplicationNumberText>
+							</com:ApplicationNumber>
+						</pat:ApplicationIdentification>
+					</pat:PatentDocumentIdentification>
+					<pat:ParentDocumentStatusCode>ABANDONED</pat:ParentDocumentStatusCode>
+					<pat:PCTDocumentParent>
+						<pat:ApplicationIdentification>
+							<com:IPOfficeCode>WO</com:IPOfficeCode>
+							<com:ApplicationNumber>
+								<com:ApplicationNumberText>PCT/JP2008/068544</com:ApplicationNumberText>
+							</com:ApplicationNumber>
+							<pat:FilingDate>2008-10-14</pat:FilingDate>
+						</pat:ApplicationIdentification>
+					</pat:PCTDocumentParent>
+				</pat:ParentDocument>
+				<pat:ChildDocument>
+					<pat:PatentDocumentIdentification>
+						<pat:ApplicationIdentification>
+							<com:IPOfficeCode>US</com:IPOfficeCode>
+							<com:ApplicationNumber>
+								<com:ApplicationNumberText>13797521</com:ApplicationNumberText>
+							</com:ApplicationNumber>
+						</pat:ApplicationIdentification>
+					</pat:PatentDocumentIdentification>
+				</pat:ChildDocument>
+			</pat:Division>
+			<pat:RelatedPublication>
+				<pat:PatentDocumentIdentification>
+					<pat:PatentPublicationIdentification>
+						<com:IPOfficeCode>US</com:IPOfficeCode>
+						<pat:PublicationNumber>20130213561</pat:PublicationNumber>
+						<com:PatentDocumentKindCode>A1</com:PatentDocumentKindCode>
+						<com:PublicationDate>2013-08-22</com:PublicationDate>
+					</pat:PatentPublicationIdentification>
+				</pat:PatentDocumentIdentification>
+			</pat:RelatedPublication>
+		</pat:RelatedDocumentBag>
+		<pat:ExemplaryClaimBag>
+			<pat:ClaimNumber>8</pat:ClaimNumber>
+		</pat:ExemplaryClaimBag>
+		<pat:PartyBag>
+			<pat:ApplicantBag>
+				<pat:Applicant com:sequenceNumber="001">
+					<com:PublicationContact>
+						<com:Name>
+							<com:PersonName>
+								<com:PersonStructuredName>
+									<com:FirstName>Jun</com:FirstName>
+									<com:LastName>Utsumi</com:LastName>
+								</com:PersonStructuredName>
+							</com:PersonName>
+						</com:Name>
+					</com:PublicationContact>
+					<pat:ApplicantCategory>Applicant</pat:ApplicantCategory>
+					<pat:DesignationCategory>US only</pat:DesignationCategory>
+				</pat:Applicant>
+				<pat:Applicant com:sequenceNumber="002">
+					<com:PublicationContact>
+						<com:Name>
+							<com:PersonName>
+								<com:PersonStructuredName>
+									<com:FirstName>Takayuki</com:FirstName>
+									<com:LastName>Goto</com:LastName>
+								</com:PersonStructuredName>
+							</com:PersonName>
+						</com:Name>
+					</com:PublicationContact>
+					<pat:ApplicantCategory>Applicant</pat:ApplicantCategory>
+					<pat:DesignationCategory>US only</pat:DesignationCategory>
+				</pat:Applicant>
+				<pat:Applicant com:sequenceNumber="003">
+					<com:PublicationContact>
+						<com:Name>
+							<com:PersonName>
+								<com:PersonStructuredName>
+									<com:FirstName>Kensuke</com:FirstName>
+									<com:LastName>Ide</com:LastName>
+								</com:PersonStructuredName>
+							</com:PersonName>
+						</com:Name>
+					</com:PublicationContact>
+					<pat:ApplicantCategory>Applicant</pat:ApplicantCategory>
+					<pat:DesignationCategory>US only</pat:DesignationCategory>
+				</pat:Applicant>
+				<pat:Applicant com:sequenceNumber="004">
+					<com:PublicationContact>
+						<com:Name>
+							<com:PersonName>
+								<com:PersonStructuredName>
+									<com:FirstName>Hideki</com:FirstName>
+									<com:LastName>Takagi</com:LastName>
+								</com:PersonStructuredName>
+							</com:PersonName>
+						</com:Name>
+					</com:PublicationContact>
+					<pat:ApplicantCategory>Applicant</pat:ApplicantCategory>
+					<pat:DesignationCategory>US only</pat:DesignationCategory>
+				</pat:Applicant>
+				<pat:Applicant com:sequenceNumber="005">
+					<com:PublicationContact>
+						<com:Name>
+							<com:PersonName>
+								<com:PersonStructuredName>
+									<com:FirstName>Masahiro</com:FirstName>
+									<com:LastName>Funayama</com:LastName>
+								</com:PersonStructuredName>
+							</com:PersonName>
+						</com:Name>
+					</com:PublicationContact>
+					<pat:ApplicantCategory>Applicant</pat:ApplicantCategory>
+					<pat:DesignationCategory>US only</pat:DesignationCategory>
+				</pat:Applicant>
+			</pat:ApplicantBag>
+			<pat:InventorBag>
+				<pat:Inventor com:sequenceNumber="001">
+					<com:PublicationContact>
+						<com:Name>
+							<com:PersonName>
+								<com:PersonStructuredName>
+									<com:FirstName>Jun</com:FirstName>
+									<com:LastName>Utsumi</com:LastName>
+								</com:PersonStructuredName>
+							</com:PersonName>
+						</com:Name>
+					</com:PublicationContact>
+				</pat:Inventor>
+				<pat:Inventor com:sequenceNumber="002">
+					<com:PublicationContact>
+						<com:Name>
+							<com:PersonName>
+								<com:PersonStructuredName>
+									<com:FirstName>Takayuki</com:FirstName>
+									<com:LastName>Goto</com:LastName>
+								</com:PersonStructuredName>
+							</com:PersonName>
+						</com:Name>
+					</com:PublicationContact>
+				</pat:Inventor>
+				<pat:Inventor com:sequenceNumber="003">
+					<com:PublicationContact>
+						<com:Name>
+							<com:PersonName>
+								<com:PersonStructuredName>
+									<com:FirstName>Kensuke</com:FirstName>
+									<com:LastName>Ide</com:LastName>
+								</com:PersonStructuredName>
+							</com:PersonName>
+						</com:Name>
+					</com:PublicationContact>
+				</pat:Inventor>
+				<pat:Inventor com:sequenceNumber="004">
+					<com:PublicationContact>
+						<com:Name>
+							<com:PersonName>
+								<com:PersonStructuredName>
+									<com:FirstName>Hideki</com:FirstName>
+									<com:LastName>Takagi</com:LastName>
+								</com:PersonStructuredName>
+							</com:PersonName>
+						</com:Name>
+					</com:PublicationContact>
+				</pat:Inventor>
+				<pat:Inventor com:sequenceNumber="005">
+					<com:PublicationContact>
+						<com:Name>
+							<com:PersonName>
+								<com:PersonStructuredName>
+									<com:FirstName>Masahiro</com:FirstName>
+									<com:LastName>Funayama</com:LastName>
+								</com:PersonStructuredName>
+							</com:PersonName>
+						</com:Name>
+					</com:PublicationContact>
+				</pat:Inventor>
+			</pat:InventorBag>
+			<pat:RegisteredPractitionerBag>
+				<pat:RegisteredPractitioner com:sequenceNumber="01">
+					<pat:RegisteredPractitionerCategory>Attorney</pat:RegisteredPractitionerCategory>
+					<com:PublicationContact>
+						<com:Name>
+							<com:EntityName>Birch, Stewart, Kolasch &amp; Birch, LLP</com:EntityName>
+						</com:Name>
+					</com:PublicationContact>
+				</pat:RegisteredPractitioner>
+			</pat:RegisteredPractitionerBag>
+			<pat:AssigneeBag>
+				<pat:Assignee>
+					<com:PublicationContact>
+						<com:Name>
+							<com:EntityName>Mitsubishi Heavy Industries, Ltd.</com:EntityName>
+						</com:Name>
+					</com:PublicationContact>
+				</pat:Assignee>
+				<pat:Assignee>
+					<com:PublicationContact>
+						<com:Name>
+							<com:EntityName>National Institute of Advanced Industrial Science and Technology</com:EntityName>
+						</com:Name>
+					</com:PublicationContact>
+				</pat:Assignee>
+			</pat:AssigneeBag>
+			<pat:ExaminerBag>
+				<pat:PrimaryExaminer>
+					<com:Name>
+						<com:PersonName>
+							<com:PersonStructuredName>
+								<com:FirstName>Jerome</com:FirstName>
+								<com:LastName>Jackson</com:LastName>
+								<com:NameSuffix>Jr.</com:NameSuffix>
+							</com:PersonStructuredName>
+						</com:PersonName>
+					</com:Name>
+				</pat:PrimaryExaminer>
+				<pat:AssistantExaminer>
+					<com:Name>
+						<com:PersonName>
+							<com:PersonStructuredName>
+								<com:FirstName>Paul</com:FirstName>
+								<com:LastName>Budd</com:LastName>
+							</com:PersonStructuredName>
+						</com:PersonName>
+					</com:Name>
+				</pat:AssistantExaminer>
+			</pat:ExaminerBag>
+		</pat:PartyBag>
+	</pat:BibliographicData>
+	<pat:Description com:id="description">
+		<com:P com:id="p-0002" com:pNumber="0001">This application is a Divisional of co-pending U.S. patent application Ser. No. <com:PatentCitation>
+				<com:PatentCitationText>12/741,916</com:PatentCitationText>
+			</com:PatentCitation> filed on Jul. 13, 2010 which is a National Phase of <com:PatentCitation>
+				<com:PatentCitationText>PCT/JP2008/068544</com:PatentCitationText>
+			</com:PatentCitation> filed on Oct. 14, 2008, which claims priority under 35 U.S.C. &#xa7;119 (a) to Patent Application <com:PatentCitation>
+				<com:PatentCitationText>JP 2007-290922</com:PatentCitationText>
+			</com:PatentCitation> filed in Japan on Nov. 8, 2007, all of which are hereby expressly incorporated by reference in their entirety.</com:P>
+		<pat:TechnicalField>
+			<com:Heading com:id="h-0001" com:headingLevelCode="H1">TECHNICAL FIELD</com:Heading>
+			<com:P com:id="p-0003" com:pNumber="0002">The present invention relates to a device and a device manufacture method, particularly to a device using light and a method of manufacturing the device.</com:P>
+		</pat:TechnicalField>
+		<pat:BackgroundArt>
+			<com:Heading com:id="h-0002" com:headingLevelCode="H1">BACKGROUND ART</com:Heading>
+			<com:P com:id="p-0004" com:pNumber="0003">Photo detectors such as optical sensors, light-emitting devices such as LEDs, and optical signal transmission devices such as optical switches are used as light-based devices (so-called optical devices), in every field of industries. Among these, applications of solid-state imaging devices such as CCDs and CMOS image sensors manufactured by applying a semiconductor microfabrication technique have been increasingly enhanced. Furthermore, development and application of optical MEMS devices having functions of these optical devices incorporated in a micro machine element are rapidly underway. To optical MEMS devices of this type, not only a Si substrate for which a microfabrication technique has been established but also materials having high light transmission, particularly SiO<com:Sub>2 </com:Sub>materials (such as synthetic quartz and glass) are often applied.</com:P>
+			<com:P com:id="p-0005" com:pNumber="0004">In manufacturing a solid-state imaging device or an optical MEMS device of this type, a wafer level process is generally used in which a plurality of devices are collectively formed on a semiconductor wafer and sealed, and the semiconductor wafer is divided into individual devices by dicing.</com:P>
+			<com:P com:id="p-0006" com:pNumber="0005">The wafer level packaging is a technique which involves layering and bonding a sealing wafer onto a device wafer on which the devices are formed, to seal the devices in this manufacturing process. In recent years, a manufacture method using direct bonding for bonding the wafers is proposed. Since no other material layers are present on the interface between the wafers in the bonding based on the direct bonding without using adhesive or solder, it is advantageously possible to ensure high bonding strength and favorable interface physical properties. Examples of direct bonding conventionally used to manufacture an MEMS device include anodic bonding and diffusion bonding. Furthermore, there is recently proposed a bonding method for obtaining strong bonding with hydrogen bondings and heat treatment through preparing hydroxy groups or the like on a flattened and cleaned surface.</com:P>
+			<com:P com:id="p-0007" com:pNumber="0006">These direct bonding methods are, however, accompanied by heat treatment in the bonding step or after bonding, and this causes a problem in the manufacture of the MEMS devices. For the optical MEMS device, optical transparency is required for packaging, and therefore sealing is desired which uses an optically transparent substrate (such as SiO<com:Sub>2 </com:Sub>base material), which is different from the device substrate (such as Si). When the bonding step of such different substrates are accompanied by heat treatment, a heat strain is generated on the bonding interface due to the difference in the thermal expansion coefficient between the substrate materials, which deteriorates reliability and durability of the devices. Therefore, reduction of the bonding process temperature is a major technical problem with the manufacture of MEMS devices. It is another manufacture problem that the tact time of the manufacture cannot be shortened since it takes time for heating and cooling.</com:P>
+			<com:P com:id="p-0008" com:pNumber="0007">Therefore, it is desired to apply a room-temperature bonding process that is not accompanied by heating in the bonding step; however, the bonding performance largely depends on the physical properties of the material to be bonded in the room-temperature bonding, particularly that achieving bonding with dangling bonds of the surfaces to be bonded without applying active groups to the surfaces. Especially, it is known to be difficult to bond the SiO<com:Sub>2 </com:Sub>base material to a target substrate by the room-temperature bonding.</com:P>
+			<com:P com:id="p-0009" com:pNumber="0008">While the room-temperature bonding has been known as a metal bonding method, the room-temperature bonding is has been gradually applied to bonding of semiconductor material or oxide material. However, as described in Takagi et al., Proceedings of NEDO (New Energy and Industrial Technology Development Organization), 2003 Research Promotion Business Accomplishment Report Meeting, pp. 220-225 (2003), it is known that considerable bonding strength can be obtained for some of oxide materials such as Al<com:Sub>2</com:Sub>O<com:Sub>3 </com:Sub>through surface activation and pressure application, while practical bonding strengths cannot be obtained for materials such SiO<com:Sub>2</com:Sub>. Accordingly, there is proposed a method using a surface treatment and a treatment after heating such as application of active groups onto the surfaces to be bonded.</com:P>
+			<com:P com:id="p-0010" com:pNumber="0009">Japanese Laid Open Patent Application No. P2004-054170A discloses a method of bonding laser optical crystals. This method is characterized by bonding the laser optical crystals by performing only ion beam etching on the bonding surfaces without using any intermediate material such as adhesive. This method is a technique developed as a method of bonding laser optical crystals, particularly YVO<com:Sub>4 </com:Sub>crystals. Although this method is applicable to bonding of a garnet crystal, this method cannot bond SiO<com:Sub>2 </com:Sub>base material.</com:P>
+			<com:P com:id="p-0011" com:pNumber="0010">Japanese Laid Open Patent Application No. P2005-104810A discloses a method of performing room-temperature bonding for a functional ceramics polycrystal to a semiconductor single crystal such as Si. This method is characterized by involving forming a metal thin layer having reaction activity to semiconductor on the surface of the ceramics polycrystal, and bonding the ceramics polycrystal to the semiconductor single crystal with the reaction product generated by a reaction of metal to semiconductor. This method is proposed as an effective technique for bonding a ceramics substrate having a high surface roughness.</com:P>
+			<com:P com:id="p-0012" com:pNumber="0011">However, these methods suffers from a problem that a heating treatment is required as a step after the bonding when the methods are applied to the MEMS device manufacture. Furthermore, target materials are limited because of the premise of reactivity between the bonding target substrate and the metal layer.</com:P>
+			<com:P com:id="p-0013" com:pNumber="0012">On the other hand, Takagi, Mechanical Engineering Laboratory Report 189 (2000) or the like has pointed out that even a hard-to-bond material such as SiO<com:Sub>2</com:Sub>, for which strength cannot be obtained only with surface activation and pressure application, can be room-temperature-bonded by forming a metal film on the surfaces to be bonded. Methods of specifically executing this have been proposed so far.</com:P>
+			<com:P com:id="p-0014" com:pNumber="0013">Japanese Laid Open Patent Application No. P2004-337927A discloses a technique characterized by forming a metal thin film on a to-be-bonded surface as a method of bonding ionic crystal substrates that are hard to bond by room-temperature bonding. With this technique, an inert gas ion beam or inert gas neutral atom beam and a metal ion beam or metal neutral atom beam are irradiated onto the to-be-bonded surfaces in vacuum to form a metal thin film having a thickness of 1 nm to 100 nm on the to-be-bonded surface of each substrate.</com:P>
+			<com:P com:id="p-0015" com:pNumber="0014">Japanese Laid Open Patent Application No. P2004-343359A discloses a method of manufacturing an elastic surface wave device by room-temperature bonding and refers to a bonding method with an intermediate film as a method therefor. The method is characterized by bonding a piezoelectric single crystal substrate made of LiTaO<com:Sub>3 </com:Sub>or the like to a crystalline substrate made of Al<com:Sub>2</com:Sub>O<com:Sub>3</com:Sub>, Si or the like by a surface activation treatment and pressure application without a heat treatment at high temperature. As one example of this method, a method of bonding the both substrates by forming Si or insulating material or a metal layer as the intermediate layer.</com:P>
+		</pat:BackgroundArt>
+		<pat:Disclosure>
+			<com:Heading com:id="h-0003" com:headingLevelCode="H1">DISCLOSURE OF INVENTION</com:Heading>
+			<com:P com:id="p-0016" com:pNumber="0015">As stated above, it is difficult to bond SiO<com:Sub>2 </com:Sub>base material with a practical bonding strength only by the surface activation and pressure application. It is effective to provide metal or the like on the bonding interface as the bonding functional intermediate layer which causes bonding strength so as to obtain the practical bonding strength.</com:P>
+			<com:P com:id="p-0017" com:pNumber="0016">However, the method using the metal as the bonding functional intermediate layer is a technique which is only directed to the occurrence of the bonding strength and cannot sufficiently provide other bonding interface physical properties such as optical transparency. Even a very thin metal layer (100 nm or less) as the bonding functional intermediate layer produces optical attenuation as described in, for example, Japanese Laid Open Patent Application No. P2004-337927A. Such optical attenuation possibly deteriorates the performance and reliability of a device such as the optical MEMS device required to have optical transparency, and therefore this approach is not appropriate as a device manufacture method. On the other hand, the room-temperature bonding method is a method for which the bonding property largely depends on physical properties of materials to be bonded, and it is impossible to realize both the bonding strength and the optical transmission characteristics simply by using another material for the bonding functional intermediate layer.</com:P>
+			<com:P com:id="p-0018" com:pNumber="0017">It is an object of the present invention to provide a device and device manufacture method which are capable of room-temperature bonding of a SiO<com:Sub>2 </com:Sub>base material substrate with a practical bonding strength and excellent in optical transmission characteristics.</com:P>
+			<com:P com:id="p-0019" com:pNumber="0018">It is another object of the present invention to provide a device and a device manufacture method which are capable of preventing damage and lessening layout restrictions.</com:P>
+			<com:P com:id="p-0020" com:pNumber="0019">A device according to the present invention includes: a first substrate mainly containing silicon dioxide; a second substrate mainly containing silicon, compound semiconductor, silicon dioxide or fluoride; and a bonding functional intermediate layer arranged between the first substrate and the second substrate, and functioning to cause a practical bonding strength. The first substrate is bonded to the second substrate thorough room temperature bonding in which a sputtered first surface of the first substrate is contacted with a sputtered second surface of the second substrate via the bonding functional intermediate layer. At this time, the material of the bonding functional intermediate layer is selected from among optically transparent materials which are oxide, fluoride, or nitride, the materials being different from the main component of the first substrate and different from the main component of the second substrate. Such a device allows ensuring a practical bonding strength for bonding the first substrate to the second substrate, ensuring excellent optical transmission through the bonding interface, and arranging the bonding interface in a region transmitted by light. Therefore, such a device can relax restrictions on the layout related to the bonding interface, make the layout diversified, and make manufacturing process more diversified.</com:P>
+			<com:P com:id="p-0021" com:pNumber="0020">In the device according to the present invention, it is preferable that the first substrate is made of one of quartz, fused quartz, and glass each having a crystal structure. The device according to the present invention is characterized in that the second substrate is made of one of the quartz, the fused quartz, and the glass. The quartz has a crystal structure.</com:P>
+			<com:P com:id="p-0022" com:pNumber="0021">Examples of preferred material of the bonding functional intermediate layer include aluminum oxide, titanium dioxide, zirconium dioxide, and hafnium dioxide. In the device according to the present invention, the bonding functional intermediate layer is distributed in a layered fashion on the interface between first and second materials. In addition, another device according to the present invention is characterized in that a bonding functional intermediate layer is distributed in a continuous or an intermittent thin film fashion on the interface between first and second materials.</com:P>
+			<com:P com:id="p-0023" com:pNumber="0022">A device according to the present invention includes: a first substrate having optical transparency, and mainly containing silicon dioxide; and a second substrate on which a photo detector is formed which generates an output signal or an electromotive force in response to external light. The first and second substrates are bonded through room temperature bonding with a bonding functional intermediate layer having optical transparency to seal the photo detector. Here, the first substrate is preferably made of one of quartz and fused quartz each having a crystal structure. Preferred examples of the photo detector include a CCD and a CMOS sensor. Other examples of the photo detector include a solar cell, a photoelectric conversion device, and a functional device converting electromagnetic wave (such as high frequency electromagnetic wave) into electric power.</com:P>
+			<com:P com:id="p-0024" com:pNumber="0023">A device according to the present invention includes: a first substrate having optical transparency, and mainly containing silicon dioxide; and a second substrate on which a light-emitting device is formed. The first and second substrates are bonded through room temperature bonding with a bonding functional intermediate layer having optical transparency to seal the light-emitting device. Here, preferred examples of a material of the bonding functional intermediate layer include aluminum oxide, titanium dioxide, zirconium dioxide, and hafnium dioxide.</com:P>
+			<com:P com:id="p-0025" com:pNumber="0024">A device according to the present invention is an optical signal transmission device transmitting an optical signal, and includes: a first substrate having optical transparency, and mainly containing silicon dioxide; and a second substrate having optical transparency, and mainly containing silicon dioxide. The first and second substrates are bonded through room temperature bonding with a bonding functional intermediate layer having optical transparency. The optical signal transmits through the interface between the first and second substrates. Here, preferred examples of a material of the bonding functional intermediate layer include aluminum oxide and titanium dioxide. Examples of such an optical signal transmission device include an optical switch, a lens, and an optical fiber. Other examples of such an optical signal transmission device include a photonic crystal fiber.</com:P>
+			<com:P com:id="p-0026" com:pNumber="0025">A device manufacture method according to the present invention is a method of manufacturing a device excellent in optical transmission by bonding SiO<com:Sub>2 </com:Sub>base material substrates with a practical bonding strength through room temperature bonding. The device manufacture method according to the present invention includes steps of: sputtering a surface of a first substrate mainly containing silicon dioxide; attaching a bonding functional intermediate layer functioning to cause a practical bonding strength in room temperature bonding onto the surface; and preparing a bonded substrate by bonding the first substrate to a second substrate mainly containing one of silicon, compound semiconductor, silicon dioxide, and fluoride through the room temperature bonding in which the sputtered surface of the first substrate is contacted with a surface of the second substrate via the bonding functional intermediate layer. Here, the material of the bonding functional intermediate layer is selected from among optically transparent materials which are oxide, fluoride, or nitride, the materials being different from the main component of the first substrate, and different from the main component of the second substrate. Further, a device manufacture method according to the present invention includes steps of: sputtering a surface of a first substrate mainly containing silicon dioxide; sputtering a surface of a second substrate mainly containing one of silicon, compound semiconductor, silicon dioxide, and fluoride; attaching a bonding functional intermediate layer functioning to cause a practical bonding strength in room temperature bonding onto the surface; and preparing a bonded substrate by bonding the surface of the first substrate to the surface of the second substrate by the room temperature bonding with a bonding functional intermediate layer. At this time, the material of the bonding functional intermediate layer is selected from among optically transparent materials which are oxide, fluoride, or nitride, the materials being different from the main component of the first substrate, and different from the main component of the second substrate. The device manufacture method according to the present invention further includes a step of sputtering the surface of the second substrate simultaneously with sputtering of the surface of the first substrate.</com:P>
+			<com:P com:id="p-0027" com:pNumber="0026">A device manufacture method according to the present invention includes steps of: forming a bonding functional intermediate layer on a surface of a first substrate mainly containing silicon dioxide; sputtering the surface of the first substrate after forming the bonding functional intermediate layer; and preparing a bonded substrate by bonding the first substrate to a second substrate mainly containing one of silicon, compound semiconductor, silicon dioxide, and fluoride through room temperature bonding with the bonding functional intermediate layer. Another device manufacture method according to the present invention includes steps of: forming a bonding functional intermediate layer on a surface of a first substrate mainly containing silicon dioxide; sputtering the surface of the first substrate on which surface the bonding functional intermediate layer is formed; sputtering a surface of a second substrate mainly containing one of silicon, compound semiconductor, silicon dioxide, and fluoride; and preparing a bonded substrate by bonding the surface of the first substrate to the second substrate through room temperature bonding with the bonding functional intermediate layer. The device manufacture method according to the present invention further includes a step of sputtering the surface of the second substrate simultaneously with sputtering of the surface of the first substrate.</com:P>
+			<com:P com:id="p-0028" com:pNumber="0027">In the above-described device manufacture method, material of the bonding functional intermediate layer is selected from among optically transparent materials which are oxide, fluoride, and nitride, the materials being different from a main component of the first substrate, and different from a main component of the second substrate. The device manufacture method according to the present invention is characterized in that the first substrate is made of one of quartz, fused quartz, and glass each having a crystal structure. The device manufacture method according to the present invention is further characterized in that the second substrate is made of one of quartz, fused quartz, and glass each having a crystal structure.</com:P>
+			<com:P com:id="p-0029" com:pNumber="0028">Examples of preferred material of the bonding functional intermediate layer include aluminum oxide, titanium dioxide, zirconium dioxide, and hafnium dioxide. In addition, the bonding functional intermediate layer is distributed in a layered fashion on the interface between the first substrate and the second substrate. Further, in another device according to the present invention, the bonding functional intermediate layer is distributed in a continuous or an intermittent thin film fashion on the interface between first and second substrates.</com:P>
+		</pat:Disclosure>
+		<pat:DrawingDescription>
+			<com:Heading com:id="h-0004" com:headingLevelCode="H1">BRIEF DESCRIPTION OF DRAWINGS</com:Heading>
+			<com:P com:id="p-0030" com:pNumber="0029">
+				<com:FigureReference com:idrefs="DRAWINGS">FIG. 1</com:FigureReference> is a cross-sectional view showing a room-temperature bonding apparatus in an embodiment of the present invention;</com:P>
+			<com:P com:id="p-0031" com:pNumber="0030">
+				<com:FigureReference com:idrefs="DRAWINGS">FIG. 2</com:FigureReference> is a cross-sectional view showing states of substrates;</com:P>
+			<com:P com:id="p-0032" com:pNumber="0031">
+				<com:FigureReference com:idrefs="DRAWINGS">FIG. 3</com:FigureReference> is a cross-sectional view showing other states of the substrates;</com:P>
+			<com:P com:id="p-0033" com:pNumber="0032">
+				<com:FigureReference com:idrefs="DRAWINGS">FIG. 4</com:FigureReference> is a cross-sectional view showing still other states of the substrates;</com:P>
+			<com:P com:id="p-0034" com:pNumber="0033">
+				<com:FigureReference com:idrefs="DRAWINGS">FIG. 5</com:FigureReference> is a cross-sectional view showing still other states of the substrates;</com:P>
+			<com:P com:id="p-0035" com:pNumber="0034">
+				<com:FigureReference com:idrefs="DRAWINGS">FIG. 6</com:FigureReference> is a cross-sectional view showing states of substrates in a comparative example;</com:P>
+			<com:P com:id="p-0036" com:pNumber="0035">
+				<com:FigureReference com:idrefs="DRAWINGS">FIG. 7</com:FigureReference> is a cross-sectional view showing other states of the substrates in the comparative example;</com:P>
+			<com:P com:id="p-0037" com:pNumber="0036">
+				<com:FigureReference com:idrefs="DRAWINGS">FIG. 8</com:FigureReference> is a cross-sectional view showing states of substrates when bonding strengths of the substrates are evaluated;</com:P>
+			<com:P com:id="p-0038" com:pNumber="0037">
+				<com:FigureReference com:idrefs="DRAWINGS">FIG. 9</com:FigureReference> is a cross-sectional view showing a photo detector main body formed on a substrate;</com:P>
+			<com:P com:id="p-0039" com:pNumber="0038">
+				<com:FigureReference com:idrefs="DRAWINGS">FIG. 10</com:FigureReference> is a cross-sectional view showing a light-emitting device formed on a substrate; and</com:P>
+			<com:P com:id="p-0040" com:pNumber="0039">
+				<com:FigureReference com:idrefs="DRAWINGS">FIG. 11</com:FigureReference> is a cross-sectional view showing an optical signal transmission device formed on a substrate.</com:P>
+		</pat:DrawingDescription>
+		<com:Heading com:id="h-0005" com:headingLevelCode="H1">BEST MODE FOR CARRYING OUT THE INVENTION</com:Heading>
+		<com:P com:id="p-0041" com:pNumber="0040">Embodiments of a device according to the present invention will be described with reference to the drawings. The device is manufactured using a room-temperature bonding apparatus. The room-temperature bonding apparatus <com:B>1</com:B> includes a bonding chamber <com:B>2</com:B>, an ion gun <com:B>3</com:B>, an upper stage <com:B>5</com:B>, and a lower stage <com:B>6</com:B> as shown in <com:FigureReference com:idrefs="DRAWINGS">FIG. 1</com:FigureReference>.</com:P>
+		<com:P com:id="p-0042" com:pNumber="0041">The bonding chamber <com:B>2</com:B> is a container having the interior sealed from the environment and made of stainless steel. The bonding chamber <com:B>2</com:B> also includes a vacuum pump and a cover which are not shown. The vacuum pump evacuates gas from the interior of the bonding chamber <com:B>2</com:B>. Examples of the vacuum pump include a turbo molecular pump evacuating the gas by causing a plurality of internal metal blades to flick away molecules of the gas. The cover closes or opens a gate connecting the exterior to the interior of the bonding chamber <com:B>2</com:B>.</com:P>
+		<com:P com:id="p-0043" com:pNumber="0042">The upper stage <com:B>5</com:B> is made of stainless steel, formed into a cylindrical shape, and supported to allow a parallel shift in the vertical direction with respect to the bonding chamber <com:B>2</com:B>. The upper stage <com:B>5</com:B> includes a dielectric layer provided on the lower end of the cylindrical shape, applies a voltage between the dielectric layer and a substrate <com:B>11</com:B>, and attracts the substrate <com:B>11</com:B> to the dielectric layer by the electrostatic force to thereby support the substrate <com:B>11</com:B>. The upper stage <com:B>5</com:B> also includes a pressure application mechanism that is not shown. In accordance with user's operations, the pressure application mechanism achieves parallel shift of the upper stage <com:B>5</com:B> in the vertical direction with respect to the bonding chamber <com:B>2</com:B>.</com:P>
+		<com:P com:id="p-0044" com:pNumber="0043">The lower stage <com:B>6</com:B> is made of stainless steel. The lower stage <com:B>6</com:B> includes a dielectric layer provided on the upper end of the lower stage <com:B>6</com:B>, applies a voltage between the dielectric layer and a substrate <com:B>12</com:B>, and attracts the substrate <com:B>12</com:B> to the dielectric layer by an electrostatic force to thereby support the substrate <com:B>12</com:B>. The lower stage <com:B>6</com:B> also includes a positioning mechanism that is not shown. In accordance with user's operations, the positioning mechanism achieves a parallel shift of the lower stage <com:B>6</com:B> in a parallel direction to the horizontal direction and moves to rotate about a rotational axis in parallel to the vertical direction.</com:P>
+		<com:P com:id="p-0045" com:pNumber="0044">The ion gun <com:B>3</com:B> is directed to the substrate <com:B>11</com:B> supported by the upper stage <com:B>5</com:B> and the substrate <com:B>12</com:B> supported by the lower stage <com:B>6</com:B>. The ion gun <com:B>3</com:B> emits charged particles accelerated in the direction where the ion gun <com:B>3</com:B> is directed. Examples of the charged particles include argon ions. The bonding chamber <com:B>2</com:B> may further include an electron gun that is not shown. The electron gun is arranged to be directed to the target irradiated with the charged particles by the ion gun <com:B>3</com:B>, and emits electrons accelerated in the direction toward the target. Such electrons are used to neutralize the target positively charged with the charged particles emitted from the ion gun <com:B>3</com:B>.</com:P>
+		<com:P com:id="p-0046" com:pNumber="0045">A device manufacture method in an embodiment of the present invention is a method of manufacturing the device according to the present invention, which is implemented by using the room-temperature bonding apparatus <com:B>1</com:B>. <com:FigureReference com:idrefs="DRAWINGS">FIGS. 2 to 5</com:FigureReference> show states of the substrates <com:B>11</com:B> and <com:B>12</com:B> in performing room-temperature bonding of the substrates <com:B>11</com:B> and <com:B>12</com:B> by using the room-temperature bonding apparatus <com:B>1</com:B>. First, the operator opens the cover of the bonding chamber <com:B>2</com:B>, attaches holds the substrate <com:B>11</com:B> on the upper stage <com:B>5</com:B>, and attaches the substrate <com:B>12</com:B> on the lower stage <com:B>6</com:B>. The operator closes the cover of the bonding chamber <com:B>2</com:B> and generates a vacuum atmosphere within the bonding chamber <com:B>2</com:B>. The operator manipulates the positioning mechanism of the lower stage <com:B>6</com:B> to move the lower stage <com:B>6</com:B> horizontally so that the substrate <com:B>11</com:B> is opposed to the substrate <com:B>12</com:B>.</com:P>
+		<com:P com:id="p-0047" com:pNumber="0046">The substrate <com:B>11</com:B> is made of fused quartz, and has a bonding functional intermediate layer <com:B>28</com:B> formed on the surface of the substrate <com:B>11</com:B> as shown in <com:FigureReference com:idrefs="DRAWINGS">FIG. 2</com:FigureReference>. The bonding functional intermediate layer <com:B>28</com:B> is formed of aluminum oxide and has an optical transparency. The bonding functional intermediate layer <com:B>28</com:B> functions to achieve a practical bonding strength. An inert surface <com:B>21</com:B> is present on the surface of the bonding functional intermediate layer <com:B>28</com:B>. The inert surface <com:B>21</com:B> is formed of a material outermost layer or the like in a state in which the bonds are terminated with impurities adhering onto the inert surface <com:B>21</com:B>, products metamorphosed from the substrate material, oxygen and the like to cause an insufficient reaction activity. The substrate <com:B>12</com:B> is made of fused quartz similarly to the substrate <com:B>11</com:B>, and a bonding functional intermediate layer <com:B>28</com:B>&#x2032; is formed on the surface of the substrate <com:B>12</com:B>. The bonding functional intermediate layer <com:B>28</com:B>&#x2032; is made of aluminum oxide and has an optical transparency. The bonding functional intermediate layer <com:B>28</com:B>&#x2032; functions to cause a practical bonding strength. An inert surface <com:B>22</com:B> is formed on the surface of the bonding functional intermediate layer <com:B>28</com:B>&#x2032; similarly to the bonding functional intermediate layer <com:B>28</com:B>. The inert surface <com:B>22</com:B> is formed of a material outermost layer or the like in a state in which the bonds are terminated with impurities adhering onto the inert surface <com:B>22</com:B>, products metamorphosed from a substrate material, oxygen and the like, to cause an insufficient reaction activity.</com:P>
+		<com:P com:id="p-0048" com:pNumber="0047">As shown in <com:FigureReference com:idrefs="DRAWINGS">FIG. 3</com:FigureReference>, the operator irradiates the space between the substrates <com:B>12</com:B> and <com:B>11</com:B> with the charged particles using the ion gun <com:B>3</com:B> in a state in which the substrates <com:B>11</com:B> and <com:B>12</com:B> are sufficiently away from each other. At this time, the substrates <com:B>12</com:B> and <com:B>11</com:B> are sputtered by being irradiated with the charged particles, and the inert surfaces <com:B>21</com:B> and <com:B>22</com:B> formed on the surfaces of the respective substrates <com:B>12</com:B> and <com:B>11</com:B> are removed.</com:P>
+		<com:P com:id="p-0049" com:pNumber="0048">After the irradiation with the charged particles completes, active surfaces <com:B>24</com:B> and <com:B>25</com:B> are exposed on the surfaces of the bonding functional intermediate layers <com:B>28</com:B> and <com:B>28</com:B>&#x2032; of the substrates <com:B>11</com:B> and <com:B>12</com:B>, as shown in <com:FigureReference com:idrefs="DRAWINGS">FIG. 4</com:FigureReference>, respectively.</com:P>
+		<com:P com:id="p-0050" com:pNumber="0049">The operator manipulates the pressure application mechanism of the upper stage <com:B>5</com:B> to move the upper stage <com:B>5</com:B> down in the vertical direction, thereby contacting the active surface <com:B>24</com:B> of the substrate <com:B>11</com:B> with the active surface <com:B>25</com:B> of the substrate <com:B>12</com:B>. The substrates <com:B>11</com:B> and <com:B>12</com:B> are bonded to each other through room temperature bonding by so contacting the substrate <com:B>11</com:B> with the substrate <com:B>12</com:B>. At this time, the bonding functional intermediate layers <com:B>28</com:B> and <com:B>28</com:B>&#x2032; are present on the interface <com:B>27</com:B> between the substrates <com:B>11</com:B> and <com:B>12</com:B> and cause a practical bonding strength between the substrates <com:B>11</com:B> and <com:B>12</com:B> to mediate between bonding of the substrate <com:B>11</com:B> to the substrate <com:B>12</com:B>.</com:P>
+		<com:P com:id="p-0051" com:pNumber="0050">Alternatively, the bonding functional intermediate layers <com:B>28</com:B> and <com:B>28</com:B>&#x2032; may be distributed to the interface <com:B>27</com:B> in the form of intermittent thin films. Such bonding functional intermediate layers <com:B>28</com:B> and <com:B>28</com:B>&#x2032; can cause a practical bonding strength between the substrates <com:B>11</com:B> and <com:B>12</com:B> to mediate between bonding of the substrate <com:B>11</com:B> to the substrate <com:B>12</com:B>.</com:P>
+		<com:P com:id="p-0052" com:pNumber="0051">The bonding functional intermediate layers <com:B>28</com:B> and <com:B>28</com:B>&#x2032; may be formed of a substance other than aluminum oxide. The substance is made of material which has optical transparency and is any of oxide, nitride, and fluoride. Examples of the oxide include titanium dioxide TiO<com:Sub>2</com:Sub>, zirconium dioxide ZrO<com:Sub>2</com:Sub>, and hafnium dioxide HfO<com:Sub>2</com:Sub>. Examples of the nitride include silicon nitride SiN and titanium nitride TiN. Examples of the fluoride include calcium fluoride CaF<com:Sub>2 </com:Sub>and magnesium fluoride MgF<com:Sub>2</com:Sub>. The bonding functional intermediate layer <com:B>28</com:B> is formed of one or more substances out of these substances.</com:P>
+		<com:P com:id="p-0053" com:pNumber="0052">The bonding functional intermediate layer <com:B>28</com:B> may be formed on the substrate <com:B>11</com:B> at a timing different from the timing before sputtering the substrates <com:B>11</com:B> and <com:B>12</com:B>. For example, when the substrate <com:B>11</com:B> is sputtered while the constituent material of the bonding functional intermediate layer <com:B>28</com:B> is discharged into the bonding chamber <com:B>2</com:B>, then the inert surface <com:B>21</com:B> formed on the surface of the bonding functional intermediate layer <com:B>28</com:B> on the substrate <com:B>11</com:B> is removed, and the discharged material is deposited on the substrate <com:B>11</com:B> to form the bonding functional intermediate layer <com:B>28</com:B>.</com:P>
+		<com:P com:id="p-0054" com:pNumber="0053">With the above-stated device manufacture method, the substrates <com:B>11</com:B> and <com:B>12</com:B>, which are made of the SiO<com:Sub>2 </com:Sub>base material and difficult to achieve room temperature bonding to each other with the conventional methods, are bonded through room temperature bonding by interposing the bonding functional intermediate layers <com:B>28</com:B> and <com:B>28</com:B>&#x2032; as a product.</com:P>
+		<com:P com:id="p-0055" com:pNumber="0054">It should be noted that the substrates <com:B>11</com:B> and <com:B>12</com:B> may be made of material other than fused quartz. Examples of other materials include synthetics quartz and glass, such as Pyrex (registered trademark). Glass such as Pyrex (registered trademark) and fused quartz are solidified without being crystallized and have a three-dimensional net structure. With the room temperature bonding method according to the present invention, even if the two substrates to be bonded through room temperature, bonding are made of any of such SiO<com:Sub>2 </com:Sub>base materials, the substrates can be used as the substrates <com:B>11</com:B> and <com:B>12</com:B> similarly to the substrates <com:B>11</com:B> and <com:B>12</com:B> made of fused quartz and can be bonded through room temperature bonding with a practical bonding strength.</com:P>
+		<com:P com:id="p-0056" com:pNumber="0055">Furthermore, when a product produced by such a device manufacture method is a product in which the substrates <com:B>11</com:B> and <com:B>12</com:B> are made of SiO<com:Sub>2 </com:Sub>base material having optical transparency, an optical loss resulting from reduction in the signal intensity and light absorption is avoided since the interface <com:B>27</com:B> does not absorb light (such as high intensity laser beam) when the produce is irradiated with light. This allows manufacturing a device which fails to hamper the transmission of an optical signal or exhibits superior durability against high intensity light. Also, a product which is produced with such a device manufacture method does not have an electric conduction property in the bonding interface due to the use of material which is one of oxide, fluoride, and nitride for bonding of the SiO<com:Sub>2 </com:Sub>base materials, and therefore the interface does not hamper the transmission of electromagnetic wave. This property can be effectively applied to, for example, manufacturing of an RF-MEMS device which receives light transmitted through the substrates and in which functional devices receive the electromagnetic wave and convert the received electromagnetic wave into power driving the devices.</com:P>
+		<com:P com:id="p-0057" com:pNumber="0056">It should be noted that, as for the product manufactured with such a device manufacture method, the compositions of the bonding functional intermediate layers provided on the interface of the two room-temperature-bonded substrates can be measured. Example of a measurement method includes EDX analysis using a transmission electron microscope.</com:P>
+		<com:P com:id="p-0058" com:pNumber="0057">As shown in <com:FigureReference com:idrefs="DRAWINGS">FIG. 6</com:FigureReference>, a device manufacture method according to a comparative example to the present invention is implemented with substrates <com:B>11</com:B>&#x2032; and <com:B>12</com:B>&#x2032; from which bonding functional intermediate layers <com:B>28</com:B> and <com:B>28</com:B>&#x2032; are excluded, respectively. With the device manufacture method according to the comparative example, active surfaces <com:B>31</com:B> and <com:B>32</com:B> are exposed on the surfaces of the substrates <com:B>11</com:B>&#x2032; and <com:B>12</com:B>&#x2032;, respectively, after irradiation of charged particles completes. The active surface <com:B>31</com:B> mainly contains SiO<com:Sub>2</com:Sub>, which is same as the basic material of the substrate <com:B>11</com:B>&#x2032;. The active surface <com:B>32</com:B> is made of the same component as the basic material of the substrate <com:B>12</com:B>&#x2032;. As shown in <com:FigureReference com:idrefs="DRAWINGS">FIG. 7</com:FigureReference>, the substrates <com:B>11</com:B>&#x2032; and <com:B>12</com:B>&#x2032; are bonded through room temperature bonding by contacting the active surface <com:B>31</com:B> of the substrate <com:B>11</com:B>&#x2032; with the active surface <com:B>32</com:B> of the substrate <com:B>12</com:B>&#x2032;. No other material which functions to cause bonding strength is interposed between the active surfaces <com:B>31</com:B> and <com:B>32</com:B>, and therefore a practical bonding strength cannot be obtained even after a load is applied to achieve bonding with the both contacted with each other.</com:P>
+		<com:P com:id="p-0059" com:pNumber="0058">The bonding strength between the substrates bonded through room temperature bonding can be evaluated using the bond energy of the bonding region. The bond energy can be evaluated by a well-known method. Examples of the method include an edge insertion method described in Takagi, Mechanical Engineering Laboratory Report 189 (2000). <com:FigureReference com:idrefs="DRAWINGS">FIG. 8</com:FigureReference> shows a method of measuring the bond energy using the edge insertion method. That is, the inspector inserts an edge of a razor <com:B>43</com:B> into the interface between substrates <com:B>41</com:B> and <com:B>42</com:B>. At this time, the substrates <com:B>41</com:B> and <com:B>42</com:B> separate from each other and a crack <com:B>44</com:B> is formed. The inspector measures the extension length of the crack <com:B>44</com:B>. The bond energy &#x394;<com:Sub>&#x3b3;</com:Sub> per unit area of one surface of the bonding interface is expressed by the following equation:</com:P>
+		<com:P com:id="p-0060" com:pNumber="0059">
+			<com:Math xmlns="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:tbl="http://www.oasis-open.org/tables/exchange/1.0" xmlns:mathml="http://www.w3.org/1998/Math/MathML3" com:mathNumber="00001">
+				<mathml:math>
+					<mathml:mrow>
+						<mathml:mrow>
+							<mathml:mrow>
+								<mathml:mi>&#x394;</mathml:mi>
+								<mathml:mo>&#x2062;</mathml:mo>
+								<mathml:mstyle>
+									<mathml:mspace width="0.3em" height="0.3ex"/>
+								</mathml:mstyle>
+								<mathml:mo>&#x2062;</mathml:mo>
+								<mathml:mi>&#x3b3;</mathml:mi>
+							</mathml:mrow>
+							<mathml:mo>=</mathml:mo>
+							<mathml:mrow>
+								<mathml:mfrac>
+									<mathml:mn>3</mathml:mn>
+									<mathml:mn>4</mathml:mn>
+								</mathml:mfrac>
+								<mathml:mo>&#x2062;</mathml:mo>
+								<mathml:mfrac>
+									<mathml:mrow>
+										<mathml:msub>
+											<mathml:mi>E</mathml:mi>
+											<mathml:mn>1</mathml:mn>
+										</mathml:msub>
+										<mathml:mo>&#x2062;</mathml:mo>
+										<mathml:msub>
+											<mathml:mi>E</mathml:mi>
+											<mathml:mn>2</mathml:mn>
+										</mathml:msub>
+										<mathml:mo>&#x2062;</mathml:mo>
+										<mathml:msubsup>
+											<mathml:mi>t</mathml:mi>
+											<mathml:mn>1</mathml:mn>
+											<mathml:mn>3</mathml:mn>
+										</mathml:msubsup>
+										<mathml:mo>&#x2062;</mathml:mo>
+										<mathml:msubsup>
+											<mathml:mi>t</mathml:mi>
+											<mathml:mn>2</mathml:mn>
+											<mathml:mn>3</mathml:mn>
+										</mathml:msubsup>
+									</mathml:mrow>
+									<mathml:mrow>
+										<mathml:mo>(</mathml:mo>
+										<mathml:mrow>
+											<mathml:mrow>
+												<mathml:msub>
+													<mathml:mi>E</mathml:mi>
+													<mathml:mn>1</mathml:mn>
+												</mathml:msub>
+												<mathml:mo>&#x2062;</mathml:mo>
+												<mathml:msubsup>
+													<mathml:mi>t</mathml:mi>
+													<mathml:mn>1</mathml:mn>
+													<mathml:mn>3</mathml:mn>
+												</mathml:msubsup>
+											</mathml:mrow>
+											<mathml:mo>+</mathml:mo>
+											<mathml:mrow>
+												<mathml:msub>
+													<mathml:mi>E</mathml:mi>
+													<mathml:mn>2</mathml:mn>
+												</mathml:msub>
+												<mathml:mo>&#x2062;</mathml:mo>
+												<mathml:msubsup>
+													<mathml:mi>t</mathml:mi>
+													<mathml:mn>2</mathml:mn>
+													<mathml:mn>3</mathml:mn>
+												</mathml:msubsup>
+											</mathml:mrow>
+										</mathml:mrow>
+										<mathml:mo>)</mathml:mo>
+									</mathml:mrow>
+								</mathml:mfrac>
+								<mathml:mo>&#x2062;</mathml:mo>
+								<mathml:mfrac>
+									<mathml:msup>
+										<mathml:mi>y</mathml:mi>
+										<mathml:mn>2</mathml:mn>
+									</mathml:msup>
+									<mathml:msup>
+										<mathml:mi>L</mathml:mi>
+										<mathml:mn>4</mathml:mn>
+									</mathml:msup>
+								</mathml:mfrac>
+							</mathml:mrow>
+						</mathml:mrow>
+						<mathml:mo>,</mathml:mo>
+					</mathml:mrow>
+				</mathml:math>
+			</com:Math>
+			<com:Br/>
+wherein the extension length of the crack <com:B>44</com:B> is L, the thickness of the razor edge <com:B>43</com:B> is 2y, the thickness of the substrate <com:B>41</com:B> is t<com:Sub>1</com:Sub>, the thickness of the substrate <com:B>42</com:B> is t<com:Sub>2</com:Sub>, the Young's modulus of the substrate <com:B>41</com:B> is E<com:Sub>1</com:Sub>, and the Young's modulus of the substrate <com:B>42</com:B> is E<com:Sub>2</com:Sub>. The bond energy &#x394;<com:Sub>&#x3b3;</com:Sub> indicates that the bonding strength is higher and it is more difficult to separate the substrates from each other if the value of the bond energy &#x394;<com:Sub>&#x3b3;</com:Sub> is higher.
+</com:P>
+		<com:P com:id="p-0061" com:pNumber="0060">Moreover, if the bond energy &#x394;<com:Sub>&#x3b3;</com:Sub> is equal to or higher than 0.1 J/m<com:Sup>2</com:Sup>, this implies, for example, that the substrates <com:B>41</com:B> and <com:B>42</com:B> are bonded to the extent that the substrates <com:B>41</com:B> and <com:B>42</com:B> are not separated from each other when the substrates <com:B>41</com:B> and <com:B>42</com:B> are subjected to gentle dicing, although the substrates <com:B>41</com:B> and <com:B>42</com:B> are bonded with a low bonding strength. If the bond energy &#x394;<com:Sub>&#x3b3;</com:Sub> is equal to or higher than 0.5 J/m<com:Sup>2</com:Sup>, this implies that the substrates <com:B>41</com:B> and <com:B>42</com:B> are bonded to the extent that the substrates <com:B>41</com:B> and <com:B>42</com:B> are not separated from each other when the substrates <com:B>41</com:B> and <com:B>42</com:B> are subjected to fast dicing. Based on this discussion, the &#x201c;practical bonding strength&#x201d; is defined as a strength if the bond energy &#x394;<com:Sub>&#x3b3;</com:Sub> per unit area of one surface on the bonding interface is equal to or higher than 0.1 J/m<com:Sup>2</com:Sup>, preferably equal to or higher than 0.5 J/m<com:Sup>2</com:Sup>.</com:P>
+		<com:P com:id="p-0062" com:pNumber="0061">The following table shows an experimental result of an experiment measuring the bond energy &#x394;<com:Sub>&#x3b3;</com:Sub> for the substrates bonded through room temperature bonding by using the device manufacture method according to the present invention.</com:P>
+		<com:P com:id="p-0063" com:pNumber="0062">
+			<com:Table xmlns:mathml="http://www.w3.org/1998/Math/MathML3" xmlns:tbl="http://www.oasis-open.org/tables/exchange/1.0">
+				<com:IPOASISTable tbl:frame="none" tbl:colsep="false" tbl:rowsep="false" com:id="TABLE-US-00001" com:tableNumber="00001">
+					<com:TableGroup tbl:cols="3" tbl:colsep="false" tbl:rowsep="false" tbl:align="left">
+						<tbl:colspec tbl:colname="offset" tbl:colwidth="28pt" tbl:align="left"/>
+						<tbl:colspec tbl:colname="1" tbl:colwidth="105pt" tbl:align="left"/>
+						<tbl:colspec tbl:colname="2" tbl:colwidth="84pt" tbl:align="left"/>
+						<com:TableHead>
+							<com:Row>
+								<com:Entry/>
+								<com:Entry tbl:namest="offset" tbl:nameend="2" tbl:rowsep="true" tbl:align="center"/>
+							</com:Row>
+							<com:Row>
+								<com:Entry/>
+								<com:Entry>Bonding functional</com:Entry>
+								<com:Entry/>
+							</com:Row>
+							<com:Row>
+								<com:Entry/>
+								<com:Entry>intermediate layer</com:Entry>
+								<com:Entry>Bond energy &#x394;<com:Sub>&#x3b3;</com:Sub>
+								</com:Entry>
+							</com:Row>
+							<com:Row>
+								<com:Entry/>
+								<com:Entry tbl:namest="offset" tbl:nameend="2" tbl:rowsep="true" tbl:align="center"/>
+							</com:Row>
+						</com:TableHead>
+						<com:TableBody tbl:valign="top">
+							<com:Row>
+								<com:Entry/>
+								<com:Entry>None</com:Entry>
+								<com:Entry>0.05 J/m<com:Sup>2 </com:Sup>or less</com:Entry>
+							</com:Row>
+							<com:Row>
+								<com:Entry/>
+								<com:Entry>Aluminum oxide Al<com:Sub>2</com:Sub>O<com:Sub>3</com:Sub>
+								</com:Entry>
+								<com:Entry>0.5 J/m<com:Sup>2 </com:Sup>or more</com:Entry>
+							</com:Row>
+							<com:Row>
+								<com:Entry/>
+								<com:Entry>Titanium dioxide TiO<com:Sub>2</com:Sub>
+								</com:Entry>
+								<com:Entry>0.8 J/m<com:Sup>2 </com:Sup>or more</com:Entry>
+							</com:Row>
+							<com:Row>
+								<com:Entry/>
+								<com:Entry>Zirconium dioxide ZrO<com:Sub>2</com:Sub>
+								</com:Entry>
+								<com:Entry>0.8 J/m<com:Sup>2 </com:Sup>or more</com:Entry>
+							</com:Row>
+							<com:Row>
+								<com:Entry/>
+								<com:Entry>Hafnium dioxide HfO<com:Sub>2</com:Sub>
+								</com:Entry>
+								<com:Entry>0.8 J/m<com:Sup>2 </com:Sup>or more</com:Entry>
+							</com:Row>
+							<com:Row>
+								<com:Entry/>
+								<com:Entry tbl:namest="offset" tbl:nameend="2" tbl:rowsep="true" tbl:align="center"/>
+							</com:Row>
+						</com:TableBody>
+					</com:TableGroup>
+				</com:IPOASISTable>
+			</com:Table>
+			<com:Br/>
+Here, each bonding functional intermediate layer <com:B>28</com:B> is formed to have a thickness of several nanometers. That is, the experimental result indicates that the bond energy &#x394;<com:Sub>&#x3b3;</com:Sub> of the bonded part is lower than 0.1 J/m<com:Sup>2 </com:Sup>when the bonding functional intermediate layer <com:B>28</com:B> is not arranged, the bond energy &#x394;<com:Sub>&#x3b3;</com:Sub> is equal to or higher than 0.5 J/m<com:Sup>2 </com:Sup>when the bonding functional intermediate layer <com:B>28</com:B> is made of aluminum oxide Al<com:Sub>2</com:Sub>O<com:Sub>3</com:Sub>, that the bond energy &#x394;<com:Sub>&#x3b3;</com:Sub> is equal to or higher than 0.8 J/m<com:Sup>2 </com:Sup>when the bonding functional intermediate layer <com:B>28</com:B> is made of titanium dioxide TiO<com:Sub>2</com:Sub>, that the bond energy &#x394;<com:Sub>&#x3b3;</com:Sub> is equal to or higher than 0.8 J/m<com:Sup>2 </com:Sup>when the bonding functional intermediate layer <com:B>28</com:B> is made of zirconium dioxide ZrO<com:Sub>2</com:Sub>, and that the bond energy &#x394;<com:Sub>&#x3b3;</com:Sub> is equal to or higher than 0.8 J/m<com:Sup>2 </com:Sup>when the bonding functional intermediate layer <com:B>28</com:B> is made of hafnium dioxide HfO<com:Sub>2</com:Sub>. That is, this experimental result indicates that the bond energy &#x394;<com:Sub>&#x3b3;</com:Sub> of the bonded part of the substrates bonded through room temperature bonding is lower than 0.1 J/m<com:Sup>2 </com:Sup>when the bonding functional intermediate layer <com:B>28</com:B> is not prepared, and that the bond energy &#x394;<com:Sub>&#x3b3;</com:Sub> of the bonded part of the substrates bonded through room temperature bonding is equal to or higher than 0.1 J/m<com:Sup>2 </com:Sup>when the bonding functional intermediate layer <com:B>28</com:B> is prepared. This experimental result also indicates that the substrates are not bonded to each other with a practical bonding strength when the bonding functional intermediate layer <com:B>28</com:B> is not prepared, and that the substrates are bonded to each other with a practical bonding strength when the bonding functional intermediate layer <com:B>28</com:B> is arranged.
+</com:P>
+		<com:P com:id="p-0064" com:pNumber="0063">A device in an embodiment of the present invention is produced with the above-stated room temperature bonding method using the above-stated room temperature bonding apparatus <com:B>1</com:B>. As shown in <com:FigureReference com:idrefs="DRAWINGS">FIG. 9</com:FigureReference>, the device is applied to a photo detector generating an electric signal or an electromotive force based on received light, and includes a plurality of substrates and a photo detector main body <com:B>101</com:B>. The plurality of substrates include substrates <com:B>11</com:B> and <com:B>12</com:B>: a substrate on which the photo detector main body is formed, and a SiO<com:Sub>2 </com:Sub>base material substrate mainly containing SiO<com:Sub>2 </com:Sub>and transmitting light, which is excellent in the optical transparency. Examples of SiO<com:Sub>2 </com:Sub>base material include synthetic quartz, Pyrex (registered trademark), glass, and fused quartz each having a crystal structure. The Pyrex (registered trademark), the glass, and the fused quartz are solidified without being crystallized and have a stereoscopic net structure. The photo detector main body <com:B>101</com:B> generates the electric signal or electromotive force based on the light with which the device is irradiated.</com:P>
+		<com:P com:id="p-0065" com:pNumber="0064">Formed in the plurality of substrates are interfaces bonded through room temperature bonding by using the device manufacture method according to the present invention. That is, the bonding functional intermediate layer <com:B>28</com:B> is formed on the interface <com:B>27</com:B> between the substrates <com:B>11</com:B> and <com:B>12</com:B>. The bonding functional intermediate layer <com:B>28</com:B> is made of one of oxide, nitride, and fluoride each having optical transparency. Examples of the oxide include aluminum oxide Al<com:Sub>2</com:Sub>O<com:Sub>3</com:Sub>, titanium dioxide TiO<com:Sub>2</com:Sub>, zirconium dioxide ZrO<com:Sub>2</com:Sub>, and hafnium dioxide HfO<com:Sub>2</com:Sub>. Examples of the nitride include silicon nitride SiN and titanium nitride TiN. Examples of the fluoride include calcium fluoride CaF<com:Sub>2 </com:Sub>and magnesium fluoride MgF<com:Sub>2</com:Sub>. The photo detector main body <com:B>101</com:B> is formed on one of the plurality of substrates (for example, the substrate <com:B>12</com:B>), and sealed from the environment by the plurality of substrates (for example, the substrates <com:B>11</com:B> and <com:B>12</com:B>). The photo detector main body <com:B>101</com:B> generates an electric signal or electromotive force based on light transmitted through the interface <com:B>27</com:B> between the substrates <com:B>11</com:B> and <com:B>12</com:B>.</com:P>
+		<com:P com:id="p-0066" com:pNumber="0065">Such a device is configured so that the SiO<com:Sub>2 </com:Sub>base materials, which are difficult to bond to each other with the conventional room temperature bonding, are bonded through room temperature bonding with the bonding functional intermediate layer <com:B>28</com:B>, is free from deterioration of performance and reliability and excellent in light transmission of transmitting light to the photo detector. Furthermore, the bonding interface between the substrates <com:B>11</com:B> and <com:B>12</com:B> allows transmitting light and such a device allows arranging the bonding interface in a region transmitting light. Accordingly, such a device can lessen restrictions on layout related to the bonding interface, make the layout diversified, and make the manufacturing process more diversified. As a result, the device can further facilitate designing and further facilitate the manufacturing process.</com:P>
+		<com:P com:id="p-0067" com:pNumber="0066">It should be noted that the device according to the present invention is also applicable to, as shown in <com:FigureReference com:idrefs="DRAWINGS">FIG. 10</com:FigureReference>, a light-emitting device emitting light based on an applied electric signal. In this case, the device includes a plurality of substrates and a light-emitting device main body. The plurality of substrates includes the substrates <com:B>11</com:B> and <com:B>12</com:B> and an interface bonded through room temperature bonding is formed inside. That is, the bonding functional intermediate layer <com:B>28</com:B> is formed on the interface <com:B>27</com:B> between the substrates <com:B>11</com:B> and <com:B>12</com:B>. The bonding functional intermediate layer <com:B>28</com:B> is made of one of oxide, nitride, and fluoride having optical transparency. Examples of the oxide include aluminum oxide Al<com:Sub>2</com:Sub>O<com:Sub>3</com:Sub>, titanium dioxide TiO<com:Sub>2</com:Sub>, zirconium dioxide ZrO<com:Sub>2</com:Sub>, and hafnium dioxide HfO<com:Sub>2</com:Sub>. Examples of the nitride include silicon nitride SiN and titanium nitride TiN. Examples of the fluoride include calcium fluoride CaF<com:Sub>2 </com:Sub>and magnesium fluoride MgF<com:Sub>2</com:Sub>. The light-emitting device main body <com:B>103</com:B> is formed on one of the plurality of substrates (for example, the substrate <com:B>12</com:B>), and sealed from the environment by the plurality of substrates (for example, the substrates <com:B>11</com:B> and <com:B>12</com:B>). The light-emitting device main body <com:B>103</com:B> emits light based on an electrical signal applied to the device. The light is transmitted through the interface <com:B>27</com:B> between the substrates <com:B>11</com:B> and <com:B>12</com:B> and emitted to outside.</com:P>
+		<com:P com:id="p-0068" com:pNumber="0067">Such a device is configured so that the SiO<com:Sub>2 </com:Sub>base materials, which are difficult to bond to each other with the conventional room temperature bonding, are bonded through room temperature bonding, and is free from deterioration of performance and reliability and excellent in optical transmission of transmitting light from the light-emitting device. The device allows arranging the bonding interface between the substrates <com:B>11</com:B> and <com:B>12</com:B> in a region transmitting light. Therefore, such a device can lessen restrictions on layout related to the bonding interface, make the layout diversified, and make the manufacturing process more diversified. As a result, the device can further facilitate designing and further facilitate the manufacturing process.</com:P>
+		<com:P com:id="p-0069" com:pNumber="0068">Moreover, the device according to the present invention is applicable to, as shown in <com:FigureReference com:idrefs="DRAWINGS">FIG. 11</com:FigureReference>, an optical signal transmission device. In this case, the device includes a plurality of substrates and an optical signal transmission device main body. The plurality of substrates includes the substrates <com:B>11</com:B> and <com:B>12</com:B> and an interface bonded through room temperature bonding is formed inside. That is, the bonding functional intermediate layer <com:B>28</com:B> is formed on the interface <com:B>27</com:B> between the substrates <com:B>11</com:B> and <com:B>12</com:B>. The bonding functional intermediate layer <com:B>28</com:B> is made of one of oxide, nitride, and fluoride having optical transparency. Examples of the oxide include aluminum oxide Al<com:Sub>2</com:Sub>O<com:Sub>3</com:Sub>, titanium dioxide TiO<com:Sub>2</com:Sub>, zirconium dioxide ZrO<com:Sub>2</com:Sub>, and hafnium dioxide HfO<com:Sub>2</com:Sub>. Examples of the nitride include silicon nitride SiN and titanium nitride TiN. Examples of the fluoride include calcium fluoride CaF<com:Sub>2 </com:Sub>and magnesium fluoride MgF<com:Sub>2</com:Sub>. The optical signal transmission device main body <com:B>105</com:B> is formed on one of the plurality of substrates (for example, the substrate <com:B>12</com:B>), and sealed from the environment by the plurality of substrates (for example, the substrates <com:B>11</com:B> and <com:B>12</com:B>). Examples of the optical signal transmission device main body <com:B>105</com:B> include an optical switch, a lens, and an optical fiber. The optical switch includes a mirror and a plurality of light transmission paths. The optical switch reflects an inputted optical signal on the mirror, and outputs the reflected optical signal to one optical transmission path selected from among the plurality of optical transmission paths. Examples of such an optical signal transmission device main body <com:B>105</com:B> also include a photonic crystal fiber. The optical signal is transmitted by the interface <com:B>27</com:B> between the substrates <com:B>11</com:B> and <com:B>12</com:B> and emitted to outside.</com:P>
+		<com:P com:id="p-0070" com:pNumber="0069">Similarly to the above-stated devices, such a device is configured so that the SiO<com:Sub>2 </com:Sub>base materials, which are difficult to bond to each other with the conventional room-temperature bonding, are room-temperature-bonded to each other via the bonding functional intermediate layer <com:B>28</com:B>, and is free from deterioration of performance and reliability. The device is free from attenuation resulting from a strain caused by a heat treatment or absorption by the intermediate layer, and excellent in the transmission performance for the optical signal transmitted via the interface and in the durability against high intensity light. Further, the device allows arranging the bonding interface between the substrates <com:B>11</com:B> and <com:B>12</com:B> in a region transmitting light. Therefore, such a device can lessen restrictions on layout related to the bonding interface, make the layout diversified, and make the manufacturing process more diversified. As a result, the device can further facilitate designing and further facilitate the manufacturing process.</com:P>
+		<com:P com:id="p-0071" com:pNumber="0070">The device according to the present invention is formed so that the SiO<com:Sub>2 </com:Sub>base materials, which are difficult to bond to each other with the conventional room-temperature bonding, are bonded through room temperature bonding, is free from deterioration of performance and reliability, and is excellent in the optical transmission characteristics. With the device manufacture method according to the present invention, the SiO<com:Sub>2 </com:Sub>base materials, which are difficult to bond to each other with the conventional room-temperature bonding, are bonded through room temperature bonding with a practical bonding strength, and room temperature bonding can be achieved without causing deterioration of optical transmission on the bonding interface, thereby allowing manufacturing a device free from deterioration of performance and reliability, and excellent in the optical transmission characteristics.</com:P>
+	</pat:Description>
+	<pat:ClaimStatement>The invention claimed is:</pat:ClaimStatement>
+	<pat:Claims com:id="claims">
+		<pat:Claim com:id="CLM-00001">
+			<pat:ClaimNumber>1</pat:ClaimNumber>
+			<pat:ClaimTypeCategory>Independent</pat:ClaimTypeCategory>
+			<pat:ClaimText>1. A device manufacture method, comprising:
+<pat:ClaimText>sputtering a first surface of a first substrate mainly containing silicon dioxide; and</pat:ClaimText>
+				<pat:ClaimText>preparing a bonded substrate by room-temperature bonding in which said first surface is contacted in a vacuum atmosphere with a second surface of a second substrate mainly containing silicon, compound semiconductor, silicon dioxide, or fluoride via a bonding functional intermediate layer to thereby bond said first substrate to said second substrate,</pat:ClaimText>
+				<pat:ClaimText>wherein material of said bonding functional intermediate layer is selected from among optically transparent materials which are oxide, fluoride, or nitride, the material being different from the main component of the first substrate, and different from the main component of the second substrate.</pat:ClaimText>
+			</pat:ClaimText>
+		</pat:Claim>
+		<pat:Claim com:id="CLM-00002">
+			<pat:ClaimNumber>2</pat:ClaimNumber>
+			<pat:ClaimTypeCategory>Dependent</pat:ClaimTypeCategory>
+			<pat:ClaimText>2. The device manufacture method according to <pat:ClaimReference com:idrefs="CLM-00001">claim 1</pat:ClaimReference>, wherein said first surface is subject to sputtering after said bonding functional intermediate layer is formed thereon.</pat:ClaimText>
+		</pat:Claim>
+		<pat:Claim com:id="CLM-00003">
+			<pat:ClaimNumber>3</pat:ClaimNumber>
+			<pat:ClaimTypeCategory>Dependent</pat:ClaimTypeCategory>
+			<pat:ClaimText>3. The device manufacture method according to <pat:ClaimReference com:idrefs="CLM-00002">claim 2</pat:ClaimReference>, further comprising:
+<pat:ClaimText>sputtering said second surface simultaneously with the sputtering of said first surface.</pat:ClaimText>
+			</pat:ClaimText>
+		</pat:Claim>
+		<pat:Claim com:id="CLM-00004">
+			<pat:ClaimNumber>4</pat:ClaimNumber>
+			<pat:ClaimTypeCategory>Dependent</pat:ClaimTypeCategory>
+			<pat:ClaimText>4. The device manufacture method according to <pat:ClaimReference com:idrefs="CLM-00003">claim 3</pat:ClaimReference>, wherein said first substrate is fused quartz, glass or quartz having a crystal structure.</pat:ClaimText>
+		</pat:Claim>
+		<pat:Claim com:id="CLM-00005">
+			<pat:ClaimNumber>5</pat:ClaimNumber>
+			<pat:ClaimTypeCategory>Dependent</pat:ClaimTypeCategory>
+			<pat:ClaimText>5. The device manufacture method according to <pat:ClaimReference com:idrefs="CLM-00002">claim 2</pat:ClaimReference>, wherein said first substrate is fused quartz or quartz having a crystal structure.</pat:ClaimText>
+		</pat:Claim>
+		<pat:Claim com:id="CLM-00006">
+			<pat:ClaimNumber>6</pat:ClaimNumber>
+			<pat:ClaimTypeCategory>Dependent</pat:ClaimTypeCategory>
+			<pat:ClaimText>6. The device manufacture method according to any one of <pat:ClaimReference com:idrefs="CLM-00001">claim 1</pat:ClaimReference>, wherein said first substrate is fused quartz, glass or quartz having a crystal structure.</pat:ClaimText>
+		</pat:Claim>
+		<pat:Claim com:id="CLM-00007">
+			<pat:ClaimNumber>7</pat:ClaimNumber>
+			<pat:ClaimTypeCategory>Dependent</pat:ClaimTypeCategory>
+			<pat:ClaimText>7. The device manufacture method according to <pat:ClaimReference com:idrefs="CLM-00006">claim 6</pat:ClaimReference>, wherein said second substrate is fused quartz, glass or quartz having a crystal structure.</pat:ClaimText>
+		</pat:Claim>
+		<pat:Claim com:id="CLM-00008">
+			<pat:ClaimNumber>8</pat:ClaimNumber>
+			<pat:ClaimTypeCategory>Independent</pat:ClaimTypeCategory>
+			<pat:ClaimText>8. A device manufacture method, comprising:
+<pat:ClaimText>sputtering a first surface of a first substrate mainly containing silicon dioxide: and</pat:ClaimText>
+				<pat:ClaimText>preparing a bonded substrate by contacting said first surface with a second surface of a second substrate mainly containing silicon, compound semiconductor, silicon dioxide, or fluoride via a bonding functional intermediate layer to thereby bond said first substrate to said second substrate.</pat:ClaimText>
+				<pat:ClaimText>wherein material of said bonding functional intermediate layer is selected from among optically transparent materials which are oxide, fluoride, or nitride, the materials being different from the main component of the first substrate, and different from the main component of the second substrate,</pat:ClaimText>
+				<pat:ClaimText>wherein said first substrate is fused quartz, glass or quartz having a crystal structure,</pat:ClaimText>
+				<pat:ClaimText>wherein said second substrate is fused quartz, glass or quartz having a crystal structure,</pat:ClaimText>
+				<pat:ClaimText>wherein material of said bonding functional intermediate layer is aluminum oxide, titanium dioxide, zirconium dioxide, or hafnium dioxide.</pat:ClaimText>
+			</pat:ClaimText>
+		</pat:Claim>
+		<pat:Claim com:id="CLM-00009">
+			<pat:ClaimNumber>9</pat:ClaimNumber>
+			<pat:ClaimTypeCategory>Independent</pat:ClaimTypeCategory>
+			<pat:ClaimText>9. A device manufacture method, comprising:
+<pat:ClaimText>sputtering a first surface of a first bonding functional intermediate layer formed on a first substrate mainly containing silicon dioxide;</pat:ClaimText>
+				<pat:ClaimText>sputtering a second surface of a second bonding functional intermediate layer formed on a second substrate mainly containing silicon, compound semiconductor, silicon dioxide, or fluoride;</pat:ClaimText>
+				<pat:ClaimText>preparing a bonded substrate by room-temperature bonding in which said first surface of said first bonding functional intermediate layer is contacted in a vacuum atmosphere with a second surface of said second to thereby bond said first substrate to said second substrate,</pat:ClaimText>
+				<pat:ClaimText>wherein material of said first sand second bonding functional intermediate layers is selected from among optically transparent materials which are oxide, fluoride, or nitride, the materials being different from the main component of the first substrate, and different from the main component of the second substrate.</pat:ClaimText>
+			</pat:ClaimText>
+		</pat:Claim>
+		<pat:Claim com:id="CLM-00010">
+			<pat:ClaimNumber>10</pat:ClaimNumber>
+			<pat:ClaimTypeCategory>Dependent</pat:ClaimTypeCategory>
+			<pat:ClaimText>10. The device manufacture method according to <pat:ClaimReference com:idrefs="CLM-00009">claim 9</pat:ClaimReference>, wherein the sputtering of said second surface is performed simultaneously with the sputtering of said first surface. </pat:ClaimText>
+		</pat:Claim>
+	</pat:Claims>
+	<pat:Abstract com:id="abstract">
+		<com:P com:id="p-0001" com:pNumber="0000">A device is provided with: a first substrate mainly containing silicon dioxide; a second substrate mainly containing silicon, compound semiconductor, silicon dioxide or fluoride; and a bonding functional intermediate layer arranged between the first substrate and the second substrate. The first substrate is bonded to the second substrate thorough room temperature bonding in which a sputtered first surface of the first substrate is contacted with a sputtered second surface of the second substrate via the bonding functional intermediate layer. Here, the material of the bonding functional intermediate layer is selected from among optically transparent materials which are oxide, fluoride, or nitride, the materials being different from the main component of the first substrate and different from the main component of the second substrate.</com:P>
+	</pat:Abstract>
+	<pat:Drawings com:id="DRAWINGS">
+		<pat:PageImage com:id="Fig-EMI-D00000">
+			<com:ImageFormatCategory>TIFF</com:ImageFormatCategory>
+			<com:FileName>US08936998-20150120-D00000.TIF</com:FileName>
+			<com:HeightMeasure com:measureUnitCode="Mm">79.16</com:HeightMeasure>
+			<com:WidthMeasure com:measureUnitCode="Mm">121.16</com:WidthMeasure>
+			<com:Alt>embedded image</com:Alt>
+		</pat:PageImage>
+		<pat:PageImage com:id="Fig-EMI-D00001">
+			<com:ImageFormatCategory>TIFF</com:ImageFormatCategory>
+			<com:FileName>US08936998-20150120-D00001.TIF</com:FileName>
+			<com:HeightMeasure com:measureUnitCode="Mm">160.70</com:HeightMeasure>
+			<com:WidthMeasure com:measureUnitCode="Mm">164.00</com:WidthMeasure>
+			<com:Alt>embedded image</com:Alt>
+		</pat:PageImage>
+		<pat:PageImage com:id="Fig-EMI-D00002">
+			<com:ImageFormatCategory>TIFF</com:ImageFormatCategory>
+			<com:FileName>US08936998-20150120-D00002.TIF</com:FileName>
+			<com:HeightMeasure com:measureUnitCode="Mm">232.92</com:HeightMeasure>
+			<com:WidthMeasure com:measureUnitCode="Mm">146.39</com:WidthMeasure>
+			<com:Alt>embedded image</com:Alt>
+		</pat:PageImage>
+		<pat:PageImage com:id="Fig-EMI-D00003">
+			<com:ImageFormatCategory>TIFF</com:ImageFormatCategory>
+			<com:FileName>US08936998-20150120-D00003.TIF</com:FileName>
+			<com:HeightMeasure com:measureUnitCode="Mm">231.22</com:HeightMeasure>
+			<com:WidthMeasure com:measureUnitCode="Mm">141.39</com:WidthMeasure>
+			<com:Alt>embedded image</com:Alt>
+		</pat:PageImage>
+		<pat:PageImage com:id="Fig-EMI-D00004">
+			<com:ImageFormatCategory>TIFF</com:ImageFormatCategory>
+			<com:FileName>US08936998-20150120-D00004.TIF</com:FileName>
+			<com:HeightMeasure com:measureUnitCode="Mm">97.54</com:HeightMeasure>
+			<com:WidthMeasure com:measureUnitCode="Mm">127.08</com:WidthMeasure>
+			<com:Alt>embedded image</com:Alt>
+		</pat:PageImage>
+		<pat:PageImage com:id="Fig-EMI-D00005">
+			<com:ImageFormatCategory>TIFF</com:ImageFormatCategory>
+			<com:FileName>US08936998-20150120-D00005.TIF</com:FileName>
+			<com:HeightMeasure com:measureUnitCode="Mm">202.44</com:HeightMeasure>
+			<com:WidthMeasure com:measureUnitCode="Mm">154.01</com:WidthMeasure>
+			<com:Alt>embedded image</com:Alt>
+		</pat:PageImage>
+		<pat:PageImage com:id="Fig-EMI-D00006">
+			<com:ImageFormatCategory>TIFF</com:ImageFormatCategory>
+			<com:FileName>US08936998-20150120-D00006.TIF</com:FileName>
+			<com:HeightMeasure com:measureUnitCode="Mm">103.46</com:HeightMeasure>
+			<com:WidthMeasure com:measureUnitCode="Mm">146.30</com:WidthMeasure>
+			<com:Alt>embedded image</com:Alt>
+		</pat:PageImage>
+	</pat:Drawings>
+	<com:ExternalDocumentBag>
+		<com:ExternalDocument>
+			<com:FileName>US08936998-20150120-M00001.TIF</com:FileName>
+			<com:DocumentFormatCategory>TIFF</com:DocumentFormatCategory>
+			<com:DocumentContentCategory>Mathematical formula</com:DocumentContentCategory>
+		</com:ExternalDocument>
+		<com:ExternalDocument>
+			<com:FileName>US08936998_Search_Report.PDF</com:FileName>
+			<com:DocumentFormatCategory>PDF</com:DocumentFormatCategory>
+			<com:DocumentContentCategory>Search Report</com:DocumentContentCategory>
+		</com:ExternalDocument>
+	</com:ExternalDocumentBag>
+</pat:PatentPublication>

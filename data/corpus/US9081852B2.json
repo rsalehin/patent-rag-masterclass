@@ -1,0 +1,296 @@
+{
+ "doc_id": "US9081852B2",
+ "publication_number": "US9081852B2",
+ "title": "Recommending terms to specify ontology space",
+ "abstract": "In one embodiment, a set of target search terms for a search is received. Candidate terms are selected, where a candidate term is selected to reduce an ontology space of the search. The candidate terms are sent to a computer to recommend the candidate terms as search terms. In another embodiment, a document stored in one or more tangible media is accessed. A set of target tags for the document is received. Terms are selected, where a term is selected to reduce an ontology space of the document. The terms are sent to a computer to recommend the terms as tags.",
+ "assignees": [
+  "Fujitsu Ltd",
+  "Fujitsu Ltd"
+ ],
+ "inventors": [
+  "David L. Marvit",
+  "Jawahar Jain",
+  "Stergios Stergiou",
+  "Alex Gilman",
+  "B. Thomas Adler",
+  "John J. Sidorowich",
+  "Albert Reinhardt",
+  "Yannis Labrou"
+ ],
+ "priority_date": "2007-10-05",
+ "filing_date": "2008-10-01",
+ "publication_date": "2015-07-14",
+ "cpc": [
+  "G06F17/30672",
+  "G06F",
+  "G06F16/00",
+  "G06F16/30",
+  "G06F16/33",
+  "G06F16/3331",
+  "G06F16/3332",
+  "G06F16/3338",
+  "G06F16/31",
+  "G06F16/313",
+  "G06F16/332",
+  "G06F16/3325"
+ ],
+ "citations": [
+  "US5907836A",
+  "US6023676A",
+  "US6038560A",
+  "US6175829B1",
+  "US20020022956A1",
+  "US20020024532A1",
+  "US6397205B1",
+  "US20020091661A1",
+  "EP1320042A2",
+  "US6587848B1",
+  "US20030135725A1",
+  "US20030182168A1",
+  "US6675159B1",
+  "US6687696B2",
+  "US20040083424A1",
+  "US6766316B2",
+  "US6772170B2",
+  "US20040158569A1",
+  "US20040210600A1",
+  "US6832350B1"
+ ],
+ "language": "en",
+ "claims": [
+  {
+   "number": 1,
+   "text": "A computer-implemented method comprising: accessing a document stored in one or more tangible media; receiving a set of target tags for the document; using a microprocessor of a computer, identifying a plurality of terms, each identified term selected to reduce an ontology space of the document due to the identified term having a higher affinity with a target tag and a lower affinity with the other identified terms; sending the plurality of identified terms to a user of the computer via a user interface of the computer to recommend the plurality of identified terms as tags; receiving, via the user interface of the computer, a selection by the user of one or more terms of the plurality of identified terms and identifying one or more of the plurality of identified terms that were not selected by the user; using the microprocessor of the computer, determining a plurality of next terms that have both (i) an affinity with the one or more terms selected by the user that is above a first affinity threshold and (ii) an affinity with the one or more terms that were not selected by the user that is below a second affinity threshold; and sending the next terms to the user via the user interface of the computer to recommend the terms as tags.",
+   "dependent_on": null
+  },
+  {
+   "number": 2,
+   "text": "The method of claim 1 , the accessing the set of target tags for the document further comprising: receiving a target tag of the set of target tags from a source selected from a group consisting of: user input; and a computer analysis; and recording the source of the target tag.",
+   "dependent_on": 1
+  },
+  {
+   "number": 3,
+   "text": "The method of claim 1 , further comprising: establishing a source of each target tag of the set of target tags; retrieving a plurality of search results, a search result associated with a target tag; and ranking the search results according to the sources of the target tags.",
+   "dependent_on": 1
+  },
+  {
+   "number": 4,
+   "text": "The method of claim 1 , further comprising: removing one or more redundant terms from the set of target tags.",
+   "dependent_on": 1
+  },
+  {
+   "number": 5,
+   "text": "The method of claim 1 , further comprising: initiating display of a graphical element configured to receive a requested degree of relatedness that a tag should have to a particular term.",
+   "dependent_on": 1
+  },
+  {
+   "number": 6,
+   "text": "The method of claim 1 , further comprising identifying the plurality of terms according to affinity by: identifying one or more terms having a higher affinity with a target tag from a cluster corresponding to the target tag.",
+   "dependent_on": 1
+  },
+  {
+   "number": 7,
+   "text": "The method of claim 1 , further comprising identifying the plurality of terms according to affinity, the affinity further comprising one or more affinities selected from a group consisting of an affinity, an average affinity, a directional affinity, and a differential affinity.",
+   "dependent_on": 1
+  },
+  {
+   "number": 8,
+   "text": "One or more non-transitory computer-readable tangible media encoding software operable when executed to: access a document stored in one or more tangible media; receive a set of target tags for the document; identify a plurality of terms, each identified term selected to reduce an ontology space of the document due to the identified term having a higher affinity with a target tag and a lower affinity with the other identified terms; send the plurality of identified terms to a computer to recommend the plurality of identified terms as tags; receive a selection by a user of one or more terms of the plurality of identified terms and identifying one or more of the plurality of identified terms that were not selected by the user; determine a plurality of next terms that have both (i) an affinity with the one or more terms selected by the user that is above a first affinity threshold and (ii) an affinity with the one or more terms that were not selected by the user that is below a second affinity threshold; and send the next terms to the computer to recommend the terms as tags.",
+   "dependent_on": null
+  },
+  {
+   "number": 9,
+   "text": "The computer-readable tangible media of claim 8 , the software when executed operable to access the set of target tags for the document by: receiving a target tag of the set of target tags from a source selected from a group consisting of: user input; and a computer analysis; and recording the source of the target tag.",
+   "dependent_on": 8
+  },
+  {
+   "number": 10,
+   "text": "The computer-readable tangible media of claim 8 , the software when executed operable to: establish a source of each target tag of the set of target tags; retrieve a plurality of search results, a search result associated with a target tag; and rank the search results according to the sources of the target tags.",
+   "dependent_on": 8
+  },
+  {
+   "number": 11,
+   "text": "The computer-readable tangible media of claim 8 , the software when executed operable to: remove one or more redundant terms from the set of target tags.",
+   "dependent_on": 8
+  },
+  {
+   "number": 12,
+   "text": "The computer-readable tangible media of claim 8 , the software when executed operable to: initiate display of a graphical element configured to receive a requested degree of relatedness that a tag should have to a particular term.",
+   "dependent_on": 8
+  },
+  {
+   "number": 13,
+   "text": "The computer-readable tangible media of claim 8 , the software when executed operable to identify the plurality of terms according to affinity by: identifying one or more terms having a higher affinity with a target tag from a cluster corresponding to the target tag.",
+   "dependent_on": 8
+  },
+  {
+   "number": 14,
+   "text": "The computer-readable tangible media of claim 8 , the software when executed operable to identify the plurality of terms according to affinity, the affinity further comprising one or more affinities selected from a group consisting of an affinity, an average affinity, a directional affinity, and a differential affinity.",
+   "dependent_on": 8
+  },
+  {
+   "number": 15,
+   "text": "A computer-implemented method comprising: receiving a set of target search terms for a search; using a microprocessor of a computer, selecting a plurality of candidate terms, each candidate term selected to reduce an ontology space of the document due to the candidate term having a higher affinity with a target tag and a lower affinity with the other candidate terms; sending the candidate terms to a user of the computer via a user interface of the computer to recommend the candidate terms as search terms; receiving, via the user interface of the computer, a selection by the user of one or more terms of the candidate terms and identifying one or more terms of the candidate terms that were not selected by the user; using the microprocessor of the computer, determining a plurality of next terms that have both (i) an affinity with the one or more terms selected by the user that is above a first affinity threshold and (ii) an affinity with the one or more terms that were not selected by the user that is below a second affinity threshold; and sending the next terms to the user via the user interface of the computer to recommend the next terms as search terms.",
+   "dependent_on": null
+  },
+  {
+   "number": 16,
+   "text": "The method of claim 15 , the receiving the set of target search terms for the search further comprising: receiving a target search term of the set of target search terms from a source selected from a group consisting of: user input; and a computer analysis; and recording the source of the target search term.",
+   "dependent_on": 15
+  },
+  {
+   "number": 17,
+   "text": "The method of claim 15 , further comprising: establishing a source of each target search term of the set of target search terms; retrieving a plurality of search results, a search result associated with a target search term; and ranking the search results according to the sources of the target search terms.",
+   "dependent_on": 15
+  },
+  {
+   "number": 18,
+   "text": "The method of claim 15 , further comprising: removing one or more redundant terms from the set of target search terms.",
+   "dependent_on": 15
+  },
+  {
+   "number": 19,
+   "text": "The method of claim 15 , further comprising: initiating display of a graphical element configured to receive a requested degree of relatedness that a candidate term should have to a search term.",
+   "dependent_on": 15
+  },
+  {
+   "number": 20,
+   "text": "The method of claim 15 , further comprising selecting the plurality of candidate terms according to affinity by: identifying one or more candidate terms having a higher affinity with a target search term from a cluster corresponding to the target search term.",
+   "dependent_on": 15
+  },
+  {
+   "number": 21,
+   "text": "The method of claim 15 , further comprising selecting the plurality of candidate terms according to affinity, the affinity further comprising one or more affinities selected from a group consisting of an affinity, an average affinity, a directional affinity, and a differential affinity.",
+   "dependent_on": 15
+  },
+  {
+   "number": 22,
+   "text": "One or more non-transitory computer-readable tangible media encoding software operable when executed to: receive a set of target search terms for a search; select a plurality of candidate terms, each candidate term selected to reduce an ontology space of the document due to the candidate term having a higher affinity with a target tag and a lower affinity with the other candidate terms; send the candidate terms to a computer to recommend the candidate terms as search terms; receive a selection by the user of one or more terms of the candidate terms and identifying one or more terms of the candidate terms that were not selected by the user; determine a plurality of next terms that have both (i) an affinity with the one or more terms selected by the user that is above a first affinity threshold and (ii) an affinity with the one or more terms that were not selected by the user that is below a second affinity threshold; and send the next terms to the computer to recommend the next terms as search terms.",
+   "dependent_on": null
+  },
+  {
+   "number": 23,
+   "text": "The computer-readable tangible media of claim 22 , the software when executed operable to receive the set of target search terms for the search by: receiving a target search term of the set of target search terms from a source selected from a group consisting of: user input; and a computer analysis; and recording the source of the target search term.",
+   "dependent_on": 22
+  },
+  {
+   "number": 24,
+   "text": "The computer-readable tangible media of claim 22 , the software when executed operable to: establish a source of each target search term of the set of target search terms; retrieve a plurality of search results, a search result associated with a target search term; and rank the search results according to the sources of the target search terms.",
+   "dependent_on": 22
+  },
+  {
+   "number": 25,
+   "text": "The computer-readable tangible media of claim 22 , the software when executed operable to: remove one or more redundant terms from the set of target search terms.",
+   "dependent_on": 22
+  },
+  {
+   "number": 26,
+   "text": "The computer-readable tangible media of claim 22 , the software when executed operable to: initiate display of a graphical element configured to receive a requested degree of relatedness that a candidate term should have to a search term.",
+   "dependent_on": 22
+  },
+  {
+   "number": 27,
+   "text": "The computer-readable tangible media of claim 22 , the software when executed operable to select the plurality of candidate terms according to affinity by: identifying one or more candidate terms having a higher affinity with a target search term from a cluster corresponding to the target search term.",
+   "dependent_on": 22
+  },
+  {
+   "number": 28,
+   "text": "The computer-readable tangible media of claim 22 , the software when executed operable to select the plurality of candidate terms according to affinity, the affinity further comprising one or more affinities selected from a group consisting of an affinity, an average affinity, a directional affinity, and a differential affinity.",
+   "dependent_on": 22
+  }
+ ],
+ "description": [
+  {
+   "heading": "RELATED APPLICATION",
+   "paragraphs": [
+    "This application claims benefit under 35 U.S.C. §119(e) of U.S. Provisional Application Ser. No. 60/977,934, titled “Techniques for Improved Tagging,” filed Oct. 5, 2007, by David Marvit et al."
+   ]
+  },
+  {
+   "heading": "TECHNICAL FIELD",
+   "paragraphs": [
+    "The present invention relates generally to lexigraphical analysis and, more particularly, to recommending terms to specify ontology space."
+   ]
+  },
+  {
+   "heading": "BACKGROUND",
+   "paragraphs": [
+    "A corpus of data may hold a large amount of information, yet finding relevant information may be difficult. Documents may be tagged to facilitate the search for relevant information. In certain situations, however, known techniques for document tagging are not effective in locating information. Similarly, known techniques for searching are not effective in locating relevant information."
+   ]
+  },
+  {
+   "heading": "BRIEF DESCRIPTION OF THE FIGURES",
+   "paragraphs": [
+    "FIG. 1 illustrates one embodiment of a system that selects tags for documents;",
+    "FIG. 2 illustrates one embodiment of an affinity module that may be used with the system of FIG. 1 ;",
+    "FIG. 3 illustrates an example of an affinity matrix that records basic affinities;",
+    "FIG. 4 illustrates an example of an affinity matrix that records directional affinities;",
+    "FIG. 5 illustrates an example of an affinity matrix that records average affinities;",
+    "FIG. 6 illustrates an example of an affinity graph;",
+    "FIG. 7 illustrates one embodiment of a clustering module that may be used with the system of FIG. 1 ;",
+    "FIG. 8 illustrates one embodiment of an ontology feature module that may be used with the system of FIG. 1 ;",
+    "FIG. 9 illustrates one embodiment of a tagging module that may that may be used with the system of FIG. 1 ;",
+    "FIG. 10 illustrates an example of a method for determining a statistical distribution for a topic;",
+    "FIG. 11 illustrates an example of a method for assigning tags to a document by analyzing paragraphs of the document; and",
+    "FIG. 12 illustrates an example of a method for assigning tags in response to selected tags."
+   ]
+  },
+  {
+   "heading": "DETAILED DESCRIPTION",
+   "paragraphs": [
+    "FIG. 1 illustrates one embodiment of a system 10 that selects tags for documents. A tag may be one or more words assigned to a document, for example, as metadata. The tags may be used to facilitate the process of searching electronic documents. In particular embodiments, a document may be tagged by tags that serve to reduce the ontology space in which the document resides. These tags may be used to more readily retrieve the document. In particular embodiments, given one tag of the document, other tags that reduce the ontology space in which the document resides may be recommended.",
+    "In particular embodiments, system 10 assigns tags in response to target tags selected by, for example, a user. In the embodiments, system 10 recommends tags for a document. The recommended tags may have a higher affinity with a target tag and a lower affinity with the other recommended tags to reduce an ontology space of the document. System 10 may receive a selection of the recommended tags, and may recommend more tags in response to the selection. Once final tags have been selected, system 10 may assign the final tags to the document. The embodiment may be used to assign tags to documents that do not include text, as well as to documents that include text.",
+    "In certain embodiments, directional affinity may be calculated on a specific inverted index II for a given subset of words and a dictionary D, where index II includes, for example, entries I(w i ) and I(w j ) for words w i and w j . In general, an inverted index is an index data structure that stores mappings from a term to its locations, that is, the co-occurrence contexts in which a term appears. For each pair of words w i and w j in D, DA(i,j) may be defined as the values in the conjunction of entries I(w i ), I(w j ) in II divided by the number of values in I(w i ). In general, DA(i,j) is not necessarily equal to DA(j,i). The results may be stored in any suitable manner, for example, row-wise, where the D(j,i) are stored, then the D(2,j) are stored, and so on. For each row i, |I(w i )| may be stored, followed by the cardinalities of the conjunctions with the w j .",
+    "In certain embodiments, directional affinity may be calculated in three phases. In the embodiments, each dictionary term is assigned a unique integer identifier. The entries of an inverted index correspond to the integer identifiers. In Phase 0, the II entries corresponding to D are read. For parameters (s,o), only the element identifiers that are of the form ks+o are kept. The value ks+o defines a subset of the II entries to be examined. In this manner, directional affinities can be computed in parallel. As an example, the result from parameters s,o (1,0) is equivalent to the one obtained from the merging of the computations with parameters (3,0), (3,1), (3,2). This step allows calculation of DA tables for very large inverted indices.",
+    "In Phase 1, the conjunctions are calculated row-wise only for DA(i,j). In Phase 2, the calculated upper-triangular UT DA array is read. From that, the lower-triangular part is obtained as the transpose of UT. In certain embodiments, multiple DA arrays of the same dimension may be merged into a single array. A DA array on a large II can be calculated as the sum i=0 . . . (s−1) DA with parameters (s,i). Additional information may be stored with the calculated conjunctions so that directional affinities can be computed. In certain cases, the cardinalities of the II entries may be stored.",
+    "In certain embodiments, the DA may be stored row-wise, so the calculation of the AA entries may proceed in parallel with the calculation of the DA entries. In particular, AA may be generated by summing up the rows of the DA as they are read from the disk and, at the end, normalized by the number of the dictionary entries.",
+    "In the illustrated embodiment, system 10 includes a client 20 , a server 22 , and a memory 24 . Client 20 allows a user to communicate with server 22 to generate ontologies of a language. Client 20 may send user input to server 22 , and may provide (for example, display or print) server output to user. Server system 24 manages applications for generating ontologies of a language. Memory 24 stores data used by server system 24 .",
+    "In the illustrated embodiment, memory 24 stores pages 50 and a record 54 . A page 50 (or document or co-occurrence context) may refer to a collection of words. Examples of a page 50 include one or more pages of a document, one or more documents, one or more books, one or more web pages, correspondence (for example, email or instant messages), and/or other collections of words. A page 50 may be identified by a page identifier. A page 50 may be electronically stored in one or more tangible computer-readable media. A page 50 may be associated with any suitable content, for example, text (such as characters, words, and/or numbers), images (such as graphics, photographs, or videos), audio (such as recordings or computer-generated sounds), and/or software programs. In certain embodiments, a set of pages 50 may belong to a corpus. A corpus may be associated with a particular subject matter, community, organization, or other entity.",
+    "Record 54 describes pages 50 . In the embodiment, record 54 includes an index 58 , an inverted index 62 , ontologies 66 , and clusters 67 . Index 58 includes index lists, where an index list for a page 50 indicates the words of the page 50 . Inverted index 62 includes inverted index lists, where an inverted index list for a word (or set of words) indicates the pages 50 that include the word (or set of words). In one example, list W i includes page identifiers of pages 50 that include word w i . List W i & W j includes page identifiers of conjunction pages 50 that include both words w i and w j . List W i +W j includes page identifiers of disjunction pages 50 that include either word w i or w j . P(W i ) is the number of pages 50 of W i , that is, the number of pages 50 that include word w i .",
+    "In one embodiment, a list (such as an index list or an inverted index list) may be stored as a binary decision diagram (BDD). In one example, a binary decision diagram BDD(W i ) for set W i represents the pages 50 that have word w i . The satisfying assignment count Satisf(BDD(W i )) of a BDD(W i ) yields the number P(W i ) of pages 50 that have word w i : P ( W i )=Satisf(BDD( W i ))",
+    "Accordingly, P ( W i & W j )=Satisf(BDD( W i ) AND BDD( W j )) P ( W i +W j )=Satisf(BDD( W i ) OR BDD( W j ))",
+    "Ontologies 66 represent the words of a language and the relationships among the words. In one embodiment, an ontology 66 represents the affinities between words. In the illustrated example, ontologies 66 include an affinity matrix and an affinity graph. Examples of affinity matrices are described with the reference to FIGS. 3 through 5 . An example of an affinity graph is described with reference to FIG. 6 . Clusters 67 record clusters of words that are related to each other. Clusters are described in more detail with reference to FIG. 7 .",
+    "In the illustrated embodiment, server 22 includes an affinity module 30 , a clustering module 31 , an ontology feature module 32 , and a tagging module 35 . Affinity module 30 may calculate affinities for word pairs, record the affinities in an affinity matrix, and/or report the affinity matrix. Affinity module 30 may also generate an affinity graph. Affinity module 30 is described in more detail with reference to FIG. 2 .",
+    "In particular embodiments, clustering module 31 may discover patterns in data sets by identifying clusters of related elements in the data sets. In particular embodiments, clustering module 31 may identify clusters of a set of words (for example, a language or a set of pages 50 ). In general, words of a cluster are highly related to each other, but not to words outside of the cluster. A cluster of words may designate a theme (or topic) of the set of words. In particular embodiments, clustering module 31 identifies clusters of related words according to the affinities among the words. In the embodiments, words of a cluster are highly affine to each other, but not to words outside of the cluster. Clustering module 31 is described in more detail with reference to FIG. 7 .",
+    "In particular embodiments, ontology feature module 32 may determine one or more ontology features of a set of one or more words (for example, a particular word or document that include words), and may then apply the ontology features in any of a variety of situations. An ontology feature is a feature of a word set that may place the word set in ontology space of a language. Examples of ontology features include depth and specificity. In particular embodiments, depth may indicate the textual sophistication of a word set. A deeper word set may be more technical and specialized, while a shallower word set may be more common. In particular embodiments, the specificity of a word set is related to the number of themes of the word set. A more specific word set may have fewer themes, while a less specific word set may have more themes.",
+    "Ontology feature module 32 may apply the ontology features in any suitable situation. Examples of suitable situations include searching, sorting, or selecting documents according to an ontology feature; reporting the ontology features of a document; and determining the ontology features of documents of one or more users. Ontology feature module 32 is described in more detail with reference to FIG. 8 .",
+    "In particular embodiments, tagging module 35 may select tags to tag documents. Tags may be selected in any suitable manners. In particular embodiments, tagging module 35 models topics as statistical distributions of related words of the topics. Tagging module 35 uses the statistical distributions to identify topics for which selected words of a document have the highest probability of appearance and selects tags for the document in accordance with the identified topics. In other embodiments, tagging module 35 identifies candidate tags of the paragraphs of a document. Tagging module 35 determines the relatedness of the candidate tags with other candidate tags of the document and selects tags for the document in accordance with the determination. In yet other embodiments, tagging module 35 recommends tags for a document. The tags may be recommended based on affinity (for example, directional and/or differential affinity) with target tags input or selected by a user or by a computer. Once final tags have been selected, tagger 314 may assign the selected tags to the document. Tagging module 35 is described in more detail with reference to FIG. 9 .",
+    "A component of system 10 may include an interface, logic, memory, and/or other suitable element. An interface receives input, sends output, processes the input and/or output, and/or performs other suitable operation. An interface may comprise hardware and/or software.",
+    "Logic performs the operations of the component, for example, executes instructions to generate output from input. Logic may include hardware, software, and/or other logic. Logic may be encoded in one or more tangible media and may perform operations when executed by a computer. Certain logic, such as a processor, may manage the operation of a component. Examples of a processor include one or more computers, one or more microprocessors, one or more applications, and/or other logic.",
+    "A memory stores information. A memory may comprise one or more tangible, computer-readable, and/or computer-executable storage medium. Examples of memory include computer memory (for example, Random Access Memory (RAM) or Read Only Memory (ROM)), mass storage media (for example, a hard disk), removable storage media (for example, a Compact Disk (CD) or a Digital Video Disk (DVD)), database and/or network storage (for example, a server), and/or other computer-readable medium.",
+    "Modifications, additions, or omissions may be made to system 10 without departing from the scope of the invention. The components of system 10 may be integrated or separated. Moreover, the operations of system 10 may be performed by more, fewer, or other components. For example, the operations of generators 42 and 46 may be performed by one component, or the operations of affinity calculator 34 may be performed by more than one component. Additionally, operations of system 10 may be performed using any suitable logic comprising software, hardware, and/or other logic. As used in this document, “each” refers to each member of a set or each member of a subset of a set.",
+    "Modifications, additions, or omissions may be made to the examples of the matrices without departing from the scope of the invention. A matrix may include more, fewer, or other values. Additionally, the values of the matrix may be arranged in any suitable order.",
+    "FIG. 2 illustrates one embodiment of affinity module 30 that may be used with system 10 of FIG. 1 . Affinity module 30 may calculate an affinity for a word pair, record the affinity in an affinity matrix, and/or report the affinity matrix. Affinity module 30 may also generate an affinity graph.",
+    "In the illustrated embodiment, affinity module 30 includes an affinity calculator 34 , ontology generators 38 , and a word recommender 48 . Affinity calculator 34 calculates any suitable type of affinity for a word w i or for a word pair comprising a first word w i and a second word w j . Examples of affinities include a basic, directional, average, differential, and/or other affinity.",
+    "In one embodiment, word recommender 48 receives a seed word and identifies words that have an affinity with the seed word that is greater than a threshold affinity. The threshold affinity may have any suitable value, such as greater than or equal to 0.25, 0.5, 0.75, or 0.95. The threshold affinity may be pre-programmed or user-designated.",
+    "A basic affinity may be calculated from the amount (for example, the number) of pages 50 that include words w i and/or w j . The conjunction page amount represents the amount of pages 50 that include both word w i and word w j , and the disjunction page amount represents the amount of pages 50 that include either word w i or word w j . The basic affinity may be given by the conjunction page amount divided by the disjunction page amount. In one example, a number of conjunction pages indicates the number of pages comprising word w i and word w j , and a number of disjunction pages indicates the number of pages comprising either word w i or word w j . The basic affinity may be given by the number of conjunction pages divided by the number of disjunction pages: Affinity( w i ,w j )= P ( W i & W j )/ P ( W i +W j )",
+    "FIG. 3 illustrates an example of an affinity matrix 110 that records basic affinities. In the illustrated example, affinity matrix 110 records the pairwise affinities of words w 1 . . . , w 5 . According to affinity matrix 110 , the affinity between words w 0 and w 1 is 0.003, between words w 0 and w 2 is 0.005, and so on.",
+    "Referring back to FIG. 1 , an affinity group includes word pairs that have high affinities towards each another, and may be used to capture the relationship between words w 1 and w 2 with respect to page content. A high affinity may be designated as an affinity over an affinity group threshold. A threshold may be set at any suitable value, such as greater than or equal to 0.50, 0.60, 0.75, 0.90, or 0.95. A word may belong to more than one affinity group. In one embodiment, an affinity group may be represented as a BDD. The pointer for the BDD may be stored with each word of the group in inverted index 62 .",
+    "A directional affinity may be used to measure the importance of word w i with respect to word w j . Affinity calculator 34 calculates the directional affinity of word w i given word w j from the amount (for example, the number) of pages 50 that include words w i and w j . A word w j page amount represents the amount of pages 50 that include word w i . The directional affinity of word w i given word w j may be given by the conjunction page amount divided by word w j page amount. For example, a number of word w j pages indicates the number of pages 50 that include word w i . The directional affinity of word w i given word w j may be given by the number of conjunction pages 50 divided by number of word w i pages 50 : D Affinity( w i ,w j )= P ( W i & W j )/ P ( W i )",
+    "DAffinity(w i , w j ) is not the same as DAffinity(w j , w i ). A high directional affinity DAffinity(w i , w j ) between words w i and w j indicates a higher probability that a page 50 includes word w i given that the page 50 includes word w j . In one example, pages [1 2 3 4 5 6] include word w i , and pages [4 2] include word w j . The pages that include word w j also include word w i , so from the viewpoint of word w j , word w i is of high importance. Only in one-third the pages that include w i also include word w j , so from the viewpoint of word w i , word w j is of low importance.",
+    "FIG. 4 illustrates an example of an affinity matrix 120 that records the directional affinities for words w 0 , . . . , W 5 . In the example, words 124 are A words, and words 128 are B words. The rows of matrix 120 record the affinity of a B word given an A word, and the columns of affinity matrix 120 record the affinity of an A word given a B word.",
+    "Referring back to FIG. 1 , the average affinity of a word w i calculated with respect to the other words w j . In one embodiment, the average affinity may be the average of the affinities between word w i and every other word w j . The average affinity of word w i of N words may be given by:",
+    "AveAff ⁡ ( w i ) = 1 N ⁢ ∑ j = 1 N ⁢ P ⁡ ( w i ❘ w j )",
+    "FIG. 5 illustrates an example of an affinity matrix 140 that records average affinities. Rows 142 record basic affinities for word 1 through word 50 , 000 . Row 144 records the average affinities of word 1 through word 50 , 000 .",
+    "Referring back to FIG. 1 , the average affinity of a word may indicate the depth of the word. A word with a lower average affinity may be regarded as a deeper word, and a word with a higher average affinity may be regarded as a shallower word. Deeper words tend to be more technical, specific, and precise. A page 50 with a higher percentage of deeper words may be regarded as a deeper page, and a page 50 with a lower percentage of deeper words may be regarded as a shallower page. In one embodiment, a user may specify the depth of word and/or pages 50 to be retrieved.",
+    "The deeper words of a page 50 may form one or more clusters of highly related words. A cluster may represent a common idea, or theme. The number of themes of a page 50 may indicate the specificity of the page 50 . A page 50 with fewer themes may be regarded as more specific, and a page 50 with more themes may be regarded as less specific.",
+    "The differential affinity for word w i with respect to word w j is the directional affinity between words w i and w j minus the average affinity of word w j for all other words. Differential affinity may be expressed as: DiffAff( w i ,w j )= D Affinity( w i ,w j )−AveAff( w j )",
+    "Differential affinity removes the bias caused by the general tendency for word w j to occur in pages 50 . In particular circumstances, differential affinity may provide a more accurate indication of the probability that a page includes word w i given that the page includes word w j .",
+    "Differential affinities may be used in a variety of applications. In one example, differential affinities among people's names may be used to study social networking. In another example, differential affinities among language elements may be used to study natural language processing. In another example, differential affinities among products may be used to study marketing.",
+    "Affinity calculator 34 may use any suitable technique to search inverted index lists to calculate affinities. For example, to identify pages that include both words w i , and w j , affinity calculator 34 may search list W i of word w i and list W j of word w j for common elements, that is, common page identifiers.",
+    "In particular embodiments, an ontology generator 38 generates an ontology 66 of a language, such as an affinity matrix or an affinity graph. An ontology may be generated from any suitable affinity, such as a basic, directional, average, differential, and/or other affinity. Ontologies 66 may be generated from words selected from a language in any suitable manner. For example, words from a commonly used portion of the language or words related to one or more particular subject matter areas may be selected.",
+    "In the illustrated embodiment, ontology generators 38 include an affinity matrix generator 42 and an affinity graph generator 46 . Affinity matrix generator 42 generates an affinity matrix that records affinities between words. Affinity graph generator 46 generates an affinity graph that represents affinities between words. In an affinity graph, a node represents a word, and the weight of the directed edge between nodes represents the affinity between the words represented by the nodes. An affinity graph may have any suitable number of dimensions.",
+    "FIG. 6 illustrates an example of an affinity graph 150 . Affinity graph 150 includes nodes 154 and links 158 . A node 154 represents a word. In the example, node 154 a represents the word “binary.” The weight of the directed edge between nodes between nodes 154 represents the affinity between the words represented by nodes 154 . For example, a greater weight represents a greater affinity. A link 158 between the nodes indicates that the affinity between the words represented by the nodes 154 is above an affinity threshold. The affinity threshold may have any suitable value, for example, greater than or equal to 0.25, 0.5, 0.75, or 095.",
+    "FIG. 7 illustrates one embodiment of clustering module 31 that may be used with system 10 of FIG. 1 . In particular embodiments, clustering module 31 discovers patterns in data sets by identifying clusters of related elements in the data sets. In particular embodiments, clustering module 31 may identify clusters of a set of words (for example, a language or a set of pages 50 ). In general, words of a cluster are highly related to each other, but not to words outside of the cluster. A cluster of words may designate a theme (or topic) of the set of words.",
+    "In particular embodiments, clustering module 31 identifies clusters of related words according to the affinities among the words. In the embodiments, words of a cluster are highly affine to each other, but not to words outside of the cluster. In one embodiment, words may be regarded as highly affine if they are sufficiently affine. Words may be sufficiently affine if they satisfy one or more affinity criteria (such as thresholds), examples of which are provided below."
+   ]
+  }
+ ],
+ "pdf_url": "https://patentimages.storage.googleapis.com/fb/31/6f/ed7ece0a107483/US9081852.pdf",
+ "source": {
+  "provider": "Google Patents",
+  "url": "https://patents.google.com/patent/US9081852B2/en",
+  "fetched": "2026-08-28",
+  "note": "Patent text is public record; Google Patents used as aggregator."
+ }
+}

@@ -1,0 +1,262 @@
+{
+ "doc_id": "US11714853B2",
+ "publication_number": "US11714853B2",
+ "title": "Efficient storage and searching of vector datasets",
+ "abstract": "In one embodiment, an apparatus comprises a storage device and a processor. The storage device stores a feature vector index, wherein the feature vector index comprises a sparse-array data structure representing a feature space for a set of labeled feature vectors, wherein the set of labeled feature vectors are assigned to a plurality of classes. The processor is to: receive a query corresponding to a target feature vector; access, via the storage device, a first portion of the feature vector index, wherein the first portion of the feature vector index comprises a subset of labeled feature vectors that correspond to a same portion of the feature space as the target feature vector; determine the corresponding class of the target feature vector based on the subset of labeled feature vectors; and provide a response to the query based on the corresponding class.",
+ "assignees": [
+  "Intel Corp",
+  "Intel Corp"
+ ],
+ "inventors": [
+  "Luis Carlos Maria Remis",
+  "Vishakha Gupta",
+  "Christina R. Strong",
+  "Philip R. Lantz"
+ ],
+ "priority_date": "2018-12-28",
+ "filing_date": "2021-06-29",
+ "publication_date": "2023-08-01",
+ "cpc": [
+  "G06F",
+  "G06F16/00",
+  "G06F16/90",
+  "G06F16/901",
+  "G06F16/20",
+  "G06F16/22",
+  "G06F16/2228",
+  "G06F16/2237",
+  "G06F16/24",
+  "G06F16/245",
+  "G06F16/2455",
+  "G06F16/24553"
+ ],
+ "citations": [
+  "US20110286628A1",
+  "US20140324870A1",
+  "US20150049942A1",
+  "US9077949B2",
+  "US20190295151A1"
+ ],
+ "language": "en",
+ "claims": [
+  {
+   "number": 1,
+   "text": "A device, comprising: storage circuitry to store: a set of feature vectors, wherein the set of feature vectors represent a set of features for a plurality of data objects, wherein each feature vector represents the set of features for one of the data objects; and a vector index associated with the set of feature vectors, wherein the vector index organizes the set of feature vectors into regions of a vector space; and processing circuitry to: receive, via a vector management application programming interface (API), a similarity search query for a target feature vector; identify, based on the vector index, a subset of feature vectors close to the target feature vector in the vector space, wherein the subset of feature vectors is from the set of feature vectors; compare the target feature vector with each feature vector in the subset of feature vectors; identify, based on the comparison, one or more similar feature vectors relative to the target feature vector, wherein the one or more similar feature vectors are from the subset of feature vectors; and return, via the vector management API, a response to the similarity search query based on the one or more similar feature vectors.",
+   "dependent_on": null
+  },
+  {
+   "number": 2,
+   "text": "The device of claim 1 , wherein the data objects comprise objects in images or videos.",
+   "dependent_on": 1
+  },
+  {
+   "number": 3,
+   "text": "The device of claim 1 , wherein: the set of feature vectors form clusters within the vector space, wherein the vector space is sparse; and the vector index comprises a data structure for representing sparse data.",
+   "dependent_on": 1
+  },
+  {
+   "number": 4,
+   "text": "The device of claim 3 , wherein the data structure comprises: a tree; a dictionary of keys; a list of lists; a linked list; a coordinate list; or a sparse array data structure.",
+   "dependent_on": 3
+  },
+  {
+   "number": 5,
+   "text": "The device of claim 1 , wherein the storage circuitry comprises persistent storage circuitry, wherein the set of feature vectors and the vector index are stored persistently on the persistent storage circuitry.",
+   "dependent_on": 1
+  },
+  {
+   "number": 6,
+   "text": "The device of claim 1 , wherein the processing circuitry to identify, based on the vector index, the subset of feature vectors close to the target feature vector in the vector space is further to: retrieve, from the storage circuitry, a portion of the vector index for a region of the vector space in which the target feature vector resides, wherein the portion of the vector index comprises the subset of feature vectors.",
+   "dependent_on": 1
+  },
+  {
+   "number": 7,
+   "text": "The device of claim 1 , wherein the processing circuitry to compare the target feature vector with each feature vector in the subset of feature vectors is further to: compute a Euclidian distance between the target feature vector and each feature vector in the subset of feature vectors.",
+   "dependent_on": 1
+  },
+  {
+   "number": 8,
+   "text": "The device of claim 1 , wherein: the data objects are of a particular object type; the set of feature vectors are labeled with classes of the particular object type; and the processing circuitry is further to determine a class of the target feature vector based on the classes of the one or more similar feature vectors.",
+   "dependent_on": 1
+  },
+  {
+   "number": 9,
+   "text": "The device of claim 1 , wherein the set of feature vectors comprises high-dimensional feature vectors having at least 100 dimensions, wherein the dimensions correspond to the set of features represented by the high-dimensional feature vectors.",
+   "dependent_on": 1
+  },
+  {
+   "number": 10,
+   "text": "At least one machine accessible storage medium having instructions stored thereon, wherein the instructions, when executed on processing circuitry, cause the processing circuitry to: receive, via a vector management application programming interface (API), a similarity search query for a target feature vector, wherein based on the similarity search query, a set of feature vectors is to be searched for one or more similar feature vectors relative to the target feature vector; identify, based on a vector index, a subset of feature vectors that are close to the target feature vector in a vector space, wherein the vector index organizes the set of feature vectors into regions of the vector space, and wherein the subset of feature vectors is identified from the set of feature vectors; compare the target feature vector with each feature vector in the subset of feature vectors; identify, based on the comparison, the one or more similar feature vectors relative to the target feature vector, wherein the one or more similar feature vectors are identified from the subset of feature vectors; and return, via the vector management API, a response to the similarity search query based on the one or more similar feature vectors.",
+   "dependent_on": null
+  },
+  {
+   "number": 11,
+   "text": "The storage medium of claim 10 , wherein the set of feature vectors represent a set of features for a plurality of data objects, wherein each feature vector represents the set of features for one of the data objects.",
+   "dependent_on": 10
+  },
+  {
+   "number": 12,
+   "text": "The storage medium of claim 11 , wherein the set of feature vectors comprises high-dimensional feature vectors having at least 100 dimensions, wherein the dimensions correspond to the set of features represented by the high-dimensional feature vectors.",
+   "dependent_on": 11
+  },
+  {
+   "number": 13,
+   "text": "The storage medium of claim 11 , wherein the data objects comprise objects in images or videos.",
+   "dependent_on": 11
+  },
+  {
+   "number": 14,
+   "text": "The storage medium of claim 10 , wherein: the set of feature vectors form clusters within the vector space, wherein the vector space is sparse; and the vector index comprises a data structure for representing sparse data.",
+   "dependent_on": 10
+  },
+  {
+   "number": 15,
+   "text": "The storage medium of claim 14 , wherein the data structure comprises: a tree; a dictionary of keys; a list of lists; a linked list; a coordinate list; or a sparse array data structure.",
+   "dependent_on": 14
+  },
+  {
+   "number": 16,
+   "text": "The storage medium of claim 10 , wherein the similarity search query is an approximate nearest neighbor search query.",
+   "dependent_on": 10
+  },
+  {
+   "number": 17,
+   "text": "The storage medium of claim 10 , wherein the instructions that cause the processing circuitry to identify, based on the vector index, the subset of feature vectors close to the target feature vector in the vector space further cause the processing circuitry to: determine, based on the vector index, that the subset of feature vectors are within a same region of the vector space as the target feature vector.",
+   "dependent_on": 10
+  },
+  {
+   "number": 18,
+   "text": "The storage medium of claim 17 , wherein the instructions that cause the processing circuitry to determine, based on the vector index, that the subset of feature vectors are within the same region of the vector space as the target feature vector further cause the processing circuitry to: retrieve, from a persistent storage device, a portion of the vector index corresponding to the same region of the vector space as the target feature vector, wherein the portion of the vector index comprises the subset of feature vectors.",
+   "dependent_on": 17
+  },
+  {
+   "number": 19,
+   "text": "The storage medium of claim 10 , wherein the instructions that cause the processing circuitry to compare the target feature vector with each feature vector in the subset of feature vectors further cause the processing circuitry to: compute a distance between the target feature vector and each feature vector in the subset of feature vectors.",
+   "dependent_on": 10
+  },
+  {
+   "number": 20,
+   "text": "The storage medium of claim 19 , wherein the distance comprises a Euclidian distance.",
+   "dependent_on": 19
+  },
+  {
+   "number": 21,
+   "text": "The storage medium of claim 10 , wherein: the data objects are of a particular object type; the set of feature vectors are labeled with classes of the particular object type; and the instructions further cause the processing circuitry to determine a class of the target feature vector based on the classes of the one or more similar feature vectors.",
+   "dependent_on": 10
+  },
+  {
+   "number": 22,
+   "text": "A method, comprising: receiving, via a vector management application programming interface (API), a similarity search query for a target feature vector, wherein based on the similarity search query, a set of feature vectors is to be searched for one or more similar feature vectors relative to the target feature vector; identifying, based on a vector index, a subset of feature vectors that are close to the target feature vector in a vector space, wherein the vector index organizes the set of feature vectors into regions of the vector space, and wherein the subset of feature vectors is identified from the set of feature vectors; comparing the target feature vector with each feature vector in the subset of feature vectors; identifying, based on the comparison, the one or more similar feature vectors relative to the target feature vector, wherein the one or more similar feature vectors are identified from the subset of feature vectors; and returning, via the vector management API, a response to the similarity search query based on the one or more similar feature vectors.",
+   "dependent_on": null
+  },
+  {
+   "number": 23,
+   "text": "The method of claim 22 , wherein: the set of feature vectors form clusters within the vector space, wherein the vector space is sparse; and the vector index comprises a data structure for representing sparse data.",
+   "dependent_on": 22
+  },
+  {
+   "number": 24,
+   "text": "A system, comprising: a camera to capture images; a persistent storage device to store: a set of feature vectors, wherein the set of feature vectors represent a set of features for objects detected in the images, wherein each feature vector represents the set of features for one of the objects; and a vector index associated with the set of feature vectors, wherein the vector index organizes the set of feature vectors into regions of a vector space; and processing circuitry to: receive, via a vector management application programming interface (API), a similarity search query for a target feature vector; identify, based on the vector index, a subset of feature vectors close to the target feature vector in the vector space, wherein the subset of feature vectors is from the set of feature vectors; compare the target feature vector with each feature vector in the subset of feature vectors; identify, based on the comparison, one or more similar feature vectors relative to the target feature vector, wherein the one or more similar feature vectors are from the subset of feature vectors; and return, via the vector management API, a response to the similarity search query based on the one or more similar feature vectors.",
+   "dependent_on": null
+  },
+  {
+   "number": 25,
+   "text": "The system claim 24 , wherein the processing circuitry comprises: a central processing unit; a graphics processing unit; or a field-programmable gate array.",
+   "dependent_on": 24
+  }
+ ],
+ "description": [
+  {
+   "heading": "CROSS-REFERENCE TO RELATED APPLICATIONS",
+   "paragraphs": [
+    "This Application is a continuation (and claims the benefit of priority under 35 U.S.C. § 120) of U.S. application Ser. No. 16/235,823, filed Dec. 28, 2018, and entitled “EFFICIENT STORAGE AND PROCESSING OF HIGH-DIMENSIONAL FEATURE VECTORS.” The disclosure of the prior Application is considered part of and is incorporated by reference in the disclosure of this Application."
+   ]
+  },
+  {
+   "heading": "FIELD OF THE SPECIFICATION",
+   "paragraphs": [
+    "This disclosure relates in general to the field of visual computing, and more particularly, though not exclusively, to efficient storage and processing of high-dimensional feature vectors."
+   ]
+  },
+  {
+   "heading": "BACKGROUND",
+   "paragraphs": [
+    "Many distributed and fog computing applications leverage high-dimensional feature vectors to represent a wide range of information, such as objects captured in images and/or videos. Managing high-dimensional feature vectors using traditional data storage solutions can be very inefficient, however, particularly due to the large size of typical feature vector datasets and the lack of native support for efficiently managing these feature vector datasets. For example, performing an operation over a feature vector dataset typically requires loading the entire set of feature vectors from persistent storage into memory, generating an index of the feature vectors, and then performing an operation using the index. This approach incurs significantly latency due to the persistent storage access and index generation required for each feature vector operation, and significant memory overhead is often required to store the resulting index in memory. Accordingly, traditional solutions are unable to efficiently store and process high-dimensional feature vectors in a transactional manner."
+   ]
+  },
+  {
+   "heading": "BRIEF DESCRIPTION OF THE DRAWINGS",
+   "paragraphs": [
+    "The present disclosure is best understood from the following detailed description when read with the accompanying figures. It is emphasized that, in accordance with the standard practice in the industry, various features are not necessarily drawn to scale, and are used for illustration purposes only. Where a scale is shown, explicitly or implicitly, it provides only one illustrative example. In other embodiments, the dimensions of the various features may be arbitrarily increased or reduced for clarity of discussion.",
+    "FIG. 1 illustrates an example fog computing environment with a feature vector management system in accordance with the embodiments described throughout this disclosure.",
+    "FIG. 2 illustrates an example embodiment of a feature vector management system.",
+    "FIG. 3 illustrates an example of facial recognition using a feature vector management system.",
+    "FIGS. 4 A-C illustrate a visual representation of a feature vector index.",
+    "FIGS. 5 - 6 illustrate performance graphs for various feature vector management solutions.",
+    "FIG. 7 illustrates a flowchart for an example embodiment of a feature vector management system.",
+    "FIGS. 8 , 9 , 10 , and 11 illustrate examples of Internet-of-Things (IoT) networks and architectures that can be used in accordance with certain embodiments.",
+    "FIGS. 12 and 13 illustrate example computer architectures that can be used in accordance with certain embodiments."
+   ]
+  },
+  {
+   "heading": "EMBODIMENTS OF THE DISCLOSURE",
+   "paragraphs": [
+    "The following disclosure provides many different embodiments, or examples, for implementing different features of the present disclosure. Specific examples of components and arrangements are described below to simplify the present disclosure. These are, of course, merely examples and are not intended to be limiting. Further, the present disclosure may repeat reference numerals and/or letters in the various examples. This repetition is for the purpose of simplicity and clarity and does not in itself dictate a relationship between the various embodiments and/or configurations discussed. Different embodiments may have different advantages, and no particular advantage is necessarily required of any embodiment.",
+    "Efficient Storage and Processing of High-Dimensional Feature Vectors",
+    "Many distributed and fog computing applications rely on high-dimensional representations of information, which are commonly referred to as feature vectors, visual descriptors, or simply descriptors. For example, an n-dimensional feature vector may refer to a vector containing n numerical values that each represent a distinct feature associated with some collection of data. Thus, the dimensionality of a feature vector may refer to the number of distinct values or features contained within the feature vector. A high-dimensional feature vector may refer to a feature vector with a relatively large number of dimensions, which may vary depending on the particular application or use case.",
+    "As an example, visual computing applications often leverage high-dimensional feature vectors to represent objects or actions captured in visual data, such as images and/or videos. For example, an n-dimensional feature vector used to represent a particular object may contain n numerical values representing n distinct features of the object.",
+    "These high-dimensional feature vectors are often extracted from images and videos, labeled (e.g., assigned or tagged as belonging to a particular class), and then organized into an index that facilitates subsequent operations, such as searching the labeled feature vectors to determine the class of an unlabeled feature vector extracted from a new image or video. These operations are a necessary and critical step in the pipeline of many visual computing applications, including retail analytics and services, digital security and surveillance, and autonomous vehicles, among many other examples. Moreover, in a distributed visual computing pipeline (referred to as a visual fog pipeline), the processing associated with these operations is often distributed across the edge, the cloud, and/or the “fog” (e.g., any portion of the processing pipeline from the edge to the cloud).",
+    "With respect to facial recognition, for example, feature vectors can be used to represent the faces of people that are captured in images and/or videos, such as people that appear in a particular photo album, people that are captured entering a particular store (e.g., by a surveillance camera), and so forth. These feature vectors are typically extracted from visual data (e.g., images and/or videos) using a particular feature extraction technique. In some embodiments, for example, each value within an n-dimensional feature vector may represent a distinct feature associated with the visual data for a particular person's face. For example, the feature vector may contain 100 or more dimensions representing 100 or more corresponding features extracted from the visual data for that person's face.",
+    "These feature vectors are then tagged or labeled to identify the person corresponding to each face (e.g., based on their name or any other suitable identifier). In this manner, the set of labeled feature vectors can be subsequently used to answer visual questions or queries, such as “who is present in this new photo” or “which customers or clients frequently visit a particular store.” For example, a person captured in a new image or video can be identified by extracting a target feature vector of the person's face, and then searching for the labeled feature vectors that are the most similar to the target feature vector (e.g., an operation referred to as a “neighbor search”). The labels of the similar feature vectors can then be used to identify the person, determine the last time the person was present in a particular store, and so forth.",
+    "There are currently no solutions, however, to efficiently store and query these high-dimensional feature vectors in a transactional manner (e.g., using a persistent backend storage that supports native feature vector matching or searching operations and provides consistency guarantees). In particular, traditional data storage solutions lack native support for high-dimensional feature vectors, and thus are not designed to store, query, and operate on high-dimensional feature vectors in an efficient manner. High-dimensional feature vectors (e.g., those used in visual applications) have unique properties that can be used to index and perform operations on them more efficiently. There are no current solutions (e.g., software libraries, database management systems, array managers, file systems), however, that leverage those properties to provide a transactional system that natively supports operations on high-dimensional feature vectors in an efficient manner.",
+    "For example, there are numerous existing database management systems, including relational databases (e.g., Microsoft SQL Server, MySQL, MemSQL, DB2 by IBM) and non-relational or “NoSQL” databases (e.g., Accumulo, Cassandra, Druid, HBase, Vertica, SAP HANA). However, none of these solutions recognize or include high-dimensional feature vectors as a principal data type, nor do they provide the requisite indexing and other functionality to perform operations over these feature vectors (e.g., neighbor searches). Accordingly, these database solutions are not designed to support high-dimensional feature vectors, as they fail to leverage the unique properties and statistical characteristics of feature vectors that allow them to be processed more efficiently.",
+    "As an example, using traditional data storage solutions, a feature vector query requires loading the entire set of labeled feature vectors from persistent storage into memory, generating an index for the labeled feature vectors, and then searching the index to identify similar or matching feature vectors. This approach can be very inefficient, however, due to the large size of typical feature vector datasets. For example, significantly latency is incurred for the persistent storage access and index generation that are required for each query. Moreover, storing the resulting index in memory often requires significant memory overhead.",
+    "Further, in order to use traditional data storage solutions for high-dimensional feature vectors, a user typically has to define a key-value schema for storing and retrieving sets of feature vectors, and then further develop or configure a separate and independent mechanism to index and operate on feature vectors after they have been retrieved. Existing approaches for building indices of multi-dimensional data over these storage backends suffer from various performance drawbacks, as they are typically only suitable for feature vectors with relatively few dimensions (e.g., four or less dimensions), such as feature vectors for geolocation data with three dimensions for latitude, longitude, and altitude. Beyond the performance drawbacks, these approaches also require a repetition of work and a waste of resources that can be avoided if the storage mechanism natively implements the requisite functionality for operating on high-dimensional feature vectors as a supported datatype.",
+    "For example, there are various “in-memory” libraries (e.g., Faiss, Fast Library for Approximate Nearest Neighbors (FLANN), and Eigen) that enable a user to load a set of feature vectors into an index in memory, and then perform operations using the index in memory (rather than using persistent storage directly). With these in-memory libraries, the scope of the index is limited to the runtime of the application, which requires the user to re-build the index every time the application runs, as the indexing process is a separate step disconnected from the mechanism used to persistently store the feature vectors. Further, these libraries are limited by the amount of memory in the system, and they also lack any native support for performing operations over the index of feature vectors.",
+    "Accordingly, this disclosure presents various embodiments of a feature vector management system for storing and processing high-dimensional feature vectors in an efficient manner. In some embodiments, for example, the feature vector management system leverages a novel feature vector index maintained in persistent storage to implement specialized operations over high-dimensional feature vectors. For example, the feature vector index may be implemented by representing the feature space for a set of high-dimensional feature vectors (also referred to as a “hyperspace”) using a sparse-array data structure. The use of a sparse-array data structure to represent the hyperspace enables high-dimensional feature vectors to be indexed and searched more efficiently, directly from persistent storage, while also reducing the overall storage footprint on disk and/or in memory.",
+    "The described feature vector management system provides numerous advantages. For example, applications can efficiently store and operate over sets of high-dimensional feature vectors directly using persistent storage, which enables the excessive memory consumed by existing solutions (e.g., relational databases and/or indexing libraries) to be reclaimed. In this manner, application workflows can leverage reusable information within a feature vector index without being constrained by the memory available in the underlying system, while also saving storage space (e.g., as shown by FIG. 6 ) and providing consistency guarantees.",
+    "Further, the complete set of functionality that users previously had to implement and perform in separate stages (e.g., storing and updating a set of feature vectors, building an index, performing operations using the index) is now natively supported within a single building block, which incorporates various optimizations to improve performance. These performance optimizations cannot be achieved using existing relational databases, as relational databases lack the fundamental ability to generate indexes for high-dimensional feature vectors. Further, these performance optimizations enable common feature vector operations (e.g., a k-nearest neighbor search) to be performed much more efficiently than existing in-memory indexing libraries (e.g., as shown by FIG. 5 ). Moreover, in some embodiments, the distance computations for nearest neighbor searches may be further accelerated using a processor that supports vector-based instructions, such as single-instruction multiple-data (SIMD) processor instructions, or more specifically, Intel's Advanced Vector Extensions (AVX) SIMD instructions (e.g., AVX-512).",
+    "Accordingly, the described embodiments result in significant performance improvements for applications that leverage high-dimensional feature vectors, such as visual computing applications running on the cloud, edge, and/or in the fog.",
+    "FIG. 1 illustrates an example fog computing system 100 with a feature vector management system in accordance with the embodiments described throughout this disclosure. In the illustrated example, computing system 100 includes various edge resources 110 and cloud resources 120 communicating over a network 130 , along with a feature vector management system 140 , as described further below.",
+    "In the illustrated example, feature vector management system (FVMS) 140 is used to efficiently manage access to collections of feature vectors used by components of system 100 . In various embodiments, for example, FVMS 140 may be implemented as a standalone component of system 100 that is used by other components of system 100 (e.g., analogous to a database server), or the functionality of FVMS 140 may be integrated or embedded within one or more existing components of system 100 , such as edge computing devices 112 or cloud computing resources 120 .",
+    "Moreover, in some embodiments, FVMS 140 may be implemented as a software library or application programming interface (API) used by computing applications that are executed on components of system 100 . For example, in some embodiments, FVMS 140 may implement a software interface that can be used to search feature vector sets, as demonstrated by the following example:",
+    "“FindDescriptors”: { “set”: “party_faces”, // Specify the descriptor set “k_closest”: 2, // Specify the number of nearest neighbors to return “radius”: 243.434, // Specify max search distance from the query descriptor “results”: { // for matching neighbors, return label, gender, and distance “list”: [“_label”, “gender”, “_distance”], “return_descriptor”: False // do not return descriptor values } } + descriptor // The query descriptor is passed using the client library",
+    "In some embodiments, for example, a visual computing application executing on one or more components of system 100 may use high-dimensional feature vectors to represent information contained in visual data, such as objects or actions contained in images or videos captured by cameras 114 . For example, feature vectors may be extracted from a collection of visual data, labeled or assigned into the corresponding classes of information that they represent, and then stored as a set of labeled feature vectors. In this manner, the class of an unlabeled feature vector extracted from a new image or video can be derived by searching the set of labeled feature vectors for ones that are similar. In the illustrated embodiment, FVMS 140 can be used to manage access to the set of labeled feature vectors in order to improve performance.",
+    "For example, FVMS 140 leverages feature vector indexes to enable sets of feature vectors to be stored, retrieved, and/or searched directly from persistent storage. In some embodiments, for example, a feature vector index may contain a representation of the feature space for a particular set of feature vectors, which is stored within a sparse-array data structure. The sparse-array data structure significantly reduces the amount of storage required to represent the entire the feature space, as elements of the array that contain values of zero (e.g., which correspond to empty portions of the feature space that do not contain any feature vectors) are not stored. Moreover, this feature space representation within the index significantly improves the speed of similarity searches associated with feature vector queries, which reduces the query response latency. In particular, the index enables a subset of labeled feature vectors within the same neighborhood of similarity as a queried feature vector to be retrieved directly from persistent storage, without having to access or retrieve the remaining labeled feature vectors from persistent storage. Moreover, the similarity search is only performed over that smaller subset of labeled feature vectors rather than the entire set, which significantly improves the speed of the search.",
+    "For example, when a query associated with a new feature vector is received, the labeled feature vectors that are the most similar to the new feature vector are retrieved directly from the index in persistent storage using a sub-array access. In particular, the sub-array access is performed on the sparse-array data structure to retrieve only the labeled feature vectors that are in the same sub-region of the feature space as the new feature vector, as they will be the ones that are the most similar to the new feature vector since they reside in the same sub-region of the feature space. A similarity search can then be performed over this smaller subset of labeled feature vectors to identify those that are the most similar to the new feature vector (e.g., based on their computed distances to the new feature vector). In some cases, the class of the new feature vector may then be derived based on the classes of the most similar labeled feature vectors in the subset. An appropriate response to the query can then be returned based on the results of the similarity search and/or the corresponding class derived for the new feature vector.",
+    "Moreover, in various embodiments, FVMS 140 may implement any or all aspects of the feature vector management functionality described further throughout this disclosure, either alone or in conjunction with other components of computing system 100 .",
+    "Edge resources 110 may include any equipment, devices, and/or components deployed or connected near the “edge” of a communication network, such as edge computing devices 112 and sensors 114 . Edge computing devices 112 may include any type of computing device deployed in the edge, such as on-premise servers, computing appliances, gateways, routers, personal computers, mobile devices (e.g., laptops, tablets, mobile phones, wearable devices), Internet-of-Things (IoT) devices, and so forth. Sensors 114 may include any type of device capable of capturing or detecting information associated with a particular environment, such as cameras and other vision sensors, microphones, motion sensors, and so forth. In some embodiments, for example, sensors 114 may include one or more cameras and/or other vision sensors to capture visual data containing representations of their surroundings.",
+    "Cloud resources 120 may include any resources or services that are hosted remotely over a network, which may otherwise be referred to as in the “cloud.” In some embodiments, for example, cloud resources 120 may be remotely hosted on servers in a datacenter (e.g., application servers, database servers). In general, cloud resources 120 may include any resources, services, applications, and/or other functionality that can be utilized by or for components of computing system 100 (e.g., edge resources 110 ), including but not limited to, visual computing applications and services, IoT application and management services, data storage, computational services (e.g., data analytics, searching, diagnostics and fault management), security services (e.g., surveillance, alarms, user authentication), mapping and navigation, geolocation services, network or infrastructure management, payment processing, audio and video streaming, messaging, social networking, news, and weather, among other examples.",
+    "Communication network 130 may be used to facilitate communication among components of computing system 100 , such as edge resources 110 , cloud resources 120 , feature vector management system 140 , and/or any other remote resources or networks. In various embodiments, communication network 130 may be implemented using any type and/or number of communication network(s), including local area networks, wide area networks, public networks, the Internet, cellular networks, Wi-Fi networks, short-range networks (e.g., Bluetooth or ZigBee), and/or any other wired or wireless communication networks or mediums.",
+    "Any, all, or some of the computing devices of computing system 100 may be adapted to execute any operating system, including Linux or other UNIX-based operating systems, Microsoft Windows, Windows Server, MacOS, Apple iOS, Google Android, or any customized and/or proprietary operating system, along with virtual machines adapted to virtualize execution of a particular operating system.",
+    "While FIG. 1 is described as containing or being associated with a plurality of elements, not all elements illustrated within computing system 100 of FIG. 1 may be utilized in each alternative implementation of the present disclosure. Additionally, one or more of the elements described in connection with the examples of FIG. 1 may be located external to computing system 100 , while in other instances, certain elements may be included within or as a portion of one or more of the other described elements, as well as other elements not described in the illustrated implementation. Further, certain elements illustrated in FIG. 1 may be combined with other components, as well as used for alternative or additional purposes in addition to those purposes described herein.",
+    "Additional embodiments associated with the implementation of computing system 100 are described further in connection with the remaining FIGURES. Accordingly, it should be appreciated that computing system 100 of FIG. 1 may be implemented with any aspects of the embodiments described throughout this disclosure.",
+    "FIG. 2 illustrates an example embodiment of a feature vector management system (FVMS) 200 . In some embodiments, for example, the components of FVMS 200 may be used to implement the feature vector management functionality described throughout this disclosure.",
+    "In the illustrated embodiment, FVMS 200 includes one or more processors 201 , one or more memory elements 202 , one or more communication interfaces 203 , one or more sensors 204 , a feature vector manager 205 , and one or more storage devices 206 .",
+    "Processor 201 may be used to execute logic and/or instructions associated with the functionality of FVMS 200 . Memory 202 may be used to store logic, instructions, and/or data used by components of FVMS 200 . Communication interface 203 may be used to communicate with one or more remote components over a network. Sensors 204 may include any type of device capable of capturing or detecting information associated with a particular environment, such as cameras and other vision sensors, microphones, motion sensors, and so forth. In some embodiments, for example, sensors 204 may include one or more vision sensors that can be used to capture or generate visual representations of a surrounding environment, such as cameras, depth sensors, ultraviolet (UV) sensors, laser rangefinders (e.g., light detection and ranging (LIDAR)), infrared (IR) sensors, electro-optical/infrared (EO/IR) sensors, and so forth.",
+    "Feature vector manager 205 includes logic and/or instructions that can be executed by processor 201 to implement the feature vector management functionality described throughout this disclosure.",
+    "Storage device 206 may include any type of device for storing data. In some embodiments, for example, storage device 206 may include a persistent storage device capable of storing data persistently (e.g., hard disk drive (HDD), solid-state drive (SSD), distributed filesystem).",
+    "In the illustrated embodiment, storage device 206 is used to store feature vector index 207 . Feature vector index 207 may contain a representation of a feature space for a particular set of feature vectors (e.g., stored within a sparse-array data structure), which may be used to manage access to the feature vectors in an efficient manner, as described further throughout this disclosure. For example, each feature vector may be a vector containing n numerical values that each represent a distinct feature associated with some collection of data. In some embodiments, for example, the set of feature vectors may include high-dimensional feature vectors that are used to represent information contained in visual data, such as objects or actions contained in images or videos captured by one or more vision sensors 204 (e.g., cameras). In other embodiments, however, the set of feature vectors may be used to represent information associated with any type of data, and the feature vectors may include any number of dimensions.",
+    "The respective components of FVMS 200 may be used to implement the feature vector management functionality described further throughout this disclosure. Moreover, in various embodiments, the underlying components and functionality of FVMS 200 may be combined, separated, and/or distributed across any number of devices or components.",
+    "FIG. 3 illustrates an example 300 of facial recognition using a feature vector management system in accordance with the embodiments described throughout this disclosure.",
+    "At step 301 , a user application runs a facial feature extractor over a photo of people, which performs feature extraction to extract feature vectors corresponding to the faces of each person in the photo. These feature vectors are then tagged or labeled to identify the person corresponding to each face (e.g., based on their name or any other suitable identifier). In various embodiments, the labeling processing can be performed manually by a user or automatically by the feature vector management system (e.g., by performing classification on the feature vectors in the manner described further below).",
+    "At step 302 , the set of labeled feature vectors are passed to the feature vector management system.",
+    "At step 303 , the feature vector management system stores the set of labeled feature vectors by generating and/or updating an internal index of labeled feature vectors, which is maintained in persistent storage. In some embodiments, for example, the feature vector index may be implemented using a sparse-array data structure to represent the feature space corresponding to the set of labeled feature vectors.",
+    "At step 304 , the feature vector management system returns successfully, indicating that the set of labeled feature vectors have been stored within the internal feature vector index.",
+    "At step 305 , later in time, the user application obtains a new photo containing an unidentified person whom the application needs to identify. Accordingly, the user application runs the same facial feature extractor (e.g., from step 301 ) over the new photo to extract a target feature vector corresponding to the face of the person in the new photo.",
+    "At step 306 , the user application submits a query via the “classify” interface of the feature vector management system to request that a corresponding label be determined for the target feature vector (e.g., by performing classification).",
+    "At step 307 , the feature vector management system performs classification on the target feature vector to determine its corresponding label. In some embodiments, for example, the target feature vector is classified using a nearest neighbor search.",
+    "A nearest neighbor search can be used to search a preprocessed set of data objects to find those that are most similar to a queried or target data object (e.g., based on the Euclidian distance between the respective feature vectors). As an example, a nearest neighbor search could be performed over a set of labeled feature vectors representing objects extracted from visual data in order to find those that are most similar to an unlabeled feature vector extracted from recently-captured visual data. In this manner, the object represented in the unlabeled feature vector can be identified based on the label(s) of the most similar labeled feature vector(s).",
+    "In the illustrated embodiment, a nearest neighbor search for the target feature vector is performed using the feature vector index maintained in persistent storage, thus avoiding the need to re-load the entire set of labeled feature vectors from disk and then re-build the index for each query. Moreover, the feature vector index enables the nearest neighbor search to be performed more efficiently by only computing distances for a subset of the labeled feature vectors that are within the neighborhood of the target feature vector (e.g., as further described in connection with FIGS. 4 A-C ). In some embodiments, for example, the neighbor search is performed by: (1) retrieving a subset of labeled features from the index that are in the same portion of the feature space as the target feature vector; (2) computing the distances between each labeled feature vector in the subset and the target feature vector; (3) identifying the labeled feature vectors that are the most similar to the target feature vector based on the distance calculations; and (4) determining the corresponding label for the target feature vector based on the labels of the most similar labeled feature vectors.",
+    "At step 308 , the feature vector management system returns the label corresponding to the target feature vector in response to the query from the user application."
+   ]
+  }
+ ],
+ "pdf_url": "https://patentimages.storage.googleapis.com/a5/32/d7/3832b5661cd904/US11714853.pdf",
+ "source": {
+  "provider": "Google Patents",
+  "url": "https://patents.google.com/patent/US11714853B2/en",
+  "fetched": "2026-08-28",
+  "note": "Patent text is public record; Google Patents used as aggregator."
+ }
+}

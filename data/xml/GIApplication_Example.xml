@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gin:GIApplication xmlns:gin="http://www.wipo.int/standards/XMLSchema/ST96/GeographicalIndication" xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark" xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.wipo.int/standards/XMLSchema/ST96/GeographicalIndication https://www.wipo.int/standards/XMLSchema/ST96/V8_0/GeographicalIndication/Document/GIApplication_V8_0.xsd" com:st96Version="V8_0">
+	<gin:GIData com:officeCode="FR" com:languageCode="fr">
+		<com:ApplicationNumber>
+			<com:ApplicationNumberText>IG 18-002</com:ApplicationNumberText>
+		</com:ApplicationNumber>
+		<com:ApplicationDate>2018-03-19</com:ApplicationDate>
+		<gin:GINameBag>
+			<gin:GINameText com:languageCode="fr" com:sequenceNumber="001">Tapisserie d'Aubusson</gin:GINameText>
+			<gin:GINameTranslationText com:languageCode="en" com:sequenceNumber="001">Aubusson tapestry</gin:GINameTranslationText>
+		</gin:GINameBag>
+		<gin:ProductIndicationBag>
+			<tmk:GoodsServices>
+				<tmk:GoodsServicesClassificationBag>
+					<tmk:GoodsServicesClassification>
+						<tmk:ClassificationKindCode>Nice</tmk:ClassificationKindCode>
+						<tmk:ClassNumber>24</tmk:ClassNumber>
+					</tmk:GoodsServicesClassification>
+					<tmk:GoodsServicesClassification>
+						<tmk:ClassificationKindCode>Nice</tmk:ClassificationKindCode>
+						<tmk:ClassNumber>27</tmk:ClassNumber>
+					</tmk:GoodsServicesClassification>
+				</tmk:GoodsServicesClassificationBag>
+			</tmk:GoodsServices>
+		</gin:ProductIndicationBag>
+		<gin:FeatureDescriptionBag>
+			<gin:FeatureDescription>
+				<gin:FeatureDescriptionText com:languageCode="fr">La tapisserie d’Aubusson couvre les produits issus de la technique suivante : tapisseries tissées à la main sur métier de basse lisse.</gin:FeatureDescriptionText>
+			</gin:FeatureDescription>
+		</gin:FeatureDescriptionBag>
+		<gin:GeographicRegionDescriptionBag>
+			<gin:GeographicRegionDescription>
+				<gin:GeographicRegionDescriptionText com:languageCode="fr" com:sequenceNumber="001" gin:geographicRegionDescriptionCategory="Administrative boundaries">Département de la Creuse</gin:GeographicRegionDescriptionText>
+			</gin:GeographicRegionDescription>
+		</gin:GeographicRegionDescriptionBag>
+		<gin:GICategory>Geographical Indication</gin:GICategory>
+		<gin:GIPublicationDataBag>
+			<gin:GIPublicationData>
+				<com:PublicationIdentifier>2018-18</com:PublicationIdentifier>
+				<com:PublicationDate>2018-06-04</com:PublicationDate>
+			</gin:GIPublicationData>
+		</gin:GIPublicationDataBag>
+	</gin:GIData>
+	<gin:AuthorizedUserBag>
+		<gin:AuthorizedUser>
+			<com:Contact>
+				<com:Name>
+					<com:OrganizationName>
+						<com:OrganizationStandardName>Atelier CC Brindelaine</com:OrganizationStandardName>
+					</com:OrganizationName>
+				</com:Name>
+			</com:Contact>
+			<gin:AuthorizedUserCategory>Manufacturer</gin:AuthorizedUserCategory>
+		</gin:AuthorizedUser>
+		<gin:AuthorizedUser>
+			<com:Contact>
+				<com:Name>
+					<com:OrganizationName>
+						<com:OrganizationStandardName>Ateliers PINTON</com:OrganizationStandardName>
+					</com:OrganizationName>
+				</com:Name>
+			</com:Contact>
+			<gin:AuthorizedUserCategory>Manufacturer</gin:AuthorizedUserCategory>
+		</gin:AuthorizedUser>
+		<gin:AuthorizedUser>
+			<com:Contact>
+				<com:Name>
+					<com:OrganizationName>
+						<com:OrganizationStandardName>ROBERT FOUR</com:OrganizationStandardName>
+					</com:OrganizationName>
+				</com:Name>
+			</com:Contact>
+			<gin:AuthorizedUserCategory>Manufacturer</gin:AuthorizedUserCategory>
+		</gin:AuthorizedUser>
+		<gin:AuthorizedUser>
+			<com:Contact>
+				<com:Name>
+					<com:OrganizationName>
+						<com:OrganizationStandardName>Atelier de la Lune</com:OrganizationStandardName>
+					</com:OrganizationName>
+				</com:Name>
+			</com:Contact>
+			<gin:AuthorizedUserCategory>Manufacturer</gin:AuthorizedUserCategory>
+		</gin:AuthorizedUser>
+		<gin:AuthorizedUser>
+			<com:Contact>
+				<com:Name>
+					<com:OrganizationName>
+						<com:OrganizationStandardName>ATELIER A2</com:OrganizationStandardName>
+					</com:OrganizationName>
+				</com:Name>
+			</com:Contact>
+			<gin:AuthorizedUserCategory>Manufacturer</gin:AuthorizedUserCategory>
+		</gin:AuthorizedUser>
+		<gin:AuthorizedUser>
+			<com:Contact>
+				<com:Name>
+					<com:OrganizationName>
+						<com:OrganizationStandardName>Atelier Tapisserie Guillot Aubusson</com:OrganizationStandardName>
+					</com:OrganizationName>
+				</com:Name>
+			</com:Contact>
+			<gin:AuthorizedUserCategory>Manufacturer</gin:AuthorizedUserCategory>
+		</gin:AuthorizedUser>
+		<gin:AuthorizedUser>
+			<com:Contact>
+				<com:Name>
+					<com:OrganizationName>
+						<com:OrganizationStandardName>Atelier BERNET</com:OrganizationStandardName>
+					</com:OrganizationName>
+				</com:Name>
+			</com:Contact>
+			<gin:AuthorizedUserCategory>Manufacturer</gin:AuthorizedUserCategory>
+		</gin:AuthorizedUser>
+		<gin:AuthorizedUser>
+			<com:Contact>
+				<com:Name>
+					<com:OrganizationName>
+						<com:OrganizationStandardName>Atelier Françoise VERNAUDON</com:OrganizationStandardName>
+					</com:OrganizationName>
+				</com:Name>
+			</com:Contact>
+			<gin:AuthorizedUserCategory>Manufacturer</gin:AuthorizedUserCategory>
+		</gin:AuthorizedUser>
+		<gin:AuthorizedUser>
+			<com:Contact>
+				<com:Name>
+					<com:OrganizationName>
+						<com:OrganizationStandardName>Atelier collectif Just’Lissieres</com:OrganizationStandardName>
+					</com:OrganizationName>
+				</com:Name>
+			</com:Contact>
+			<gin:AuthorizedUserCategory>Manufacturer</gin:AuthorizedUserCategory>
+		</gin:AuthorizedUser>
+		<gin:AuthorizedUser>
+			<com:Contact>
+				<com:Name>
+					<com:OrganizationName>
+						<com:OrganizationStandardName>Mairie d'Aubusson</com:OrganizationStandardName>
+					</com:OrganizationName>
+				</com:Name>
+			</com:Contact>
+			<gin:AuthorizedUserCategory>Manufacturer</gin:AuthorizedUserCategory>
+		</gin:AuthorizedUser>
+	</gin:AuthorizedUserBag>
+	<gin:ApplicantBag>
+		<gin:Applicant com:sequenceNumber="001">
+			<com:Contact>
+				<com:Name>
+					<com:OrganizationName>
+						<com:OrganizationStandardName>Association LAINAMAC</com:OrganizationStandardName>
+					</com:OrganizationName>
+				</com:Name>
+			</com:Contact>
+		</gin:Applicant>
+	</gin:ApplicantBag>
+	<com:PaymentBag>
+		<com:Payment>
+			<com:FeePayableTotalAmount com:currencyCode="EUR">0</com:FeePayableTotalAmount>
+		</com:Payment>
+	</com:PaymentBag>
+	<com:SignatureBag>
+		<com:Signature>
+			<com:Contact>
+				<com:Name>
+					<com:OrganizationName>
+						<com:OrganizationStandardName>Association LAINAMAC</com:OrganizationStandardName>
+					</com:OrganizationName>
+				</com:Name>
+			</com:Contact>
+			<com:ElectronicSignature>
+				<com:ElectronicBasicSignature>
+					<com:ElectronicBasicSignatureText>Association LAINAMAC</com:ElectronicBasicSignatureText>
+				</com:ElectronicBasicSignature>
+			</com:ElectronicSignature>
+		</com:Signature>
+	</com:SignatureBag>
+</gin:GIApplication>

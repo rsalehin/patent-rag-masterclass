@@ -1,0 +1,219 @@
+{
+ "doc_id": "US8930304B2",
+ "publication_number": "US8930304B2",
+ "title": "Knowledge discovery from citation networks",
+ "abstract": "In a corpus of scientific articles such as a digital library, documents are connected by citations and one document plays two different roles in the corpus: document itself and a citation of other documents. A Bernoulli Process Topic (BPT) model is provided which models the corpus at two levels: document level and citation level. In the BPT model, each document has two different representations in the latent topic space associated with its roles. Moreover, the multi-level hierarchical structure of the citation network is captured by a generative process involving a Bernoulli process. The distribution parameters of the BPT model are estimated by a variational approximation approach.",
+ "assignees": [
+  "Research Foundation of the State University of New York",
+  "Research Foundation of the State University of New York"
+ ],
+ "inventors": [
+  "Zhen Guo",
+  "Mark Zhang"
+ ],
+ "priority_date": "2010-12-06",
+ "filing_date": "2014-01-14",
+ "publication_date": "2015-01-06",
+ "cpc": [
+  "G06N",
+  "G06N20/00",
+  "G06N7/005",
+  "G06F",
+  "G06F16/00",
+  "G06F16/20",
+  "G06F16/24",
+  "G06F16/245",
+  "G06F16/2457",
+  "G06F16/24573",
+  "G06F16/24578",
+  "G06F16/90"
+ ],
+ "citations": [
+  "US20030182631A1",
+  "US6772170B2",
+  "US7113958B1",
+  "US20070118498A1",
+  "US20080208840A1",
+  "US20090094196A1",
+  "US7702660B2",
+  "US20100161611A1",
+  "US20110040764A1",
+  "US20110112994A1",
+  "US20110302162A1",
+  "US20120095952A1",
+  "US20120166179A1",
+  "US8630975B1"
+ ],
+ "language": "en",
+ "claims": [
+  {
+   "number": 1,
+   "text": "A method for characterizing a set of documents, comprising: identifying a network of multilevel hierarchically related documents having direct and indirect references associated with content relationships; for each respective document, determining a set of latent topic characteristics captured by a Bernoulli process, based on at least both an intrinsic content of the respective document and a set of latent topic characteristics based on a respective content of other documents which are directly referenced and indirectly referenced through at least one other document to the respective document, such that a topic distribution of each respective document is a mixture of distributions associated with at least the at least one other document; representing a set of latent topics for the respective document based on a joint probability distribution of at least the latent topic characteristics based on the intrinsic content and the respective content of other documents which are directly referenced and indirectly referenced through at least one other document to the respective document, dependent on the identified network and a random process; and storing, in a memory, the represented set of latent topics for the respective document.",
+   "dependent_on": null
+  },
+  {
+   "number": 2,
+   "text": "The method according to claim 1 , wherein the network comprises a Bayesian network structure.",
+   "dependent_on": 1
+  },
+  {
+   "number": 3,
+   "text": "The method according to claim 1 , wherein the set of documents is modeled by a generative probabilistic model of a topic content of the set of documents along with the references among the documents.",
+   "dependent_on": 1
+  },
+  {
+   "number": 4,
+   "text": "The method according to claim 1 , wherein the represented set of latent topics is modeled at both a document level and a reference level, by differentiating the two different levels and the multilevel hierarchical network which is captured by the Bernoulli process.",
+   "dependent_on": 1
+  },
+  {
+   "number": 5,
+   "text": "The method according to claim 1 , wherein the iterative process at a reference level comprises iterating, for each document d j , for the i-th location in document d j , choosing a topic z ji from the topic distribution of document d j , p(z|d j ,θ d j ), where the distribution parameter θ d j is drawn from a Dirichlet distribution Dir(α), choosing a word w ji which follows the multinomial distribution p(w|z ji ,Λ) conditioned on the topic z ji , and incrementing the locations and documents, wherein the iterative process at a document level comprises iterating, for each document d s , for the i-th location in document d s , choosing a referenced document c si from p(c|d s ,Ξ), a multinomial distribution conditioned on the document d s , choosing a topic t si from the topic distribution of the document c si at the reference level, and choosing a word w si which follows the multinomial distribution p(w|t si ,Λ) conditioned on the topic t si , where Ξ is a mixing coefficient matrix which represents how much of the content of the respective document is from direct or indirect references, and a composition of Ξ and θ models the topic distribution at the document level, and incrementing the locations and documents, wherein a number of latent topics is K and the mixing coefficients are parameterized by an N×N matrix Ξ where Ξ js =p(c si =d j |d s ), which are treated as a fixed quantity computed from the reference information of the set of documents, wherein topic distributions at the reference level are parameterized by a K×N matrix Θ where Θ lj =p(z ji =l|d j ), which is to be estimated, and an M×K word probability matrix Λ, where Λ hl =p(w si h =1|t si =l), which is to be estimated, and wherein the references comprise citations, each document d s having a set of citations Q d s , further comprising constructing a matrix S to denote direct relationships among the documents wherein S ls = 1  Q d s  for d l εQ d s and 0 otherwise, where |Q d s | denotes the size of the set Q d s , and employing a generative process for generating a related document c from the respective document d s , comprising: setting l=s; choosing t˜Bernoulli(β); if t=1, choosing h˜Multinomial(S .,l ), where S .,l denotes the l-th column; setting l=h, and returning to said choosing step; and if t=0, letting c=d l , to thereby combine a Bernoulli process and a random walk on a directed graph together, where a transitive property of the citations is captured, wherein the parameter β of the Bernoulli process determines a probability that the random walk stops at a current node, and the parameter β also specifies how much of the content of the respective document is influenced from the direct or indirect citations.",
+   "dependent_on": 1
+  },
+  {
+   "number": 6,
+   "text": "The method according to claim 1 , wherein a generative process for the set of documents leads to a joint probability distribution p ⁡ ( c , z , D , Θ | α , Λ ) | z si , Λ ) = p ⁡ ( Θ | α ) ⁢ ∏ s = 1 N ⁢ p ⁡ ( c s | d s ) ⁢ p ⁡ ( z s | c s ) ⁢ ∏ i = 1 L s ⁢ p ⁡ ( w si | z si , Λ ) where p (Θ|α)=Π j=1 N p (θ j |α), p ( c s |d s )=Π i=1 L s p ( c si |d s ), and p ( z s |c s )=Π i=1 L s p ( z si |c si ,θ c si ), and a marginal distribution of the set of documents obtained by integrating over Θ and summing over c,z p ⁡ ( D ) = ∫ ∑ z ⁢ ∑ c ⁢ p ⁡ ( c , z , D , Θ | α , Λ ) ⁢ ⅆ Θ = B ⁡ ( α ) - N ⁢ ∫ ( ∏ j = 1 N ⁢ ∏ i = 1 K ⁢ Θ ij α i - 1 ) ⁢ ∏ s = 1 N ⁢ ∏ i = 1 L s ⁢ ∑ l = 1 K ⁢ ∑ t = 1 N ⁢ ∏ h = 1 M ⁢ ( Ξ ts ⁢ Θ lt ⁢ Λ hl ) w si h ⁢ ⅆ Θ where B(α)= i=1 K Γ(α i )/Γ(Σ i=1 K α i ).",
+   "dependent_on": 1
+  },
+  {
+   "number": 7,
+   "text": "The method according to claim 1 , wherein a generative process for the set of documents leads to a joint distribution of c,z,θ represented as: α→θ→z→w |c d→c→t→w |d| θ→t Ξ→c w |c| ←Λ→w |z| and update rules for the iterative process comprise: Φ sjhl ∝ Ξ js ⁢ Λ hl ⁢ exp ⁡ ( Ψ ⁡ ( γ jl ) - Ψ ⁡ ( ∑ t = 1 K ⁢ γ jt ) ) ( 2 ) γ sl = α l + ∑ g = 1 N ⁢ ∑ h = 1 M ⁢ A hg ⁢ Φ gshl ( 3 ) Λ hl ∝ ∑ s = 1 N ⁢ ∑ j = 1 N ⁢ A hs ⁢ Φ sjhl ( 4 ) where A hs =Σ i=1 L s w si h and Ψ(•) is digamma function.",
+   "dependent_on": 1
+  },
+  {
+   "number": 8,
+   "text": "The method according to claim 7 , wherein the iterative update rules Φ sjhl ∝ Ξ js ⁢ Λ hl ⁢ exp ⁡ ( Ψ ⁡ ( γ jl ) - Ψ ⁡ ( ∑ t = 1 K ⁢ γ jt ) ) ( 2 ) γ sl = α l + ∑ g = 1 N ⁢ ∑ h = 1 M ⁢ A hg ⁢ Φ gshl ( 3 ) Λ hl ∝ ∑ s = 1 N ⁢ ∑ j = 1 N ⁢ A hs ⁢ Φ sjhl ( 4 ) are performed in order until convergence.",
+   "dependent_on": 7
+  },
+  {
+   "number": 9,
+   "text": "The method according to claim 7 , wherein the iterative update rules Φ sjhl ∝ Ξ js ⁢ Λ hl ⁢ exp ⁡ ( Ψ ⁡ ( γ jl ) - Ψ ⁡ ( ∑ t = 1 K ⁢ γ jt ) ) ( 2 ) γ sl = α l + ∑ g = 1 N ⁢ ∑ h = 1 M ⁢ A hg ⁢ Φ gshl ( 3 ) are performed in order until convergence to learn the topic distribution of new set of documents.",
+   "dependent_on": 7
+  },
+  {
+   "number": 10,
+   "text": "A method for characterizing a set of documents, comprising: identifying a multilevel hierarchy of documents having direct references and indirect references, having citation linkages with semantic significance; for each respective document, determining latent topic characteristics captured by a Bernoulli process, based on at least an intrinsic semantic content of the respective document, semantic content associated with directly cited documents, and semantic content associated with documents referenced by directly cited documents, wherein a semantic content significance of a citation has a transitive property, such that a topic distribution of each respective document is a mixture of distributions associated with at least the cited documents; representing latent topics for documents within the set of documents based on a joint probability distribution of the latent topic characteristics, wherein distinctions in the multilevel hierarchical network are captured by a random process; and storing, in a memory, the represented set of latent topics.",
+   "dependent_on": null
+  },
+  {
+   "number": 11,
+   "text": "The method according to claim 10 , wherein the set of documents is modeled by a generative probabilistic model of a topic content of each document of the set of documents along with the linkages among members of the set of documents.",
+   "dependent_on": 10
+  },
+  {
+   "number": 12,
+   "text": "The method according to claim 10 , wherein the latent topics are modeled at both a document level and a citation level, and distinctions in the multilevel hierarchical network are captured by the Bernoulli process.",
+   "dependent_on": 10
+  },
+  {
+   "number": 13,
+   "text": "The method according to claim 10 , wherein the joint probability distribution is estimated by an iterative process at a citation level, comprising, for each document d j , and for the i-th location in document d j , choosing a topic z ji from the topic distribution of document d j , p(z|d j ,θ d j ), where the distribution parameter θ d j is drawn from a Dirichlet distribution Dir(α), choosing a word w ji which follows the multinomial distribution p(w|z ji ,Λ) conditioned on the topic z ji , and respectively incrementing the locations and documents, wherein the joint probability distribution is estimated by an iterative process at a document level comprising, for each document d s , and for the i-th location in document d s , choosing a cited document c si from p(c|d s ,Ξ), a multinomial distribution conditioned on the document d s choosing a topic t si from the topic distribution of the document c si at the citation level, and choosing a word w si which follows the multinomial distribution p(w|t si ,Λ) conditioned on the topic t si , where Ξ is a mixing coefficient matrix which represents how much of the content of the respective document is from direct or indirect references, and a composition of Ξ and θ models the topic distribution at the document level, and respectively incrementing the locations and documents, wherein a number of latent topics is K and the mixing coefficients are parameterized by an N×N matrix Ξ, where Ξ js =p(c si =d j |d s ), which are treated as a fixed quantity computed from the citation information of the set of documents, wherein topic distributions at the citation level are parameterized by a K×N matrix Θ where Θ lj =p(z ji =l|d j ), which is to be estimated, and an M×K word probability matrix Λ, where Λ hl =p(w si h =1|t si =l), which is to be estimated, and wherein each document d s has a set of citations Q d s , further comprising constructing a matrix S to denote direct relationships among the documents wherein S ls =1/|Q d s | for d l εQ d s and 0 otherwise, where |Q d s | denotes the size of the set Q d s , and employing a generative process for generating a related document c from the respective document d s , comprising: setting l=s; choosing t˜Bernoulli(β); if t=1, choosing h˜Multinomial(S .,l ), where S .,l denotes the l-th column; setting l=h, and returning to said choosing step; and if t=0, letting c=d l , to thereby combine a Bernoulli process and a random walk on a directed graph together, where a transitive property of the citations is captured, wherein the parameter β of the Bernoulli process determines a probability that the random walk stops at a current node, and the parameter β also specifies how much of the content of the respective document is influenced from the direct or indirect citations.",
+   "dependent_on": 10
+  },
+  {
+   "number": 14,
+   "text": "The method according to claim 10 , wherein the joint probability distribution is estimated by an iterative process at a citation level, comprising, for each document d j , and for the i-th location in document d j , choosing a topic z ji from the topic distribution of document d j , p(z|d j ,θ d j ), where the distribution parameter θ d j is drawn from a Dirichlet distribution Dir(α), choosing a word with w ji which follows the multinomial distribution p(w|z ji ,Λ) conditioned on the topic z ji , and respectively incrementing the locations and documents, wherein generative processes for the set of documents leads to a joint probability distribution p ⁡ ( c , z , D , Θ | α , Λ ) | z si , Λ ) = p ⁡ ( Θ | α ) ⁢ ∏ s = 1 N ⁢ p ⁡ ( c s | d s ) ⁢ p ⁡ ( z s | c s ) ⁢ ∏ i = 1 L s ⁢ p ⁡ ( w si | z si , Λ ) where p (Θ|α)=Π j=1 N p (θ j |α), p ( c s |d s )=Π i=1 L s p ( c si |d s ), and p ( z s |c s )=Π i=1 L s p ( z si |c si ,θ c si ), and a marginal distribution of the set of documents obtained by integrating over Θ and summing over c,z p ⁡ ( D ) = ∫ ∑ z ⁢ ∑ c ⁢ p ⁡ ( c , z , D , Θ | α , Λ ) ⁢ ⅆ Θ = B ⁡ ( α ) - N ⁢ ∫ ( ∏ j = 1 N ⁢ ∏ i = 1 K ⁢ Θ ij α i - 1 ) ⁢ ∏ s = 1 N ⁢ ∏ i = 1 L s ⁢ ∑ l = 1 K ⁢ ∑ t = 1 N ⁢ ∏ h = 1 M ⁢ ( Ξ ts ⁢ Θ lt ⁢ Λ hl ) w si h ⁢ ⅆ Θ where B(α)=Π i=1 K Γ(α i )/Γ(Σ i=1 K α i ).",
+   "dependent_on": 10
+  },
+  {
+   "number": 15,
+   "text": "The method according to claim 14 , wherein a joint distribution of c,z,θ of a generative process for the set of documents is represented as: α→θ→z→w |c d→c→t→w |d| θ→t Ξ→c w |c| ←Λ→w |z| and iterative update rules for the iterative process comprise: Φ sjhl ∝ Ξ js ⁢ Λ hl ⁢ exp ⁡ ( Ψ ⁡ ( γ jl ) - Ψ ⁡ ( ∑ t = 1 K ⁢ γ jt ) ) ( 2 ) γ sl = α l + ∑ g = 1 N ⁢ ∑ h = 1 M ⁢ A hg ⁢ Φ gshl ( 3 ) Λ hl ∝ ∑ s = 1 N ⁢ ∑ j = 1 N ⁢ A hs ⁢ Φ sjhl ( 4 ) where A hs =Σ i=1 L s w si h and Ψ(•) is a digamma function, at least the iterative update rules (2) ands (3) are performed in sequence iteratively until convergence within a convergence criterion.",
+   "dependent_on": 14
+  },
+  {
+   "number": 16,
+   "text": "A non-transitory computer readable medium storing instructions for controlling a programmable processor to characterize a set of documents, to perform a method comprising: for each respective document in a multilevel hierarchy of documents having direct references and indirect references, having citation linkages with semantic significance, determining latent topic characteristics captured by a Bernoulli process, based on at least an intrinsic semantic content of the respective document, semantic content associated with directly cited documents, and semantic content associated with documents referenced by directly cited documents, wherein a semantic content significance of a citation has a transitive property, such that a topic distribution of each respective document is a mixture of distributions associated with at least the cited documents; representing latent topics for documents within the set of documents based on a joint probability distribution of the latent topic characteristics, wherein distinctions in the multilevel hierarchical network are captured by a random process; and storing the represented set of latent topics.",
+   "dependent_on": null
+  },
+  {
+   "number": 17,
+   "text": "The non-transitory computer readable medium according to claim 16 , wherein the set of documents is modeled by a generative probabilistic model of a topic content of each document of the set of documents along with the linkages among members of the set of documents.",
+   "dependent_on": 16
+  }
+ ],
+ "description": [
+  {
+   "heading": "CROSS REFERENCE TO RELATED APPLICATIONS",
+   "paragraphs": [
+    "The present application is a Continuation of U.S. patent application Ser. No. 13/310,098, filed Dec. 20, 2011, issued as U.S. Pat. No. 8,630,975 on Jan. 14, 2014, which claims benefit of priority from U.S. Provisional Patent Application 61/420,059, filed Dec. 6, 2010, the entirety of which are expressly incorporated herein by reference in their entirety."
+   ]
+  },
+  {
+   "heading": "GOVERNMENT RIGHTS CLAUSE",
+   "paragraphs": [
+    "This invention was made with government support under IIS-0535162, IIS-0812114 awarded by the National Science Foundation. The government has certain rights in the invention."
+   ]
+  },
+  {
+   "heading": "BACKGROUND OF THE INVENTION",
+   "paragraphs": [
+    "Unsupervised learning from documents is a fundamental problem in machine learning, which aims at modeling the documents and providing a meaningful description of the documents while preserving the basic statistical information about the corpus. Many learning tasks, such as organizing, clustering, classifying, or searching a collection of the documents, fall into this category. This problem becomes even more important with the existing huge repositories of text data, especially with the rapid development of Internet and digital databases, and thus receives an increasing attention recently.",
+    "There has been comprehensive research on the unsupervised learning from a corpus and the latent topic models play a central role among the existing methods. The topic models extract the latent topics from the corpus and therefore represent the documents in the new latent semantic space. This new latent semantic space bridges the gap between the documents and words and thus enables the efficient processing of the corpus such as browsing, clustering, and visualization.",
+    "One of the learning tasks which play central roles in the data mining field is to understand the content of a corpus such that one can efficiently store, organize, and visualize the documents. Moreover, it is essential in developing the human-machine interface in an information processing system to improve user experiences. This problem has received more and more attentions recently since huge repositories of documents are made available by the development of the Internet and digital databases and analyzing such large-scale corpora is a challenging research area. Among the numerous approaches on the knowledge discovery from documents, the latent topic models play an important role. The topic models extract latent topics from the corpus and the documents have new representations in the new latent semantic space. This new latent semantic space bridges the gap between the documents and the words and thus enables efficient processing of the corpus such as browsing, clustering, and visualization. Probabilistic Latent Semantic Indexing (PLSI) [T. Hofmann, “Probabilistic latent semantic indexing,” in SIGIR, 1999, pp. 50-57.] and Latent Dirichlet Allocation (LDA) [D. M. Blei, A. Y. Ng, and M. I. Jordan, “Latent dirichlet allocation,” in Journal of Machine Learning Research, 2003, pp. 993-1022.] are two well-known topic models.",
+    "PLSI (Hofmann 1999) and LDA (Blei, Ng, and Jordan 2003) are two well known topic models toward document modeling by treating each document as a mixture of a set of topics. In these and other existing probabilistic models, a basic assumption underpinning the generative process is that the documents are independent of each other. More specifically, they assume that the topic distributions of the documents are independent of each other. However, this assumption does not hold true in practice and the documents in a corpus are actually related to each other in certain ways; for example, research papers are related to each other by citations. The existing approaches treat the citations as the additional features similar to the content. For example, Cohn et al. (2000) applies the PLSI model to a new feature space which contains both content and citations. The LDA model is also exploited in a similar way (Erosheva, Fienberg, and Lafferty 2004). As another example, Zhu et al. (2007) combine the content and citations to form an objective function for optimization.",
+    "A basic assumption underpinning the PLSI and LDA models as well as other topic models is that the documents are independent of each other. However, documents in most of corpora are related to each other in many ways instead of being isolated, which suggests that such information should be considered in analyzing the corpora. For example, research papers are related to each other by citations in the digital libraries. One approach is to treat the citations as the additional features in a similar way to the content features and apply the existing approaches to the new feature space, where Cohn et al. [D. A. Cohn and T. Hofmann, “The missing link—a probabilistic model of document content and hypertext connectivity,” in NIPS, 2000, pp. 430-436] used PLSI model and Erosheva et al. [E. Erosheva, S. Fienberg, and J. Lafferty, “Mixed membership models of scientific publications,” in Proceedings of the National Academy of Sciences, 101 Suppl 1:5220-7 (2004)] applied LDA model. Zhu et al. [S. Zhu, K. Yu, Y. Chi, and Y. Gong, “Combining content and link for classification using matrix factorization,” in SIGIR, 2007, pp. 487-494] formulated a loss function in the new feature space for optimization. The above studies, however, fail to capture two important properties of the citation network. First, one document plays two different roles in the corpus: document itself and a citation of other documents. The topic distributions of these two roles are different and are related in a particular way. It should be beneficial to model the corpus at a finer level by differentiating these two roles for each document. For example, in the well-known LDA paper, Blei et al. [D. M. Blei, A. Y. Ng, and M. I. Jordan, “Latent dirichlet allocation,” in Journal of Machine Learning Research, 2003, pp. 993-1022] proposed a graphical model for document modeling and adopted the variational inference approach for parameter estimation. When the LDA paper serves as the citation role, one might be more interested in the graphical model and variational inference approach than other content covered in the LDA paper. This is the case, especially when one is interested in the applications of the LDA model in other contexts, such as the document clustering task. Therefore, the topic distributions of the LDA paper at the two levels (document level and citation level) are different, as illustrated in FIG. 1 . The topic models which simply treat the citations as the features in a peer-level to the content fail to differentiate these two levels.",
+    "The second property of the citation network that is ignored by the above studies is the multi-level hierarchical structure, which implies that the relations represented by the citations are transitive. A small citation network is illustrated in FIG. 2 , where the first level citations of document d 1 are those papers directly cited by d 1 and the second level citations of d 1 are those papers cited by the papers in the reference list of d 1 . Although the second level citations are not directly cited by d 1 , they are also likely to influence d 1 to a lesser degree than the first level citations. For example, d 5 is not directly cited by d 1 ; however, d 1 is probably influenced by d 5 indirectly through d 2 . A topic model which fails to capture such multi-level structure is flawed.",
+    "The Latent Dirichlet allocation (LDA) (see, Blei, David and Lafferty, John, “Topic Models”, In A. Srivastava and M. Sahami, editors, Text Mining: Theory and Applications. Taylor and Francis, 2009, expressly incorporated by reference, and liberally quoted below), has is a basis for many other topic models. LDA is based on latent semantic indexing (LSI) (Deerwester et al., 1990) and probabilistic LSI (Hofmann, 1999). See also, Steyvers and Griffiths (2006). LDA can be developed from the principles of generative probabilistic models. LDA models documents as arising from multiple topics, where a topic is defined to be a distribution over a fixed vocabulary of terms. Specifically, we assume that K topics are associated with a collection, and that each document exhibits these topics with different proportions. Documents in a corpus tend to be heterogeneous, combining a subset of main ideas or themes from the collection as a whole. These topics are not typically known in advance, but may be learned from the data.",
+    "More formally, LDA provides a hidden variable model of documents. Hidden variable models are structured distributions in which observed data interact with hidden random variables. With a hidden variable model, a hidden structure is posited within in the observed data, which is inferred using posterior probabilistic inference. Hidden variable models are prevalent in machine learning; examples include hidden Markov models (Rabiner, 1989), Kalman filters (Kalman, 1960), phylogenetic tree models (Mau et al., 1999), and mixture models (McLachlan and Peel, 2000).",
+    "In LDA, the observed data are the words of each document and the hidden variables represent the latent topical structure, i.e., the topics themselves and how each document exhibits them. Given a collection, the posterior distribution of the hidden variables given the observed documents determines a hidden topical decomposition of the collection. Applications of topic modeling use posterior estimates of these hidden variables to perform tasks such as information retrieval and document browsing.",
+    "The relation between the observed documents and the hidden topic structure is extracted with a probabilistic generative process associated with LDA, the imaginary random process that is assumed to have produced the observed data. That is, LDA assumes that the document is randomly generated based on the hidden topic structure.",
+    "Let K be a specified number of topics, V the size of the vocabulary, {right arrow over (α)} a positive K-vector, and η a scalar. Dir V ({right arrow over (α)}) denotes a V-dimensional Dirichlet with vector parameter {right arrow over (α)} and Dir K (η) denote a K dimensional symmetric Dirichlet with scalar parameter η. For each topic, we draw a distribution over words {right arrow over (β)} k ˜Dir V (η). For each document, we draw a vector of topic proportions {right arrow over (θ)} d ˜Dir V ({right arrow over (α)}). For each word, we draw a topic assignment Z d,n ˜Mult({right arrow over (θ)} d ), Z d,n ε{1, . . . , K}, and draw a word W d,n ˜Mult({right arrow over (β)} z d,n ), W d,n ε{1, . . . , V}. This process is illustrated as a directed graphical model in FIG. 9 .",
+    "The hidden topical structure of a collection is represented in the hidden random variables: the topics {right arrow over (β)} 1:K , the per-document topic proportions {right arrow over (θ)} 1:D , and the per-word topic assignments z 1:D,1:N . With these variables, LDA is a type of mixed-membership model (Erosheva et al., 2004). These are distinguished from classical mixture models (McLachlan and Peel, 2000; Nigam et al., 2000), where each document is limited to exhibit one topic.",
+    "This additional structure is important because documents often exhibit multiple topics; LDA can model this heterogeneity while classical mixtures cannot. Advantages of LDA over classical mixtures has been quantified by measuring document generalization (Blei et al., 2003). LDA makes central use of the Dirichlet distribution, the exponential family distribution over the simplex of positive vectors that sum to one. The Dirichlet has density:",
+    "p ⁡ ( θ ❘ α -> ) = Γ ( ∑ i ⁢ ⁢ α i ) ∏ i ⁢ ⁢ Γ ⁡ ( α i ) ⁢ ∏ i ⁢ ⁢ θ i α i - 1 .",
+    "The parameter {right arrow over (α)} is a positive K-vector, and Γ denotes the Gamma function, which can be thought of as a real-valued extension of the factorial function. A symmetric Dirichlet is a Dirichlet where each component of the parameter is equal to the same value. The Dirichlet is used as a distribution over discrete distributions; each component in the random vector is the probability of drawing the item associated with that component.",
+    "LDA contains two Dirichlet random variables: the topic proportions {right arrow over (θ)} are distributions over topic indices {1, . . . , K}; the topics {right arrow over (β)} are distributions over the vocabulary.",
+    "Exploring a corpus with the posterior distribution. LDA provides a joint distribution over the observed and hidden random variables. The hidden topic decomposition of a particular corpus arises from the corresponding posterior distribution of the hidden variables given the D observed documents {right arrow over (w)} 1:D ,",
+    "p ⁡ ( θ -> 1 ⁢ : ⁢ D , z 1 ⁢ : ⁢ D , 1 ⁢ : ⁢ N , ⁢ β -> 1 ⁢ : ⁢ K ❘ w 1 ⁢ : ⁢ D , 1 ⁢ : ⁢ N , ⁢ α , η ) = p ⁡ ( θ -> 1 ⁢ : ⁢ D , z -> 1 ⁢ : ⁢ D , 1 ⁢ : ⁢ N , ⁢ β -> 1 ⁢ : ⁢ K ❘ w -> 1 ⁢ : ⁢ D , 1 ⁢ : ⁢ N , ⁢ α , η ) ∫ β -> 1 ⁢ : ⁢ K ⁢ ∫ θ -> 1 ⁢ : ⁢ D ⁢ ∑ Z -> ⁢ ⁢ p ⁡ ( θ -> 1 ⁢ : ⁢ D , z -> 1 ⁢ : ⁢ D , ⁢ β -> 1 ⁢ : ⁢ K ❘ w -> 1 ⁢ : ⁢ D , ⁢ α , η ) ⁢",
+    "Loosely, this posterior can be thought of the “reversal” of the generative process described above. Given the observed corpus, the posterior is a distribution of the hidden variables which generated it.",
+    "Computing this distribution is generally considered intractable because of the integral in the denominator, Blei et al. (2003). The posterior distribution gives a decomposition of the corpus that can be used to better understand and organize its contents. The quantities needed for exploring a corpus are the posterior expectations of the hidden variables. These are the topic probability of a term {circumflex over (β)} k,v =E[β k,v |w 1:D,1:N ], the topic proportions of a document {circumflex over (θ)} d,k =E[θ d,k |w 1:D,1:N ], and the topic assignment of a word {circumflex over (z)} d,n,k =E[Z d,n =k|w 1:D,1:N ]. Note that each of these quantities is conditioned on the observed corpus.",
+    "Exploring a corpus through a topic model typically begins with visualizing the posterior topics through their per-topic term probabilities {circumflex over (β)}. The simplest way to visualize a topic is to order the terms by their probability. However, we prefer the following score,",
+    "term - score k , v = β ^ k , v ⁢ log ( β ^ k , v ( ∏ j = 1 K ⁢ ⁢ β ^ k , v ) 1 K ) .",
+    "This is inspired by the popular TFIDF term score of vocabulary terms used in information retrieval Baeza-Yates and Ribeiro-Neto (1999). The first expression is akin to the term frequency; the second expression is akin to the document frequency, down-weighting terms that have high probability under all the topics. Other methods of determining the difference between a topic and others can be found in (Tang and MacLennan, 2005).",
+    "The posterior topic proportions {circumflex over (θ)} d,k and posterior topic assignments {circumflex over (z)} d,n,k to visualize the underlying topic decomposition of a document. Plotting the posterior topic proportions gives a sense of which topics the document is “about.” These vectors can also be used to group articles that exhibit certain topics with high proportions. Note that, in contrast to traditional clustering models (Fraley and Raftery, 2002), articles contain multiple topics and thus can belong to multiple groups. Finally, examining the most likely topic assigned to each word gives a sense of how the topics are divided up within the document.",
+    "The posterior topic proportions can be used to define a topic-based similarity measure between documents. These vectors provide a low dimensional simplicial representation of each document, reducing their representation from the (V-1)-simplex to the (K-1)-simplex. One can use the Hellinger distance between documents as a similarity measure,",
+    "document ⁢ - ⁢ ⁢ similarity d , f = ∑ k = 1 K ⁢ ( θ ^ d , k - θ ^ f , k ) 2 .",
+    "The central computational problem for topic modeling with LDA is approximating the posterior. This distribution is the key to using LDA for both quantitative tasks, such as prediction and document generalization, and the qualitative exploratory tasks that we discuss here. Several approximation techniques have been developed for LDA, including mean field variational inference (Blei et al., 2003), collapsed variational inference (Teh et al., 2006), expectation propagation (Minka and Lafferty, 2002), and Gibbs sampling (Steyvers and Griffiths, 2006). Each has advantages and disadvantages: choosing an approximate inference algorithm amounts to trading off speed, complexity, accuracy, and conceptual simplicity.",
+    "The basic idea behind variational inference is to approximate an intractable posterior distribution over hidden variables, with a simpler distribution containing free variational parameters. These parameters are then fit so that the approximation is close to the true posterior.",
+    "The LDA posterior is intractable to compute exactly because the hidden variables (i.e., the components of the hidden topic structure) are dependent when conditioned on data. Specifically, this dependence yields difficulty in computing the denominator of the posterior distribution equation, because one must sum over all configurations of the interdependent N topic assignment variables Z 1:N .",
+    "In contrast to the true posterior, the mean field variational distribution for LDA is one where the variables are independent of each other, with and each governed by a different variational parameter:",
+    "q ⁡ ( θ → 1 ⁢ : ⁢ ⁢ D , z 1 ⁢ : ⁢ ⁢ D , 1 ⁢ : ⁢ ⁢ N , ⁢ β → 1 ⁢ : ⁢ ⁢ K ) = ∏ k = 1 K ⁢ ⁢ q ⁡ ( β → k ❘ λ → k ) ⁢ ∏ d = 1 D ⁢ ⁢ ( q ⁡ ( θ → dd ❘ γ → d ) ⁢ ∏ n = 1 N ⁢ ⁢ q ⁡ ( z d , n ❘ ϕ → d , n ) )",
+    "Each hidden variable is described by a distribution over its type: the topics {right arrow over (β)} 1:K are each described by a V-Dirichlet distribution {right arrow over (λ)} k ; the topic proportions {right arrow over (θ)} 1:D are each described by a K-Dirichlet distribution {right arrow over (λ)} d ; and the topic assignment z d,n is described by a K-multinomial distribution {right arrow over (θ)} d,n . In the variational distribution these variables are independent; in the true posterior they are coupled through the observed documents. The variational parameters are fit to minimize the Kullback-Leibler (KL) to the true posterior:",
+    "arg ⁢ ⁢ min γ → 1 ⁢ : ⁢ ⁢ D , λ → 1 ⁢ : ⁢ ⁢ K , ϕ → 1 ⁢ : ⁢ ⁢ D , 1 ⁢ : ⁢ ⁢ N ⁢ KL ⁢ ( q ⁡ ( θ → 1 ⁢ : ⁢ ⁢ D , z 1 ⁢ : ⁢ ⁢ D , 1 ⁢ : ⁢ ⁢ N , ⁢ β → 1 ⁢ : ⁢ ⁢ K ) ⁢  p ( θ → 1 ⁢ : ⁢ ⁢ D , z 1 ⁢ : ⁢ ⁢ D , 1 ⁢ : ⁢ ⁢ N , ⁢ β → 1 ⁢ : ⁢ ⁢ K  ⁢ w 1 ⁢ : ⁢ ⁢ D , 1 ⁢ : ⁢ ⁢ N ) )",
+    "The objective cannot be computed exactly, but it can be computed up to a constant that does not depend on the variational parameters. (In fact, this constant is the log likelihood of the data under the model.)",
+    "Specifically, the objective function is",
+    "ℒ ⁢ ∑ k = 1 K ⁢ E ⁡ [ log ⁢ ⁢ p ⁡ ( β → k ❘ η ) ] + ∑ d = 1 D ⁢ E ⁡ [ log ⁢ ⁢ p ⁡ ( θ → d ❘ α → ) ] + ∑ d = 1 D ⁢ ∑ k = 1 K ⁢ E ⁡ [ log ⁢ ⁢ p ⁡ ( Z d , n ❘ θ → d ) ] + ∑ d = 1 D ⁢ ∑ k = 1 K ⁢ E ⁡ [ log ⁢ ⁢ p ⁡ ( w d , n ❘ Z d , n ⁢ β → 1 ⁢ : ⁢ ⁢ K ) ] + H ⁡ ( q ) where H denotes the entropy and all expectations are taken with respect to the variational parameter distribution. See Blei et al. (2003) for details on how to compute this function. Optimization proceeds by coordinate ascent, iteratively optimizing each variational parameter to increase the objective. Mean field variational inference for LDA is discussed in detail in (Blei et al., 2003), and good introductions to variational methods include (Jordan et al., 1999) and (Wainwright and Jordan, 2005).",
+    "The true posterior Dirichlet variational parameter for a term given all of the topic assignments and words is a Dirichlet with parameters η+n k,w , where n k,w denotes the number of times word w is assigned to topic k. (This follows from the conjugacy of the Dirichlet and multinomial. See (Gelman et al., 1995) for a good introduction to this concept.) The update of λ below is nearly this expression, but with n k,w replaced by its expectation under the variational distribution. The independence of the hidden variables in the variational distribution guarantees that such an expectation will not depend on the parameter being updated. The variational update for the topic proportions γ is analogous.",
+    "The variational update for the distribution of z d,n follows a similar formula. Consider the true posterior of z d,n given the other relevant hidden variables and observed word w d,n , p ( z d,n =k|{right arrow over (θ)} d ,w d,n {right arrow over (β)} 1:K )∝exp{log θ d,k +log β k,w d,n }",
+    "The update of φ is this distribution, with the term inside the exponent replaced by its expectation under the variational distribution. Note that under the variational Dirichlet distribution, E[log β k,w ]=Ψ(λ k,w )−Ψ(Σ v λ k,v ), and E[log θ d,k ] is similarly computed.",
+    "An iteration of mean field variational inference for LDA is provided as follows:",
+    "(1) For each topic k and term v:",
+    "λ k , v ( t + 1 ) = ⁢ η = ⁢ ∑ d = 1 D ⁢ ∑ n = 1 N ⁢ ( w d , n = v ) ⁢ ϕ n , k ( t ) .",
+    "(2) For each document d:",
+    "This algorithm is repeated until the objective function converges. Each update has a close relationship to the true posterior of each hidden random variable conditioned on the other hidden and observed random variables.",
+    "This general approach to mean-field variational methods—update each variational parameter with the parameter given by the expectation of the true posterior under the variational distribution—is applicable when the conditional distribution of each variable is in the exponential family. This has been described by several authors (Beal, 2003; Xing et al., 2003; Blei and Jordan, 2005) and is the backbone of the VIBES framework (Winn and Bishop, 2005). The quantities needed to explore and decompose the corpus are readily computed from the variational distribution.",
+    "The per-term topic probabilities are:",
+    "β ^ k , v = λ k , v ∑ v ′ = 1 V ⁢ λ k , v ′ .",
+    "The per topic proportions are:",
+    "θ ^ d , k = γ d , k ∑ k ′ = 1 K ⁢ γ d , k ′ .",
+    "The per topic assignment expectation is: {circumflex over (z)} d,n,k =φ d,n,k .",
+    "The computational bottleneck of the algorithm is typically computing the Ψ function, which should be precomputed as much as possible.",
+    "Each of the correlated topic model and the dynamic topic model embellishes LDA to relax one of its implicit assumptions. In addition to describing topic models that are more powerful than LDA, our goal is give the reader an idea of the practice of topic modeling. Deciding on an appropriate model of a corpus depends both on what kind of structure is hidden in the data and what kind of structure the practitioner cares to examine. While LDA may be appropriate for learning a fixed set of topics, other applications of topic modeling may call for discovering the connections between topics or modeling topics as changing through time.",
+    "The correlated topic model addresses one limitation of LDA, which fails to directly model correlation between the occurrence of topics. In many text corpora, it is natural to expect that the occurrences of the underlying latent topics will be highly correlated. In LDA, this modeling limitation stems from the independence assumptions implicit in the Dirichlet distribution of the topic proportions. Specifically, under a Dirichlet, the components of the proportions vector are nearly independent, which leads to the strong assumption that the presence of one topic is not correlated with the presence of another. (We say “nearly independent” because the components exhibit slight negative correlation because of the constraint that they have to sum to one.)",
+    "In the correlated topic model (CTM), the topic proportions are modeled with an alternative, more flexible distribution that allows for covariance structure among the components (Blei and Lafferty, 2007). This gives a more realistic model of latent topic structure where the presence of one latent topic may be correlated with the presence of another. The CTM better fits the data, and provides a rich way of visualizing and exploring text collections.",
+    "The key to the CTM is the logistic normal distribution (Aitchison, 1982). The logistic normal is a distribution on the simplex that allows for a general pattern of variability between the components. It achieves this by mapping a multivariate random variable from R d to the d-simplex. In particular, the logistic normal distribution takes a draw from a multivariate Gaussian, exponentiates it, and maps it to the simplex via normalization. The covariance of the Gaussian leads to correlations between components of the resulting simplicial random variable. The logistic normal was originally studied in the context of analyzing observed data such as the proportions of minerals in geological samples. In the CTM, it is used in a hierarchical model where it describes the hidden composition of topics associated with each document.",
+    "Let {μ,Σ} be a K-dimensional mean and covariance matrix, and let topics β 1:K be K multinomials over a fixed word vocabulary, as above. The CTM assumes that an N-word document arises from the following generative process:",
+    "(1) Draw η|{μ,Σ}˜n(μ,Σ}.",
+    "(2) For nε{1, . . . ,N}"
+   ]
+  }
+ ],
+ "pdf_url": "https://patentimages.storage.googleapis.com/c8/ba/66/7dd77d29e9bf64/US8930304.pdf",
+ "source": {
+  "provider": "Google Patents",
+  "url": "https://patents.google.com/patent/US8930304B2/en",
+  "fetched": "2026-08-28",
+  "note": "Patent text is public record; Google Patents used as aggregator."
+ }
+}

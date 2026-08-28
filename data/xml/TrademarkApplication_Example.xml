@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmk:TrademarkApplication xmlns:tmk="http://www.wipo.int/standards/XMLSchema/ST96/Trademark"
+                          xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          com:st96Version="V8_0"
+                          xsi:schemaLocation="http://www.wipo.int/standards/XMLSchema/ST96/Trademark https://www.wipo.int/standards/XMLSchema/ST96/V8_0/Trademark/Document/TrademarkApplication_V8_0.xsd">
+   <tmk:ApplicationFormName>TEAS (Trademark Electronic Application System) Plus Application</tmk:ApplicationFormName>
+   <com:RequestExamination>
+      <com:RequestExaminationCategory>Normal</com:RequestExaminationCategory>
+   </com:RequestExamination>
+   <com:DocumentIncludedBag>
+      <com:DocumentIncluded com:languageCode="en">
+         <com:DocumentName>OG Publication Confirmation</com:DocumentName>
+         <com:DocumentKindCategory>Outgoing</com:DocumentKindCategory>
+         <com:DocumentDate>2017-01-10</com:DocumentDate>
+         <com:DocumentMediaCategory>File</com:DocumentMediaCategory>
+      </com:DocumentIncluded>
+      <com:DocumentIncluded com:languageCode="en">
+         <com:DocumentName>Notice of Publication</com:DocumentName>
+         <com:DocumentKindCategory>Outgoing</com:DocumentKindCategory>
+         <com:DocumentDate>2016-12-21</com:DocumentDate>
+         <com:DocumentMediaCategory>File</com:DocumentMediaCategory>
+      </com:DocumentIncluded>
+      <com:DocumentIncluded com:languageCode="en">
+         <com:DocumentName>Notification Of Notice of Publication</com:DocumentName>
+         <com:DocumentKindCategory>Outgoing</com:DocumentKindCategory>
+         <com:DocumentDate>2016-12-21</com:DocumentDate>
+         <com:DocumentMediaCategory>File</com:DocumentMediaCategory>
+      </com:DocumentIncluded>
+      <com:DocumentIncluded com:languageCode="en">
+         <com:DocumentName>Publication &amp; Issue Review Complete</com:DocumentName>
+         <com:DocumentKindCategory>TRAM Snapshot</com:DocumentKindCategory>
+         <com:DocumentDate>2016-12-09</com:DocumentDate>
+         <com:DocumentMediaCategory>File</com:DocumentMediaCategory>
+      </com:DocumentIncluded>
+      <com:DocumentIncluded com:languageCode="en">
+         <com:DocumentName>TRAM Snapshot of App at Pub for Oppostn</com:DocumentName>
+         <com:DocumentKindCategory>TRAM Snapshot</com:DocumentKindCategory>
+         <com:DocumentDate>2016-11-22</com:DocumentDate>
+         <com:DocumentMediaCategory>File</com:DocumentMediaCategory>
+      </com:DocumentIncluded>
+      <com:DocumentIncluded com:languageCode="en">
+         <com:DocumentName>Notation to File</com:DocumentName>
+         <com:DocumentKindCategory>Outgoing</com:DocumentKindCategory>
+         <com:DocumentDate>2016-11-21</com:DocumentDate>
+         <com:DocumentMediaCategory>File</com:DocumentMediaCategory>
+      </com:DocumentIncluded>
+      <com:DocumentIncluded com:languageCode="en">
+         <com:DocumentName>Amendment and Mail Process Complete</com:DocumentName>
+         <com:DocumentKindCategory>TRAM Snapshot</com:DocumentKindCategory>
+         <com:DocumentDate>2016-11-18</com:DocumentDate>
+         <com:DocumentMediaCategory>File</com:DocumentMediaCategory>
+      </com:DocumentIncluded>
+      <com:DocumentIncluded com:languageCode="en">
+         <com:DocumentName>Response to Office Action</com:DocumentName>
+         <com:DocumentKindCategory>Incoming</com:DocumentKindCategory>
+         <com:DocumentDate>2016-10-27</com:DocumentDate>
+         <com:DocumentMediaCategory>File</com:DocumentMediaCategory>
+      </com:DocumentIncluded>
+      <com:DocumentIncluded com:languageCode="en">
+         <com:DocumentName>Offc Action Outgoing</com:DocumentName>
+         <com:DocumentKindCategory>Outgoing</com:DocumentKindCategory>
+         <com:DocumentDate>2016-08-27</com:DocumentDate>
+         <com:DocumentMediaCategory>File</com:DocumentMediaCategory>
+      </com:DocumentIncluded>
+      <com:DocumentIncluded com:languageCode="en">
+         <com:DocumentName>XSearch Search Summary</com:DocumentName>
+         <com:DocumentKindCategory>Outgoing</com:DocumentKindCategory>
+         <com:DocumentDate>2016-08-27</com:DocumentDate>
+         <com:DocumentMediaCategory>File</com:DocumentMediaCategory>
+      </com:DocumentIncluded>
+      <com:DocumentIncluded com:languageCode="en">
+         <com:DocumentName>Design Search Code Corr Project</com:DocumentName>
+         <com:DocumentKindCategory>Outgoing</com:DocumentKindCategory>
+         <com:DocumentDate>2016-05-19</com:DocumentDate>
+         <com:DocumentMediaCategory>File</com:DocumentMediaCategory>
+      </com:DocumentIncluded>
+      <com:DocumentIncluded com:languageCode="en">
+         <com:DocumentName>Drawing</com:DocumentName>
+         <com:DocumentKindCategory>Drawing</com:DocumentKindCategory>
+         <com:DocumentDate>2016-05-12</com:DocumentDate>
+         <com:DocumentMediaCategory>File</com:DocumentMediaCategory>
+      </com:DocumentIncluded>
+      <com:DocumentIncluded com:languageCode="en">
+         <com:DocumentName>TEAS Plus New Application</com:DocumentName>
+         <com:DocumentKindCategory>Application</com:DocumentKindCategory>
+         <com:DocumentDate>2016-05-12</com:DocumentDate>
+         <com:DocumentMediaCategory>File</com:DocumentMediaCategory>
+      </com:DocumentIncluded>
+      <com:DocumentIncluded com:languageCode="en">
+         <com:DocumentName>Specimen</com:DocumentName>
+         <com:DocumentFormatCategory>PDF</com:DocumentFormatCategory>
+         <com:DocumentKindCategory>Specimens</com:DocumentKindCategory>
+         <com:DocumentDate>2016-05-12</com:DocumentDate>
+         <com:DocumentMediaCategory>File</com:DocumentMediaCategory>
+         <com:DocumentLocationURI>https://tsdrapi.uspto.gov/ts/cd/casedocs/bundle.pdf?sn=87035559&amp;type=SPE</com:DocumentLocationURI>
+      </com:DocumentIncluded>
+   </com:DocumentIncludedBag>
+   <tmk:TrademarkBag>
+      <tmk:Trademark>
+         <com:RegistrationOfficeCode>US</com:RegistrationOfficeCode>
+         <com:ApplicationNumber>
+            <com:IPOfficeCode>US</com:IPOfficeCode>
+            <com:ApplicationNumberText>87035559</com:ApplicationNumberText>
+         </com:ApplicationNumber>
+         <com:RegistrationNumber>5169753</com:RegistrationNumber>
+         <com:ApplicationDate>2016-05-12</com:ApplicationDate>
+         <com:RegistrationDate>2017-03-28</com:RegistrationDate>
+         <com:FilingPlaceName>US</com:FilingPlaceName>
+         <tmk:MarkCurrentStatusCode>REGISTERED</tmk:MarkCurrentStatusCode>
+         <tmk:MarkCurrentStatusDate>2017-03-28</tmk:MarkCurrentStatusDate>
+         <tmk:MarkCategory>Trademark</tmk:MarkCategory>
+         <tmk:MarkRepresentation>
+            <tmk:MarkReproduction>
+               <tmk:WordMarkSpecification>
+                  <tmk:MarkVerbalElementText>LANYI</tmk:MarkVerbalElementText>
+                  <tmk:MarkSignificantVerbalElementText>LANYI</tmk:MarkSignificantVerbalElementText>
+                  <tmk:MarkStandardCharacterIndicator>false</tmk:MarkStandardCharacterIndicator>
+               </tmk:WordMarkSpecification>
+               <tmk:MarkImageBag>
+                  <tmk:MarkImage>
+                     <com:FileName>87035559.png</com:FileName>
+                     <tmk:MarkImageColourClaimedText com:sequenceNumber="1">Color is not claimed as a feature of the mark.</tmk:MarkImageColourClaimedText>
+                     <tmk:NationalDesignSearchCodeBag>
+                        <tmk:NationalDesignSearchCode>
+                           <tmk:NationalDesignCode>06.03.03</tmk:NationalDesignCode>
+                           <tmk:NationalDesignCodeDescriptionText>Ocean</tmk:NationalDesignCodeDescriptionText>
+                           <tmk:NationalDesignCodeDescriptionText>Waves, open sea (multiple waves)</tmk:NationalDesignCodeDescriptionText>
+                           <tmk:NationalDesignCodeDescriptionText>Ripples (multiple waves)</tmk:NationalDesignCodeDescriptionText>
+                        </tmk:NationalDesignSearchCode>
+                     </tmk:NationalDesignSearchCodeBag>
+                     <com:ColourIndicator>false</com:ColourIndicator>
+                  </tmk:MarkImage>
+               </tmk:MarkImageBag>
+            </tmk:MarkReproduction>
+            <tmk:MarkDescriptionBag>
+               <tmk:MarkDescriptionText>The mark consists of the word "LANYI" and wave-like logo above.</tmk:MarkDescriptionText>
+               <tmk:NationalMarkDescription>
+                  <tmk:NationalMarkApplicationNumber>
+                     <com:ApplicationNumberText>87035559</com:ApplicationNumberText>
+                  </tmk:NationalMarkApplicationNumber>
+                  <tmk:MarkFeatureCode>3</tmk:MarkFeatureCode>
+               </tmk:NationalMarkDescription>
+            </tmk:MarkDescriptionBag>
+         </tmk:MarkRepresentation>
+         <tmk:GoodsServicesBag>
+            <tmk:GoodsServices>
+               <tmk:GoodsServicesClassificationBag>
+                  <tmk:GoodsServicesClassification>
+                     <tmk:ClassificationKindCode>Primary</tmk:ClassificationKindCode>
+                     <tmk:ClassNumber>009</tmk:ClassNumber>
+                  </tmk:GoodsServicesClassification>
+                  <tmk:GoodsServicesClassification>
+                     <tmk:ClassificationKindCode>Nice</tmk:ClassificationKindCode>
+                     <tmk:ClassNumber>009</tmk:ClassNumber>
+                  </tmk:GoodsServicesClassification>
+                  <tmk:GoodsServicesClassification>
+                     <tmk:ClassificationKindCode>Domestic</tmk:ClassificationKindCode>
+                     <tmk:NationalClassNumber>021</tmk:NationalClassNumber>
+                  </tmk:GoodsServicesClassification>
+                  <tmk:GoodsServicesClassification>
+                     <tmk:ClassificationKindCode>Domestic</tmk:ClassificationKindCode>
+                     <tmk:NationalClassNumber>023</tmk:NationalClassNumber>
+                  </tmk:GoodsServicesClassification>
+                  <tmk:GoodsServicesClassification>
+                     <tmk:ClassificationKindCode>Domestic</tmk:ClassificationKindCode>
+                     <tmk:NationalClassNumber>026</tmk:NationalClassNumber>
+                  </tmk:GoodsServicesClassification>
+                  <tmk:GoodsServicesClassification>
+                     <tmk:ClassificationKindCode>Domestic</tmk:ClassificationKindCode>
+                     <tmk:NationalClassNumber>036</tmk:NationalClassNumber>
+                  </tmk:GoodsServicesClassification>
+                  <tmk:GoodsServicesClassification>
+                     <tmk:ClassificationKindCode>Domestic</tmk:ClassificationKindCode>
+                     <tmk:NationalClassNumber>038</tmk:NationalClassNumber>
+                  </tmk:GoodsServicesClassification>
+               </tmk:GoodsServicesClassificationBag>
+               <tmk:NationalFilingBasis>
+                  <tmk:CurrentBasis>
+                     <tmk:BasisForeignApplicationIndicator>false</tmk:BasisForeignApplicationIndicator>
+                     <tmk:BasisForeignRegistrationIndicator>false</tmk:BasisForeignRegistrationIndicator>
+                     <tmk:BasisUseIndicator>false</tmk:BasisUseIndicator>
+                     <tmk:BasisIntentToUseIndicator>false</tmk:BasisIntentToUseIndicator>
+                     <tmk:NoBasisIndicator>false</tmk:NoBasisIndicator>
+                  </tmk:CurrentBasis>
+                  <tmk:FirstUsedDate>2016-05-12</tmk:FirstUsedDate>
+                  <tmk:FirstUsedCommerceDate>2016-05-12</tmk:FirstUsedCommerceDate>
+               </tmk:NationalFilingBasis>
+               <tmk:ClassDescriptionBag>
+                  <tmk:ClassDescription>
+                     <tmk:ClassNumber>009</tmk:ClassNumber>
+                     <tmk:NationalStatusBag>
+                        <tmk:NationalStatus>
+                           <tmk:NationalStatusCategory>National class status</tmk:NationalStatusCategory>
+                           <tmk:NationalStatusCode>6</tmk:NationalStatusCode>
+                           <tmk:NationalStatusExternalDescriptionText>ACTIVE</tmk:NationalStatusExternalDescriptionText>
+                        </tmk:NationalStatus>
+                     </tmk:NationalStatusBag>
+                     <tmk:GoodsServicesDescriptionText com:sequenceNumber="1">Audio cables; Bags for cameras and photographic equipment; Batteries; Battery chargers for use with telephones; Battery chargers for use with Camera; Battery packs for video cameras; Camera cases; Camera filters; Camera flashes; Camera handles; Camera hoods; Camera shutters; Camera straps; Camera tripods; Carrying cases, holders, protective cases and stands featuring power supply connectors, adaptors, speakers and battery charging devices, specially adapted for use with handheld digital electronic devices, namely, cell phones; Cell phone battery chargers for use in vehicles; Cell phone cases; Cell phone covers; Cell phone straps; Data cables; Earphones; Electric door bells; Flashlights for use in photography; Head-clip cell phone holders; Headphones; Keyboards for mobile phones; LCD projectors; LCDs; Lens filters; Loudspeakers; Microphones; Mobile phone cases featuring rechargeable batteries; Monopods used to take photographs by positioning a smartphone or camera beyond the normal range of the arm; Multimedia projectors; Neoprene laptop covers; Photographic filters; Portable photography equipment, namely, reflectors, tripods, light stands and supports and bags specially adapted for these goods; Portable telephones; Protection masks; Protective covers and cases for tablet computers; Protective covers for smartphones; Protective display screen covers adapted for use with tablet computers; Smartwatches; Tripods for cameras; Wireless broadband radios; Wireless cellular phone headsets; Wireless computer mice; Wireless computer peripherals; Wireless electronic visitor chimes; Wireless electronic visitor signal chimes; Wireless headsets for smartphones; Wireless indoor and outdoor speakers; Wireless POS (point of service) devices; Wireless receivers and transmitters for portable media players; Wireless telephones; Wireless telephony apparatus</tmk:GoodsServicesDescriptionText>
+                  </tmk:ClassDescription>
+               </tmk:ClassDescriptionBag>
+            </tmk:GoodsServices>
+         </tmk:GoodsServicesBag>
+         <tmk:PublicationBag>
+            <tmk:Publication>
+               <com:PublicationIdentifier>USPTO Official Gazette for Trademarks (OG)</com:PublicationIdentifier>
+               <com:PublicationDate>2017-01-10</com:PublicationDate>
+            </tmk:Publication>
+         </tmk:PublicationBag>
+         <tmk:ApplicantBag>
+            <tmk:Applicant com:sequenceNumber="10">
+               <com:LegalEntityName>LIMITED LIABILITY COMPANY</com:LegalEntityName>
+               <com:Contact>
+                  <com:Name>
+                     <com:OrganizationName>
+                        <com:OrganizationStandardName>Shenzhen Fengniao E-Commerce Co.,Ltd</com:OrganizationStandardName>
+                     </com:OrganizationName>
+                     <com:EntityName>Shenzhen Fengniao E-Commerce Co.,Ltd</com:EntityName>
+                  </com:Name>
+               </com:Contact>
+               <com:NationalLegalEntityCode>16</com:NationalLegalEntityCode>
+               <com:IncorporationCountryCode>CN</com:IncorporationCountryCode>
+               <com:CommentText com:sequenceNumber="1">ORIGINAL APPLICANT</com:CommentText>
+            </tmk:Applicant>
+            <tmk:Applicant com:sequenceNumber="20">
+               <com:LegalEntityName>LIMITED LIABILITY COMPANY</com:LegalEntityName>
+               <com:Contact>
+                  <com:Name>
+                     <com:OrganizationName>
+                        <com:OrganizationStandardName>Shenzhen Fengniao E-Commerce Co.,Ltd</com:OrganizationStandardName>
+                     </com:OrganizationName>
+                     <com:EntityName>Shenzhen Fengniao E-Commerce Co.,Ltd</com:EntityName>
+                  </com:Name>
+               </com:Contact>
+               <com:NationalLegalEntityCode>16</com:NationalLegalEntityCode>
+               <com:IncorporationCountryCode>CN</com:IncorporationCountryCode>
+               <com:CommentText com:sequenceNumber="1">OWNER AT PUBLICATION</com:CommentText>
+            </tmk:Applicant>
+            <tmk:Applicant com:sequenceNumber="30">
+               <com:LegalEntityName>LIMITED LIABILITY COMPANY</com:LegalEntityName>
+               <com:Contact>
+                  <com:Name>
+                     <com:EntityName>Shenzhen Fengniao E-Commerce Co.,Ltd</com:EntityName>
+                  </com:Name>
+               </com:Contact>
+               <com:NationalLegalEntityCode>16</com:NationalLegalEntityCode>
+               <com:IncorporationCountryCode>CN</com:IncorporationCountryCode>
+               <com:CommentText com:sequenceNumber="1">ORIGINAL REGISTRANT</com:CommentText>
+            </tmk:Applicant>
+         </tmk:ApplicantBag>
+         <tmk:NationalCorrespondent>
+            <com:Contact>
+               <com:Name>
+                  <com:PersonName>
+                     <com:PersonFullName>IVY XU</com:PersonFullName>
+                  </com:PersonName>
+               </com:Name>
+            </com:Contact>
+         </tmk:NationalCorrespondent>
+         <tmk:MarkEventBag>
+            <tmk:MarkEvent>
+               <tmk:MarkEventCategory>National prosecution history entry</tmk:MarkEventCategory>
+               <tmk:NationalMarkEvent>
+                  <tmk:MarkEventCode>R.PRA</tmk:MarkEventCode>
+                  <tmk:MarkEventDescriptionText>REGISTERED-PRINCIPAL REGISTER</tmk:MarkEventDescriptionText>
+                  <tmk:MarkEventEntryNumber>17</tmk:MarkEventEntryNumber>
+                  <tmk:MarkEventAdditionalText>0</tmk:MarkEventAdditionalText>
+               </tmk:NationalMarkEvent>
+               <tmk:MarkEventDate>2017-03-28</tmk:MarkEventDate>
+            </tmk:MarkEvent>
+            <tmk:MarkEvent>
+               <tmk:MarkEventCategory>National prosecution history entry</tmk:MarkEventCategory>
+               <tmk:NationalMarkEvent>
+                  <tmk:MarkEventCode>NPUBE</tmk:MarkEventCode>
+                  <tmk:MarkEventDescriptionText>OFFICIAL GAZETTE PUBLICATION CONFIRMATION E-MAILED</tmk:MarkEventDescriptionText>
+                  <tmk:MarkEventEntryNumber>16</tmk:MarkEventEntryNumber>
+                  <tmk:MarkEventAdditionalText>0</tmk:MarkEventAdditionalText>
+               </tmk:NationalMarkEvent>
+               <tmk:MarkEventDate>2017-01-10</tmk:MarkEventDate>
+            </tmk:MarkEvent>
+            <tmk:MarkEvent>
+               <tmk:MarkEventCategory>National prosecution history entry</tmk:MarkEventCategory>
+               <tmk:NationalMarkEvent>
+                  <tmk:MarkEventCode>PUBOA</tmk:MarkEventCode>
+                  <tmk:MarkEventDescriptionText>PUBLISHED FOR OPPOSITION</tmk:MarkEventDescriptionText>
+                  <tmk:MarkEventEntryNumber>15</tmk:MarkEventEntryNumber>
+                  <tmk:MarkEventAdditionalText>0</tmk:MarkEventAdditionalText>
+               </tmk:NationalMarkEvent>
+               <tmk:MarkEventDate>2017-01-10</tmk:MarkEventDate>
+            </tmk:MarkEvent>
+            <tmk:MarkEvent>
+               <tmk:MarkEventCategory>National prosecution history entry</tmk:MarkEventCategory>
+               <tmk:NationalMarkEvent>
+                  <tmk:MarkEventCode>NONPE</tmk:MarkEventCode>
+                  <tmk:MarkEventDescriptionText>NOTIFICATION OF NOTICE OF PUBLICATION E-MAILED</tmk:MarkEventDescriptionText>
+                  <tmk:MarkEventEntryNumber>14</tmk:MarkEventEntryNumber>
+                  <tmk:MarkEventAdditionalText>0</tmk:MarkEventAdditionalText>
+               </tmk:NationalMarkEvent>
+               <tmk:MarkEventDate>2016-12-21</tmk:MarkEventDate>
+            </tmk:MarkEvent>
+            <tmk:MarkEvent>
+               <tmk:MarkEventCategory>National prosecution history entry</tmk:MarkEventCategory>
+               <tmk:NationalMarkEvent>
+                  <tmk:MarkEventCode>PREVO</tmk:MarkEventCode>
+                  <tmk:MarkEventDescriptionText>LAW OFFICE PUBLICATION REVIEW COMPLETED</tmk:MarkEventDescriptionText>
+                  <tmk:MarkEventEntryNumber>13</tmk:MarkEventEntryNumber>
+                  <tmk:MarkEventAdditionalText>68171</tmk:MarkEventAdditionalText>
+               </tmk:NationalMarkEvent>
+               <tmk:MarkEventDate>2016-12-08</tmk:MarkEventDate>
+            </tmk:MarkEvent>
+            <tmk:MarkEvent>
+               <tmk:MarkEventCategory>National prosecution history entry</tmk:MarkEventCategory>
+               <tmk:NationalMarkEvent>
+                  <tmk:MarkEventCode>CNSAO</tmk:MarkEventCode>
+                  <tmk:MarkEventDescriptionText>APPROVED FOR PUB - PRINCIPAL REGISTER</tmk:MarkEventDescriptionText>
+                  <tmk:MarkEventEntryNumber>12</tmk:MarkEventEntryNumber>
+                  <tmk:MarkEventAdditionalText>0</tmk:MarkEventAdditionalText>
+               </tmk:NationalMarkEvent>
+               <tmk:MarkEventDate>2016-11-21</tmk:MarkEventDate>
+            </tmk:MarkEvent>
+            <tmk:MarkEvent>
+               <tmk:MarkEventCategory>National prosecution history entry</tmk:MarkEventCategory>
+               <tmk:NationalMarkEvent>
+                  <tmk:MarkEventCode>TEMEI</tmk:MarkEventCode>
+                  <tmk:MarkEventDescriptionText>TEAS/EMAIL CORRESPONDENCE ENTERED</tmk:MarkEventDescriptionText>
+                  <tmk:MarkEventEntryNumber>11</tmk:MarkEventEntryNumber>
+                  <tmk:MarkEventAdditionalText>68171</tmk:MarkEventAdditionalText>
+               </tmk:NationalMarkEvent>
+               <tmk:MarkEventDate>2016-11-17</tmk:MarkEventDate>
+            </tmk:MarkEvent>
+            <tmk:MarkEvent>
+               <tmk:MarkEventCategory>National prosecution history entry</tmk:MarkEventCategory>
+               <tmk:NationalMarkEvent>
+                  <tmk:MarkEventCode>CRFAI</tmk:MarkEventCode>
+                  <tmk:MarkEventDescriptionText>CORRESPONDENCE RECEIVED IN LAW OFFICE</tmk:MarkEventDescriptionText>
+                  <tmk:MarkEventEntryNumber>10</tmk:MarkEventEntryNumber>
+                  <tmk:MarkEventAdditionalText>68171</tmk:MarkEventAdditionalText>
+               </tmk:NationalMarkEvent>
+               <tmk:MarkEventDate>2016-11-17</tmk:MarkEventDate>
+            </tmk:MarkEvent>
+            <tmk:MarkEvent>
+               <tmk:MarkEventCategory>National prosecution history entry</tmk:MarkEventCategory>
+               <tmk:NationalMarkEvent>
+                  <tmk:MarkEventCode>ALIEA</tmk:MarkEventCode>
+                  <tmk:MarkEventDescriptionText>ASSIGNED TO LIE</tmk:MarkEventDescriptionText>
+                  <tmk:MarkEventEntryNumber>9</tmk:MarkEventEntryNumber>
+                  <tmk:MarkEventAdditionalText>68171</tmk:MarkEventAdditionalText>
+               </tmk:NationalMarkEvent>
+               <tmk:MarkEventDate>2016-11-08</tmk:MarkEventDate>
+            </tmk:MarkEvent>
+            <tmk:MarkEvent>
+               <tmk:MarkEventCategory>National prosecution history entry</tmk:MarkEventCategory>
+               <tmk:NationalMarkEvent>
+                  <tmk:MarkEventCode>TROAI</tmk:MarkEventCode>
+                  <tmk:MarkEventDescriptionText>TEAS RESPONSE TO OFFICE ACTION RECEIVED</tmk:MarkEventDescriptionText>
+                  <tmk:MarkEventEntryNumber>8</tmk:MarkEventEntryNumber>
+                  <tmk:MarkEventAdditionalText>0</tmk:MarkEventAdditionalText>
+               </tmk:NationalMarkEvent>
+               <tmk:MarkEventDate>2016-10-27</tmk:MarkEventDate>
+            </tmk:MarkEvent>
+            <tmk:MarkEvent>
+               <tmk:MarkEventCategory>National prosecution history entry</tmk:MarkEventCategory>
+               <tmk:NationalMarkEvent>
+                  <tmk:MarkEventCode>GNRNO</tmk:MarkEventCode>
+                  <tmk:MarkEventDescriptionText>NOTIFICATION OF NON-FINAL ACTION E-MAILED</tmk:MarkEventDescriptionText>
+                  <tmk:MarkEventEntryNumber>7</tmk:MarkEventEntryNumber>
+                  <tmk:MarkEventAdditionalText>6325</tmk:MarkEventAdditionalText>
+               </tmk:NationalMarkEvent>
+               <tmk:MarkEventDate>2016-08-27</tmk:MarkEventDate>
+            </tmk:MarkEvent>
+            <tmk:MarkEvent>
+               <tmk:MarkEventCategory>National prosecution history entry</tmk:MarkEventCategory>
+               <tmk:NationalMarkEvent>
+                  <tmk:MarkEventCode>GNRTF</tmk:MarkEventCode>
+                  <tmk:MarkEventDescriptionText>NON-FINAL ACTION E-MAILED</tmk:MarkEventDescriptionText>
+                  <tmk:MarkEventEntryNumber>6</tmk:MarkEventEntryNumber>
+                  <tmk:MarkEventAdditionalText>6325</tmk:MarkEventAdditionalText>
+               </tmk:NationalMarkEvent>
+               <tmk:MarkEventDate>2016-08-27</tmk:MarkEventDate>
+            </tmk:MarkEvent>
+            <tmk:MarkEvent>
+               <tmk:MarkEventCategory>National prosecution history entry</tmk:MarkEventCategory>
+               <tmk:NationalMarkEvent>
+                  <tmk:MarkEventCode>CNRTR</tmk:MarkEventCode>
+                  <tmk:MarkEventDescriptionText>NON-FINAL ACTION  WRITTEN</tmk:MarkEventDescriptionText>
+                  <tmk:MarkEventEntryNumber>5</tmk:MarkEventEntryNumber>
+                  <tmk:MarkEventAdditionalText>67507</tmk:MarkEventAdditionalText>
+               </tmk:NationalMarkEvent>
+               <tmk:MarkEventDate>2016-08-27</tmk:MarkEventDate>
+            </tmk:MarkEvent>
+            <tmk:MarkEvent>
+               <tmk:MarkEventCategory>National prosecution history entry</tmk:MarkEventCategory>
+               <tmk:NationalMarkEvent>
+                  <tmk:MarkEventCode>DOCKD</tmk:MarkEventCode>
+                  <tmk:MarkEventDescriptionText>ASSIGNED TO EXAMINER</tmk:MarkEventDescriptionText>
+                  <tmk:MarkEventEntryNumber>4</tmk:MarkEventEntryNumber>
+                  <tmk:MarkEventAdditionalText>67507</tmk:MarkEventAdditionalText>
+               </tmk:NationalMarkEvent>
+               <tmk:MarkEventDate>2016-08-27</tmk:MarkEventDate>
+            </tmk:MarkEvent>
+            <tmk:MarkEvent>
+               <tmk:MarkEventCategory>National prosecution history entry</tmk:MarkEventCategory>
+               <tmk:NationalMarkEvent>
+                  <tmk:MarkEventCode>MDSCE</tmk:MarkEventCode>
+                  <tmk:MarkEventDescriptionText>NOTICE OF DESIGN SEARCH CODE E-MAILED</tmk:MarkEventDescriptionText>
+                  <tmk:MarkEventEntryNumber>3</tmk:MarkEventEntryNumber>
+                  <tmk:MarkEventAdditionalText>0</tmk:MarkEventAdditionalText>
+               </tmk:NationalMarkEvent>
+               <tmk:MarkEventDate>2016-05-19</tmk:MarkEventDate>
+            </tmk:MarkEvent>
+            <tmk:MarkEvent>
+               <tmk:MarkEventCategory>National prosecution history entry</tmk:MarkEventCategory>
+               <tmk:NationalMarkEvent>
+                  <tmk:MarkEventCode>NWOSI</tmk:MarkEventCode>
+                  <tmk:MarkEventDescriptionText>NEW APPLICATION OFFICE SUPPLIED DATA ENTERED IN TRAM</tmk:MarkEventDescriptionText>
+                  <tmk:MarkEventEntryNumber>2</tmk:MarkEventEntryNumber>
+                  <tmk:MarkEventAdditionalText>0</tmk:MarkEventAdditionalText>
+               </tmk:NationalMarkEvent>
+               <tmk:MarkEventDate>2016-05-18</tmk:MarkEventDate>
+            </tmk:MarkEvent>
+            <tmk:MarkEvent>
+               <tmk:MarkEventCategory>National prosecution history entry</tmk:MarkEventCategory>
+               <tmk:NationalMarkEvent>
+                  <tmk:MarkEventCode>NWAPI</tmk:MarkEventCode>
+                  <tmk:MarkEventDescriptionText>NEW APPLICATION ENTERED IN TRAM</tmk:MarkEventDescriptionText>
+                  <tmk:MarkEventEntryNumber>1</tmk:MarkEventEntryNumber>
+                  <tmk:MarkEventAdditionalText>0</tmk:MarkEventAdditionalText>
+               </tmk:NationalMarkEvent>
+               <tmk:MarkEventDate>2016-05-16</tmk:MarkEventDate>
+            </tmk:MarkEvent>
+         </tmk:MarkEventBag>
+         <tmk:NationalTrademarkInformation>
+            <tmk:RegisterCategory>Primary</tmk:RegisterCategory>
+            <tmk:AmendedPrincipalRegisterIndicator>false</tmk:AmendedPrincipalRegisterIndicator>
+            <tmk:AmendedSupplementalRegisterIndicator>false</tmk:AmendedSupplementalRegisterIndicator>
+            <tmk:MarkCurrentStatusExternalDescriptionText>Registered.  The registration date is used to determine when post-registration maintenance documents are due.</tmk:MarkCurrentStatusExternalDescriptionText>
+            <tmk:PreviouslyRegisteredMarkPublicationIndicator>false</tmk:PreviouslyRegisteredMarkPublicationIndicator>
+            <tmk:FiledAsPlusApplicationIndicator>true</tmk:FiledAsPlusApplicationIndicator>
+            <tmk:CurrentlyPlusApplicationIndicator>true</tmk:CurrentlyPlusApplicationIndicator>
+            <tmk:RegistrationChangeIndicator>false</tmk:RegistrationChangeIndicator>
+            <tmk:NationalCaseLocation>
+               <tmk:LawOfficeAssignedText>LAW OFFICE 101</tmk:LawOfficeAssignedText>
+               <tmk:LawOfficeAssignedDescriptionCode>L10</tmk:LawOfficeAssignedDescriptionCode>
+               <tmk:CurrentLocationText>PUBLICATION AND ISSUE SECTION</tmk:CurrentLocationText>
+               <tmk:CurrentLocationCode>650</tmk:CurrentLocationCode>
+               <tmk:CurrentLocationDate>2017-03-28</tmk:CurrentLocationDate>
+               <tmk:ChargeToLocation>900 - FILE REPOSITORY (FRANCONIA)</tmk:ChargeToLocation>
+               <tmk:PhysicalLocation>MADCD</tmk:PhysicalLocation>
+               <tmk:PhysicalLocationDate>2016-05-18</tmk:PhysicalLocationDate>
+            </tmk:NationalCaseLocation>
+         </tmk:NationalTrademarkInformation>
+         <tmk:NationalGoodsServices>
+            <tmk:ActiveClassTotalQuantity>1</tmk:ActiveClassTotalQuantity>
+            <tmk:NationalClassTotalQuantity>5</tmk:NationalClassTotalQuantity>
+         </tmk:NationalGoodsServices>
+         <tmk:NationalFilingBasis>
+            <tmk:FilingBasis>
+               <tmk:BasisForeignApplicationIndicator>false</tmk:BasisForeignApplicationIndicator>
+               <tmk:BasisForeignRegistrationIndicator>false</tmk:BasisForeignRegistrationIndicator>
+               <tmk:BasisUseIndicator>true</tmk:BasisUseIndicator>
+               <tmk:BasisIntentToUseIndicator>false</tmk:BasisIntentToUseIndicator>
+               <tmk:NoBasisIndicator>false</tmk:NoBasisIndicator>
+               <tmk:BasisInternationalRegistrationIndicator>false</tmk:BasisInternationalRegistrationIndicator>
+            </tmk:FilingBasis>
+            <tmk:CurrentBasis>
+               <tmk:BasisForeignApplicationIndicator>false</tmk:BasisForeignApplicationIndicator>
+               <tmk:BasisForeignRegistrationIndicator>false</tmk:BasisForeignRegistrationIndicator>
+               <tmk:BasisUseIndicator>true</tmk:BasisUseIndicator>
+               <tmk:BasisIntentToUseIndicator>false</tmk:BasisIntentToUseIndicator>
+               <tmk:NoBasisIndicator>false</tmk:NoBasisIndicator>
+               <tmk:BasisInternationalRegistrationIndicator>false</tmk:BasisInternationalRegistrationIndicator>
+            </tmk:CurrentBasis>
+            <tmk:AmendedBasis>
+               <tmk:BasisForeignApplicationIndicator>false</tmk:BasisForeignApplicationIndicator>
+               <tmk:BasisForeignRegistrationIndicator>false</tmk:BasisForeignRegistrationIndicator>
+               <tmk:BasisUseIndicator>false</tmk:BasisUseIndicator>
+               <tmk:BasisIntentToUseIndicator>false</tmk:BasisIntentToUseIndicator>
+            </tmk:AmendedBasis>
+         </tmk:NationalFilingBasis>
+      </tmk:Trademark>
+   </tmk:TrademarkBag>
+</tmk:TrademarkApplication>

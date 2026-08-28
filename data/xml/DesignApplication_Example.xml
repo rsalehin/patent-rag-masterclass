@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dgn:DesignApplication xmlns:dgn="http://www.wipo.int/standards/XMLSchema/ST96/Design"
+                       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                       xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common"
+                       xsi:schemaLocation="http://www.wipo.int/standards/XMLSchema/ST96/Design https://www.wipo.int/standards/XMLSchema/ST96/V8_0/Design/Document/DesignApplication_V8_0.xsd"
+                       com:st96Version="V8_0">
+   <com:RegistrationOfficeCode>XX</com:RegistrationOfficeCode>
+   <com:ReceivingOfficeCode>XX</com:ReceivingOfficeCode>
+   <com:ApplicationNumber>
+      <com:IPOfficeCode>XX</com:IPOfficeCode>
+      <com:ApplicationNumberText>35503842</com:ApplicationNumberText>
+   </com:ApplicationNumber>
+   <dgn:DesignApplicationLanguageCode>en</dgn:DesignApplicationLanguageCode>
+   <dgn:DesignTotalQuantity>1</dgn:DesignTotalQuantity>
+   <com:CorrespondenceLanguageCode>en</com:CorrespondenceLanguageCode>
+   <dgn:DesignBag>
+      <dgn:Design>
+         <dgn:DesignIdentifier>D0123456</dgn:DesignIdentifier>
+         <com:RightEffectiveDate>2019-01-29</com:RightEffectiveDate>
+         <com:RegistrationNumber>123456</com:RegistrationNumber>
+         <com:RegistrationDate>2017-08-29</com:RegistrationDate>
+         <dgn:DesignTitleText com:languageCode="en">Chair</dgn:DesignTitleText>
+         <dgn:DesignDescriptionText com:sequenceNumber="0001">1. Chair [seat]</dgn:DesignDescriptionText>
+         <dgn:DesignDescriptionText com:sequenceNumber="0002">1.1 is a perspective view; 1.2 is a right side view; 1.3 is a left side view; 1.4 is a front view;</dgn:DesignDescriptionText>
+         <dgn:DesignDescriptionText com:sequenceNumber="0003">1.5 is a rear view; 1.6 is a top view; 1.7 is a bottom view.</dgn:DesignDescriptionText>
+         <dgn:DesignClaim>
+            <dgn:DesignClaimTextBag>
+               <dgn:DesignClaimText com:languageCode="en">The ornamental design for a chair, as shown and described.</dgn:DesignClaimText>
+            </dgn:DesignClaimTextBag>
+            <dgn:AffectedDesign>
+               <dgn:AllDesignsIndicator>true</dgn:AllDesignsIndicator>
+            </dgn:AffectedDesign>
+         </dgn:DesignClaim>
+         <dgn:PublicationKindDescription>Design</dgn:PublicationKindDescription>
+         <com:ColourIndicator>false</com:ColourIndicator>
+         <dgn:RepresentationSheetTotalQuantity>7</dgn:RepresentationSheetTotalQuantity>
+         <dgn:BlackWhiteViewTotalQuantity>7</dgn:BlackWhiteViewTotalQuantity>
+         <com:ExpiryDate>2034-01-29</com:ExpiryDate>
+         <dgn:DesignCurrentStatusCategory>Registered</dgn:DesignCurrentStatusCategory>
+         <dgn:DesignCurrentStatusDate>2019-01-29</dgn:DesignCurrentStatusDate>
+         <dgn:DesignRepresentationBag>
+            <dgn:DesignRepresentation>
+               <dgn:ViewBag>
+                  <dgn:View>
+                     <com:FileName>m001_001.jpg</com:FileName>
+                     <dgn:ViewIdentifier>1</dgn:ViewIdentifier>
+                     <dgn:ViewFileFormatCategory>JPEG</dgn:ViewFileFormatCategory>
+                     <dgn:RepresentationFormCategory>Drawing</dgn:RepresentationFormCategory>
+                     <dgn:ViewTypeCategory>Perspective</dgn:ViewTypeCategory>
+                     <com:HeightMeasure com:measureUnitCode="Mm">265.94</com:HeightMeasure>
+                     <com:WidthMeasure com:measureUnitCode="Mm">154.86</com:WidthMeasure>
+                  </dgn:View>
+                  <dgn:View>
+                     <com:FileName>m001_002.jpg</com:FileName>
+                     <dgn:ViewIdentifier>2</dgn:ViewIdentifier>
+                     <dgn:ViewFileFormatCategory>JPEG</dgn:ViewFileFormatCategory>
+                     <dgn:RepresentationFormCategory>Drawing</dgn:RepresentationFormCategory>
+                     <dgn:ViewTypeCategory>Front</dgn:ViewTypeCategory>
+                     <com:HeightMeasure com:measureUnitCode="Mm">277.71</com:HeightMeasure>
+                     <com:WidthMeasure com:measureUnitCode="Mm">161.04</com:WidthMeasure>
+                  </dgn:View>
+                  <dgn:View>
+                     <com:FileName>m001_003.jpg</com:FileName>
+                     <dgn:ViewIdentifier>3</dgn:ViewIdentifier>
+                     <dgn:ViewFileFormatCategory>JPEG</dgn:ViewFileFormatCategory>
+                     <dgn:RepresentationFormCategory>Drawing</dgn:RepresentationFormCategory>
+                     <dgn:ViewTypeCategory>Back</dgn:ViewTypeCategory>
+                     <com:HeightMeasure com:measureUnitCode="Mm">264.84</com:HeightMeasure>
+                     <com:WidthMeasure com:measureUnitCode="Mm">148.76</com:WidthMeasure>
+                  </dgn:View>
+                  <dgn:View>
+                     <com:FileName>m001_004.jpg</com:FileName>
+                     <dgn:ViewIdentifier>4</dgn:ViewIdentifier>
+                     <dgn:ViewFileFormatCategory>JPEG</dgn:ViewFileFormatCategory>
+                     <dgn:RepresentationFormCategory>Drawing</dgn:RepresentationFormCategory>
+                     <dgn:ViewTypeCategory>Top</dgn:ViewTypeCategory>
+                     <com:HeightMeasure com:measureUnitCode="Mm">260.52</com:HeightMeasure>
+                     <com:WidthMeasure com:measureUnitCode="Mm">144.53</com:WidthMeasure>
+                  </dgn:View>
+                  <dgn:View>
+                     <com:FileName>m001_005.jpg</com:FileName>
+                     <dgn:ViewIdentifier>5</dgn:ViewIdentifier>
+                     <dgn:ViewFileFormatCategory>JPEG</dgn:ViewFileFormatCategory>
+                     <dgn:RepresentationFormCategory>Drawing</dgn:RepresentationFormCategory>
+                     <dgn:ViewTypeCategory>Bottom</dgn:ViewTypeCategory>
+                  </dgn:View>
+                  <dgn:View>
+                     <com:FileName>m001_006.jpg</com:FileName>
+                     <dgn:ViewIdentifier>6</dgn:ViewIdentifier>
+                     <dgn:ViewFileFormatCategory>JPEG</dgn:ViewFileFormatCategory>
+                     <dgn:RepresentationFormCategory>Drawing</dgn:RepresentationFormCategory>
+                     <dgn:ViewTypeCategory>Left</dgn:ViewTypeCategory>
+                     <com:HeightMeasure com:measureUnitCode="Mm">264.16</com:HeightMeasure>
+                     <com:WidthMeasure com:measureUnitCode="Mm">144.53</com:WidthMeasure>
+                  </dgn:View>
+                  <dgn:View>
+                     <com:FileName>m001_007.jpg</com:FileName>
+                     <dgn:ViewIdentifier>7</dgn:ViewIdentifier>
+                     <dgn:ViewFileFormatCategory>JPEG</dgn:ViewFileFormatCategory>
+                     <dgn:RepresentationFormCategory>Drawing</dgn:RepresentationFormCategory>
+                     <dgn:ViewTypeCategory>Right</dgn:ViewTypeCategory>
+                     <com:HeightMeasure com:measureUnitCode="Mm">162.39</com:HeightMeasure>
+                     <com:WidthMeasure com:measureUnitCode="Mm">153.08</com:WidthMeasure>
+                  </dgn:View>
+               </dgn:ViewBag>
+            </dgn:DesignRepresentation>
+         </dgn:DesignRepresentationBag>
+         <com:DesignClassificationBag>
+            <com:LocarnoClassificationBag>
+               <com:LocarnoClassificationEdition>11</com:LocarnoClassificationEdition>
+               <com:LocarnoClassificationText>06-01</com:LocarnoClassificationText>
+            </com:LocarnoClassificationBag>
+            <com:NationalDesignClassificationBag>
+               <com:IPOfficeCode>XX</com:IPOfficeCode>
+               <com:NationalDesignClassification>D6/373</com:NationalDesignClassification>
+               <com:NationalDesignClassification>D6/375</com:NationalDesignClassification>
+               <com:NationalDesignClassification>D6/376</com:NationalDesignClassification>
+            </com:NationalDesignClassificationBag>
+         </com:DesignClassificationBag>
+         <dgn:PriorityBag>
+            <dgn:Priority>
+               <com:PriorityCountryCode>WO</com:PriorityCountryCode>
+               <com:ApplicationNumber>
+                  <com:ApplicationNumberText>DM/096824</com:ApplicationNumberText>
+               </com:ApplicationNumber>
+               <com:PriorityApplicationFilingDate>2017-03-31</com:PriorityApplicationFilingDate>
+            </dgn:Priority>
+         </dgn:PriorityBag>
+         <com:StaffBag>
+            <com:Staff>
+               <com:OfficialTitleText>Design Examiner</com:OfficialTitleText>
+               <com:StaffName>Jane Doe</com:StaffName>
+            </com:Staff>
+         </com:StaffBag>
+         <dgn:PublicationBag>
+            <dgn:Publication>
+               <com:PublicationIdentifier>D0123456</com:PublicationIdentifier>
+               <com:PublicationDate>2019-01-29</com:PublicationDate>
+            </dgn:Publication>
+         </dgn:PublicationBag>
+         <dgn:PatentIdentificationBag>
+            <com:CitedPatentDocumentIdentification>
+               <com:IPOfficeCode>US</com:IPOfficeCode>
+               <com:DocumentNumber>D5584709</com:DocumentNumber>
+               <com:EntityName>Priebe</com:EntityName>
+               <com:PatentDocumentKindCode>S</com:PatentDocumentKindCode>
+               <com:PatentDocumentDate>2008-01</com:PatentDocumentDate>
+            </com:CitedPatentDocumentIdentification>
+            <com:CitedPatentDocumentIdentification>
+               <com:IPOfficeCode>US</com:IPOfficeCode>
+               <com:DocumentNumber>D5653108</com:DocumentNumber>
+               <com:EntityName>Peter</com:EntityName>
+               <com:PatentDocumentKindCode>S</com:PatentDocumentKindCode>
+               <com:PatentDocumentDate>2018-04</com:PatentDocumentDate>
+            </com:CitedPatentDocumentIdentification>
+            <com:CitedPatentDocumentIdentification>
+               <com:IPOfficeCode>US</com:IPOfficeCode>
+               <com:DocumentNumber>D6497904</com:DocumentNumber>
+               <com:EntityName>Kalafus</com:EntityName>
+               <com:PatentDocumentKindCode>S</com:PatentDocumentKindCode>
+               <com:PatentDocumentDate>2015-12</com:PatentDocumentDate>
+            </com:CitedPatentDocumentIdentification>
+            <com:CitedPatentDocumentIdentification>
+               <com:IPOfficeCode>US</com:IPOfficeCode>
+               <com:DocumentNumber>D6497909</com:DocumentNumber>
+               <com:EntityName>Till</com:EntityName>
+               <com:PatentDocumentKindCode>S</com:PatentDocumentKindCode>
+               <com:PatentDocumentDate>2011-02</com:PatentDocumentDate>
+            </com:CitedPatentDocumentIdentification>
+            <com:CitedPatentDocumentIdentification>
+               <com:IPOfficeCode>US</com:IPOfficeCode>
+               <com:DocumentNumber>D6498000</com:DocumentNumber>
+               <com:EntityName>Ko</com:EntityName>
+               <com:PatentDocumentKindCode>S</com:PatentDocumentKindCode>
+               <com:PatentDocumentDate>2014-12</com:PatentDocumentDate>
+            </com:CitedPatentDocumentIdentification>
+         </dgn:PatentIdentificationBag>
+         <dgn:ApplicantBag>
+            <dgn:Applicant com:sequenceNumber="001">
+               <com:Contact>
+                  <com:Name>
+                     <com:EntityName>HARPER Inc.</com:EntityName>
+                  </com:Name>
+               </com:Contact>
+            </dgn:Applicant>
+         </dgn:ApplicantBag>
+         <com:RepresentativeBag>
+            <com:Representative com:sequenceNumber="01">
+               <com:Contact>
+                  <com:Name>
+                     <com:EntityName>Attorney Firm, LLP</com:EntityName>
+                  </com:Name>
+               </com:Contact>
+               <com:RepresentativeCategory>Laywer</com:RepresentativeCategory>
+            </com:Representative>
+         </com:RepresentativeBag>
+         <dgn:DesignerBag>
+            <dgn:Designer com:sequenceNumber="001">
+               <com:Contact>
+                  <com:Name>
+                     <com:PersonName>
+                        <com:PersonStructuredName>
+                           <com:FirstName>Emma</com:FirstName>
+                           <com:LastName>Francis</com:LastName>
+                        </com:PersonStructuredName>
+                     </com:PersonName>
+                  </com:Name>
+               </com:Contact>
+            </dgn:Designer>
+            <dgn:Designer com:sequenceNumber="002">
+               <com:Contact>
+                  <com:Name>
+                     <com:PersonName>
+                        <com:PersonStructuredName>
+                           <com:FirstName>Jeannette</com:FirstName>
+                           <com:LastName>Altova</com:LastName>
+                        </com:PersonStructuredName>
+                     </com:PersonName>
+                  </com:Name>
+               </com:Contact>
+            </dgn:Designer>
+            <dgn:Designer com:sequenceNumber="003">
+               <com:Contact>
+                  <com:Name>
+                     <com:PersonName>
+                        <com:PersonStructuredName>
+                           <com:FirstName>Manuel</com:FirstName>
+                           <com:LastName>Ho</com:LastName>
+                        </com:PersonStructuredName>
+                     </com:PersonName>
+                  </com:Name>
+               </com:Contact>
+            </dgn:Designer>
+         </dgn:DesignerBag>
+      </dgn:Design>
+   </dgn:DesignBag>
+   <dgn:ApplicantBag>
+      <dgn:Applicant com:sequenceNumber="001">
+         <com:Contact>
+            <com:Name>
+               <com:EntityName>HARPER Inc.</com:EntityName>
+            </com:Name>
+         </com:Contact>
+      </dgn:Applicant>
+   </dgn:ApplicantBag>
+   <dgn:DesignApplicationEventBag>
+      <dgn:DesignApplicationEvent>
+         <dgn:DesignApplicationEventCategory>Undefined</dgn:DesignApplicationEventCategory>
+         <com:CommentText>Transmit Statement of Grant to I.B. (Hague)</com:CommentText>
+         <dgn:DesignApplicationEventDate>2019-01-31</dgn:DesignApplicationEventDate>
+      </dgn:DesignApplicationEvent>
+      <dgn:DesignApplicationEvent>
+         <dgn:DesignApplicationEventCategory>Undefined</dgn:DesignApplicationEventCategory>
+         <com:CommentText>Statement Of Grant (Hague)</com:CommentText>
+         <dgn:DesignApplicationEventDate>2019-01-29</dgn:DesignApplicationEventDate>
+      </dgn:DesignApplicationEvent>
+      <dgn:DesignApplicationEvent>
+         <dgn:DesignApplicationEventCategory>Undefined</dgn:DesignApplicationEventCategory>
+         <com:CommentText>Email Notification</com:CommentText>
+         <dgn:DesignApplicationEventDate>2019-01-10</dgn:DesignApplicationEventDate>
+      </dgn:DesignApplicationEvent>
+      <dgn:DesignApplicationEvent>
+         <dgn:DesignApplicationEventCategory>Undefined</dgn:DesignApplicationEventCategory>
+         <com:CommentText>Application ready for data exchange by participating foreign offices</com:CommentText>
+         <dgn:DesignApplicationEventDate>2019-01-10</dgn:DesignApplicationEventDate>
+      </dgn:DesignApplicationEvent>
+      <dgn:DesignApplicationEvent>
+         <dgn:DesignApplicationEventCategory>Undefined</dgn:DesignApplicationEventCategory>
+         <com:CommentText>Issue Notification Mailed</com:CommentText>
+         <dgn:DesignApplicationEventDate>2019-01-09</dgn:DesignApplicationEventDate>
+      </dgn:DesignApplicationEvent>
+      <dgn:DesignApplicationEvent>
+         <dgn:DesignApplicationEventCategory>Undefined</dgn:DesignApplicationEventCategory>
+         <com:CommentText>Email Notification</com:CommentText>
+         <dgn:DesignApplicationEventDate>2018-12-17</dgn:DesignApplicationEventDate>
+      </dgn:DesignApplicationEvent>
+      <dgn:DesignApplicationEvent>
+         <dgn:DesignApplicationEventCategory>Undefined</dgn:DesignApplicationEventCategory>
+         <com:CommentText>Application Is Considered Ready for Issue</com:CommentText>
+         <dgn:DesignApplicationEventDate>2018-12-14</dgn:DesignApplicationEventDate>
+      </dgn:DesignApplicationEvent>
+      <dgn:DesignApplicationEvent>
+         <dgn:DesignApplicationEventCategory>Undefined</dgn:DesignApplicationEventCategory>
+         <com:CommentText>Issue Fee Payment Verified</com:CommentText>
+         <dgn:DesignApplicationEventDate>2018-12-13</dgn:DesignApplicationEventDate>
+      </dgn:DesignApplicationEvent>
+      <dgn:DesignApplicationEvent>
+         <dgn:DesignApplicationEventCategory>Undefined</dgn:DesignApplicationEventCategory>
+         <com:CommentText>Filing Receipt - Corrected</com:CommentText>
+         <dgn:DesignApplicationEventDate>2018-12-17</dgn:DesignApplicationEventDate>
+      </dgn:DesignApplicationEvent>
+      <dgn:DesignApplicationEvent>
+         <dgn:DesignApplicationEventCategory>Undefined</dgn:DesignApplicationEventCategory>
+         <com:CommentText>Issue Fee Payment Received</com:CommentText>
+         <dgn:DesignApplicationEventDate>2018-12-13</dgn:DesignApplicationEventDate>
+      </dgn:DesignApplicationEvent>
+      <dgn:DesignApplicationEvent>
+         <dgn:DesignApplicationEventCategory>Undefined</dgn:DesignApplicationEventCategory>
+         <com:CommentText>I.B. Acknowledged Receipt of Notice of Allowance (Hague)</com:CommentText>
+         <dgn:DesignApplicationEventDate>2018-09-20</dgn:DesignApplicationEventDate>
+      </dgn:DesignApplicationEvent>
+      <dgn:DesignApplicationEvent>
+         <dgn:DesignApplicationEventCategory>Undefined</dgn:DesignApplicationEventCategory>
+         <com:CommentText>Electronic Review</com:CommentText>
+         <dgn:DesignApplicationEventDate>2018-09-14</dgn:DesignApplicationEventDate>
+      </dgn:DesignApplicationEvent>
+      <dgn:DesignApplicationEvent>
+         <dgn:DesignApplicationEventCategory>Undefined</dgn:DesignApplicationEventCategory>
+         <com:CommentText>Email Notification</com:CommentText>
+         <dgn:DesignApplicationEventDate>2018-09-14</dgn:DesignApplicationEventDate>
+      </dgn:DesignApplicationEvent>
+      <dgn:DesignApplicationEvent>
+         <dgn:DesignApplicationEventCategory>Undefined</dgn:DesignApplicationEventCategory>
+         <com:CommentText>Transmit Notice of Allowance to I.B. (Hague)</com:CommentText>
+         <dgn:DesignApplicationEventDate>2018-09-12</dgn:DesignApplicationEventDate>
+      </dgn:DesignApplicationEvent>
+      <dgn:DesignApplicationEvent>
+         <dgn:DesignApplicationEventCategory>Undefined</dgn:DesignApplicationEventCategory>
+         <com:CommentText>Mail Notice of Allowance</com:CommentText>
+         <dgn:DesignApplicationEventDate>2018-09-14</dgn:DesignApplicationEventDate>
+      </dgn:DesignApplicationEvent>
+      <dgn:DesignApplicationEvent>
+         <dgn:DesignApplicationEventCategory>Undefined</dgn:DesignApplicationEventCategory>
+         <com:CommentText>Notice of Allowance Data Verification Completed</com:CommentText>
+         <dgn:DesignApplicationEventDate>2018-09-11</dgn:DesignApplicationEventDate>
+      </dgn:DesignApplicationEvent>
+      <dgn:DesignApplicationEvent>
+         <dgn:DesignApplicationEventCategory>Undefined</dgn:DesignApplicationEventCategory>
+         <com:CommentText>Case Docketed to Examiner</com:CommentText>
+         <dgn:DesignApplicationEventDate>2018-06-13</dgn:DesignApplicationEventDate>
+      </dgn:DesignApplicationEvent>
+      <dgn:DesignApplicationEvent>
+         <dgn:DesignApplicationEventCategory>Undefined</dgn:DesignApplicationEventCategory>
+         <com:CommentText>Case Docketed to Examiner</com:CommentText>
+         <dgn:DesignApplicationEventDate>2018-02-27</dgn:DesignApplicationEventDate>
+      </dgn:DesignApplicationEvent>
+      <dgn:DesignApplicationEvent>
+         <dgn:DesignApplicationEventCategory>Undefined</dgn:DesignApplicationEventCategory>
+         <com:CommentText>Request for Foreign Priority (Priority Papers May Be Included)</com:CommentText>
+         <dgn:DesignApplicationEventDate>2017-11-29</dgn:DesignApplicationEventDate>
+      </dgn:DesignApplicationEvent>
+      <dgn:DesignApplicationEvent>
+         <dgn:DesignApplicationEventCategory>Undefined</dgn:DesignApplicationEventCategory>
+         <com:CommentText>Email Notification</com:CommentText>
+         <dgn:DesignApplicationEventDate>2017-11-27</dgn:DesignApplicationEventDate>
+      </dgn:DesignApplicationEvent>
+      <dgn:DesignApplicationEvent>
+         <dgn:DesignApplicationEventCategory>Undefined</dgn:DesignApplicationEventCategory>
+         <com:CommentText>Change in Power of Attorney (May Include Associate POA)</com:CommentText>
+         <dgn:DesignApplicationEventDate>2017-11-27</dgn:DesignApplicationEventDate>
+      </dgn:DesignApplicationEvent>
+      <dgn:DesignApplicationEvent>
+         <dgn:DesignApplicationEventCategory>Undefined</dgn:DesignApplicationEventCategory>
+         <com:CommentText>Correspondence Address Change</com:CommentText>
+         <dgn:DesignApplicationEventDate>2017-11-22</dgn:DesignApplicationEventDate>
+      </dgn:DesignApplicationEvent>
+      <dgn:DesignApplicationEvent>
+         <dgn:DesignApplicationEventCategory>Undefined</dgn:DesignApplicationEventCategory>
+         <com:CommentText>Application Dispatched from OIPE</com:CommentText>
+         <dgn:DesignApplicationEventDate>2017-11-15</dgn:DesignApplicationEventDate>
+      </dgn:DesignApplicationEvent>
+      <dgn:DesignApplicationEvent>
+         <dgn:DesignApplicationEventCategory>Undefined</dgn:DesignApplicationEventCategory>
+         <com:CommentText>Application Is Now Complete</com:CommentText>
+         <dgn:DesignApplicationEventDate>2017-11-15</dgn:DesignApplicationEventDate>
+      </dgn:DesignApplicationEvent>
+      <dgn:DesignApplicationEvent>
+         <dgn:DesignApplicationEventCategory>Undefined</dgn:DesignApplicationEventCategory>
+         <com:CommentText>Filing Receipt issued</com:CommentText>
+         <dgn:DesignApplicationEventDate>2017-11-15</dgn:DesignApplicationEventDate>
+      </dgn:DesignApplicationEvent>
+      <dgn:DesignApplicationEvent>
+         <dgn:DesignApplicationEventCategory>Undefined</dgn:DesignApplicationEventCategory>
+         <com:CommentText>Receipt of New Application from I.B. (Hague)</com:CommentText>
+         <dgn:DesignApplicationEventDate>2017-08-29</dgn:DesignApplicationEventDate>
+      </dgn:DesignApplicationEvent>
+      <dgn:DesignApplicationEvent>
+         <dgn:DesignApplicationEventCategory>Undefined</dgn:DesignApplicationEventCategory>
+         <com:CommentText>ENTITY STATUS SET TO UNDISCOUNTED (INITIAL DEFAULT SETTING OR STATUS CHANGE)</com:CommentText>
+         <dgn:DesignApplicationEventDate>2017-08-29</dgn:DesignApplicationEventDate>
+      </dgn:DesignApplicationEvent>
+      <dgn:DesignApplicationEvent>
+         <dgn:DesignApplicationEventCategory>Filed</dgn:DesignApplicationEventCategory>
+         <com:CommentText>Application received by XX Office</com:CommentText>
+         <dgn:DesignApplicationEventDate>2017-08-29</dgn:DesignApplicationEventDate>
+      </dgn:DesignApplicationEvent>
+   </dgn:DesignApplicationEventBag>
+   <com:ApplicationDate>2017-08-29</com:ApplicationDate>
+</dgn:DesignApplication>

@@ -1,0 +1,137 @@
+[
+ {
+  "doc_id": "US10083169B1",
+  "title": "Topic-based sequence modeling neural networks",
+  "cpc": [
+   "G06F17/276",
+   "G06F"
+  ],
+  "n_claims": 15
+ },
+ {
+  "doc_id": "US10261954B2",
+  "title": "Optimizing search result snippet selection",
+  "cpc": [
+   "G06F",
+   "G06F16/00"
+  ],
+  "n_claims": 19
+ },
+ {
+  "doc_id": "US11093561B2",
+  "title": "Fast indexing with graphs and compact regression codes on online social networks",
+  "cpc": [
+   "G06F",
+   "G06F16/00"
+  ],
+  "n_claims": 19
+ },
+ {
+  "doc_id": "US11113744B2",
+  "title": "Personalized item recommendations through large-scale deep-embedding architecture with real-time inferencing",
+  "cpc": [
+   "G06Q",
+   "G06Q30/00"
+  ],
+  "n_claims": 18
+ },
+ {
+  "doc_id": "US11216459B2",
+  "title": "Multi-layer semantic search",
+  "cpc": [
+   "G06F",
+   "G06F16/00"
+  ],
+  "n_claims": 20
+ },
+ {
+  "doc_id": "US11257279B2",
+  "title": "Systems and methods for providing non-parametric texture synthesis of arbitrary shape and/or material data in a unified framework",
+  "cpc": [
+   "G06T",
+   "G06T11/00"
+  ],
+  "n_claims": 21
+ },
+ {
+  "doc_id": "US11714853B2",
+  "title": "Efficient storage and searching of vector datasets",
+  "cpc": [
+   "G06F",
+   "G06F16/00"
+  ],
+  "n_claims": 25
+ },
+ {
+  "doc_id": "US11971885B2",
+  "title": "Retrieval aware embedding",
+  "cpc": [
+   "G06N",
+   "G06N3/00"
+  ],
+  "n_claims": 18
+ },
+ {
+  "doc_id": "US12099542B2",
+  "title": "Implementing a graphical user interface to collect information from a user to identify a desired document based on dissimilarity and/or collective closeness to other identified documents",
+  "cpc": [
+   "G06F",
+   "G06F16/00"
+  ],
+  "n_claims": 13
+ },
+ {
+  "doc_id": "US8930304B2",
+  "title": "Knowledge discovery from citation networks",
+  "cpc": [
+   "G06N",
+   "G06N20/00"
+  ],
+  "n_claims": 17
+ },
+ {
+  "doc_id": "US9081550B2",
+  "title": "Adding speech capabilities to existing computer applications with complex graphical user interfaces",
+  "cpc": [
+   "G06F",
+   "G06F3/00"
+  ],
+  "n_claims": 30
+ },
+ {
+  "doc_id": "US9081852B2",
+  "title": "Recommending terms to specify ontology space",
+  "cpc": [
+   "G06F17/30672",
+   "G06F"
+  ],
+  "n_claims": 28
+ },
+ {
+  "doc_id": "US9183310B2",
+  "title": "Disambiguating intents within search engine result pages",
+  "cpc": [
+   "G06F",
+   "G06F16/00"
+  ],
+  "n_claims": 18
+ },
+ {
+  "doc_id": "US9342582B2",
+  "title": "Selection of atoms for search engine retrieval",
+  "cpc": [
+   "G06F17/30616",
+   "G06F"
+  ],
+  "n_claims": 20
+ },
+ {
+  "doc_id": "US9720934B1",
+  "title": "Object recognition of feature-sparse or texture-limited subject matter",
+  "cpc": [
+   "G06F17/30247",
+   "G06F"
+  ],
+  "n_claims": 23
+ }
+]

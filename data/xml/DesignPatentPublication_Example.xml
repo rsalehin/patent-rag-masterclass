@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<pat:DesignPatentPublication xmlns:com="http://www.wipo.int/standards/XMLSchema/ST96/Common" xmlns:dgn="http://www.wipo.int/standards/XMLSchema/ST96/Design" xmlns:pat="http://www.wipo.int/standards/XMLSchema/ST96/Patent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" com:languageCode="ru" com:st96Version="V9_0">													
+	<pat:DesignPatentBibliographicData com:st96Version="V9_0">								
+		<pat:PatentPublicationIdentification>
+			<com:IPOfficeCode>EA</com:IPOfficeCode>                     	
+			<pat:PublicationNumber>000238</pat:PublicationNumber>    		
+			<com:PatentDocumentKindCode>S1</com:PatentDocumentKindCode> 	
+			<com:PublicationDate>2023-04-26</com:PublicationDate>       	
+		</pat:PatentPublicationIdentification>
+		<pat:PlainLanguageDesignationText>ЕВРАЗИЙСКИЙ ПАТЕНТ НА ПРОМЫШЛЕННЫЙ ОБРАЗЕЦ</pat:PlainLanguageDesignationText> 
+		<pat:ApplicationIdentification>
+			<com:IPOfficeCode>EA</com:IPOfficeCode>                     			
+			<com:ApplicationNumber>
+				<com:ApplicationNumberText>202240272</com:ApplicationNumberText>   	
+			</com:ApplicationNumber>
+			<pat:FilingDate>2022-12-30</pat:FilingDate> 							
+		</pat:ApplicationIdentification>
+		<dgn:DesignTotalQuantity>5</dgn:DesignTotalQuantity>							
+		<pat:PublicAvailabilityDataBag>												
+			<pat:UnexaminedNoGrantPrintedPatentDocument>
+				<pat:PatentDocumentIdentification>
+					<pat:PatentPublicationIdentification>
+						<com:IPOfficeCode>EA</com:IPOfficeCode>
+						<pat:PublicationNumber>202240272</pat:PublicationNumber>
+						<com:PublicationDate>2023-02-02</com:PublicationDate>
+					</pat:PatentPublicationIdentification>
+				</pat:PatentDocumentIdentification>
+			</pat:UnexaminedNoGrantPrintedPatentDocument>
+		</pat:PublicAvailabilityDataBag>
+		<pat:PatentGrantIdentification>												
+			<com:IPOfficeCode>EA</com:IPOfficeCode>
+			<pat:PatentNumber>000238</pat:PatentNumber>
+			<pat:GrantDate>2023-04-26</pat:GrantDate>
+		</pat:PatentGrantIdentification>	
+		<pat:PartyBag>								
+			<pat:ApplicantBag>						 
+				<pat:Applicant com:sequenceNumber="1">
+					<com:Contact com:languageCode="ru">
+						<com:Name>
+							<com:OrganizationName>			
+								<com:OrganizationStandardName>ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "ГЖЕЛЬ-ХУДОЖЕСТВЕННЫЕ МАСТЕРСКИЕ"</com:OrganizationStandardName>	
+							</com:OrganizationName>
+						</com:Name>
+					</com:Contact>
+					<com:NationalityCode>RU</com:NationalityCode>		 												
+				</pat:Applicant>
+			</pat:ApplicantBag>		
+			<pat:OwnerBag>										
+				<pat:Owner com:sequenceNumber="1">				
+					<com:PublicationContact com:languageCode="ru">
+						<com:Name>
+							<com:OrganizationName>			
+								<com:OrganizationStandardName>ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "ГЖЕЛЬ-ХУДОЖЕСТВЕННЫЕ МАСТЕРСКИЕ"</com:OrganizationStandardName>	
+							</com:OrganizationName>
+						</com:Name>
+						<com:CountryCode>RU</com:CountryCode>
+					</com:PublicationContact>					
+				</pat:Owner>
+			</pat:OwnerBag>
+			<pat:RegisteredPractitionerBag>						
+				<pat:RegisteredPractitioner com:sequenceNumber="1">                                    					
+					<pat:RegisteredPractitionerCategory>Agent</pat:RegisteredPractitionerCategory>
+					<com:Contact com:languageCode="ru">
+						<com:Name>
+							<com:PersonName>																			
+								<com:PersonStructuredName>	
+										<com:FirstName>Валерий</com:FirstName>														
+										<com:MiddleName>Николаевич</com:MiddleName>
+										<com:LastName>Медведев</com:LastName>
+								</com:PersonStructuredName>	
+							</com:PersonName>
+						</com:Name>
+					</com:Contact>
+				</pat:RegisteredPractitioner>
+			</pat:RegisteredPractitionerBag>
+		</pat:PartyBag>
+		<pat:RegionalFilingData>													
+			<pat:ApplicationIdentification>                                                          
+				<com:IPOfficeCode>RU</com:IPOfficeCode>        						
+				<com:ApplicationNumber>
+					<com:ApplicationNumberText>2023Е50005</com:ApplicationNumberText>         
+				</com:ApplicationNumber>
+				<pat:FilingDate>2022-12-30</pat:FilingDate>	    					                                     
+			</pat:ApplicationIdentification>
+		</pat:RegionalFilingData>
+	</pat:DesignPatentBibliographicData>
+	<pat:DesignPatentBag com:st96Version="V9_0">																														
+		<pat:DesignPatent com:sequenceNumber="1" com:st96Version="V9_0">																								
+			<dgn:DesignIdentifier>202240272-01</dgn:DesignIdentifier>																			
+			<com:LocarnoClassificationBag>																										
+				<com:LocarnoClassificationEdition>14</com:LocarnoClassificationEdition>															
+				<com:LocarnoClassification>
+					<com:LocarnoClass>32</com:LocarnoClass>																						
+					<com:LocarnoSubclassBag>
+						<com:LocarnoSubclass>00</com:LocarnoSubclass>																			
+					</com:LocarnoSubclassBag>
+				</com:LocarnoClassification>
+			</com:LocarnoClassificationBag>
+			<com:EffectiveCountryBag>																											
+				<com:CountryCode>AM</com:CountryCode>																							
+				<com:CountryCode>AZ</com:CountryCode>
+				<com:CountryCode>BY</com:CountryCode>
+				<com:CountryCode>KZ</com:CountryCode>
+				<com:CountryCode>KG</com:CountryCode>
+				<com:CountryCode>TJ</com:CountryCode>
+				<com:CountryCode>RU</com:CountryCode>
+			</com:EffectiveCountryBag>
+			<dgn:DesignerBag>																																																								
+				<dgn:Designer com:sequenceNumber="1">																								
+					<com:NationalityCode>RU</com:NationalityCode>																				
+					<com:Contact>
+						<com:Name>
+							<com:PersonName>																									
+								<com:PersonStructuredName>	
+										<com:FirstName>Виктория </com:FirstName>																		
+										<com:MiddleName>Васильевна</com:MiddleName>
+										<com:LastName>Неделина</com:LastName>
+								</com:PersonStructuredName>	
+							</com:PersonName>
+						</com:Name>
+					</com:Contact>
+				</dgn:Designer>
+			</dgn:DesignerBag>
+			<dgn:DesignTitleText com:languageCode="ru">ОРНАМЕНТ (УЗОР)</dgn:DesignTitleText>
+			<com:ProductDescriptionTextBag> 	
+				<com:ProductDescriptionText com:languageCode="ru">ПОСУДА, ПОСУДА ДЛЯ ДЕКОРАТИВНЫХ ЦЕЛЕЙ, УПАКОВКА, ТЕКСТИЛЬНЫЕ ИЗДЕЛИЯ, ФИГУРКИ</com:ProductDescriptionText>
+			</com:ProductDescriptionTextBag>				
+			<dgn:DesignRepresentationBag>																										
+				<dgn:DesignRepresentation>
+					<dgn:ViewBag>
+						<dgn:View>
+							<com:FileName>m001_001.jpg</com:FileName>																			
+							<dgn:ViewIdentifier>01.1</dgn:ViewIdentifier>																		
+							<dgn:ViewFileFormatCategory>JPEG</dgn:ViewFileFormatCategory>																																							
+							<com:HeightMeasure com:measureUnitCode="Mm">265</com:HeightMeasure>												
+							<com:WidthMeasure com:measureUnitCode="Mm">154</com:WidthMeasure>												
+						</dgn:View>
+					</dgn:ViewBag>
+				</dgn:DesignRepresentation>
+			</dgn:DesignRepresentationBag>
+		</pat:DesignPatent>	
+		<pat:DesignPatent com:sequenceNumber="2" com:st96Version="V9_0">																								
+			<dgn:DesignIdentifier>202240272-02</dgn:DesignIdentifier>																			
+			<com:LocarnoClassificationBag>																										
+				<com:LocarnoClassificationEdition>14</com:LocarnoClassificationEdition>															
+				<com:LocarnoClassification>
+					<com:LocarnoClass>32</com:LocarnoClass>																						
+					<com:LocarnoSubclassBag>
+						<com:LocarnoSubclass>00</com:LocarnoSubclass>																			
+					</com:LocarnoSubclassBag>
+				</com:LocarnoClassification>
+			</com:LocarnoClassificationBag>
+			<com:EffectiveCountryBag>																											
+				<com:CountryCode>AM</com:CountryCode>																							
+				<com:CountryCode>AZ</com:CountryCode>
+				<com:CountryCode>BY</com:CountryCode>
+				<com:CountryCode>KZ</com:CountryCode>
+				<com:CountryCode>KG</com:CountryCode>
+				<com:CountryCode>TJ</com:CountryCode>
+				<com:CountryCode>RU</com:CountryCode>
+			</com:EffectiveCountryBag>
+			<dgn:DesignerBag>																																																								
+				<dgn:Designer com:sequenceNumber="1">																								
+					<com:NationalityCode>RU</com:NationalityCode>																				
+					<com:Contact>
+						<com:Name>
+							<com:PersonName>																									
+								<com:PersonStructuredName>	
+										<com:FirstName>Елена</com:FirstName>																		
+										<com:MiddleName>Борисовна </com:MiddleName>
+										<com:LastName>Сухорукова</com:LastName>
+								</com:PersonStructuredName>	
+							</com:PersonName>
+						</com:Name>
+					</com:Contact>
+				</dgn:Designer>
+			</dgn:DesignerBag>
+			<dgn:DesignTitleText com:languageCode="ru">ОРНАМЕНТ (УЗОР)</dgn:DesignTitleText>																					
+			<com:ProductDescriptionTextBag> 	
+				<com:ProductDescriptionText com:languageCode="ru">ПОСУДА, ПОСУДА ДЛЯ ДЕКОРАТИВНЫХ ЦЕЛЕЙ, УПАКОВКА, ТЕКСТИЛЬНЫЕ ИЗДЕЛИЯ, ФИГУРКИ</com:ProductDescriptionText>
+			</com:ProductDescriptionTextBag>	
+			<dgn:DesignRepresentationBag>																										
+				<dgn:DesignRepresentation>
+					<dgn:ViewBag>
+						<dgn:View>
+							<com:FileName>m002_002.jpg</com:FileName>																			
+							<dgn:ViewIdentifier>02.1</dgn:ViewIdentifier>																		
+							<dgn:ViewFileFormatCategory>JPEG</dgn:ViewFileFormatCategory>																																							
+							<com:HeightMeasure com:measureUnitCode="Mm">265</com:HeightMeasure>												
+							<com:WidthMeasure com:measureUnitCode="Mm">154</com:WidthMeasure>												
+						</dgn:View>
+					</dgn:ViewBag>
+				</dgn:DesignRepresentation>
+			</dgn:DesignRepresentationBag>
+		</pat:DesignPatent>	
+		<pat:DesignPatent com:sequenceNumber="3" com:st96Version="V9_0">																								
+			<dgn:DesignIdentifier>202240272-03</dgn:DesignIdentifier>																			
+			<com:LocarnoClassificationBag>																										
+				<com:LocarnoClassificationEdition>14</com:LocarnoClassificationEdition>															
+				<com:LocarnoClassification>
+					<com:LocarnoClass>32</com:LocarnoClass>																						
+					<com:LocarnoSubclassBag>
+						<com:LocarnoSubclass>00</com:LocarnoSubclass>																			
+					</com:LocarnoSubclassBag>
+				</com:LocarnoClassification>
+			</com:LocarnoClassificationBag>
+			<com:EffectiveCountryBag>																											
+				<com:CountryCode>AM</com:CountryCode>																							
+				<com:CountryCode>AZ</com:CountryCode>
+				<com:CountryCode>BY</com:CountryCode>
+				<com:CountryCode>KZ</com:CountryCode>
+				<com:CountryCode>KG</com:CountryCode>
+				<com:CountryCode>TJ</com:CountryCode>
+				<com:CountryCode>RU</com:CountryCode>
+			</com:EffectiveCountryBag>
+			<dgn:DesignerBag>																																																								
+				<dgn:Designer com:sequenceNumber="1">																								
+					<com:NationalityCode>RU</com:NationalityCode>																				
+					<com:Contact>
+						<com:Name>
+							<com:PersonName>																									
+								<com:PersonStructuredName>	
+										<com:FirstName>Елена</com:FirstName>																		
+										<com:MiddleName>Борисовна </com:MiddleName>
+										<com:LastName>Сухорукова</com:LastName>
+								</com:PersonStructuredName>	
+							</com:PersonName>
+						</com:Name>
+					</com:Contact>
+				</dgn:Designer>
+			</dgn:DesignerBag>
+			<dgn:DesignTitleText com:languageCode="ru">ОРНАМЕНТ (УЗОР)</dgn:DesignTitleText>																					
+			<com:ProductDescriptionTextBag> 	
+				<com:ProductDescriptionText com:languageCode="ru">ПОСУДА, ПОСУДА ДЛЯ ДЕКОРАТИВНЫХ ЦЕЛЕЙ, УПАКОВКА, ТЕКСТИЛЬНЫЕ ИЗДЕЛИЯ, ФИГУРКИ</com:ProductDescriptionText>
+			</com:ProductDescriptionTextBag>	
+			<dgn:DesignRepresentationBag>																										
+				<dgn:DesignRepresentation>
+					<dgn:ViewBag>
+						<dgn:View>
+							<com:FileName>m003_003.jpg</com:FileName>																			
+							<dgn:ViewIdentifier>03.1</dgn:ViewIdentifier>																		
+							<dgn:ViewFileFormatCategory>JPEG</dgn:ViewFileFormatCategory>																																							
+							<com:HeightMeasure com:measureUnitCode="Mm">265</com:HeightMeasure>												
+							<com:WidthMeasure com:measureUnitCode="Mm">154</com:WidthMeasure>												
+						</dgn:View>
+					</dgn:ViewBag>
+				</dgn:DesignRepresentation>
+			</dgn:DesignRepresentationBag>
+		</pat:DesignPatent>	
+		<pat:DesignPatent com:sequenceNumber="4" com:st96Version="V9_0">																								
+			<dgn:DesignIdentifier>202240272-04</dgn:DesignIdentifier>																			
+			<com:LocarnoClassificationBag>																										
+				<com:LocarnoClassificationEdition>14</com:LocarnoClassificationEdition>															
+				<com:LocarnoClassification>
+					<com:LocarnoClass>32</com:LocarnoClass>																						
+					<com:LocarnoSubclassBag>
+						<com:LocarnoSubclass>00</com:LocarnoSubclass>																			
+					</com:LocarnoSubclassBag>
+				</com:LocarnoClassification>
+			</com:LocarnoClassificationBag>
+			<com:EffectiveCountryBag>																											
+				<com:CountryCode>AM</com:CountryCode>																							
+				<com:CountryCode>AZ</com:CountryCode>
+				<com:CountryCode>BY</com:CountryCode>
+				<com:CountryCode>KZ</com:CountryCode>
+				<com:CountryCode>KG</com:CountryCode>
+				<com:CountryCode>TJ</com:CountryCode>
+				<com:CountryCode>RU</com:CountryCode>
+			</com:EffectiveCountryBag>
+			<dgn:DesignerBag>																																																								
+				<dgn:Designer com:sequenceNumber="1">																								
+					<com:NationalityCode>RU</com:NationalityCode>																				
+					<com:Contact>
+						<com:Name>
+							<com:PersonName>																									
+								<com:PersonStructuredName>	
+										<com:FirstName>Елена</com:FirstName>																		
+										<com:MiddleName>Борисовна </com:MiddleName>
+										<com:LastName>Сухорукова</com:LastName>
+								</com:PersonStructuredName>	
+							</com:PersonName>
+						</com:Name>
+					</com:Contact>
+				</dgn:Designer>
+			</dgn:DesignerBag>
+			<dgn:DesignTitleText com:languageCode="ru">ОРНАМЕНТ (УЗОР)</dgn:DesignTitleText>																					
+			<com:ProductDescriptionTextBag> 	
+				<com:ProductDescriptionText com:languageCode="ru">ПОСУДА, ПОСУДА ДЛЯ ДЕКОРАТИВНЫХ ЦЕЛЕЙ, УПАКОВКА, ТЕКСТИЛЬНЫЕ ИЗДЕЛИЯ, ФИГУРКИ</com:ProductDescriptionText>
+			</com:ProductDescriptionTextBag>	
+			<dgn:DesignRepresentationBag>																										
+				<dgn:DesignRepresentation>
+					<dgn:ViewBag>
+						<dgn:View>
+							<com:FileName>m001_004.jpg</com:FileName>																			
+							<dgn:ViewIdentifier>04.1</dgn:ViewIdentifier>																		
+							<dgn:ViewFileFormatCategory>JPEG</dgn:ViewFileFormatCategory>																																							
+							<com:HeightMeasure com:measureUnitCode="Mm">265</com:HeightMeasure>												
+							<com:WidthMeasure com:measureUnitCode="Mm">154</com:WidthMeasure>												
+						</dgn:View>
+					</dgn:ViewBag>
+				</dgn:DesignRepresentation>
+			</dgn:DesignRepresentationBag>
+		</pat:DesignPatent>	
+		<pat:DesignPatent com:sequenceNumber="5" com:st96Version="V9_0">																								
+			<dgn:DesignIdentifier>202240272-05</dgn:DesignIdentifier>																			
+			<com:LocarnoClassificationBag>																										
+				<com:LocarnoClassificationEdition>14</com:LocarnoClassificationEdition>															
+				<com:LocarnoClassification>
+					<com:LocarnoClass>32</com:LocarnoClass>																						
+					<com:LocarnoSubclassBag>
+						<com:LocarnoSubclass>00</com:LocarnoSubclass>																			
+					</com:LocarnoSubclassBag>
+				</com:LocarnoClassification>
+			</com:LocarnoClassificationBag>
+			<com:EffectiveCountryBag>																											
+				<com:CountryCode>AM</com:CountryCode>																							
+				<com:CountryCode>AZ</com:CountryCode>
+				<com:CountryCode>BY</com:CountryCode>
+				<com:CountryCode>KZ</com:CountryCode>
+				<com:CountryCode>KG</com:CountryCode>
+				<com:CountryCode>TJ</com:CountryCode>
+				<com:CountryCode>RU</com:CountryCode>
+			</com:EffectiveCountryBag>
+			<dgn:DesignerBag>																																																								
+				<dgn:Designer com:sequenceNumber="1">																								
+					<com:NationalityCode>RU</com:NationalityCode>																				
+					<com:Contact>
+						<com:Name>
+							<com:PersonName>																									
+								<com:PersonStructuredName>	
+										<com:FirstName>Елена</com:FirstName>																		
+										<com:MiddleName>Борисовна </com:MiddleName>
+										<com:LastName>Сухорукова</com:LastName>
+								</com:PersonStructuredName>	
+							</com:PersonName>
+						</com:Name>
+					</com:Contact>
+				</dgn:Designer>
+			</dgn:DesignerBag>
+			<dgn:DesignTitleText com:languageCode="ru">ОРНАМЕНТ (УЗОР)</dgn:DesignTitleText>																					
+			<com:ProductDescriptionTextBag> 	
+				<com:ProductDescriptionText com:languageCode="ru">ПОСУДА, ПОСУДА ДЛЯ ДЕКОРАТИВНЫХ ЦЕЛЕЙ, УПАКОВКА, ТЕКСТИЛЬНЫЕ ИЗДЕЛИЯ, ФИГУРКИ</com:ProductDescriptionText>
+			</com:ProductDescriptionTextBag>		
+			<dgn:DesignRepresentationBag>																										
+				<dgn:DesignRepresentation>
+					<dgn:ViewBag>
+						<dgn:View>
+							<com:FileName>m005_005.jpg</com:FileName>																			
+							<dgn:ViewIdentifier>05.1</dgn:ViewIdentifier>																		
+							<dgn:ViewFileFormatCategory>JPEG</dgn:ViewFileFormatCategory>																																							
+							<com:HeightMeasure com:measureUnitCode="Mm">265</com:HeightMeasure>												
+							<com:WidthMeasure com:measureUnitCode="Mm">154</com:WidthMeasure>												
+						</dgn:View>
+					</dgn:ViewBag>
+				</dgn:DesignRepresentation>
+			</dgn:DesignRepresentationBag>
+		</pat:DesignPatent>	
+	</pat:DesignPatentBag>
+</pat:DesignPatentPublication>

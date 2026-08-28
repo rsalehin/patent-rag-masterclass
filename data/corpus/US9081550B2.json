@@ -1,0 +1,323 @@
+{
+ "doc_id": "US9081550B2",
+ "publication_number": "US9081550B2",
+ "title": "Adding speech capabilities to existing computer applications with complex graphical user interfaces",
+ "abstract": "At design time of a graphical user interface (GUI), a software component (VUIcontroller) is added to the GUI. At run time of the GUI, the VUIcontroller analyzes the GUI from within a process that executes the GUI. From this analysis, the VUIcontroller automatically generates a voice command set, such as a speech-recognition grammar, that corresponds to controls of the GUI. The generated voice command set is made available to a speech recognition engine, thereby speech-enabling the GUI. Optionally, a GUI designer may add properties to ones of the GUI controls at GUI design time, without necessarily writing a voice command set. These properties, if specified, are then used at GUI run time to control or influence the analysis of the GUI and the automatic generation of the voice command set.",
+ "assignees": [
+  "Microsoft Technology Licensing LLC",
+  "Nuance Communications Inc"
+ ],
+ "inventors": [
+  "Mert Öz",
+  "Herwig Häle",
+  "Attila Muszta",
+  "Andreas Neubacher",
+  "Peter Kozma"
+ ],
+ "priority_date": "2011-02-18",
+ "filing_date": "2011-04-26",
+ "publication_date": "2015-07-14",
+ "cpc": [
+  "G06F",
+  "G06F3/00",
+  "G06F3/16",
+  "G06F3/167",
+  "G06F8/00",
+  "G06F8/30",
+  "G06F8/38",
+  "G06F9/4443",
+  "G06F9/00",
+  "G06F9/06",
+  "G06F9/44",
+  "G06F9/451"
+ ],
+ "citations": [
+  "US5377303A",
+  "US5748186A",
+  "US6012030A",
+  "US20010043234A1",
+  "US20010047265A1",
+  "US20030078784A1",
+  "US20030105637A1",
+  "US20030125956A1",
+  "US20030200080A1",
+  "US20040230637A1",
+  "US6832196B2",
+  "US20040260438A1",
+  "US20050075884A1",
+  "US6882974B2",
+  "US20050091057A1",
+  "US20050149331A1",
+  "US7020841B2",
+  "US7036080B1",
+  "US20060167697A1",
+  "US20060235699A1"
+ ],
+ "language": "en",
+ "claims": [
+  {
+   "number": 1,
+   "text": "Non-transitory computer-readable medium comprising computer-readable instructions that, when executed by a computer, adapt the computer to: provide a voice user interface controller (VUIcontroller) for automatically speech enabling a graphical user interface (GUI) at run time of the GUI; configure a user interface of the computer to receive first input from a GUI designer that identifies and includes the VUIcontroller in the GUI while designing the GUI so that the VUIcontroller will execute at run time of the GUI; configure the user interface of the computer to receive second input from the GUI designer that identifies and assigns, at design time of the GUI, at least one voice-enabling property to a first GUI control of the GUI; configure the user interface of the computer to receive third input from the GUI designer that identifies and disables, at design time of the GUI, voice control of a second GUI control of the GUI, wherein the VUIcontroller comprises instructions that are automatically executed at run time of the GUI to automatically: analyze the GUI from within a process that executes the GUI; generate a voice-enabled GUI based on the analysis; generate, from the analysis, a voice command set corresponding to voice-enabled controls of the GUI; and make the generated voice command set available to a speech-recognition engine.",
+   "dependent_on": null
+  },
+  {
+   "number": 2,
+   "text": "The non-transitory computer-readable medium of claim 1 , wherein the computer-readable instructions, when executed, further adapt the computer to provide a drag-and-drop tool for use in a visual GUI integrated design environment (IDE) to include the VUIcontroller in the GUI.",
+   "dependent_on": 1
+  },
+  {
+   "number": 3,
+   "text": "The non-transitory computer-readable medium of claim 1 , wherein the computer-readable instructions for the VUIcontroller comprise a routine callable from a GUI markup document.",
+   "dependent_on": 1
+  },
+  {
+   "number": 4,
+   "text": "The non-transitory computer-readable medium of claim 3 , wherein the computer-readable instructions are stored on a server other than a computer that renders the GUI at run time of the GUI, wherein the computer that renders the GUI and the server are interconnected, at least in part, by the Internet.",
+   "dependent_on": 3
+  },
+  {
+   "number": 5,
+   "text": "The non-transitory computer-readable medium of claim 4 , wherein at least a portion of the analysis of the GUI is performed by the server.",
+   "dependent_on": 4
+  },
+  {
+   "number": 6,
+   "text": "The non-transitory computer-readable medium of claim 1 , wherein the computer-readable instructions for the VUIcontroller, when executed, further adapt the computer to automatically analyze the GUI by constructing a data structure representing the controls of the GUI.",
+   "dependent_on": 1
+  },
+  {
+   "number": 7,
+   "text": "The non-transitory computer-readable medium of claim 1 , wherein the computer-readable instructions for the VUIcontroller, when executed, further adapt the computer to respond, at run time of the GUI, to dynamic changes in the GUI by revising the generated voice command set according to the changes in the GUI.",
+   "dependent_on": 1
+  },
+  {
+   "number": 8,
+   "text": "The non-transitory computer-readable medium of claim 1 , wherein the computer-readable instructions for the VUIcontroller, when executed, further adapt the computer to respond, at run time of the GUI, to dynamic changes in the GUI by revising the generated voice command set according to the changes in the GUI and according to at least one user-settable property, the user-settable property being settable to a value by the GUI designer at design time of the GUI.",
+   "dependent_on": 1
+  },
+  {
+   "number": 9,
+   "text": "The non-transitory computer-readable medium of claim 1 , wherein the computer-readable instructions for the VUIcontroller, when executed, further adapt the computer to respond, at run time of the GUI, to dynamic changes in the GUI by generating a revised voice command set according to the changed GUI.",
+   "dependent_on": 1
+  },
+  {
+   "number": 10,
+   "text": "The non-transitory computer-readable medium of claim 1 , wherein the computer-readable instructions for the VUIcontroller, when executed, further adapt the computer to respond, at run time of the GUI, to dynamic changes in the GUI by generating a revised voice command set according to the changed GUI and according to at least one user-settable property, the user-settable property being settable to a value by the GUI designer at design time of the GUI.",
+   "dependent_on": 1
+  },
+  {
+   "number": 11,
+   "text": "The non-transitory computer-readable medium of claim 1 , wherein the computer-readable instructions, when executed, further adapt the computer to augment, at design time of the GUI, each of the controls of the GUI with at least one corresponding user-settable property, the user-settable property being settable to a value by the GUI designer at design time of the GUI.",
+   "dependent_on": 1
+  },
+  {
+   "number": 12,
+   "text": "The non-transitory computer-readable medium of claim 11 , wherein the at least one user-settable property comprises text of a voice command for navigating to the corresponding control of the GUI.",
+   "dependent_on": 11
+  },
+  {
+   "number": 13,
+   "text": "The non-transitory computer-readable medium of claim 11 , wherein the at least one user-settable property comprises an indicator of whether the corresponding control of the GUI is to be speech enabled.",
+   "dependent_on": 11
+  },
+  {
+   "number": 14,
+   "text": "The non-transitory computer-readable medium of claim 11 , wherein: the at least one user-settable property comprises a unique identifier associated with the control of the GUI; and the computer-readable instructions, when executed, further adapt the computer to store, at design time of the GUI, an identifier of a user-specified speech recognition grammar associated with the unique identifier.",
+   "dependent_on": 11
+  },
+  {
+   "number": 15,
+   "text": "The non-transitory computer-readable medium of claim 1 , wherein the computer-readable instructions, when executed, further adapt the computer to augment, at design time of the GUI, each of the controls of the GUI with a unique identifier usable to identify an associated speech recognition grammar.",
+   "dependent_on": 1
+  },
+  {
+   "number": 16,
+   "text": "The non-transitory computer-readable medium of claim 1 , wherein the automatic analysis of the GUI, when executed, is performed according to at least one user-settable property, the user-settable property being settable to a value by the GUI designer at design time of the GUI.",
+   "dependent_on": 1
+  },
+  {
+   "number": 17,
+   "text": "The non-transitory computer-readable medium of claim 1 , wherein the automatic generation of the voice command set is performed according to at least one user settable property, the user-settable property being settable to a value by the GUI designer at design time of the GUI.",
+   "dependent_on": 1
+  },
+  {
+   "number": 18,
+   "text": "The non-transitory computer-readable medium of claim 1 , wherein the automatic making available of the generated voice command set to the speech-recognition engine is performed according to at least one user-settable property, the user-settable property being settable to a value by the GUI designer at design time of the GUI.",
+   "dependent_on": 1
+  },
+  {
+   "number": 19,
+   "text": "The non-transitory computer-readable medium of claim 1 , wherein the computer-readable instructions, when executed, further adapt the computer to enable the GUI designer to specify more than one voice command for a GUI control.",
+   "dependent_on": 1
+  },
+  {
+   "number": 20,
+   "text": "The non-transitory computer-readable medium of claim 1 , wherein the computer-readable instructions, when executed, further adapt the computer to enable the GUI designer to identify a predefined grammar for a GUI control.",
+   "dependent_on": 1
+  },
+  {
+   "number": 21,
+   "text": "A method for automatically speech enabling a graphical user interface (GUI), the method comprising: at design time of the GUI, receiving first input from a GUI designer for design of the GUI; at design time of the GUI, including a VUIcontroller in the GUI that will be executed at run time of the GUI; at design time of the GUI, receiving second input the GUI designer that specifies a voice-enabling property of a first control of the GUI being designed; at design time of the GUI, receiving third input from the GUI designer that disables voice control of a second control of the GUI being designed; at run time of the GUI, automatically executing the VUIcontroller that was included in the GUI at design time of the GUI, wherein the VUIcontroller instantiates acts of: analyzing the GUI from within a process that executes the GUI; generating a voice-enabled GUI based on the analysis; generating, from the analysis of the GUI, a voice command set corresponding to voice-enabled controls of the GUI; and making the generated voice command set available to a speech-recognition engine.",
+   "dependent_on": null
+  },
+  {
+   "number": 22,
+   "text": "A method according to claim 21 , further comprising providing the VUIcontroller in a form of a drag-and-drop tool configured to be added to a visual GUI integrated development environment (IDE).",
+   "dependent_on": 21
+  },
+  {
+   "number": 23,
+   "text": "A method according to claim 21 , wherein analyzing the GUI comprises analyzing the GUI according to at least one user-settable property, the user-settable property being settable to a value by the GUI designer at design time of the GUI.",
+   "dependent_on": 21
+  },
+  {
+   "number": 24,
+   "text": "A method according to claim 21 , wherein generating the voice command set comprises generating the voice command set according to at least one user-settable property, the user-settable property being settable to a value by the GUI designer at design time of the GUI.",
+   "dependent_on": 21
+  },
+  {
+   "number": 25,
+   "text": "A method according to claim 21 , wherein making the generated voice command set available to the speech-recognition engine comprises making the generated voice command set available to the speech-recognition engine according to at least one user-settable property, the user-settable property being settable to a value by the GUI designer at design time of the GUI.",
+   "dependent_on": 21
+  },
+  {
+   "number": 26,
+   "text": "A method according to claim 21 , further comprising, at run time of the GUI, in response to a change in the GUI, revising the generated voice command set according to the changes in the GUI.",
+   "dependent_on": 21
+  },
+  {
+   "number": 27,
+   "text": "A method according to claim 21 , further comprising, at run time of the GUI, in response to a change in the GUI, revising the generated voice command set according to the changes in the GUI according to at least one user-settable property, the user-settable property being settable to a value by the GUI designer at design time of the GUI.",
+   "dependent_on": 21
+  },
+  {
+   "number": 28,
+   "text": "A method according to claim 21 , further comprising, at run time of the GUI, in response to a change in the GUI, generating a revised voice command set according to the changes in the GUI.",
+   "dependent_on": 21
+  },
+  {
+   "number": 29,
+   "text": "A method according to claim 21 , further comprising, at run time of the GUI, in response to a change in the GUI, generating a revised voice command set according to the changes in the GUI according to at least one user-settable property, the user-settable property being settable to a value by the GUI designer at design time of the GUI.",
+   "dependent_on": 21
+  },
+  {
+   "number": 30,
+   "text": "A data processing system comprising: a display; and a processor adapted with computer-readable instructions to: include a voice user interface controller (VUIcontroller) in a graphical user interface (GUI) at design time of the GUI that will be executed at run time of the GUI; receive, at design time of the GUI, first input from a GUI designer that specifies a voice-enabling property of a first selected control of the GUI being designed; receive, at design time of the GUI, second input from the GUI designer that disables voice control of a second selected control of the GUI being designed; automatically execute the VUIcontroller at run time of the GUI; automatically analyze, by the VUIcontroller at run time, the GUI from within a process that executes the GUI; generate a voice-enabled GUI based on the analysis; generate, from the analysis of the GUI, a voice command set corresponding to voice-enabled controls of the GUI; and make the generated voice command set available to a speech recognition engine.",
+   "dependent_on": null
+  }
+ ],
+ "description": [
+  {
+   "heading": "CROSS REFERENCE TO RELATED APPLICATIONS",
+   "paragraphs": [
+    "This application claims the benefit of U.S. Provisional Patent Application No. 61/444,340, filed Feb. 18, 2011, titled “Adding Speech Capabilities to Existing Computer Applications with Complex Graphical User Interfaces,” the entire contents of which are hereby incorporated by reference herein, for all purposes."
+   ]
+  },
+  {
+   "heading": "TECHNICAL FIELD",
+   "paragraphs": [
+    "The present invention relates to software development libraries, software development kits (SDKs), application programming interfaces (APIs) and other software components (collectively “software development tools”) and, more particularly, to software development tools for adding speech recognition capabilities to existing graphical user interfaces."
+   ]
+  },
+  {
+   "heading": "BACKGROUND ART",
+   "paragraphs": [
+    "Many computer programs have graphical user interfaces (GUIs), which allow users to interact with the programs using images rather than text commands. A GUI represents information and actions by displaying graphical icons and visual indicators on a screen. A user interacts with the GUI through manipulation of the graphical elements using a mouse, trackball, joystick, touch screen or other input device. For example, a user may control the location of a cursor displayed on the screen by moving a mouse. The user may indicate a choice by moving the cursor to an icon and pressing a button on the mouse (“clicking”). Similarly, the user may move the cursor to a location within a rectangle (“text box”) displayed on the screen, click to select the text box and then enter text into the box by typing on a keyboard. GUIs employ metaphors, such as buttons, check boxes, radio buttons, text boxes, pull-down lists (drop-down boxes), etc. (collectively referred to as “controls”), to facilitate human-computer interaction. GUIs are widely used in personal computers, embedded systems, such as automatic teller machines (ATMs) and point-of-sale terminals, hand-held devices, such as mobile telephones and MP3 players, and the like.",
+    "Although GUIs represent a significant advance over purely text-based user interfaces, GUIs nevertheless suffer from some shortcomings. For example, a user must be able and willing to manipulate a mouse or other pointing device and, in most cases, enter text by typing on a keyboard. People who do not have use of their hands, either because of a physical disability or because their hands are dedicated to performing some other tasks, can not use GUIs.",
+    "Automatic speech recognition (“ASR” or “SR”) technology converts spoken words into text. For example, Dragon Naturally Speaking speech recognition software from Nuance Communications, Inc., Burlington, Mass., may be used to dictate text into a word processing document or into a text box of a GUI, once the text box has been selected. In some cases, voice commands may be used to navigate among controls in a GUI. Two conventional approaches are available for speech-enabling a software application.",
+    "In one approach, a speech recognition application parses a displayed GUI at run time and attempts to identify controls, such as buttons and text boxes. The speech recognition application enables the user to navigate among the identified controls by uttering simple commands such as “Next field” and “Previous field.” In some cases, the speech recognition application can identify text displayed near the controls. For example, if the GUI is displayed by a browser rendering a web page, the speech recognition application may parse HTML code of the web page. Text that is displayed adjacent a control may be assumed to be a label for the control. The user is then able to navigate to a control by uttering “Go to xxx,” where “xxx” is the assumed label for the control. Once a control has been navigated to, the user may activate the control and/or use the control, such as by dictating into a text box.",
+    "However, correctly identifying displayed text as labels is error prone and sometimes impossible. For example, not all GUI controls have near-by text, and any near-by text may not actually correspond to the control and may not, therefore, provide a suitable navigation label for the control.",
+    "Advantageously, this approach to speech-enabling a GUI requires no effort on the part of a GUI developer. However, the navigation capabilities provided by this approach are limited to simple, i.e., “next” and “previous,” navigation commands if suitable label text can not be identified. Furthermore, some GUIs include multiple pages or tabs, the contents of only one of which is displayed at a time. Such complex GUIs are often found in electronic medical record/electronic health record (EMR/EHR) and many other complex application programs. Unfortunately, using the first speech-enabling approach, it is not possible to navigate to, or activate, a control located on a page or tab other than the currently-displayed page or tab.",
+    "Another approach to speech-enabling a GUI provides richer and more complete speech navigation. However, this approach requires specifically designing the GUI for speech recognition. A developer who is skilled in voice user interface (VUI) design constructs a “dialog” that guides a user through voice interactions with the application. Thus, the speech recognition capabilities and programming are deeply integrated in the GUI. Furthermore, the language used to specify the voice interactions is distinct from the language used to describe the GUI. Although this approach can lead to a rich and sophisticated VUI, the development process is long, expensive and requires a skilled developer.",
+    "Application developers are, therefore, faced with a technical problem of speech-enabling complex GUIs, such as multi-page or multi-tab GUIs, without constructing speech dialogs when the GUIs are designed (“GUI design time”)."
+   ]
+  },
+  {
+   "heading": "SUMMARY OF EMBODIMENTS",
+   "paragraphs": [
+    "An embodiment of the present invention provides a voice user interface controller (VUIcontroller) for automatically speech enabling a graphical user interface (GUI). The VUIcontroller includes a software component that is configured for inclusion in the GUI at design time of the GUI. The VUIcontroller is configured such that the software component is automatically executed at run time of the GUI. (The definition of “executed” includes “instantiated.”) The software component is further configured to automatically perform several actions at run time of the GUI. The software component automatically analyzes the GUI from within a process that executes the GUI. The software component also automatically generates a voice command set corresponding to controls of the GUI. (A voice command set may be implemented as a speech recognition grammar, a search graph, a speech-recognition engine-embedded state machine or any other construct or process for recognizing speech.) The voice command set is generated from the analysis. The software component also automatically makes the generated voice command set available to a speech-recognition engine.",
+    "The software component may include a drag-and-drop tool for use in a visual GUI integrated design environment (IDE) or a routine callable from a GUI markup document.",
+    "The software component may be stored on a server other than a computer that renders the GUI at run time of the GUI. The computer that renders the GUI and the server may be interconnected, at least in part, by the Internet. At least a portion of the analysis of the GUI may be performed by the server.",
+    "The software component may be configured to automatically analyze the GUI by constructing a data structure representing the controls of the GUI.",
+    "The software component may be configured to respond to GUI run-time dynamic changes in the GUI by revising the generated voice command set according to the changes in the GUI. The revision to the voice command set may be according to at least one user-settable property. The user-settable property may be settable to a value by a user at design time of the GUI.",
+    "The software component may be configured to respond to GUI run-time dynamic changes in the GUI by generating a revised voice command set according to the changed GUI. The revised voice command set may be generated according to at least one user-settable property. The user-settable property may be settable to a value by a user at design time of the GUI.",
+    "The software component may be further configured to augment each of the controls of the GUI (at design time of the GUI) with at least one corresponding user-settable property. The user-settable property may be settable to a value by a user at design time of the GUI.",
+    "The at least one user-settable property may include text of a voice command for navigating to the corresponding control of the GUI or an indicator of whether the corresponding control of the GUI is to be speech enabled.",
+    "The at least one user-settable property may include a unique identifier associated with the control of the GUI. The software component may be further configured to store, at design time of the GUI, an identifier of a user-specified speech recognition grammar associated with the unique identifier.",
+    "The software component may be further configured to augment, at design time of the GUI, each of the controls of the GUI with a unique identifier usable to identify an associated speech recognition grammar.",
+    "The software component may be further configured such that the automatic analysis of the GUI is performed according to at least one user-settable property. The user-settable property may be settable to a value by a user at design time of the GUI.",
+    "The software component may be further configured such that the automatic generation of the voice command set is performed according to at least one user-settable property. The user-settable property may be settable to a value by a user at design time of the GUI.",
+    "The software component may be further configured such that the automatic making available of the generated voice command set to the speech-recognition engine is performed according to at least one user-settable property. The user-settable property may be settable to a value by a user at design time of the GUI.",
+    "Another embodiment of the present invention provides a method for automatically speech enabling a graphical user interface (GUI). According to the method, at run time of the GUI, a VUIcontroller is automatically executed. The VUIcontroller was included in the GUI at design time of the GUI. The VUIcontroller automatically analyzes the GUI from within a process that executes the GUI and generates a voice command set corresponding to controls of the GUI, from the analysis of the GUI. The VUIcontroller also makes the generated voice command set available to a speech-recognition engine.",
+    "The VUIcontroller may be provided in a form of a drag-and-drop tool configured to be added to a visual GUI integrated development environment (IDE).",
+    "The GUI may be analyzed according to at least one user-settable property. The user-settable property may be settable to a value by a user at design time of the GUI.",
+    "The voice command set may be generated according to at least one user-settable property. The user-settable property may be settable to a value by a user at design time of the GUI.",
+    "The generated voice command set may be made available to the speech-recognition engine comprises according to at least one user-settable property. The user-settable property may be settable to a value by a user at design time of the GUI.",
+    "At run time of the GUI, in response to a change in the GUI, the generated voice command set may be revised, or a revised voice command set may be generated, according to the changes in the GUI. The revision or generation may be according to at least one user-settable property. The user-settable property may be settable to a value by a user at design time of the GUI.",
+    "Yet another embodiment of the present invention provides a non-transitory computer-readable medium having computer readable program code stored thereon for automatically speech enabling a graphical user interface (GUI). The stored program code includes program code for automatically executing a VUIcontroller at run time of the GUI. The VUIcontroller was included in the GUI at design time of the GUI. The stored program code also includes program code for performing several operations as a consequence of the automatic execution of the VUIcontroller, including automatically analyzing the GUI from within a process that executes the GUI and automatically generating a voice command set corresponding to controls of the GUI, from the analysis of the GUI. Also included is program code for automatically making the generated voice command set available to a speech recognition engine."
+   ]
+  },
+  {
+   "heading": "BRIEF DESCRIPTION OF THE DRAWINGS",
+   "paragraphs": [
+    "The invention will be more fully understood by referring to the following Detailed Description of Specific Embodiments in conjunction with the Drawings, of which:",
+    "FIG. 1 is a schematic diagram of an exemplary user interface to a visual integrated development environment (IDE), as augmented according to an embodiment of the present invention.",
+    "FIG. 2 is a schematic block diagram of a browser coupled to a server, from which a VUIcontroller script may be served, according to an embodiment of the present invention.",
+    "FIG. 3 is a schematic block diagram of an application program that includes a graphical user interface (GUI) that includes an instantiated VUIcontroller object, according to an embodiment of the present invention.",
+    "FIGS. 4-6 are schematic diagrams of a hypothetical three-window GUI.",
+    "FIGS. 7A and 7B collectively show a hierarchical representation of controls in the GUI of FIGS. 4-6 , according to an embodiment of the present invention.",
+    "FIG. 8 is a schematic block diagram of the application program of FIG. 3 coupled to a speech-recognition engine and using a voice command set automatically generated from the representation of FIGS. 7A and 7B , according to an embodiment of the present invention.",
+    "FIG. 9 is a schematic flowchart summarizing operations involving the VUIcontroller of FIGS. 1-3 and 8 , i.e., a method for automatically speech-enabling a GUI, according to an embodiment of the present invention."
+   ]
+  },
+  {
+   "heading": "DETAILED DESCRIPTION OF SPECIFIC EMBODIMENTS",
+   "paragraphs": [
+    "In accordance with embodiments of the present invention, methods and apparatus are disclosed for automatically speech enabling a graphical user interface (GUI) of a computer application program, without requiring a GUI designer to construct a dialog that guides a user through voice interactions with the application. Instead, a voice command set is automatically generated at GUI run time by analyzing the GUI from within a process that executes the GUI. (A voice command set may be implemented as a speech recognition grammar, a search graph, a speech-recognition-engine-embedded state machine or any other construct or process for recognizing speech.) Because the GUI is analyzed from within the GUI process, all the GUI controls of the application are available for analysis, regardless of whether the controls are visible or not visible on the current window. Thus, the automatically-generated voice command set can encompass the entire GUI and enables the user to navigate to, and activate, GUI controls that are on windows and tabs that are not currently visible, without requiring the GUI designer to construct a voice command set.",
+    "Nevertheless, some embodiments enable the GUI designer to optionally and simply add speech-enabling properties to one or more of the GUI controls, or one or more global properties, at GUI design time, without necessarily writing a voice command set. These properties, if specified, may then be used at GUI run time to control or influence the analysis of the GUI and the automatic generation of the voice command set. For example, the GUI designer can specify a name or other command the user can utter to navigate to or activate the GUI control. The name or other command may be stored as a property of the corresponding GUI control. Another property may be used by the GUI designer to specify that a particular GUI control is to be, or is not to be, speech enabled. Another property may be used to control automatic regeneration of the voice command set in response to programmatic changes to the GUI by the application program. Yet another property may be used by the GUI designer to associate a particular voice command set, such as a pre-defined grammar, or a particular problem domain, such as electronic medical records (EMR) or a particular field of medicine, such as radiology or oncology, with a particular GUI control. These properties may then be used at GUI run time to control or influence the analysis and/or generation of the voice command set.",
+    "Thus, a complete GUI may be automatically speech-enabled, including GUI controls that are not on a currently visible page, without requiring the GUI designer to construct a voice command set. However, the GUI designer may control or influence speech-recognition aspects of selected GUI controls through the added GUI control properties, again without requiring the GUI designer to construct a voice command set. Consequently, the GUI designer obtains benefits of both prior art speech-enabling approaches, without incurring the penalties associated with the prior art."
+   ]
+  },
+  {
+   "heading": "Voice User Interface Controller (VUIcontroller)",
+   "paragraphs": [
+    "According to some embodiments of the present invention, a “voice user interface controller” (“VUIcontroller”) is used to automatically speech-enable a GUI. The VUIcontroller is a software component that is configured to be included in a GUI when the GUI is developed, i.e., at GUI design time. The VUIcontroller is further configured to be automatically instantiated or executed and connected to the GUI when the corresponding application program is executed and the GUI is displayed, i.e., at GUI run time.",
+    "At GUI run time, the VUIcontroller analyzes the GUI from within a process that executes the GUI. Analyzing from within the process that executes the GUI enables the VUIcontroller to access information about the entire GUI, not merely a currently displayed page or tab. From this analysis, the VUIcontroller automatically generates a voice command set that corresponds to controls of the GUI. The generated voice command set is made available to a speech recognition engine, thereby speech-enabling the GUI.",
+    "In some embodiments, such as when the GUI is being developed using an integrated development environment (IDE), the VUIcontroller may be implemented as a drag-and-drop tool that can be dropped into a GUI under development. In other embodiments, such as web-based GUIs, the VUIcontroller may be implemented as a routine, such as a script written in JavaScript, that is callable from a GUI markup document, such as a web page written in the HyperText Markup Language (HTML).",
+    "The VUIcontroller may be stored on the same computer that renders the GUI at run time or on a server other than the computer that renders the GUI at run time. For example, the VUIcontroller may be stored on a server that is accessible by the GUI-rendering computer at least partially via the Internet. The VUIcontroller, or a portion of the VUIcontroller, may be downloaded from the server to the GUI-rendering computer for execution. The automatic analysis and/or automatic voice command set generation may be performed by the VUIcontroller on the GUI-rendering computer or on another server. For example, a downloaded portion of the VUIcontroller may send raw data describing the GUI to a remotely executed portion of the VUIcontroller for analysis.",
+    "In some cases, such as when part or all of the VUIcontroller is executed on a remote computer, services of the VUIcontroller may be provided by a third party commercial entity for a fee, such as under a license agreement. Thus, a company may provide a speech-enabled GUI by calling the VUIcontroller, without necessarily providing the VUIcontroller. The provider of the VUIcontroller may implement improvements in the VUIcontroller, without requiring the GUI application program to be modified or rebuilt. In such a case, the GUI application program obtains benefits from the improved VUIcontroller transparently.",
+    "Similarly, the speech-recognition engine that processes the automatically-generated voice command set may be executed by the same computer that executes the GUI or a different computer, such as a computer accessible via the Internet. In some cases, such as when the speech-recognition engine resides on a remote computer, services of the speech-recognition engine may be provided by a third party commercial entity for a fee, such as under a license agreement. Thus, a company may provide a speech-enabled GUI without necessarily also providing the speech-recognition engine. The provider of the speech-recognition engine may implement improvements in the speech-recognition engine, without requiring the GUI application program to be modified or rebuilt. In such a case, the GUI application program obtains benefits from the improved speech-recognition engine transparently.",
+    "Some embodiments of the present invention will now be described in greater detail."
+   ]
+  },
+  {
+   "heading": "VUIcontroller Implemented as a Drag-and-Drop Tool",
+   "paragraphs": [
+    "Some GUI developers use visual IDEs, such as Visual Studio 2010 software from Microsoft Corporation, Redmond, Wash. 98052-6399, to design GUIs. An IDE is a software application that provides comprehensive facilities to computer programmers for software development. An exemplary user interface 100 to a visual IDE is shown schematically in FIG. 1 . The IDE includes a window (“design pane”) 104 that graphically represents a GUI under development, as well as another window (“toolbox”) 108 that display tools, such as GUI controls that can be dragged by the developer from the toolbox 108 and dropped into the design pane 104 . The IDE may include other windows, such as a “properties” window 110 , in which the IDE displays, and the GUI developer may browse and, in appropriate cases, edit values of properties associated with GUI controls and other objects that have been added to the GUI under development. In the properties window 110 , the IDE displays a scrollable list of properties and corresponding property values, if they have been defined or defaulted, associated with a GUI control or other object, such as a tab control 112 , that has been selected in the design pane 104 . Exemplary prior art properties include X and Y coordinates within the eventual run-time GUI window of a corner of each control.",
+    "As noted, the VUIcontroller may be implemented as a drag-and- drop tool 114 that the GUI developer can drag from the toolbox 108 and drop into the GUI design pane 104 . Dropping the VUIcontroller 114 into the design pane 104 causes the IDE to add the VUIcontroller software component to the GUI under development, in the same, or similar, manner as the IDE adds other dragged-and-dropped tools, such as GUI controls. For example, adding the VUIcontroller 114 to the GUI under development may involve adding a class definition for the VUIcontroller to the GUI. The IDE adds the VUIcontroller to the GUI under development according to the GUI framework, under which the GUI is being developed. Exemplary GUI frameworks include .NET WinForms, Windows Presentation Foundation (WPF), Swing, ActiveX, iOS/Objective C, Java and Win32 hwnd-based frameworks.",
+    "Typically, the VUIcontroller 114 needs to be added only once to a GUI application under development, even if the GUI includes more than one window, page or tab. The IDE may, but need not, display an icon in the GUI design pane 104 to indicate the VUIcontroller 114 has been added to the GUI under development.",
+    "Optionally, once the VUIcontroller 114 has been dropped into the GUI design pane 104 , the VUIcontroller may extend GUI controls, such as buttons and drop-down lists, with additional custom properties. Optionally or additionally, the VUIcontroller may extend the GUI with global properties, i.e., properties that are not tied to particular GUI controls. The GUI developer may then easily give values to these properties using the IDE's properties browser 110 . Three exemplary added properties 118 , 120 and 124 are shown; however, other additional properties and other numbers of additional properties may be added, and other names for the described properties may be used. The three exemplary additional properties will now be discussed in more detail.",
+    "The VuiConceptName property 118 may be used to allow the GUI developer to specify a voice command or a list of alternative voice commands that a user will be able to utter to navigate to the associated GUI control. In one embodiment, the VuiConceptName value may be entered by the GUI developer as a text string, with a predetermined character, such as vertical bar (“|”), to separate alternative voice commands. For example, in a travel-related application, a destination control may have a VuiConceptName value of “destination |I want to travel to |my destination is.” The default value for the VuiConceptName property may be null.",
+    "The VuiEnabled property 120 may take one of two Boolean values, “true” and “false,” to indicate whether the corresponding GUI control should be speech-enabled or not. The default value may be “true.”",
+    "The GUI developer may add the VuiGUID property 124 to selected GUI controls. Optionally, the VUIcontroller 114 may automatically add the VuiGUID property 124 to each GUI control in the application. In either case, at GUI design time, the VUIcontroller 114 assigns a unique value, such as a globally unique identifier (GUID), to each VuiGUID property 124 . Thus, the VuiGUID properties uniquely identify the associated GUI controls, at least within the application. The values used for the VuiGUID property 124 may, but need not, be 32-character hexadecimal stings.",
+    "The GUI developer may associate a voice command set or an individual grammar concept (i.e., one or more phrases that can be recognized when the grammar is active), such as in a pre-existing grammar or in a grammar expected to be available to the speech-recognition engine at GUI run time, with a particular VuiGUID value, thereby associating the voice command set or grammar concept with the GUI control having that VuiGUID property value. Most existing speech-recognition engines allow the association of individual grammar concepts with semantic attributes that are returned by the speech-recognition engine, together with a recognized phrase. The concrete VuiGUID value can be stored in such a semantic attribute. Thus, at GUI run time, if a user-uttered command is recognized using a speech-recognizer grammar associated with a VuiGUID value, the VUIcontroller is notified, and the VUIcontroller activates the GUI control associated with the VuiGUID value. For example, if the GUI control is a button, the VUIcontroller simulates a button click.",
+    "The GUI developer may add other properties and associated property values to GUI controls. For example, if a text box or pull-down control relates to a particular problem domain, such as radiology, oncology or automobile repair, a VuiDictationTopic property value may be set by the GUI developer to an appropriate value, such as a code or a text string that represents the problem domain. The value of this property may then be used at GUI run time to select an appropriate voice command set to increase speech recognition accuracy. Similarly, if the semantics of a field are known at GUI design time, the GUI developer may set a property value to store information about the semantics. For example, if valid values that can be entered into a field must fall within set boundaries, such as systolic blood pressure or body temperature, the property may be used to automatically select a voice command set that recognizes only utterances of numeric information within that range. For example, VuiSemantics=“bodytemperature” may be used to restrict recognition to values between 90° F. and 110° F. or 35° C. and 42° C.",
+    "The description of custom properties (above) is phrased in the context of a .NET WinForms framework. In other frameworks, other well-known concepts may be used to achieve similar results. For example, in iOS/Objective C, extension interfaces may be used to implement these properties.",
+    "The VUIcontroller 114 may be provided by the IDE provider, or the VUIcontroller 114 may be added to the IDE's toolbox 108 as a custom tool. Instructions for adding custom tools to IDEs are typically provided by the IDEs' providers."
+   ]
+  },
+  {
+   "heading": "VUIcontroller Implemented as a Callable Script",
+   "paragraphs": [
+    "As noted, in other embodiments, the VUIcontroller may be implemented as a routine, such as a script written in JavaScript, that is callable from a GUI markup document, such as an HTML document. Also as noted, the script may be stored on the same computer that renders the GUI or on another computer, including a computer accessible to the GUI-rendering computer via the Internet. A block diagram of such an arrangement is shown schematically in FIG. 2 . The VUIcontroller script 200 may be invoked from a JavaScript file that contains code that hooks into the “on Load” event and is included in a web page via an HTML statement such as:"
+   ]
+  }
+ ],
+ "pdf_url": "https://patentimages.storage.googleapis.com/c2/60/1c/20d3bea6aa2a5f/US9081550.pdf",
+ "source": {
+  "provider": "Google Patents",
+  "url": "https://patents.google.com/patent/US9081550B2/en",
+  "fetched": "2026-08-28",
+  "note": "Patent text is public record; Google Patents used as aggregator."
+ }
+}

@@ -1,0 +1,27 @@
+Read CLAUDE.md, SPEC.md and CHAPTERS.md in full before doing anything else.
+
+Then build the complete patent RAG notebook series autonomously, without asking me
+anything. Work strictly in this order:
+
+1. Research phase: verify current versions and maintenance status of every candidate
+   library (PyPI + official docs), check the current WIPO ST.96 version, and locate a
+   small real public patent corpus per CLAUDE.md "Data". Write your decisions into a
+   short DECISIONS.md and pin requirements.txt.
+2. Acquire and bundle the corpus into data/ with data/PROVENANCE.md. Verify at least
+   a few genuine patent XML files and one PDF exist.
+3. Build chapters 00 through 14 one at a time, exactly per CHAPTERS.md: for each
+   chapter write the patentrag/ code + tests first, run pytest, write the notebook,
+   execute it fresh with nbconvert, fix everything, re-execute clean, commit, then
+   move on. Never move to the next chapter with a failing cell.
+4. After chapter 14, run `python scripts/validate_all.py` to execute the entire series
+   fresh and commit VALIDATION_REPORT.md. Only report success if it says
+   SERIES VALIDATION: PASS.
+5. Write README.md covering: how to run on Google Colab (per-notebook, fresh VM,
+   including filling in REPO_URL after I push to GitHub) and how to run locally.
+
+Hard rules (repeated because they matter): never fabricate cell outputs or metrics;
+never claim execution that didn't happen; no paid API keys required anywhere; every
+notebook must run standalone on a fresh Colab VM; total series runtime under ~45 min
+CPU. If anything must be skipped, skip it loudly with the exact reason.
+
+Begin with the research phase now.

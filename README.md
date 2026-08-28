@@ -52,6 +52,12 @@ notebook per runtime; to open several, just click several chapter links — each
    for the OCR chapter, then rebuilds any needed artifacts from `data/` (≈2–3 min the first time
    a heavy stage like embeddings is built; cached thereafter on that VM).
 
+**Private repo?** `git clone` on Colab needs a token. Create one with **repo** scope at
+<https://github.com/settings/tokens>, then in Colab open the **key icon (Secrets)** in the left
+sidebar, add a secret named **`GITHUB_TOKEN`**, paste the token, and enable **Notebook access**.
+The bootstrap cell reads that secret automatically (the token is never printed). If the repo is
+public, no token is needed.
+
 CPU-only works everywhere; a GPU is used opportunistically and never required. No paid API key is
 needed — generation defaults to a deterministic mock. To optionally use a live LLM, set
 `LLM_BASE_URL`, `LLM_API_KEY`, `LLM_MODEL` (any OpenAI-compatible endpoint, e.g. DeepSeek).

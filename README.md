@@ -28,6 +28,12 @@ Google Colab VM. Shared, tested implementations live in [`patentrag/`](patentrag
 | 13 | `13_observability_and_e2e` | Request tracing, latency budget, the end-to-end pipeline, **full provenance chain** |
 | 14 | `14_ablation_failures_production` | Measured ablation, failure catalogue, checklist, final benchmark |
 
+**Appendices** (zero-to-working guides for individual building blocks):
+
+| # | Appendix | Topic |
+|---|----------|-------|
+| A1 | `A1_pydantic` | Pydantic from zero — every concept the series' data models rely on |
+
 ## Running on Google Colab (primary)
 
 **Launcher:** open [`index.ipynb`](index.ipynb) in Colab — it has one-click "Open in Colab" links
